@@ -9,17 +9,6 @@
         "UpdateStageName":"ASP.NET Core Runtime Download",
         "UpdateSourcePlatform":"Windows",
         "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://dotnetcli.azureedge.net/dotnet/aspnetcore/Runtime/{{DotnetVersion}}/aspnetcore-runtime-{{DotnetVersion}}-win-x86.zip",
-        "UpdateSourceTarget":"{{$FullBaseDir}}dotnet",
-        "UpdateSourceArch":"x86",
-        "UnzipUpdateSource":true,
-        "OverwriteExistingFiles":true,
-        "DeleteAfterExtract":true
-    },
-    {
-        "UpdateStageName":"ASP.NET Core Runtime Download",
-        "UpdateSourcePlatform":"Windows",
-        "UpdateSource":"FetchURL",
         "UpdateSourceData":"https://dotnetcli.azureedge.net/dotnet/aspnetcore/Runtime/{{DotnetVersion}}/aspnetcore-runtime-{{DotnetVersion}}-win-x64.zip",
         "UpdateSourceTarget":"{{$FullBaseDir}}dotnet",
         "UpdateSourceArch":"x64",
