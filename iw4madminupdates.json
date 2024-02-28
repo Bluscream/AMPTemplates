@@ -1,0 +1,45 @@
+[
+    {
+        "UpdateStageName": "Downloading latest release from Github",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "GithubRelease",
+        "UpdateSourceData": "IW4MAdmin-*.zip",
+        "UpdateSourceArgs": "RaidMax/IW4M-Admin",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": true,
+        "OneShot": false
+    },
+    {
+        "UpdateStageName": "Extracting Github Release",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "ExtractArchive",
+        "UpdateSourceArgs": "./tmp/IW4MAdmin*.zip",
+        "UpdateSourceTarget": ".",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": true,
+        "OneShot": false
+    },
+    {
+        "UpdateStageName": "",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://raw.githubusercontent.com/RaidMax/IW4M-Admin/release/pre/DeploymentFiles/UpdateIW4MAdmin.ps1",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": true,
+        "DeleteAfterExtract": false,
+        "OneShot": false
+    },
+    {
+        "UpdateStageName": "",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "UpdateIW4MAdmin.ps1",
+        "UpdateSourceArgs": "-silent -clean",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": true,
+        "OneShot": false
+    }
+]
