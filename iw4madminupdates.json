@@ -1,28 +1,45 @@
 [
     {
-        "UpdateStageName": "Downloading latest release from Github",
-        "UpdateSourcePlatform": "All",
-        "UpdateSource": "GithubRelease",
-        "UpdateSourceData": "IW4MAdmin-*.zip",
-        "UpdateSourceArgs": "RaidMax/IW4M-Admin",
-        "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": false,
-        "DeleteAfterExtract": true,
-        "OneShot": false
+        "UpdateStageName":"Create Dotnet Directory",
+        "UpdateSourcePlatform":"All",
+        "UpdateSource":"CreateDirectory",
+        "UpdateSourceArgs":"{{$FullBaseDir}}dotnet"
     },
     {
-        "UpdateStageName": "Extracting Github Release",
-        "UpdateSourcePlatform": "All",
-        "UpdateSource": "ExtractArchive",
-        "UpdateSourceArgs": "./tmp/IW4MAdmin*.zip",
-        "UpdateSourceTarget": ".",
-        "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": false,
-        "DeleteAfterExtract": true,
-        "OneShot": false
+        "UpdateStageName":"ASP.NET Core Runtime Download",
+        "UpdateSourcePlatform":"Windows",
+        "UpdateSource":"FetchURL",
+        "UpdateSourceData":"https://dotnetcli.azureedge.net/dotnet/aspnetcore/Runtime/{{DotnetVersion}}/aspnetcore-runtime-{{DotnetVersion}}-win-x86.zip",
+        "UpdateSourceTarget":"{{$FullBaseDir}}dotnet",
+        "UpdateSourceArch":"x64",
+        "UnzipUpdateSource":true,
+        "OverwriteExistingFiles":true,
+        "DeleteAfterExtract":true
     },
     {
-        "UpdateStageName": "",
+        "UpdateStageName":"ASP.NET Core Runtime Download",
+        "UpdateSourcePlatform":"Linux",
+        "UpdateSource":"FetchURL",
+        "UpdateSourceData":"https://dotnetcli.azureedge.net/dotnet/aspnetcore/Runtime/{{DotnetVersion}}/aspnetcore-runtime-{{DotnetVersion}}-linux-x64.tar.gz",
+        "UpdateSourceArch":"x86_64",
+        "UpdateSourceTarget":"{{$FullBaseDir}}dotnet",
+        "UnzipUpdateSource":true,
+        "OverwriteExistingFiles":true,
+        "DeleteAfterExtract":true
+    },
+    {
+        "UpdateStageName":"ASP.NET Core Runtime Download",
+        "UpdateSourcePlatform":"Linux",
+        "UpdateSource":"FetchURL",
+        "UpdateSourceData":"https://dotnetcli.azureedge.net/dotnet/aspnetcore/Runtime/{{DotnetVersion}}/aspnetcore-runtime-{{DotnetVersion}}-linux-arm64.tar.gz",
+        "UpdateSourceArch":"aarch64",
+        "UpdateSourceTarget":"{{$FullBaseDir}}dotnet",
+        "UnzipUpdateSource":true,
+        "OverwriteExistingFiles":true,
+        "DeleteAfterExtract":true
+    },
+    {
+        "UpdateStageName": "Downloading IW4MAdmin Installer Script",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://raw.githubusercontent.com/RaidMax/IW4M-Admin/release/pre/DeploymentFiles/UpdateIW4MAdmin.ps1",
@@ -32,11 +49,11 @@
         "OneShot": false
     },
     {
-        "UpdateStageName": "",
+        "UpdateStageName": "Installing IW4MAdmin",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "Executable",
         "UpdateSourceData": "UpdateIW4MAdmin.ps1",
-        "UpdateSourceArgs": "-silent -clean",
+        "UpdateSourceArgs": "-silent",
         "UnzipUpdateSource": false,
         "OverwriteExistingFiles": false,
         "DeleteAfterExtract": true,
