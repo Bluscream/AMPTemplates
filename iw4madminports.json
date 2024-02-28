@@ -1,9 +1,0 @@
-[
-    {
-        "Protocol": "TCP",
-        "Port": "1624",
-        "Name": "Webinterface",
-        "Description": "Port used for main game traffic",
-        "Ref": "Webinterface"
-    }
-]
