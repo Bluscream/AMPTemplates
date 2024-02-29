@@ -1,0 +1,9 @@
+[
+    {
+        "ConfigFile":"players/server.cfg",
+        "AutoMap":true,
+        "ConfigType":"kvp",
+        "ConfigFormat":"set {0} \"{1}\"",
+        "ConfigFormatRegex":"^set\\w+(?<key>.+?)\\w+\"?(?<value>.*?)\"?$"
+    }
+]
