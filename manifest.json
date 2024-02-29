@@ -1,8 +1,8 @@
 {
-	"id": "f735a004-b4c3-4b82-a31f-7e56c03efe8f",
+	"id": "f735a004-b4c3-4b82-a31f-7e56c03efe8d",
 	"authors": ["Bluscream"],
 	"origin": "https://github.com/Bluscream/AMPTemplates.git",
-	"url": "https://github.com/Bluscream/AMPTemplates/tree/dev",
+	"url": "https://github.com/Bluscream/AMPTemplates/tree/app/iw4madmin",
 	"imagefile": "",
 	"prefix": "Bluscream",
 	"repotype": "AppTemplates"

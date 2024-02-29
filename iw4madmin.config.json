@@ -1,0 +1,71 @@
+[
+    {
+        "DisplayName": "Ignore Startup Errors",
+        "Category": "Command Line Settings",
+        "Description": "Ignore Startup Errors",
+        "Keywords": "ignore,startup,errors",
+        "FieldName": "no-confirm",
+        "InputType": "checkbox",
+        "IsFlagArgument": true,
+        "ParamFieldName": "no-confirm",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "true",
+        "Placeholder": "true",
+        "Suffix": "",
+        "Hidden": false,
+        "SkipIfEmpty": true,
+        "EnumValues": {
+            "true": "True",
+            "false": "False"
+        }
+    },
+    {
+        "DisplayName": "Maximal Concurrent Requests",
+        "Category": "Command Line Settings",
+        "Description": "Maximal Concurrent Requests to the database",
+        "Keywords": "maximal,concurrent,requests",
+        "FieldName": "max-concurrent-requests",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "max-concurrent-requests",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "",
+        "Placeholder": "25",
+        "Suffix": "requests",
+        "Hidden": false,
+        "SkipIfEmpty": true,
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Request Queue Limit",
+        "Category": "Command Line Settings",
+        "Description": "Request Queue Limit",
+        "Keywords": "request,queue,limit",
+        "FieldName": "request-queue-limit",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "request-queue-limit",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "",
+        "Placeholder": "25",
+        "Suffix": "requests",
+        "Hidden": false,
+        "SkipIfEmpty": true,
+        "EnumValues": {}
+    },
+    {
+        "DisplayName":"Dotnet Version",
+        "Category":"SteamCMD and Updates",
+        "Description":"Sets the [ASP.NET Core version](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) to install. NOTE: Update the server after switching versions!",
+        "Keywords":"dotnet,version",
+        "FieldName":"DotnetVersion",
+        "InputType":"text",
+        "IsFlagArgument":false,
+        "ParamFieldName":"DotnetVersion",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"6.0.22",
+        "Placeholder":"6.0.22",
+        "Required":true,
+        "EnumValues":{}
+    }
+]
