@@ -1,0 +1,764 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "",
+    "type": "object",
+    "properties": {
+      "_availablePortOptions": {
+        "type": "array",
+        "items": {
+          "required": [],
+          "properties": {}
+        }
+      },
+      "_compatibility": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Meta_DisplayName": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Meta_Description": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Meta_Arch": {
+        "type": "string",
+        "minLength": 1
+      },
+      "_Meta_Author": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Meta_Author": {
+        "type": "string",
+        "minLength": 1
+      },
+      "_Meta_GithubOrigin": {
+        "type": "string",
+        "minLength": 1
+      },
+      "_Meta_GithubURL": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Meta_URL": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Meta_MinAMPVersion": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Meta_SpecificDockerImage": {
+        "type": "string"
+      },
+      "Meta_DockerRequired": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Meta_ContainerPolicy": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Meta_ContainerPolicyReason": {
+        "type": "string"
+      },
+      "Meta_Prerequsites": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Meta_EndpointURIFormat": {
+        "type": "string",
+        "minLength": 1
+      },
+      "_SupportsWindows": {
+        "type": "boolean"
+      },
+      "_SupportsLinux": {
+        "type": "boolean"
+      },
+      "App_AdminMethod": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_HasReadableConsole": {
+        "type": "boolean"
+      },
+      "App_HasWritableConsole": {
+        "type": "boolean"
+      },
+      "App_DisplayName": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_CommandLineArgs": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_WindowsCommandLineArgs": {
+        "type": "string"
+      },
+      "App_CommandLineParameterFormat": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_CommandLineParameterDelimiter": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_RapidStartup": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_ApplicationReadyMode": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_ExitMethod": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_ExitString": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_ExitTimeout": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_ExitFile": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_SupportsLiveSettingsChanges": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_LiveSettingChangeCommandFormat": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_ApplicationIPBinding": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_AdminPortRef": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_UniversalSleepApplicationUDPPortRef": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_PrimaryApplicationPortRef": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_UniversalSleepSteamQueryPortRef": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_MaxUsers": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_UseRandomAdminPassword": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_RemoteAdminPassword": {
+        "type": "string"
+      },
+      "App_AdminLoginTransform": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_RCONConnectDelaySeconds": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_RCONConnectRetrySeconds": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_RCONHeartbeatCommand": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_RCONHeartbeatMinutes": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_TelnetLoginFormat": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_SteamUpdateAnonymousLogin": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_SteamForceLoginPrompt": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_SupportsUniversalSleep": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_WakeupMode": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_TemplateMatchRegex": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_MonitorChildProcess": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_MonitorChildProcessWaitMs": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_MonitorChildProcessName": {
+        "type": "string"
+      },
+      "App_Compatibility": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_SteamWorkshopDownloadLocation": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Console_FilterMatchRegex": {
+        "type": "string"
+      },
+      "Console_FilterMatchReplacement": {
+        "type": "string"
+      },
+      "Console_ThrowawayMessageRegex": {
+        "type": "string",
+        "minLength": 1
+      },
+      "_Console_AppReadyRegex": {
+        "type": "string",
+        "minLength": 1
+      },
+      "_Console_UserJoinRegex": {
+        "type": "string",
+        "minLength": 1
+      },
+      "_Console_UserLeaveRegex": {
+        "type": "string",
+        "minLength": 1
+      },
+      "_Console_UserChatRegex": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Console_UpdateAvailableRegex": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Console_SuppressLogAtStart": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Console_ActivateLogRegex": {
+        "type": "string"
+      },
+      "Console_UserActions": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Console_SleepMode": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Console_SleepOnStart": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Console_SleepDelayMinutes": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Console_DozeDelay": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Console_AutoRetryCount": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Console_SleepStartThresholdSeconds": {
+        "type": "string",
+        "minLength": 1
+      },
+      "_PortMappings": {
+        "type": "array",
+        "items": {
+          "required": [],
+          "properties": {}
+        }
+      },
+      "_ConfigFileMappings": {
+        "type": "array",
+        "uniqueItems": true,
+        "minItems": 1,
+        "items": {
+          "required": [
+            "ConfigFile",
+            "_ConfigType",
+            "ConfigType",
+            "_AutoMap",
+            "AutoMap"
+          ],
+          "properties": {
+            "ConfigFile": {
+              "type": "string",
+              "minLength": 1
+            },
+            "_ConfigType": {
+              "type": "string",
+              "minLength": 1
+            },
+            "ConfigType": {
+              "type": "string",
+              "minLength": 1
+            },
+            "_AutoMap": {
+              "type": "boolean"
+            },
+            "AutoMap": {
+              "type": "boolean"
+            }
+          }
+        }
+      },
+      "_UpdateSourceURL": {
+        "type": "string"
+      },
+      "_UpdateSourceGitRepo": {
+        "type": "string"
+      },
+      "_UpdateSourceUnzip": {
+        "type": "boolean"
+      },
+      "_DisplayImageSource": {
+        "type": "string",
+        "minLength": 1
+      },
+      "_SteamServerAppID": {
+        "type": "string"
+      },
+      "_WinExecutableName": {
+        "type": "string",
+        "minLength": 1
+      },
+      "_LinuxExecutableName": {
+        "type": "string",
+        "minLength": 1
+      },
+      "_AppSettings": {
+        "type": "array",
+        "uniqueItems": true,
+        "minItems": 1,
+        "items": {
+          "required": [
+            "DisplayName",
+            "Category",
+            "Description",
+            "Keywords",
+            "FieldName",
+            "InputType",
+            "IsFlagArgument",
+            "ParamFieldName",
+            "IncludeInCommandLine",
+            "DefaultValue",
+            "Placeholder",
+            "Suffix",
+            "Hidden",
+            "SkipIfEmpty",
+            "_CheckedValue",
+            "_UncheckedValue"
+          ],
+          "properties": {
+            "DisplayName": {
+              "type": "string",
+              "minLength": 1
+            },
+            "Category": {
+              "type": "string",
+              "minLength": 1
+            },
+            "Description": {
+              "type": "string",
+              "minLength": 1
+            },
+            "Keywords": {
+              "type": "string",
+              "minLength": 1
+            },
+            "FieldName": {
+              "type": "string"
+            },
+            "InputType": {
+              "type": "string",
+              "minLength": 1
+            },
+            "IsFlagArgument": {
+              "type": "boolean"
+            },
+            "ParamFieldName": {
+              "type": "string"
+            },
+            "IncludeInCommandLine": {
+              "type": "boolean"
+            },
+            "DefaultValue": {
+              "type": "string",
+              "minLength": 1
+            },
+            "Placeholder": {
+              "type": "string",
+              "minLength": 1
+            },
+            "Suffix": {
+              "type": "string"
+            },
+            "Hidden": {
+              "type": "boolean"
+            },
+            "SkipIfEmpty": {
+              "type": "boolean"
+            },
+            "_CheckedValue": {
+              "type": "string",
+              "minLength": 1
+            },
+            "_UncheckedValue": {
+              "type": "string",
+              "minLength": 1
+            },
+            "_EnumMappings": {
+              "type": "array",
+              "items": {
+                "required": [],
+                "properties": {}
+              }
+            },
+            "EnumValues": {
+              "type": "object",
+              "properties": {},
+              "required": []
+            }
+          }
+        }
+      },
+      "_UpdateStages": {
+        "type": "array",
+        "uniqueItems": true,
+        "minItems": 1,
+        "items": {
+          "required": [
+            "UpdateStageName",
+            "_UpdateSourcePlatform",
+            "UpdateSourcePlatform",
+            "_UpdateSource",
+            "UpdateSource",
+            "UpdateSourceData",
+            "UpdateSourceArgs",
+            "UpdateSourceVersion",
+            "UpdateSourceTarget",
+            "UnzipUpdateSource",
+            "OverwriteExistingFiles",
+            "_ForceDownloadPlatform",
+            "DeleteAfterExtract",
+            "OneShot"
+          ],
+          "properties": {
+            "UpdateStageName": {
+              "type": "string",
+              "minLength": 1
+            },
+            "_UpdateSourcePlatform": {
+              "type": "string",
+              "minLength": 1
+            },
+            "UpdateSourcePlatform": {
+              "type": "string",
+              "minLength": 1
+            },
+            "_UpdateSource": {
+              "type": "string",
+              "minLength": 1
+            },
+            "UpdateSource": {
+              "type": "string",
+              "minLength": 1
+            },
+            "UpdateSourceData": {
+              "type": "string",
+              "minLength": 1
+            },
+            "UpdateSourceArgs": {
+              "type": "string",
+              "minLength": 1
+            },
+            "UpdateSourceVersion": {
+              "type": "string"
+            },
+            "UpdateSourceTarget": {
+              "type": "string"
+            },
+            "UnzipUpdateSource": {
+              "type": "boolean"
+            },
+            "OverwriteExistingFiles": {
+              "type": "boolean"
+            },
+            "_ForceDownloadPlatform": {
+              "type": "string",
+              "minLength": 1
+            },
+            "ForceDownloadPlatform": {
+              "type": "object",
+              "properties": {},
+              "required": []
+            },
+            "UpdateSourceConditionSetting": {
+              "type": "object",
+              "properties": {},
+              "required": []
+            },
+            "UpdateSourceConditionValue": {
+              "type": "object",
+              "properties": {},
+              "required": []
+            },
+            "DeleteAfterExtract": {
+              "type": "boolean"
+            },
+            "OneShot": {
+              "type": "boolean"
+            }
+          }
+        }
+      },
+      "Console_AppReadyRegex": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Console_UserJoinRegex": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Console_UserLeaveRegex": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Console_UserChatRegex": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Meta_OS": {
+        "type": "number"
+      },
+      "Meta_ConfigManifest": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Meta_MetaConfigManifest": {
+        "type": "string",
+        "minLength": 1
+      },
+      "_Meta_PortsManifest": {
+        "type": "string",
+        "minLength": 1
+      },
+      "_Meta_StagesManifest": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Meta_ConfigRoot": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_RootDir": {
+        "type": "string",
+        "minLength": 1
+      },
+      "_SteamCheck": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Meta_DisplayImageSource": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_BaseDirectory": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_WorkingDir": {
+        "type": "string",
+        "minLength": 1
+      },
+      "_SteamClientAppID": {
+        "type": "string"
+      },
+      "App_ExecutableWin": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_ExecutableLinux": {
+        "type": "string",
+        "minLength": 1
+      },
+      "_App_LinuxCommandLineArgsCompat": {
+        "type": "string"
+      },
+      "_App_LinuxCommandLineArgsInput": {
+        "type": "string"
+      },
+      "App_LinuxCommandLineArgs": {
+        "type": "string"
+      },
+      "App_Ports": {
+        "type": "string",
+        "minLength": 1
+      },
+      "App_UpdateSources": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Errors": {
+        "type": "array",
+        "items": {
+          "required": [],
+          "properties": {}
+        }
+      },
+      "isValid": {
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "_availablePortOptions",
+      "_compatibility",
+      "Meta_DisplayName",
+      "Meta_Description",
+      "Meta_Arch",
+      "_Meta_Author",
+      "Meta_Author",
+      "_Meta_GithubOrigin",
+      "_Meta_GithubURL",
+      "Meta_URL",
+      "Meta_MinAMPVersion",
+      "Meta_SpecificDockerImage",
+      "Meta_DockerRequired",
+      "Meta_ContainerPolicy",
+      "Meta_ContainerPolicyReason",
+      "Meta_Prerequsites",
+      "Meta_EndpointURIFormat",
+      "_SupportsWindows",
+      "_SupportsLinux",
+      "App_AdminMethod",
+      "App_HasReadableConsole",
+      "App_HasWritableConsole",
+      "App_DisplayName",
+      "App_CommandLineArgs",
+      "App_WindowsCommandLineArgs",
+      "App_CommandLineParameterFormat",
+      "App_CommandLineParameterDelimiter",
+      "App_RapidStartup",
+      "App_ApplicationReadyMode",
+      "App_ExitMethod",
+      "App_ExitString",
+      "App_ExitTimeout",
+      "App_ExitFile",
+      "App_SupportsLiveSettingsChanges",
+      "App_LiveSettingChangeCommandFormat",
+      "App_ApplicationIPBinding",
+      "App_AdminPortRef",
+      "App_UniversalSleepApplicationUDPPortRef",
+      "App_PrimaryApplicationPortRef",
+      "App_UniversalSleepSteamQueryPortRef",
+      "App_MaxUsers",
+      "App_UseRandomAdminPassword",
+      "App_RemoteAdminPassword",
+      "App_AdminLoginTransform",
+      "App_RCONConnectDelaySeconds",
+      "App_RCONConnectRetrySeconds",
+      "App_RCONHeartbeatCommand",
+      "App_RCONHeartbeatMinutes",
+      "App_TelnetLoginFormat",
+      "App_SteamUpdateAnonymousLogin",
+      "App_SteamForceLoginPrompt",
+      "App_SupportsUniversalSleep",
+      "App_WakeupMode",
+      "App_TemplateMatchRegex",
+      "App_MonitorChildProcess",
+      "App_MonitorChildProcessWaitMs",
+      "App_MonitorChildProcessName",
+      "App_Compatibility",
+      "App_SteamWorkshopDownloadLocation",
+      "Console_FilterMatchRegex",
+      "Console_FilterMatchReplacement",
+      "Console_ThrowawayMessageRegex",
+      "_Console_AppReadyRegex",
+      "_Console_UserJoinRegex",
+      "_Console_UserLeaveRegex",
+      "_Console_UserChatRegex",
+      "Console_UpdateAvailableRegex",
+      "Console_SuppressLogAtStart",
+      "Console_ActivateLogRegex",
+      "Console_UserActions",
+      "Console_SleepMode",
+      "Console_SleepOnStart",
+      "Console_SleepDelayMinutes",
+      "Console_DozeDelay",
+      "Console_AutoRetryCount",
+      "Console_SleepStartThresholdSeconds",
+      "_PortMappings",
+      "_ConfigFileMappings",
+      "_UpdateSourceURL",
+      "_UpdateSourceGitRepo",
+      "_UpdateSourceUnzip",
+      "_DisplayImageSource",
+      "_SteamServerAppID",
+      "_WinExecutableName",
+      "_LinuxExecutableName",
+      "_AppSettings",
+      "_UpdateStages",
+      "Console_AppReadyRegex",
+      "Console_UserJoinRegex",
+      "Console_UserLeaveRegex",
+      "Console_UserChatRegex",
+      "Meta_OS",
+      "Meta_ConfigManifest",
+      "Meta_MetaConfigManifest",
+      "_Meta_PortsManifest",
+      "_Meta_StagesManifest",
+      "Meta_ConfigRoot",
+      "App_RootDir",
+      "_SteamCheck",
+      "Meta_DisplayImageSource",
+      "App_BaseDirectory",
+      "App_WorkingDir",
+      "_SteamClientAppID",
+      "App_ExecutableWin",
+      "App_ExecutableLinux",
+      "_App_LinuxCommandLineArgsCompat",
+      "_App_LinuxCommandLineArgsInput",
+      "App_LinuxCommandLineArgs",
+      "App_Ports",
+      "App_UpdateSources",
+      "Errors",
+      "isValid"
+    ]
+  }
