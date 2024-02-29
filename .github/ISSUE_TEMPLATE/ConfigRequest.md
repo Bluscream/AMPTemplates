@@ -5,17 +5,17 @@ about: To request a new application configuration
 
 # Module Request
 
-Note: Please try setting up a configuration yourself before raising an issue to request a configuration:  ~~https://config.getamp.sh/~~
-***There is a newer beta version available at https://iceofwraith.github.io/GenericConfigGen/
+Note: Please try setting up a configuration yourself before raising an issue to request a configuration:  [~~Config Generator~~](https://config.getamp.sh/)
+***There is a newer beta version available at [Config Generator v2](https://iceofwraith.github.io/GenericConfigGen/)
 
-## Game Information:
+## Game Information
 
 Game Title:
 How to obtain: https://
 Suppoted OSs:
 Supports RCON/Console input?
 
-## I confirm:
+## I confirm
 <!-- Put an x in the square brackets to confirm, make sure there's no spaces so it's just [x] -->
 - [ ] that I have searched for an existing module request for this application.
 - [ ] that the server is an official server distributed by the games publishers/developers.
