@@ -1,0 +1,9 @@
+[
+  {
+      "Protocol": "TCP",
+      "Port": "1624",
+      "Name": "Web Interface",
+      "Description": "Port used to host the IW4MAdmin Web Interface",
+      "Ref": "Webinterface"
+  }
+]
