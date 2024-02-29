@@ -2,8 +2,8 @@
   {
       "Protocol": "TCP",
       "Port": "1624",
-      "Name": "Main Game Port",
-      "Description": "Port used for main game traffic",
-      "Ref": "GamePort1"
+      "Name": "Web Interface",
+      "Description": "Port used to host the IW4MAdmin Web Interface",
+      "Ref": "Webinterface"
   }
 ]
