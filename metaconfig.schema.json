@@ -1,0 +1,33 @@
+{
+    "type": "array",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "",
+    "minItems": 1,
+    "uniqueItems": true,
+    "items": {
+      "type": "object",
+      "required": [
+        "ConfigFile",
+        "AutoMap",
+        "ConfigType",
+        "ConfigFileTemplate"
+      ],
+      "properties": {
+        "ConfigFile": {
+          "type": "string",
+          "minLength": 1
+        },
+        "AutoMap": {
+          "type": "boolean"
+        },
+        "ConfigType": {
+          "type": "string",
+          "minLength": 1
+        },
+        "ConfigFileTemplate": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }

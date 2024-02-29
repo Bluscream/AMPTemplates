@@ -1,0 +1,78 @@
+{
+    "type": "array",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "",
+    "minItems": 1,
+    "uniqueItems": true,
+    "items": {
+      "type": "object",
+      "required": [
+        "DisplayName",
+        "Category",
+        "Description",
+        "Keywords",
+        "FieldName",
+        "InputType",
+        "IsFlagArgument",
+        "ParamFieldName",
+        "IncludeInCommandLine",
+        "DefaultValue",
+        "MinValue",
+        "MaxValue",
+        "EnumValues"
+      ],
+      "properties": {
+        "DisplayName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "Category": {
+          "type": "string",
+          "minLength": 1
+        },
+        "Description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "Keywords": {
+          "type": "string",
+          "minLength": 1
+        },
+        "FieldName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "InputType": {
+          "type": "string",
+          "minLength": 1
+        },
+        "IsFlagArgument": {
+          "type": "boolean"
+        },
+        "ParamFieldName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "IncludeInCommandLine": {
+          "type": "boolean"
+        },
+        "DefaultValue": {
+          "type": "string",
+          "minLength": 1
+        },
+        "MinValue": {
+          "type": "string",
+          "minLength": 1
+        },
+        "MaxValue": {
+          "type": "string",
+          "minLength": 1
+        },
+        "EnumValues": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        }
+      }
+    }
+  }

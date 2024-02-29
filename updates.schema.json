@@ -1,0 +1,48 @@
+{
+    "type": "array",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "",
+    "minItems": 1,
+    "uniqueItems": true,
+    "items": {
+      "type": "object",
+      "required": [
+        "UpdateStageName",
+        "UpdateSourcePlatform",
+        "UpdateSource",
+        "UpdateSourceData",
+        "UpdateSourceArgs",
+        "UpdateSourceTarget",
+        "OverwriteExistingFiles"
+      ],
+      "properties": {
+        "UpdateStageName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "UpdateSourcePlatform": {
+          "type": "string",
+          "minLength": 1
+        },
+        "UpdateSource": {
+          "type": "string",
+          "minLength": 1
+        },
+        "UpdateSourceData": {
+          "type": "string",
+          "minLength": 1
+        },
+        "UpdateSourceArgs": {
+          "type": "string",
+          "minLength": 1
+        },
+        "UpdateSourceTarget": {
+          "type": "string",
+          "minLength": 1
+        },
+        "OverwriteExistingFiles": {
+          "type": "boolean"
+        }
+      }
+    }
+  }

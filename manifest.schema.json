@@ -1,0 +1,46 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "",
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "minLength": 1
+      },
+      "authors": {
+        "type": "array",
+        "items": {
+          "required": [],
+          "properties": {}
+        }
+      },
+      "origin": {
+        "type": "string",
+        "minLength": 1
+      },
+      "url": {
+        "type": "string",
+        "minLength": 1
+      },
+      "imagefile": {
+        "type": "string"
+      },
+      "prefix": {
+        "type": "string",
+        "minLength": 1
+      },
+      "repotype": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "required": [
+      "id",
+      "authors",
+      "origin",
+      "url",
+      "imagefile",
+      "prefix",
+      "repotype"
+    ]
+  }

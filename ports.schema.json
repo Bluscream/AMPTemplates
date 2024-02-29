@@ -1,0 +1,39 @@
+{
+    "type": "array",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "",
+    "minItems": 1,
+    "uniqueItems": true,
+    "items": {
+      "type": "object",
+      "required": [
+        "Protocol",
+        "Port",
+        "Name",
+        "Description",
+        "Ref"
+      ],
+      "properties": {
+        "Protocol": {
+          "type": "string",
+          "minLength": 1
+        },
+        "Port": {
+          "type": "string",
+          "minLength": 1
+        },
+        "Name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "Description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "Ref": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
