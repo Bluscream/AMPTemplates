@@ -1,14 +1,60 @@
 [
     {
-        "UpdateStageName": "",
-        "UpdateSourcePlatform": "All",
-        "UpdateSource": "SteamCMD",
-        "UpdateSourceData": "33905",
-        "UpdateSourceArgs": "33900",
-        "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": false,
-        "ForceDownloadPlatform": "Windows",
-        "DeleteAfterExtract": true,
-        "OneShot": false
+        "UpdateStageName":"SteamCMD Download",
+        "UpdateSourcePlatform":"All",
+        "UpdateSource":"SteamCMD",
+        "UpdateSourceData":"33905",
+        "UpdateSourceArgs":"33900",
+        "UpdateSourceVersion":"public",
+        "UpdateSourceConditionSetting":"ServerBranch",
+        "UpdateSourceConditionValue":"public"
+    },
+    {
+        "UpdateStageName":"Server Config Template Download",
+        "UpdateSourcePlatform":"All",
+        "UpdateSource":"FetchURL",
+        "UpdateSourceData":"https://github.com/CubeCoders/AMPTemplates/raw/main/arma2server.cfg",
+        "UpdateSourceArgs":"AMP_server.cfg",
+        "UpdateSourceTarget":"{{$FullBaseDir}}",
+        "OverwriteExistingFiles":false
+    },
+    {
+        "UpdateStageName":"Basic Config File Download",
+        "UpdateSourcePlatform":"All",
+        "UpdateSource":"FetchURL",
+        "UpdateSourceData":"https://github.com/CubeCoders/AMPTemplates/raw/main/arma2basic.cfg",
+        "UpdateSourceArgs":"basic.cfg",
+        "UpdateSourceTarget":"{{$FullBaseDir}}",
+        "OverwriteExistingFiles":false
+    },
+    {
+        "UpdateStageName":"Create Server Parameters File",
+        "UpdateSourcePlatform":"All",
+        "UpdateSource":"CreateFile",
+        "UpdateSourceArgs":"{{$FullBaseDir}}parameters.txt",
+        "OverwriteExistingFiles":false
+    },
+    {
+        "UpdateStageName":"Create Headless Client Parameters File",
+        "UpdateSourcePlatform":"All",
+        "UpdateSource":"CreateFile",
+        "UpdateSourceArgs":"{{$FullBaseDir}}hc_parameters.txt",
+        "OverwriteExistingFiles":false
+    },
+    {
+        "UpdateStageName":"Modscript Download",
+        "UpdateSourcePlatform":"Linux",
+        "UpdateSource":"FetchURL",
+        "UpdateSourceData":"https://github.com/CubeCoders/AMPTemplates/raw/main/arma2convertmods.sh",
+        "UpdateSourceArgs":"convertmods.sh",
+        "UpdateSourceTarget":"{{$FullInstanceDir}}",
+        "OverwriteExistingFiles":true
+    },
+    {
+        "UpdateStageName":"Convert Mods",
+        "UpdateSourcePlatform":"Linux",
+        "UpdateSource":"Executable",
+        "UpdateSourceData":"/bin/bash",
+        "UpdateSourceArgs":"./convertmods.sh"
     }
 ]

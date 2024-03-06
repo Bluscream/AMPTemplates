@@ -632,22 +632,6 @@
         }
     },
     {
-        "DisplayName":"Enable Statistics",
-        "Category":"Arma Misc Settings",
-        "Description":"If enabled, the server will opt into [Arma 2 game analytics](https://community.bistudio.com/wiki/Arma_2:_Analytics)",
-        "Keywords":"arma,game,analytics,statistics,statisticsenabled",
-        "FieldName":"statisticsEnabled",
-        "InputType":"checkbox",
-        "IsFlagArgument":false,
-        "ParamFieldName":"statisticsEnabled",
-        "IncludeInCommandLine":false,
-        "DefaultValue":"false",
-        "EnumValues":{
-            "False":"false",
-            "True":"true"
-        }
-    },
-    {
         "DisplayName":"Allowed File Extensions",
         "Category":"Arma Misc Settings",
         "Description":"Only allows files with the listed extensions to be loaded via the loadFile command",
@@ -1215,8 +1199,6 @@
         "EnumValues":{
             "public":"Public (default)",
             "profiling":"Performance Profiling Build",
-            "creatordlc":"Creator DLC Build",
-            "contact":"Contact Build",
             "creatordlc-profiling":"Creator DLC + Performance Profiling Builds"
         }
     }
