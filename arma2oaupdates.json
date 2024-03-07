@@ -14,6 +14,26 @@
         "UpdateSourceData":"33935",
         "UpdateSourceTarget":"{{$FullBaseDir}}",
         "UpdateSourceVersion":"{{ServerBranch}}"
+    }, 
+    {
+        "UpdateStageName": "Download Linux Server Files",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://www.moddb.com/downloads/start/36148/",
+        "UpdateSourceTarget": "{{$FullBaseDir}}",
+        "UnzipUpdateSource": true,
+        "OverwriteExistingFiles": true,
+        "DeleteAfterExtract": true
+    },
+    {
+        "UpdateStageName": "Mission Prefetch Server Download",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://app.dayzlauncher.com/MissionPrefetchServer.zip",
+        "UpdateSourceTarget": "{{$FullBaseDir}}",
+        "UnzipUpdateSource": true,
+        "OverwriteExistingFiles": true,
+        "DeleteAfterExtract": true
     },
     {
         "UpdateStageName":"Server Config Template Download",
