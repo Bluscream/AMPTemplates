@@ -12,7 +12,6 @@
         "UpdateSourcePlatform":"All",
         "UpdateSource":"SteamCMD",
         "UpdateSourceData":"33935",
-        "UpdateSourceArgs":"33930",
         "UpdateSourceTarget":"{{$FullBaseDir}}",
         "UpdateSourceVersion":"{{ServerBranch}}"
     },
@@ -56,21 +55,5 @@
         "UpdateSource":"CreateFile",
         "UpdateSourceArgs":"{{$FullBaseDir}}hc_parameters.txt",
         "OverwriteExistingFiles":false
-    },
-    {
-        "UpdateStageName":"Modscript Download",
-        "UpdateSourcePlatform":"Linux",
-        "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://github.com/Bluscream/AMPTemplates/raw/dev/arma2oaconvertmods.sh",
-        "UpdateSourceArgs":"convertmods.sh",
-        "UpdateSourceTarget":"{{$FullInstanceDir}}",
-        "OverwriteExistingFiles":true
-    },
-    {
-        "UpdateStageName":"Convert Mods",
-        "UpdateSourcePlatform":"Linux",
-        "UpdateSource":"Executable",
-        "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"./convertmods.sh"
     }
 ]
