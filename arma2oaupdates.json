@@ -39,6 +39,15 @@
         "OverwriteExistingFiles":false
     },
     {
+        "UpdateStageName":"Server Config Template Download",
+        "UpdateSourcePlatform":"All",
+        "UpdateSource":"FetchURL",
+        "UpdateSourceData":"https://github.com/Bluscream/AMPTemplates/raw/dev/arma2oaserver.cfg",
+        "UpdateSourceArgs":"server.cfg",
+        "UpdateSourceTarget":"{{$FullBaseDir}}",
+        "OverwriteExistingFiles":false
+    },
+    {
         "UpdateStageName":"Basic Config File Download",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"FetchURL",
