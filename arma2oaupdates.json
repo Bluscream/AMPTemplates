@@ -19,11 +19,17 @@
         "UpdateStageName": "Download Linux Server Files",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://www.moddb.com/downloads/start/36148/",
+        "UpdateSourceData": "https://github.com/Bluscream/arma2-oa-linux-server/releases/download/latest/a2oa-server.tar.bz2",
         "UpdateSourceTarget": "{{$FullBaseDir}}",
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": true,
         "DeleteAfterExtract": true
+    },
+    {
+        "UpdateStageName":"Set Executable Flag",
+        "UpdateSourcePlatform":"Linux",
+        "UpdateSource":"SetExecutableFlag",
+        "UpdateSourceArgs":"{{$FullBaseDir}}arma2oaserver"
     },
     {
         "UpdateStageName": "Mission Prefetch Server Download",
