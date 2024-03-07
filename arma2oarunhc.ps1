@@ -24,7 +24,7 @@ if ($args.Length -lt 6) {
 } else {
     $parfile = $args[6]
 }
-Set-Location "$PSScriptRoot\arma2oa\33930"
+Set-Location "$PSScriptRoot\arma2oa\33935"
 for ($i = 1; $i -le [int]$args[0]; $i++) {
   if ($args[1] -eq "0.0.0.0") {
     $connect = "127.0.0.1"

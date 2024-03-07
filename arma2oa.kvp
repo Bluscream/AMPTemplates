@@ -22,11 +22,11 @@ Meta.NoCommercialUsage=False
 Meta.AppConfigId=2ff6f6ca-57c1-41aa-82ca-3a875df9ff0a
 App.DisplayName=Arma 2: Operation Arrowhead
 App.RootDir=./arma2oa/
-App.BaseDirectory=./arma2oa/33930/
+App.BaseDirectory=./arma2oa/33935/
 App.SteamWorkshopDownloadLocation={{$FullBaseDir}}
-App.ExecutableWin=33930\ARMA2OASERVER.exe
-App.ExecutableLinux=33930/arma2oaserver
-App.WorkingDir=33930
+App.ExecutableWin=33935\ARMA2OASERVER.exe
+App.ExecutableLinux=33935/arma2oaserver
+App.WorkingDir=33935
 App.LinuxCommandLineArgs=
 App.WindowsCommandLineArgs=
 App.CommandLineArgs={{$PlatformArgs}} -name=AMPServer "-profiles={{$FullBaseDir}}A2Master" "-bepath={{$FullBaseDir}}battleye" -port={{$GamePort}} -config=server.cfg -cfg=basic.cfg -world=empty -ip={{$ApplicationIPBinding}} {{autoInit}}{{$FormattedArgs}} {{parfile}}{{CustomServerArgs}}

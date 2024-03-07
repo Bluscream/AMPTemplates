@@ -26,7 +26,7 @@ fi
 baseport=$(($3 + 498))
 parfile="${6:-}"
 export LD_LIBRARY_PATH=$(dirname "$0")/linux64:$LD_LIBRARY_PATH
-cd ./arma2oa/33930
+cd ./arma2oa/33935
 for i in $(seq 1 "$1"); do
   if [[ "$2" == "0.0.0.0" ]]; then
     connect="127.0.0.1"
