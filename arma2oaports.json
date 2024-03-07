@@ -40,5 +40,12 @@
         "Ref": "RCONPort",
         "Name": "RCON Port",
         "Description": "Port for RCON traffic"
+    },
+    {
+        "Protocol": "TCP",
+        "Port": 2309,
+        "Ref": "MissionPrefetchPort",
+        "Name": "Mission Prefetch Server Port",
+        "Description": "Port for Mission Prefetch Server HTTP traffic"
     }
 ]
