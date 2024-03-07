@@ -9,7 +9,7 @@
         "IsFlagArgument":false,
         "ParamFieldName":"hostname",
         "IncludeInCommandLine":false,
-        "DefaultValue":"Arma 2 Server - Powered by AMP",
+        "DefaultValue":"Arma 2: Operation Arrowhead Server - Powered by AMP",
         "EnumValues":{}
     },
     {
@@ -87,7 +87,7 @@
         "IsFlagArgument":false,
         "ParamFieldName":"motd",
         "IncludeInCommandLine":false,
-        "DefaultValue":"\"Welcome to Arma 2\",\"Hosted using AMP by CubeCoders\"",
+        "DefaultValue":"\"Welcome to Arma 2: Operation Arrowhead\",\"Hosted using AMP by CubeCoders\"",
         "EnumValues":{}
     },
     {
@@ -254,7 +254,7 @@
     {
         "DisplayName":"Minimum Client Version",
         "Category":"Arma Server Settings",
-        "Description":"Sets the minimum client version, below which clients won't be allowed to join. Default of 99999999 equates to the server version",
+        "Description":"Sets the minimum client version, below which clients won't be allowed to join. Default of 99999999 equates to the server version. NOTE: If the server uses the Performance Profiling Build in any way, set this to 0, otherwise no client can connect",
         "Keywords":"required,build,requiredbuild",
         "FieldName":"requiredBuild",
         "InputType":"number",
@@ -1186,9 +1186,9 @@
         "EnumValues":{}
     },
     {
-        "DisplayName":"Arma 2 Dedicated Server Steam Branch",
+        "DisplayName":"Arma 2: Operation Arrowhead Dedicated Server Steam Branch",
         "Category":"SteamCMD and Updates",
-        "Description":"Sets the server branch to install. NOTE: Update the server after switching branches!",
+        "Description":"Sets the server branch to install. NOTE: Update the server after switching branches, and set the Minimum Client Version to 0 if using the Performance Profiling Build in any way!",
         "Keywords":"server,branch,depot",
         "FieldName":"ServerBranch",
         "InputType":"enum",
@@ -1197,11 +1197,13 @@
         "IncludeInCommandLine":false,
         "DefaultValue":"public",
         "EnumValues":{
-            "public":"Public (default)"
+            "public":"Public (default)",
+            "beta":"Beta",
+            "legacy":"Legacy"
         }
     },
     {
-        "DisplayName":"Arma 2 Steam Branch",
+        "DisplayName":"Arma 2: Operation Arrowhead Steam Branch",
         "Category":"SteamCMD and Updates",
         "Description":"Sets the game branch to install.",
         "Keywords":"server,branch,depot",
