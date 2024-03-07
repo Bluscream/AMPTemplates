@@ -3,32 +3,18 @@
         "UpdateStageName":"SteamCMD Download (Game)",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"SteamCMD",
+        "UpdateSourceData":"33930",
+        "UpdateSourceTarget":"{{$FullBaseDir}}",
+        "UpdateSourceVersion":"{{GameBranch}}"
+    },
+    {
+        "UpdateStageName":"SteamCMD Download (Server)",
+        "UpdateSourcePlatform":"All",
+        "UpdateSource":"SteamCMD",
         "UpdateSourceData":"33935",
         "UpdateSourceArgs":"33930",
         "UpdateSourceTarget":"{{$FullBaseDir}}",
-        "UpdateSourceVersion":"public",
-        "UpdateSourceConditionSetting":"GameBranch",
-        "UpdateSourceConditionValue":"public"
-    },
-    {
-        "UpdateStageName":"SteamCMD Download (Game [beta])",
-        "UpdateSourcePlatform":"All",
-        "UpdateSource":"SteamCMD",
-        "UpdateSourceData":"33935",
-        "UpdateSourceArgs":"33930",
-        "UpdateSourceVersion":"beta",
-        "UpdateSourceConditionSetting":"GameBranch",
-        "UpdateSourceConditionValue":"beta"
-    },
-    {
-        "UpdateStageName":"SteamCMD Download (Game [legacy])",
-        "UpdateSourcePlatform":"All",
-        "UpdateSource":"SteamCMD",
-        "UpdateSourceData":"33935",
-        "UpdateSourceArgs":"33930",
-        "UpdateSourceVersion":"legacy",
-        "UpdateSourceConditionSetting":"GameBranch",
-        "UpdateSourceConditionValue":"legacy"
+        "UpdateSourceVersion":"{{ServerBranch}}"
     },
     {
         "UpdateStageName":"Server Config Template Download",
