@@ -3,8 +3,8 @@
         "UpdateStageName":"SteamCMD Download (Game)",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"SteamCMD",
-        "UpdateSourceData":"33930",
-        "UpdateSourceArgs":"33935",
+        "UpdateSourceData":"33935",
+        "UpdateSourceArgs":"33930",
         "UpdateSourceVersion":"public",
         "UpdateSourceConditionSetting":"GameBranch",
         "UpdateSourceConditionValue":"public"
@@ -13,8 +13,8 @@
         "UpdateStageName":"SteamCMD Download (Game [beta])",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"SteamCMD",
-        "UpdateSourceData":"33930",
-        "UpdateSourceArgs":"33935",
+        "UpdateSourceData":"33935",
+        "UpdateSourceArgs":"33930",
         "UpdateSourceVersion":"beta",
         "UpdateSourceConditionSetting":"GameBranch",
         "UpdateSourceConditionValue":"beta"
@@ -23,8 +23,8 @@
         "UpdateStageName":"SteamCMD Download (Game [legacy])",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"SteamCMD",
-        "UpdateSourceData":"33930",
-        "UpdateSourceArgs":"33935",
+        "UpdateSourceData":"33935",
+        "UpdateSourceArgs":"33930",
         "UpdateSourceVersion":"legacy",
         "UpdateSourceConditionSetting":"GameBranch",
         "UpdateSourceConditionValue":"legacy"
