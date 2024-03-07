@@ -30,27 +30,6 @@
         "UpdateSourceConditionValue":"legacy"
     },
     {
-        "UpdateStageName": "Move Game to server directory",
-        "UpdateSourcePlatform": "All",
-        "UpdateSource": "CopyFilePath",
-        "UpdateSourceData": "./arma2oa/33935",
-        "UpdateSourceArgs": "./arma2oa/33930",
-        "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": true,
-        "DeleteAfterExtract": true,
-        "OneShot": false
-    },
-    {
-        "UpdateStageName":"SteamCMD Download (Dedicated Server)",
-        "UpdateSourcePlatform":"All",
-        "UpdateSource":"SteamCMD",
-        "UpdateSourceData":"33935",
-        "UpdateSourceArgs":"33930",
-        "UpdateSourceVersion":"public",
-        "UpdateSourceConditionSetting":"ServerBranch",
-        "UpdateSourceConditionValue":"public"
-    },
-    {
         "UpdateStageName":"Server Config Template Download",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"FetchURL",
