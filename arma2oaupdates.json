@@ -34,7 +34,7 @@
         "UpdateSourcePlatform": "All",
         "UpdateSource": "CopyFilePath",
         "UpdateSourceData": "./arma2oa/33935",
-        "UpdateSourceArgs": "./arma2oa/33930/steamapps/Arma 2 Operation Arrowhead/*",
+        "UpdateSourceArgs": "./arma2oa/33930",
         "UnzipUpdateSource": false,
         "OverwriteExistingFiles": true,
         "DeleteAfterExtract": true,
