@@ -1186,6 +1186,22 @@
         "EnumValues":{}
     },
     {
+        "DisplayName":"Use BattleEye Anti-Cheat",
+        "Category":"Arma Server Settings",
+        "Description":"Here you can disable battleye on your server",
+        "Keywords":"server,battleeye,cheat,anticheat",
+        "FieldName":"BattlEye",
+        "InputType":"enum",
+        "IsFlagArgument":false,
+        "ParamFieldName":"BattlEye",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"1",
+        "EnumValues":{
+            "1":"Enabled (default)",
+            "0":"Disabled"
+        }
+    },
+    {
         "DisplayName":"Arma 2 Dedicated Server Steam Branch",
         "Category":"SteamCMD and Updates",
         "Description":"Sets the server branch to install. NOTE: Update the server after switching branches!",

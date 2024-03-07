@@ -26,14 +26,14 @@ fi
 baseport=$(($3 + 498))
 parfile="${6:-}"
 export LD_LIBRARY_PATH=$(dirname "$0")/linux64:$LD_LIBRARY_PATH
-cd ./arma2/33905
+cd ./arma2oa/33935
 for i in $(seq 1 "$1"); do
   if [[ "$2" == "0.0.0.0" ]]; then
     connect="127.0.0.1"
   else
     connect="$2"
   fi
-  ./arma2server -client -nosound -profiles=A2Master -connect=$connect:$3 -port=$baseport -password="$4" "-mod=$5" "-par=$parfile" >/dev/null 2>&1 &
+  ./arma2oaserver -client -nosound -profiles=A2Master -connect=$connect:$3 -port=$baseport -password="$4" "-mod=$5" "-par=$parfile" >/dev/null 2>&1 &
   clients+=($!)
 done
 

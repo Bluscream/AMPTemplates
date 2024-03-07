@@ -3,8 +3,8 @@
         "UpdateStageName":"SteamCMD Download (Game)",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"SteamCMD",
-        "UpdateSourceData":"33900",
-        "UpdateSourceArgs":"33905",
+        "UpdateSourceData":"33930",
+        "UpdateSourceArgs":"33935",
         "UpdateSourceVersion":"public",
         "UpdateSourceConditionSetting":"GameBranch",
         "UpdateSourceConditionValue":"public"
@@ -13,8 +13,8 @@
         "UpdateStageName":"SteamCMD Download (Game [beta])",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"SteamCMD",
-        "UpdateSourceData":"33900",
-        "UpdateSourceArgs":"33905",
+        "UpdateSourceData":"33930",
+        "UpdateSourceArgs":"33935",
         "UpdateSourceVersion":"beta",
         "UpdateSourceConditionSetting":"GameBranch",
         "UpdateSourceConditionValue":"beta"
@@ -23,8 +23,8 @@
         "UpdateStageName":"SteamCMD Download (Game [legacy])",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"SteamCMD",
-        "UpdateSourceData":"33900",
-        "UpdateSourceArgs":"33905",
+        "UpdateSourceData":"33930",
+        "UpdateSourceArgs":"33935",
         "UpdateSourceVersion":"legacy",
         "UpdateSourceConditionSetting":"GameBranch",
         "UpdateSourceConditionValue":"legacy"
@@ -33,27 +33,17 @@
         "UpdateStageName":"SteamCMD Download (Dedicated Server)",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"SteamCMD",
-        "UpdateSourceData":"33905",
-        "UpdateSourceArgs":"33900",
+        "UpdateSourceData":"33935",
+        "UpdateSourceArgs":"33930",
         "UpdateSourceVersion":"public",
         "UpdateSourceConditionSetting":"ServerBranch",
         "UpdateSourceConditionValue":"public"
     },
     {
-        "UpdateStageName":"SteamCMD Download (Dedicated Server [profiling)",
-        "UpdateSourcePlatform":"All",
-        "UpdateSource":"SteamCMD",
-        "UpdateSourceData":"33905",
-        "UpdateSourceArgs":"33900",
-        "UpdateSourceVersion":"profiling",
-        "UpdateSourceConditionSetting":"ServerBranch",
-        "UpdateSourceConditionValue":"profiling"
-    },
-    {
         "UpdateStageName":"Server Config Template Download",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://github.com/Bluscream/AMPTemplates/raw/dev/arma2server.cfg",
+        "UpdateSourceData":"https://github.com/Bluscream/AMPTemplates/raw/dev/arma2oaserver.cfg",
         "UpdateSourceArgs":"AMP_server.cfg",
         "UpdateSourceTarget":"{{$FullBaseDir}}",
         "OverwriteExistingFiles":false
@@ -62,7 +52,7 @@
         "UpdateStageName":"Basic Config File Download",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://github.com/Bluscream/AMPTemplates/raw/dev/arma2basic.cfg",
+        "UpdateSourceData":"https://github.com/Bluscream/AMPTemplates/raw/dev/arma2oabasic.cfg",
         "UpdateSourceArgs":"basic.cfg",
         "UpdateSourceTarget":"{{$FullBaseDir}}",
         "OverwriteExistingFiles":false
@@ -85,7 +75,7 @@
         "UpdateStageName":"Modscript Download",
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://github.com/Bluscream/AMPTemplates/raw/dev/arma2convertmods.sh",
+        "UpdateSourceData":"https://github.com/Bluscream/AMPTemplates/raw/dev/arma2oaconvertmods.sh",
         "UpdateSourceArgs":"convertmods.sh",
         "UpdateSourceTarget":"{{$FullInstanceDir}}",
         "OverwriteExistingFiles":true
