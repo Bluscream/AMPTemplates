@@ -1,0 +1,7 @@
+a2: 33900
+a2 server: 33905
+
+a2oa: 33930
+a2oa server: 33935
+
+dayz mod: 224580
