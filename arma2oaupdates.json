@@ -4,7 +4,7 @@
         "UpdateSourcePlatform":"All",
         "UpdateSource":"SteamCMD",
         "UpdateSourceData":"33935",
-        "UpdateSourceArgs":"33930",
+        "UpdateSourceArgs":"33935",
         "UpdateSourceVersion":"public",
         "UpdateSourceConditionSetting":"GameBranch",
         "UpdateSourceConditionValue":"public"
@@ -14,7 +14,7 @@
         "UpdateSourcePlatform":"All",
         "UpdateSource":"SteamCMD",
         "UpdateSourceData":"33935",
-        "UpdateSourceArgs":"33930",
+        "UpdateSourceArgs":"33935",
         "UpdateSourceVersion":"beta",
         "UpdateSourceConditionSetting":"GameBranch",
         "UpdateSourceConditionValue":"beta"
@@ -24,7 +24,7 @@
         "UpdateSourcePlatform":"All",
         "UpdateSource":"SteamCMD",
         "UpdateSourceData":"33935",
-        "UpdateSourceArgs":"33930",
+        "UpdateSourceArgs":"33935",
         "UpdateSourceVersion":"legacy",
         "UpdateSourceConditionSetting":"GameBranch",
         "UpdateSourceConditionValue":"legacy"
