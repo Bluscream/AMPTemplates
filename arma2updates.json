@@ -13,7 +13,7 @@
         "UpdateStageName":"Server Config Template Download",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://github.com/CubeCoders/AMPTemplates/raw/main/arma2server.cfg",
+        "UpdateSourceData":"https://github.com/Bluscream/AMPTemplates/raw/dev/arma2server.cfg",
         "UpdateSourceArgs":"AMP_server.cfg",
         "UpdateSourceTarget":"{{$FullBaseDir}}",
         "OverwriteExistingFiles":false
@@ -22,7 +22,7 @@
         "UpdateStageName":"Basic Config File Download",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://github.com/CubeCoders/AMPTemplates/raw/main/arma2basic.cfg",
+        "UpdateSourceData":"https://github.com/Bluscream/AMPTemplates/raw/dev/arma2basic.cfg",
         "UpdateSourceArgs":"basic.cfg",
         "UpdateSourceTarget":"{{$FullBaseDir}}",
         "OverwriteExistingFiles":false
@@ -45,7 +45,7 @@
         "UpdateStageName":"Modscript Download",
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://github.com/CubeCoders/AMPTemplates/raw/main/arma2convertmods.sh",
+        "UpdateSourceData":"https://github.com/Bluscream/AMPTemplates/raw/dev/arma2convertmods.sh",
         "UpdateSourceArgs":"convertmods.sh",
         "UpdateSourceTarget":"{{$FullInstanceDir}}",
         "OverwriteExistingFiles":true

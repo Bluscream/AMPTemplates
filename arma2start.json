@@ -35,7 +35,7 @@
         "UpdateStageName":"Headless Client Script Download",
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://github.com/CubeCoders/AMPTemplates/raw/main/arma2runhc.sh",
+        "UpdateSourceData":"https://github.com/Bluscream/AMPTemplates/raw/dev/arma2runhc.sh",
         "UpdateSourceArgs":"runhc.sh",
         "UpdateSourceTarget":"{{$FullInstanceDir}}",
         "OverwriteExistingFiles":true
@@ -44,7 +44,7 @@
         "UpdateStageName":"Headless Client Script Download",
         "UpdateSourcePlatform":"Windows",
         "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://github.com/CubeCoders/AMPTemplates/raw/main/arma2runhc.ps1",
+        "UpdateSourceData":"https://github.com/Bluscream/AMPTemplates/raw/dev/arma2runhc.ps1",
         "UpdateSourceArgs":"runhc.ps1",
         "UpdateSourceTarget":"{{$FullInstanceDir}}",
         "OverwriteExistingFiles":true
