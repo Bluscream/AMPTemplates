@@ -1198,8 +1198,7 @@
         "DefaultValue":"public",
         "EnumValues":{
             "public":"Public (default)",
-            "profiling":"Performance Profiling Build",
-            "creatordlc-profiling":"Creator DLC + Performance Profiling Builds"
+            "profiling":"Performance Profiling Build"
         }
     }
 ]
