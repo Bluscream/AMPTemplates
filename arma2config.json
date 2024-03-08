@@ -400,8 +400,7 @@
         "ParamFieldName":"par",
         "IncludeInCommandLine":true,
         "DefaultValue":"",
-        "Placeholder":"parameters.txt",
-        "EnumValues": {}
+        "Placeholder":"parameters.txt"
     },
     {
         "DisplayName":"Skip Lobby",
@@ -524,8 +523,7 @@
         "IsFlagArgument":true,
         "ParamFieldName":"autoInit",
         "IncludeInCommandLine":true,
-        "DefaultValue":"",
-        "EnumValues":{}
+        "DefaultValue":"true"
     },
     {
         "DisplayName":"Persistent Mission",
@@ -1238,10 +1236,6 @@
         "IsFlagArgument":true,
         "ParamFieldName":"server",
         "IncludeInCommandLine":true,
-        "DefaultValue":"true",
-        "EnumValues":{
-            "True":"true",
-            "False":"false"
-        }
+        "DefaultValue":"true"
     }
 ]
