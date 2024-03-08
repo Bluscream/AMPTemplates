@@ -20,7 +20,7 @@
         "UpdateSourcePlatform": "All",
         "UpdateSource":"FetchURL",
         "UpdateSourceData": "https://github.com/Bluscream/arma2-oa-linux-server/releases/latest/download/a2oa-server.zip",
-        "UpdateSourceTarget":"./",
+        "UpdateSourceTarget":"{{$FullBaseDir}}",
         "UnzipUpdateSource":true,
         "OverwriteExistingFiles":true,
         "DeleteAfterExtract":true
