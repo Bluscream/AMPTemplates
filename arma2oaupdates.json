@@ -24,6 +24,14 @@
         "UnzipUpdateSource":true,
         "OverwriteExistingFiles":true,
         "DeleteAfterExtract":true
+    },, 
+    {
+        "UpdateStageName": "Download Missing X3DAudio1_6.dll",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource":"FetchURL",
+        "UpdateSourceData": "https://github.com/Bluscream/arma2-oa-linux-server/raw/main/X3DAudio1_6.dll",
+        "UpdateSourceTarget":"{{$FullBaseDir}}",
+        "OverwriteExistingFiles":true
     },
     {
         "UpdateStageName":"Set Executable Flag",
