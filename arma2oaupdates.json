@@ -19,7 +19,7 @@
         "UpdateStageName": "Download Linux Server Files",
         "UpdateSourcePlatform": "All",
         "UpdateSource":"FetchURL",
-        "UpdateSourceData": "https://github.com/Bluscream/arma2-oa-linux-server/releases/latest/download/a2oa-server.tar.bz2",
+        "UpdateSourceData": "https://github.com/Bluscream/arma2-oa-linux-server/releases/latest/download/a2oa-server.zip",
         "UpdateSourceTarget":"./",
         "UnzipUpdateSource":true,
         "OverwriteExistingFiles":true,
