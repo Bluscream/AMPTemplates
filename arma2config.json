@@ -394,16 +394,14 @@
         "Category":"Arma Server Settings",
         "Description":"If enabled, allows the use of a [parameters file](https://community.bistudio.com/wiki/Startup_Parameters_Config_File) for additional startup parameters for the server. File is \"parameters.txt\" in the server base directory. Useful for long startup parameters such as -mod or -serverMod. Use with care",
         "Keywords":"custom,server,arguments,parameters,file,parfile",
-        "FieldName":"parfile",
-        "InputType":"checkbox",
+        "FieldName":"par",
+        "InputType":"text",
         "IsFlagArgument":false,
-        "ParamFieldName":"parfile",
-        "IncludeInCommandLine":false,
+        "ParamFieldName":"par",
+        "IncludeInCommandLine":true,
         "DefaultValue":"",
-        "EnumValues":{
-            "False":"",
-            "True":"-par=parameters.txt "
-        }
+        "Placeholder":"parameters.txt",
+        "EnumValues": {}
     },
     {
         "DisplayName":"Skip Lobby",
@@ -523,14 +521,11 @@
         "Keywords":"mission,autoinit,immediate",
         "FieldName":"autoInit",
         "InputType":"checkbox",
-        "IsFlagArgument":false,
+        "IsFlagArgument":true,
         "ParamFieldName":"autoInit",
-        "IncludeInCommandLine":false,
+        "IncludeInCommandLine":true,
         "DefaultValue":"",
-        "EnumValues":{
-            "False":"",
-            "True":"-autoInit "
-        }
+        "EnumValues":{}
     },
     {
         "DisplayName":"Persistent Mission",
@@ -1231,6 +1226,22 @@
             "public":"Public (default)",
             "beta":"Beta",
             "legacy":"Legacy"
+        }
+    },
+    {
+        "DisplayName":"Start as Server",
+        "Category":"Arma Server Settings",
+        "Description":"If enabled, starts the binary with -server",
+        "Keywords":"basic",
+        "FieldName":"server",
+        "InputType":"checkbox",
+        "IsFlagArgument":true,
+        "ParamFieldName":"server",
+        "IncludeInCommandLine":true,
+        "DefaultValue":"true",
+        "EnumValues":{
+            "True":"true",
+            "False":"false"
         }
     }
 ]

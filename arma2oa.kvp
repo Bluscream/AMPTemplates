@@ -29,7 +29,7 @@ App.ExecutableLinux=33935/arma2oaserver
 App.WorkingDir=33935
 App.LinuxCommandLineArgs=
 App.WindowsCommandLineArgs=
-App.CommandLineArgs={{$PlatformArgs}} -name=AMPServer "-profiles={{$FullBaseDir}}A2Master" "-bepath={{$FullBaseDir}}battleye" -port={{$GamePort}} -config=server.cfg -cfg=basic.cfg -world=empty -ip={{$ApplicationIPBinding}} {{autoInit}}{{$FormattedArgs}} {{parfile}}{{CustomServerArgs}}
+App.CommandLineArgs={{$PlatformArgs}} -name=AMPServer "-profiles={{$FullBaseDir}}A2Master" "-bepath={{$FullBaseDir}}battleye" -port={{$GamePort}} -config=server.cfg -cfg=basic.cfg -world=empty -pid=arma2oaserver.pid -ip={{$ApplicationIPBinding}} {{$FormattedArgs}} {{CustomServerArgs}}
 App.UseLinuxIOREDIR=False
 App.AppSettings={}
 App.EnvironmentVariables={"LD_LIBRARY_PATH":"{{$FullBaseDir}}linux64:%LD_LIBRARY_PATH%","SteamAppId":"33900"}
@@ -53,7 +53,8 @@ App.MaxUsers=64
 App.UseRandomAdminPassword=True
 App.PersistRandomPassword=True
 App.RemoteAdminPassword=
-App.AdminMethod=BattlEyeRCON
+# App.AdminMethod=BattlEyeRCON
+App.AdminMethod=STDIO
 App.AdminLoginTransform=None
 App.RCONConnectDelaySeconds=5
 App.RCONConnectRetrySeconds=5
@@ -64,7 +65,7 @@ App.UpdateSources=@IncludeJson[arma2oaupdates.json]
 App.PreStartStages=@IncludeJson[arma2oastart.json]
 App.Compatibility=None
 App.SteamUpdateAnonymousLogin=False
-App.SteamForceLoginPrompt=True
+App.SteamForceLoginPrompt=False
 App.RapidStartup=False
 App.MonitorChildProcess=False
 App.MonitorChildProcessWaitMs=100
