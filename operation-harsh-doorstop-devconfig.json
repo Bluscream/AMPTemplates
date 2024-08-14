@@ -74,11 +74,12 @@
         "DefaultValue":"",
         "EnumValues":{
             "":"None",
-            "/CasualCQB/Core/BP_HDGame_Skirmish_CQB.BP_HDGame_Skirmish_CQB_C":"CasualField (mod)",
-            "/BigLearning/Core/BP_BLGame_Testing.BP_BLGame_Testing_C": "Vehicle Overhaul (mod)",
+            "/3140994891/CasualCQB/Core/BP_HDGame_Skirmish_CQB.BP_HDGame_Skirmish_CQB_C":"CasualField (mod)",
+            "/2947290153/BigLearning/Core/BP_BLGame_Testing.BP_BLGame_Testing_C": "Vehicle Overhaul (mod)",
             "HDGame_BodycamAAS": "Bodycam (mod)",
             "/Starwars/Core/BP_HDGame_AdvanceAndSecure_Starwars.BP_HDGame_AdvanceAndSecure_Starwars_C": "Star Wars (mod)",
-            "/ConstructionPrototype/GameMode/BP_HDGame_AdvanceAndSecure_Construct.BP_HDGame_AdvanceAndSecure_Construct_C": "Construction (mod)",
+            "/2936839875/Detonation?": "Detonation (mod)",
+            "/3301823518/ConstructionPrototype/GameMode/BP_HDGame_AdvanceAndSecure_Construct.BP_HDGame_AdvanceAndSecure_Construct_C": "Construction (mod)",
             "{{CustomMode}}":"--Custom--"
         }
     },
