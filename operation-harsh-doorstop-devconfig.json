@@ -60,8 +60,9 @@
         "Special":"listfile:./operation-harsh-doorstop/950900/HarshDoorstop/Saved/Config/WindowsServer/MapCycle.cfg",
         "EnumValues":{}
     },
+
     {
-        "DisplayName":"Custom Gamemode",
+        "DisplayName":"Custom Mode",
         "Category":"OHD Server Settings",
         "Description":"Sets the path to a modded gamemode for the server to run",
         "Keywords":"game,gamemode",
@@ -71,15 +72,29 @@
         "IncludeInCommandLine":true,
         "SkipIfEmpty":true,
         "DefaultValue":"",
-        "Placeholder":"/pathToGamemode/GameModeBPname.GameModeBPname_C",
         "EnumValues":{
             "":"None",
             "/CasualCQB/Core/BP_HDGame_Skirmish_CQB.BP_HDGame_Skirmish_CQB_C":"CasualField (mod)",
             "/BigLearning/Core/BP_BLGame_Testing.BP_BLGame_Testing_C": "Vehicle Overhaul (mod)",
             "HDGame_BodycamAAS": "Bodycam (mod)",
-            "/Starwars/Core/BP_HDGame_AdvanceAndSecure_Starwars.BP_HDGame_AdvanceAndSecure_Starwars_C": "Star Wars (mod)"
+            "/Starwars/Core/BP_HDGame_AdvanceAndSecure_Starwars.BP_HDGame_AdvanceAndSecure_Starwars_C": "Star Wars (mod)",
+            "/ConstructionPrototype/GameMode/BP_HDGame_AdvanceAndSecure_Construct.BP_HDGame_AdvanceAndSecure_Construct_C": "Construction (mod)",
+            "{{CustomMode}}":"--Custom--"
         }
     },
+    {
+        "DisplayName":"Custom Mode Name",
+        "Category":"OHD Server Settings",
+        "Description":"Sets a custom gamemode for the server. \"Custom\" type must be selected under Mode, and the mode files included in HarshDoorstop/Mods",
+        "Keywords":"custom,mode",
+        "FieldName":"CustomMode",
+        "InputType":"text",
+        "ParamFieldName":"CustomMode",
+        "DefaultValue":"",
+        "Placeholder":"/pathToGamemode/GameModeBPname.GameModeBPname_C",
+        "EnumValues":{}
+    },
+
     {
         "DisplayName":"Server Admins",
         "Category":"OHD Server Settings",
