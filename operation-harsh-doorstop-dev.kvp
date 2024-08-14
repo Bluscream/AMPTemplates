@@ -37,7 +37,7 @@ App.WindowsCommandLineArgs=-FullStdOutLogOutput
 App.CommandLineArgs=HarshDoorstop {{Map}}?{{$FormattedArgs}}{{bDisableKitRestrictions}}{{bBotAutofill}}{{CustomOptions}} -QueryPort={{$QueryPort}} -RCONPort={{$RCONPort}} -EnableRCON -MultiHome={{$ApplicationIPBinding}} -RCONIP={{$ApplicationIPBinding}} -RCONPassword={{$RemoteAdminPassword}} -SteamServerName="{{ServerName}}" {{CustomFlags}} -stdout {{$PlatformArgs}}
 App.UseLinuxIOREDIR=False
 App.AppSettings={}
-App.EnvironmentVariables={"LD_LIBRARY_PATH":"{{$FullRootDir}}linux64:%LD_LIBRARY_PATH%","SteamAppId":"1316480"}
+App.EnvironmentVariables={"LD_LIBRARY_PATH":"{{$FullRootDir}}linux64:%LD_LIBRARY_PATH%","SteamAppId":"1307180"}
 App.CommandLineParameterFormat={0}={1}
 App.CommandLineParameterDelimiter=?
 App.ExitMethod=String
