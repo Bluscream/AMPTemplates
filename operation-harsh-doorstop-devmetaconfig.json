@@ -2,6 +2,21 @@
     {
         "ConfigFile":"HarshDoorstop/Saved/Config/WindowsServer/Game.ini",
         "AutoMap":true,
-        "ConfigType":"ini"
+        "ConfigType":"ini",
+        "Importable": true
+    },
+    {
+        "ConfigFile":"HarshDoorstop/Saved/Config/WindowsServer/Engine.ini",
+        "AutoMap":true,
+        "ConfigType":"ini",
+        "Importable": true,
+        "Subsections": [
+			{
+				"Heading": "OnlineSubsystemSteam",
+				"SettingMappings": {
+					"WebApiKey": "WebApiKey"
+				}
+			}
+		]
     }
 ]

@@ -413,6 +413,18 @@
         "EnumValues":{}
     },
     {
+        "DisplayName":"Steam Web API Key",
+        "Category":"OHD Server Settings",
+        "Description":"Sets your WebApiKey= in 'HarshDoorstop/Saved/Config/WindowsServer/Engine.ini' so your server enjoys the full featureset, you can get your key from steam://openurl/https://steamcommunity.com/dev/apikey",
+        "Keywords":"steam",
+        "FieldName":"WebApiKey",
+        "InputType":"text",
+        "ParamFieldName":"",
+        "DefaultValue":"",
+        "Placeholder":"",
+        "EnumValues":{}
+    },
+    {
         "DisplayName":"Custom Command Line Flags",
         "Category":"OHD Server Settings",
         "Description":"Sets custom command line flags for the server (those that start with a - (dash)). Include the dash and separate with a space. Don't use flags already in AMP's settings!",
