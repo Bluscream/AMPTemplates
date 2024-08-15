@@ -266,6 +266,11 @@
             "BP_OMFactionInfo_Foddsquad": "Star Wars Foddsquad (mod)",
             "BP_OMFactionInfo_Guard": "Star Wars Guard (mod)",
             "BP_OMFactionInfo_Seperatist": "Star Wars Seperatist (mod)",
+
+            "BP_HDFactionInfo_FEM": "Femboys (mod)",
+            "BP_HDFactionInfo_FUR": "Furries (mod)",
+            "BP_HDFactionInfo_BRO": "Bronies (mod)",
+
             "{{CustomBluforFaction}}":"--Custom--"
         }
     },
@@ -338,7 +343,7 @@
             "BP_HDFactionInfo_Insurgents":"Modern Era: Insurgents",
             "BP_HDFactionInfo_TG_OpFor":"Debug: OpFor (All Kits/Eras)",
             "BP_HDFactionInfo_TG_BluFor":"Debug: BluFor (All Kits/Eras)",
-            
+
             "BP_OMFactionInfo_212": "Star Wars 212 (mod)",
             "BP_OMFactionInfo_104th": "Star Wars 104th (mod)",
             "BP_OMFactionInfo_332nd": "Star Wars 332nd (mod)",
@@ -347,6 +352,11 @@
             "BP_OMFactionInfo_Foddsquad": "Star Wars Foddsquad (mod)",
             "BP_OMFactionInfo_Guard": "Star Wars Guard (mod)",
             "BP_OMFactionInfo_Seperatist": "Star Wars Seperatist (mod)",
+
+            "BP_HDFactionInfo_FEM": "Femboys (mod)",
+            "BP_HDFactionInfo_FUR": "Furries (mod)",
+            "BP_HDFactionInfo_BRO": "Bronies (mod)",
+
             "{{CustomBluforFaction}}":"--Custom--"
         }
     },
