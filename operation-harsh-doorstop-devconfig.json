@@ -77,7 +77,7 @@
             "/CasualCQB/Core/BP_HDGame_Skirmish_CQB.BP_HDGame_Skirmish_CQB_C":"CasualField (mod)",
             "/CasualMode/Core/BP_HDGame_AdvanceAndSecure_CasualMode.BP_HDGame_AdvanceAndSecure_CasualMode_C": "Casual Warfare (mod)",
             "/BigLearning/Core/BP_BLGame_Testing.BP_BLGame_Testing_C": "Vehicle Overhaul (mod)",
-            "/bodycam/Core/HDGame_BodycamAAS": "Bodycam (mod)",
+            "/bodycam/Core/BP_HDGame_BodycamAAS": "Bodycam (mod)",
             "/Bodycam/Core/GM_Bodycam.GM_Bodycam_C": "Realistic Bodycam (mod)",
             "/Starwars/Core/BP_HDGame_AdvanceAndSecure_Starwars.BP_HDGame_AdvanceAndSecure_Starwars_C": "Star Wars (mod)",
             "/ConstructionPrototype/GameMode/BP_HDGame_AdvanceAndSecure_Construct.BP_HDGame_AdvanceAndSecure_Construct_C": "Construction (mod)",
