@@ -418,11 +418,12 @@
         "Category":"OHD Server Settings",
         "Description":"Sets your WebApiKey= in 'HarshDoorstop/Saved/Config/WindowsServer/Engine.ini' so your server enjoys the full featureset, you can get your key from steam://openurl/https://steamcommunity.com/dev/apikey",
         "Keywords":"steam",
-        "FieldName":"WebApiKey",
+        "FieldName":"SteamWebApiKey",
         "InputType":"password",
-        "ParamFieldName":"",
+        "ParamFieldName":"SteamWebApiKey",
         "DefaultValue":"",
         "Placeholder":"",
+        "IncludeInCommandLine":true,
         "EnumValues":{}
     },
     {
