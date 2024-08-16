@@ -448,7 +448,8 @@
         "EnumValues": {
             "True": "True",
             "False": "False"
-        }
+        },
+        "FieldName": "bAllowPlayerTags"
     },
     {
         "DisplayName": "Death Camera",
@@ -462,7 +463,8 @@
         "EnumValues": {
             "True": "True",
             "False": "False"
-        }
+        },
+        "FieldName": "bEnableDeathCamera"
     },
     {
         "DisplayName": "Red Dot",
@@ -476,7 +478,8 @@
         "EnumValues": {
             "True": "True",
             "False": "False"
-        }
+        },
+        "FieldName": "bEnableRedDot"
     },
     {
         "DisplayName": "Minimap",
@@ -490,7 +493,8 @@
         "EnumValues": {
             "True": "True",
             "False": "False"
-        }
+        },
+        "FieldName": "bAllowMinimap"
     },
     {
         "DisplayName": "Suppression Effect",
@@ -504,7 +508,8 @@
         "EnumValues": {
             "True": "True",
             "False": "False"
-        }
+        },
+        "FieldName": "bEnableSuppressionEffect"
     },
     {
         "DisplayName": "Suppression Movement",
@@ -518,7 +523,8 @@
         "EnumValues": {
             "True": "True",
             "False": "False"
-        }
+        },
+        "FieldName": "bEnableSuppressionMovement"
     },
     {
         "DisplayName": "Squad Spawn",
@@ -532,7 +538,8 @@
         "EnumValues": {
             "True": "True",
             "False": "False"
-        }
+        },
+        "FieldName": "bAllowSquadSpawn"
     },
     {
         "DisplayName": "Revive",
@@ -546,7 +553,8 @@
         "EnumValues": {
             "True": "True",
             "False": "False"
-        }
+        },
+        "FieldName": "bAllowRevive"
     },
     {
         "DisplayName": "Kill Feed",
@@ -560,7 +568,8 @@
         "EnumValues": {
             "True": "True",
             "False": "False"
-        }
+        },
+        "FieldName": "bAllowKillFeed"
     },
     {
         "DisplayName": "Min Give Up Delay",
@@ -570,7 +579,8 @@
         "InputType": "number",
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.MinGiveUpDelay",
         "DefaultValue": "5",
-        "Placeholder": "5"
+        "Placeholder": "5",
+        "FieldName": "MinGiveUpDelay"
     },
     {
         "DisplayName": "Min Respawn Delay",
@@ -580,7 +590,8 @@
         "InputType": "number",
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.MinRespawnDelay",
         "DefaultValue": "10",
-        "Placeholder": "10"
+        "Placeholder": "10",
+        "FieldName": "MinRespawnDelay"
     },
     {
         "DisplayName": "Squad Spawn Additional Delay",
@@ -590,7 +601,8 @@
         "InputType": "number",
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.SquadSpawnAdditionalDelay",
         "DefaultValue": "5",
-        "Placeholder": "5"
+        "Placeholder": "5",
+        "FieldName": "SquadSpawnAdditionalDelay"
     },
     {
         "DisplayName": "Radial Damage Multiplier",
@@ -600,7 +612,8 @@
         "InputType": "number",
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.RadialDamageMultiplier",
         "DefaultValue": "0.25",
-        "Placeholder": "0.25"
+        "Placeholder": "0.25",
+        "FieldName": "RadialDamageMultiplier"
     },
     {
         "DisplayName": "Time To Continue",
@@ -610,7 +623,8 @@
         "InputType": "number",
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.TimeToContinue",
         "DefaultValue": "33",
-        "Placeholder": "33"
+        "Placeholder": "33",
+        "FieldName": "TimeToContinue"
     },
     {
         "DisplayName": "Player Sprint Acceleration",
@@ -620,7 +634,8 @@
         "InputType": "number",
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.PlayerSprintAcceleration",
         "DefaultValue": "0.9",
-        "Placeholder": "0.9"
+        "Placeholder": "0.9",
+        "FieldName": "PlayerSprintAcceleration"
     },
     {
         "DisplayName": "Player Sprint Strafing Threshold",
@@ -630,7 +645,8 @@
         "InputType": "number",
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.PlayerSprintStrafingThreashold",
         "DefaultValue": "1.0",
-        "Placeholder": "1.0"
+        "Placeholder": "1.0",
+        "FieldName": "PlayerSprintStrafingThreashold"
     },
     {
         "DisplayName": "Player Max Walk Speed",
@@ -640,7 +656,8 @@
         "InputType": "number",
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.PlayerMaxWalkSpeed",
         "DefaultValue": "450",
-        "Placeholder": "450"
+        "Placeholder": "450",
+        "FieldName": "PlayerMaxWalkSpeed"
     },
     {
         "DisplayName": "Player Fall Damage Divisor",
@@ -650,7 +667,8 @@
         "InputType": "number",
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.PlayerFallDamageDivisor",
         "DefaultValue": "15",
-        "Placeholder": "15"
+        "Placeholder": "15",
+        "FieldName": "PlayerFallDamageDivisor"
     },
     {
         "DisplayName": "Revive On Headshot",
@@ -663,7 +681,8 @@
         "EnumValues": {
             "True": "False",
             "False": "True"
-        }
+        },
+        "FieldName": "bNoReviveOnHeadshot"
     },
     {
         "DisplayName": "Auto Spawn Radius",
@@ -673,6 +692,7 @@
         "InputType": "number",
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.AutoSpawnRadius",
         "DefaultValue": "750",
-        "Placeholder": "750"
+        "Placeholder": "750",
+        "FieldName": "AutoSpawnRadius"
     }
 ]
