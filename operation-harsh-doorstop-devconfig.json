@@ -429,7 +429,11 @@
         "InputType": "checkbox",
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bEnableEnemyTags",
         "DefaultValue": "True",
-        "Placeholder": "True"
+        "Placeholder": "True",
+        "EnumValues": {
+            "True": "True",
+            "False": "False"
+        }
     },
     {
         "DisplayName": "Player Tags",
@@ -439,7 +443,11 @@
         "InputType": "checkbox",
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bAllowPlayerTags",
         "DefaultValue": "True",
-        "Placeholder": "True"
+        "Placeholder": "True",
+        "EnumValues": {
+            "True": "True",
+            "False": "False"
+        }
     },
     {
         "DisplayName": "Death Camera",
@@ -449,7 +457,11 @@
         "InputType": "checkbox",
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bEnableDeathCamera",
         "DefaultValue": "True",
-        "Placeholder": "True"
+        "Placeholder": "True",
+        "EnumValues": {
+            "True": "True",
+            "False": "False"
+        }
     },
     {
         "DisplayName": "Red Dot",
@@ -459,7 +471,11 @@
         "InputType": "checkbox",
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bEnableRedDot",
         "DefaultValue": "True",
-        "Placeholder": "True"
+        "Placeholder": "True",
+        "EnumValues": {
+            "True": "True",
+            "False": "False"
+        }
     },
     {
         "DisplayName": "Minimap",
@@ -469,7 +485,11 @@
         "InputType": "checkbox",
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bAllowMinimap",
         "DefaultValue": "True",
-        "Placeholder": "True"
+        "Placeholder": "True",
+        "EnumValues": {
+            "True": "True",
+            "False": "False"
+        }
     },
     {
         "DisplayName": "Suppression Effect",
@@ -479,7 +499,11 @@
         "InputType": "checkbox",
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bEnableSuppressionEffect",
         "DefaultValue": "False",
-        "Placeholder": "True"
+        "Placeholder": "True",
+        "EnumValues": {
+            "True": "True",
+            "False": "False"
+        }
     },
     {
         "DisplayName": "Suppression Movement",
@@ -489,7 +513,11 @@
         "InputType": "checkbox",
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bEnableSuppressionMovement",
         "DefaultValue": "False",
-        "Placeholder": "True"
+        "Placeholder": "True",
+        "EnumValues": {
+            "True": "True",
+            "False": "False"
+        }
     },
     {
         "DisplayName": "Squad Spawn",
@@ -499,7 +527,11 @@
         "InputType": "checkbox",
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bAllowSquadSpawn",
         "DefaultValue": "True",
-        "Placeholder": "True"
+        "Placeholder": "True",
+        "EnumValues": {
+            "True": "True",
+            "False": "False"
+        }
     },
     {
         "DisplayName": "Revive",
@@ -509,7 +541,11 @@
         "InputType": "checkbox",
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bAllowRevive",
         "DefaultValue": "True",
-        "Placeholder": "True"
+        "Placeholder": "True",
+        "EnumValues": {
+            "True": "True",
+            "False": "False"
+        }
     },
     {
         "DisplayName": "Kill Feed",
@@ -519,7 +555,11 @@
         "InputType": "checkbox",
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bAllowKillFeed",
         "DefaultValue": "True",
-        "Placeholder": "True"
+        "Placeholder": "True",
+        "EnumValues": {
+            "True": "True",
+            "False": "False"
+        }
     },
     {
         "DisplayName": "Min Give Up Delay",
