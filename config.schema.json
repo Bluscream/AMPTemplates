@@ -46,9 +46,7 @@
                     "type": "boolean"
                 },
                 "Placeholder": {
-                    "type": [
-                        "string"
-                    ]
+                    "type": "string"
                 },
                 "Required": {
                     "type": "boolean"
@@ -60,27 +58,6 @@
                 "MaxValue": {
                     "type": "string",
                     "format": "integer"
-                },
-                "ConfigFile": {
-                    "type": "string"
-                },
-                "AutoMap": {
-                    "type": "boolean"
-                },
-                "Importable": {
-                    "type": "boolean"
-                },
-                "ConfigType": {
-                    "$ref": "#/definitions/ConfigType"
-                },
-                "ConfigFormat": {
-                    "type": "string"
-                },
-                "ConfigFormatRegex": {
-                    "type": "string"
-                },
-                "ConfigFileTemplate": {
-                    "type": "string"
                 },
                 "IsFlagArgument": {
                     "type": "boolean"
