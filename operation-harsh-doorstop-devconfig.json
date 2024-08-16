@@ -81,6 +81,7 @@
             "/Bodycam/Core/GM_Bodycam.GM_Bodycam_C": "Realistic Bodycam (mod)",
             "/Starwars/Core/BP_HDGame_AdvanceAndSecure_Starwars.BP_HDGame_AdvanceAndSecure_Starwars_C": "Star Wars (mod)",
             "/ConstructionPrototype/GameMode/BP_HDGame_AdvanceAndSecure_Construct.BP_HDGame_AdvanceAndSecure_Construct_C": "Construction (mod)",
+            "/Detonation/Root/Core/BP_HDGame_Detonation.BP_HDGame_Detonation_C": "Detonation (mod)",
             "{{CustomMode}}":"--Custom--"
         }
     },
