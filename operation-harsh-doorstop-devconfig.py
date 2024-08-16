@@ -7,10 +7,12 @@ with codecs.open('operation-harsh-doorstop-devconfig.json', 'r', 'utf-8-sig') as
 
 # Iterate through each object in the loaded JSON array
 for obj in data:
+    if "FieldName" not in obj:
+        obj["FieldName"] = obj.get("ParamFieldName").split('.')[-1]
     # Check if InputType is "checkbox" and EnumValues does not exist
-    if obj.get("InputType") == "checkbox" and "EnumValues" not in obj:
-        # Add EnumValues to the object
-        obj["EnumValues"] = {"True": "True", "False": "False"}
+    # if obj.get("InputType") == "checkbox" and "EnumValues" not in obj:
+    #     # Add EnumValues to the object
+    #     obj["EnumValues"] = {"True": "True", "False": "False"}
 
 # Save the modified JSON back to the file with 'utf-8' encoding
 with codecs.open('operation-harsh-doorstop-devconfig.json', 'w', 'utf-8') as file:
