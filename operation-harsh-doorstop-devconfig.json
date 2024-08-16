@@ -420,5 +420,20 @@
         "InputType": "text",
         "ParamFieldName": "CustomOptions",
         "DefaultValue": ""
+    },
+    {
+        "DisplayName": "Enemy Tags",
+        "Category": "Casualfield (mod)",
+        "Description": "Enable or disable nametags ontop of enemy players when in range",
+        "Keywords": "enemy,tags",
+        "InputType": "checkbox",
+        "FieldName": "bEnableEnemyTags",
+        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bEnableEnemyTags",
+        "DefaultValue": "True",
+        "Placeholder": "True",
+        "EnumValues": {
+            "True": "True",
+            "False": "False"
+        }
     }
 ]
