@@ -5,10 +5,15 @@ import codecs
 with codecs.open('operation-harsh-doorstop-devconfig.json', 'r', 'utf-8-sig') as file:
     data = json.load(file)
 
-# Iterate through each object in the loaded JSON array
-for obj in data:
-    if "FieldName" not in obj:
-        obj["FieldName"] = obj.get("ParamFieldName").split('.')[-1]
+for i, obj in enumerate(data):
+    # Sort the keys of the current object alphabetically
+    sorted_obj = {k: obj[k] for k in sorted(obj)}
+    
+    # Update the object in the list with the sorted version
+    data[i] = sorted_obj
+# for obj in data:
+#     if "FieldName" not in obj:
+#         obj["FieldName"] = obj.get("ParamFieldName").split('.')[-1]
     # Check if InputType is "checkbox" and EnumValues does not exist
     # if obj.get("InputType") == "checkbox" and "EnumValues" not in obj:
     #     # Add EnumValues to the object

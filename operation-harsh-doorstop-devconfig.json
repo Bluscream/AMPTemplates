@@ -1,23 +1,19 @@
 [
     {
-        "DisplayName": "Server Name",
         "Category": "OHD Server Settings",
+        "DefaultValue": "AMP Powered Operation: Harsh Doorstop Server",
         "Description": "Sets the name of the server as it appears publicly in the server browser",
-        "Keywords": "server,name,servername,steamservername",
+        "DisplayName": "Server Name",
         "FieldName": "ServerName",
         "InputType": "text",
-        "ParamFieldName": "ServerName",
-        "DefaultValue": "AMP Powered Operation: Harsh Doorstop Server"
+        "Keywords": "server,name,servername,steamservername",
+        "ParamFieldName": "ServerName"
     },
     {
-        "DisplayName": "Initial Map",
         "Category": "OHD Server Settings",
-        "Description": "Sets the map for the server. If \"Custom\" is selected, Custom Map Name must also be set",
-        "Keywords": "map",
-        "FieldName": "Map",
-        "InputType": "enum",
-        "ParamFieldName": "Map",
         "DefaultValue": "AAS-TestMap",
+        "Description": "Sets the map for the server. If \"Custom\" is selected, Custom Map Name must also be set",
+        "DisplayName": "Initial Map",
         "EnumValues": {
             "AAS-TestMap": "AAS Test Map (default)",
             "Argonne": "WWI: Argonne",
@@ -33,41 +29,39 @@
             "Map_vao_vehicles": "Vooga Large flag spawn (mod)",
             "Map_vao_vehbasespawn": "Vooga Large basespawn and hab spawn (mod)",
             "{{CustomMap}}": "--Custom--"
-        }
+        },
+        "FieldName": "Map",
+        "InputType": "enum",
+        "Keywords": "map",
+        "ParamFieldName": "Map"
     },
     {
-        "DisplayName": "Custom Map Name",
         "Category": "OHD Server Settings",
+        "DefaultValue": "",
         "Description": "Sets a custom map for the server. \"Custom\" type must be selected under Map, and the map files included in HarshDoorstop/Mods",
-        "Keywords": "custom,map",
+        "DisplayName": "Custom Map Name",
         "FieldName": "CustomMap",
         "InputType": "text",
+        "Keywords": "custom,map",
         "ParamFieldName": "CustomMap",
-        "DefaultValue": "",
         "Placeholder": "AAS_Trainyard"
     },
     {
-        "DisplayName": "Map Cycle",
         "Category": "OHD Server Settings",
+        "DefaultValue": "",
         "Description": "List of [proper names](https://operation-harsh-doorstop.fandom.com/wiki/Server_Install_Instructions#MapCycle.cfg) of maps to run in sequence on the server after the initial map, in the order to be run",
-        "Keywords": "map,cycle,list,mapcycle",
+        "DisplayName": "Map Cycle",
         "FieldName": "MapCycle",
         "InputType": "list",
+        "Keywords": "map,cycle,list,mapcycle",
         "ParamFieldName": "MapCycle",
-        "DefaultValue": "",
         "Special": "listfile:./operation-harsh-doorstop/950900/HarshDoorstop/Saved/Config/WindowsServer/MapCycle.cfg"
     },
     {
-        "DisplayName": "Custom Mode",
         "Category": "OHD Server Settings",
-        "Description": "Sets the path to a modded gamemode for the server to run",
-        "Keywords": "game,gamemode",
-        "FieldName": "game",
-        "InputType": "text",
-        "ParamFieldName": "game",
-        "IncludeInCommandLine": true,
-        "SkipIfEmpty": true,
         "DefaultValue": "",
+        "Description": "Sets the path to a modded gamemode for the server to run",
+        "DisplayName": "Custom Mode",
         "EnumValues": {
             "": "None",
             "/CasualCQB/Core/BP_HDGame_Skirmish_CQB.BP_HDGame_Skirmish_CQB_C": "CasualField (mod)",
@@ -79,157 +73,157 @@
             "/ConstructionPrototype/GameMode/BP_HDGame_AdvanceAndSecure_Construct.BP_HDGame_AdvanceAndSecure_Construct_C": "Construction (mod)",
             "/Detonation/Root/Core/BP_HDGame_Detonation.BP_HDGame_Detonation_C": "Detonation (mod)",
             "{{CustomMode}}": "--Custom--"
-        }
+        },
+        "FieldName": "game",
+        "IncludeInCommandLine": true,
+        "InputType": "text",
+        "Keywords": "game,gamemode",
+        "ParamFieldName": "game",
+        "SkipIfEmpty": true
     },
     {
-        "DisplayName": "Custom Mode Name",
         "Category": "OHD Server Settings",
+        "DefaultValue": "",
         "Description": "Sets a custom gamemode for the server. \"Custom\" type must be selected under Mode, and the mode files included in HarshDoorstop/Mods",
-        "Keywords": "custom,mode",
+        "DisplayName": "Custom Mode Name",
         "FieldName": "CustomMode",
         "InputType": "text",
+        "Keywords": "custom,mode",
         "ParamFieldName": "CustomMode",
-        "DefaultValue": "",
         "Placeholder": "/pathToGamemode/GameModeBPname.GameModeBPname_C"
     },
     {
-        "DisplayName": "Server Admins",
         "Category": "OHD Server Settings",
+        "DefaultValue": "",
         "Description": "List of [Steam64 IDs](https://steamidfinder.com/) for server admins",
-        "Keywords": "admins,adminlist",
+        "DisplayName": "Server Admins",
         "FieldName": "AdminList",
         "InputType": "list",
+        "Keywords": "admins,adminlist",
         "ParamFieldName": "AdminList",
-        "DefaultValue": "",
         "Special": "listfile:./operation-harsh-doorstop/950900/HarshDoorstop/Saved/Config/WindowsServer/Admins.cfg"
     },
     {
-        "DisplayName": "Server Password",
         "Category": "OHD Server Settings",
+        "DefaultValue": "",
         "Description": "Sets the password for players to join the server. Don't include a question mark",
-        "Keywords": "server,password,serverpassword",
+        "DisplayName": "Server Password",
         "FieldName": "Password",
-        "InputType": "password",
-        "ParamFieldName": "Password",
         "IncludeInCommandLine": true,
-        "SkipIfEmpty": true,
-        "DefaultValue": ""
+        "InputType": "password",
+        "Keywords": "server,password,serverpassword",
+        "ParamFieldName": "Password",
+        "SkipIfEmpty": true
     },
     {
-        "DisplayName": "RCON Password",
         "Category": "OHD Server Settings",
         "Description": "See the Security and Privacy menu for configurable options for the server's RCON password",
-        "Keywords": "rcon,password",
+        "DisplayName": "RCON Password",
         "FieldName": "RCONPassword",
+        "IncludeInCommandLine": false,
         "InputType": "hidden",
-        "ParamFieldName": "RCONPassword",
-        "IncludeInCommandLine": false
+        "Keywords": "rcon,password",
+        "ParamFieldName": "RCONPassword"
     },
     {
-        "DisplayName": "Whitelisted Players",
         "Category": "OHD Server Settings",
+        "DefaultValue": "",
         "Description": "List of [Steam64 IDs](https://steamidfinder.com/) for whitelisted players. Empty = whitelist disabled",
-        "Keywords": "player,whitelist",
+        "DisplayName": "Whitelisted Players",
         "FieldName": "Whitelist",
         "InputType": "list",
+        "Keywords": "player,whitelist",
         "ParamFieldName": "Whitelist",
-        "DefaultValue": "",
         "Special": "listfile:./operation-harsh-doorstop/950900/HarshDoorstop/Saved/Config/WindowsServer/Whitelist.cfg"
     },
     {
-        "DisplayName": "Banned Players",
         "Category": "OHD Server Settings",
+        "DefaultValue": "",
         "Description": "List of [Steam64 IDs](https://steamidfinder.com/) for banned players",
-        "Keywords": "player,ban,banlist",
+        "DisplayName": "Banned Players",
         "FieldName": "BanList",
         "InputType": "list",
+        "Keywords": "player,ban,banlist",
         "ParamFieldName": "BanList",
-        "DefaultValue": "",
         "Special": "listfile:./operation-harsh-doorstop/950900/HarshDoorstop/Saved/Config/WindowsServer/Bans.cfg"
     },
     {
-        "DisplayName": "Player Limit",
         "Category": "OHD Server Settings",
+        "DefaultValue": "16",
         "Description": "Sets the maximum number of players able to join the server at one time",
-        "Keywords": "max,maximum,players,limit,maxplayers",
+        "DisplayName": "Player Limit",
         "FieldName": "$MaxUsers",
+        "IncludeInCommandLine": true,
         "InputType": "number",
+        "Keywords": "max,maximum,players,limit,maxplayers",
         "MinValue": "1",
         "ParamFieldName": "MaxPlayers",
-        "IncludeInCommandLine": true,
-        "DefaultValue": "16",
         "Placeholder": "16",
         "Suffix": "players"
     },
     {
-        "DisplayName": "Minimum Players To Start",
         "Category": "OHD Server Settings",
+        "DefaultValue": "0",
         "Description": "Sets the minimum number of players required to start a match",
-        "Keywords": "min,minimum,players,minplayers",
+        "DisplayName": "Minimum Players To Start",
         "FieldName": "MinPlayers",
+        "IncludeInCommandLine": true,
         "InputType": "number",
+        "Keywords": "min,minimum,players,minplayers",
         "MinValue": "0",
         "ParamFieldName": "MinPlayers",
-        "IncludeInCommandLine": true,
-        "DefaultValue": "0",
         "Placeholder": "0",
         "Suffix": "players"
     },
     {
-        "DisplayName": "Auto Assign Human Team",
         "Category": "OHD Server Settings",
-        "Description": "Sets the team (if any) that human-controlled players will be forcibly assigned and locked into (cannot switch teams). This is useful for co-op servers",
-        "Keywords": "auto,assign,human,player,AutoAssignHuman",
-        "FieldName": "AutoAssignHuman",
-        "InputType": "enum",
-        "ParamFieldName": "AutoAssignHuman",
-        "IncludeInCommandLine": true,
         "DefaultValue": "255",
+        "Description": "Sets the team (if any) that human-controlled players will be forcibly assigned and locked into (cannot switch teams). This is useful for co-op servers",
+        "DisplayName": "Auto Assign Human Team",
         "EnumValues": {
             "0": "OpFor",
             "1": "BluFor",
             "255": "Disabled (default)"
-        }
+        },
+        "FieldName": "AutoAssignHuman",
+        "IncludeInCommandLine": true,
+        "InputType": "enum",
+        "Keywords": "auto,assign,human,player,AutoAssignHuman",
+        "ParamFieldName": "AutoAssignHuman"
     },
     {
-        "DisplayName": "Disable Kit Restrictions",
         "Category": "OHD Server Settings",
-        "Description": "If set, player kit restrictions will be disabled",
-        "Keywords": "disable,kit,restrictions,bDisableKitRestrictions",
-        "FieldName": "bDisableKitRestrictions",
-        "InputType": "checkbox",
-        "ParamFieldName": "bDisableKitRestrictions",
         "DefaultValue": "",
+        "Description": "If set, player kit restrictions will be disabled",
+        "DisplayName": "Disable Kit Restrictions",
         "EnumValues": {
             "False": "",
             "True": "?bDisableKitRestrictions"
-        }
+        },
+        "FieldName": "bDisableKitRestrictions",
+        "InputType": "checkbox",
+        "Keywords": "disable,kit,restrictions,bDisableKitRestrictions",
+        "ParamFieldName": "bDisableKitRestrictions"
     },
     {
-        "DisplayName": "Autofill Bots",
         "Category": "OHD Server Settings",
-        "Description": "If enabled, the server will fill empty slots with bots to satisfy the Minimum Players To Start number, and remove them if human players join to take their place",
-        "Keywords": "auto,fill,autofill,bots,bBotAutofill",
-        "FieldName": "bBotAutofill",
-        "InputType": "checkbox",
-        "ParamFieldName": "bBotAutofill",
         "DefaultValue": "",
+        "Description": "If enabled, the server will fill empty slots with bots to satisfy the Minimum Players To Start number, and remove them if human players join to take their place",
+        "DisplayName": "Autofill Bots",
         "EnumValues": {
             "False": "",
             "True": "?bBotAutofill"
-        }
+        },
+        "FieldName": "bBotAutofill",
+        "InputType": "checkbox",
+        "Keywords": "auto,fill,autofill,bots,bBotAutofill",
+        "ParamFieldName": "bBotAutofill"
     },
     {
-        "DisplayName": "BluFor Faction",
         "Category": "OHD Server Settings",
-        "Description": "Sets the BluFor team faction. Select \"Map Default\" to use the default faction for the loaded map. If \"Custom\" is selected, Custom BluFor Faction must also be set",
-        "Keywords": "blufor,faction,bluforfaction",
-        "FieldName": "BluforFaction",
-        "InputType": "enum",
-        "ParamFieldName": "BluforFaction",
-        "IncludeInCommandLine": true,
-        "SkipIfEmpty": true,
         "DefaultValue": "",
+        "Description": "Sets the BluFor team faction. Select \"Map Default\" to use the default faction for the loaded map. If \"Custom\" is selected, Custom BluFor Faction must also be set",
+        "DisplayName": "BluFor Faction",
         "EnumValues": {
             "": "--Map Default--",
             "BP_OMFactionInfo_UnitedStates": "WWI: USA",
@@ -258,58 +252,58 @@
             "BP_HDFactionInfo_FUR": "Furries (mod)",
             "BP_HDFactionInfo_BRO": "Bronies (mod)",
             "{{CustomBluforFaction}}": "--Custom--"
-        }
+        },
+        "FieldName": "BluforFaction",
+        "IncludeInCommandLine": true,
+        "InputType": "enum",
+        "Keywords": "blufor,faction,bluforfaction",
+        "ParamFieldName": "BluforFaction",
+        "SkipIfEmpty": true
     },
     {
-        "DisplayName": "Custom BluFor Faction",
         "Category": "OHD Server Settings",
+        "DefaultValue": "",
         "Description": "Sets a custom BluFor team faction. \"Custom\" type must be selected under BluFor Faction, and the faction files included in HarshDoorstop/Mods",
-        "Keywords": "custom,blufor,faction,bluforfaction",
+        "DisplayName": "Custom BluFor Faction",
         "FieldName": "CustomBluforFaction",
         "InputType": "text",
+        "Keywords": "custom,blufor,faction,bluforfaction",
         "ParamFieldName": "CustomBluforFaction",
-        "DefaultValue": "",
         "Placeholder": ""
     },
     {
-        "DisplayName": "BluFor Tickets",
         "Category": "OHD Server Settings",
+        "DefaultValue": "500",
         "Description": "Sets the starting number of BluFor team tickets",
-        "Keywords": "blufor,tickets,BluforNumTickets",
+        "DisplayName": "BluFor Tickets",
         "FieldName": "BluforNumTickets",
+        "IncludeInCommandLine": true,
         "InputType": "number",
+        "Keywords": "blufor,tickets,BluforNumTickets",
         "MinValue": "0",
         "ParamFieldName": "BluforNumTickets",
-        "IncludeInCommandLine": true,
-        "DefaultValue": "500",
         "Placeholder": "500",
         "Suffix": "tickets"
     },
     {
-        "DisplayName": "BluFor Bots",
         "Category": "OHD Server Settings",
+        "DefaultValue": "0",
         "Description": "Sets the number of BluFor team bots",
-        "Keywords": "blufor,bots,BluforNumBots",
+        "DisplayName": "BluFor Bots",
         "FieldName": "BluforNumBots",
+        "IncludeInCommandLine": true,
         "InputType": "number",
+        "Keywords": "blufor,bots,BluforNumBots",
         "MinValue": "0",
         "ParamFieldName": "BluforNumBots",
-        "IncludeInCommandLine": true,
-        "DefaultValue": "0",
         "Placeholder": "0",
         "Suffix": "bots"
     },
     {
-        "DisplayName": "OpFor Faction",
         "Category": "OHD Server Settings",
-        "Description": "Sets the OpFor team faction. Select \"Map Default\" to use the default faction for the loaded map. If \"Custom\" is selected, Custom OpFor Faction must also be set",
-        "Keywords": "opfor,faction",
-        "FieldName": "OpforFaction",
-        "InputType": "enum",
-        "ParamFieldName": "OpforFaction",
-        "IncludeInCommandLine": true,
-        "SkipIfEmpty": true,
         "DefaultValue": "",
+        "Description": "Sets the OpFor team faction. Select \"Map Default\" to use the default faction for the loaded map. If \"Custom\" is selected, Custom OpFor Faction must also be set",
+        "DisplayName": "OpFor Faction",
         "EnumValues": {
             "": "--Map Default--",
             "BP_OMFactionInfo_UnitedStates": "WWI: USA",
@@ -338,361 +332,367 @@
             "BP_HDFactionInfo_FUR": "Furries (mod)",
             "BP_HDFactionInfo_BRO": "Bronies (mod)",
             "{{CustomBluforFaction}}": "--Custom--"
-        }
+        },
+        "FieldName": "OpforFaction",
+        "IncludeInCommandLine": true,
+        "InputType": "enum",
+        "Keywords": "opfor,faction",
+        "ParamFieldName": "OpforFaction",
+        "SkipIfEmpty": true
     },
     {
-        "DisplayName": "Custom OpFor Faction",
         "Category": "OHD Server Settings",
+        "DefaultValue": "",
         "Description": "Sets a custom OpFor team faction. \"Custom\" type must be selected under OpFor Faction, and the faction files included in HarshDoorstop/Mods",
-        "Keywords": "custom,opfor,faction,opforfaction",
+        "DisplayName": "Custom OpFor Faction",
         "FieldName": "CustomOpforFaction",
         "InputType": "text",
+        "Keywords": "custom,opfor,faction,opforfaction",
         "ParamFieldName": "CustomOpforFaction",
-        "DefaultValue": "",
         "Placeholder": ""
     },
     {
-        "DisplayName": "OpFor Tickets",
         "Category": "OHD Server Settings",
+        "DefaultValue": "500",
         "Description": "Sets the starting number of OpFor team tickets",
-        "Keywords": "opfor,tickets,OpforNumTickets",
+        "DisplayName": "OpFor Tickets",
         "FieldName": "OpforNumTickets",
+        "IncludeInCommandLine": true,
         "InputType": "number",
+        "Keywords": "opfor,tickets,OpforNumTickets",
         "MinValue": "0",
         "ParamFieldName": "OpforNumTickets",
-        "IncludeInCommandLine": true,
-        "DefaultValue": "500",
         "Placeholder": "500",
         "Suffix": "tickets"
     },
     {
-        "DisplayName": "OpFor Bots",
         "Category": "OHD Server Settings",
+        "DefaultValue": "0",
         "Description": "Sets the number of OpFor team bots",
-        "Keywords": "opfor,bots,OpforNumBots",
+        "DisplayName": "OpFor Bots",
         "FieldName": "OpforNumBots",
+        "IncludeInCommandLine": true,
         "InputType": "number",
+        "Keywords": "opfor,bots,OpforNumBots",
         "MinValue": "0",
         "ParamFieldName": "OpforNumBots",
-        "IncludeInCommandLine": true,
-        "DefaultValue": "0",
         "Placeholder": "0",
         "Suffix": "bots"
     },
     {
-        "DisplayName": "MultiHome IP Binding",
         "Category": "OHD Server Settings",
         "Description": "If required, you can change the binding of the server and Source RCON by changing the 'Server IP Address' setting under Security and Privacy. Ensure AMP itself can reach that IP or the console will not work",
-        "Keywords": "ip,binding,address,multihome",
+        "DisplayName": "MultiHome IP Binding",
         "FieldName": "MultiHome",
         "InputType": "hidden",
+        "Keywords": "ip,binding,address,multihome",
         "ParamFieldName": "MultiHome"
     },
     {
-        "DisplayName": "Steam Web API Key",
         "Category": "OHD Server Settings",
-        "Description": "Sets your WebApiKey= in 'HarshDoorstop/Saved/Config/WindowsServer/Engine.ini' so your server enjoys the full featureset, you can get your key from steam://openurl/https://steamcommunity.com/dev/apikey",
-        "Keywords": "steam",
-        "FieldName": "SteamWebApiKey",
-        "InputType": "password",
-        "ParamFieldName": "SteamWebApiKey",
         "DefaultValue": "",
-        "Placeholder": "",
-        "IncludeInCommandLine": true
+        "Description": "Sets your WebApiKey= in 'HarshDoorstop/Saved/Config/WindowsServer/Engine.ini' so your server enjoys the full featureset, you can get your key from steam://openurl/https://steamcommunity.com/dev/apikey",
+        "DisplayName": "Steam Web API Key",
+        "FieldName": "SteamWebApiKey",
+        "IncludeInCommandLine": true,
+        "InputType": "password",
+        "Keywords": "steam",
+        "ParamFieldName": "SteamWebApiKey",
+        "Placeholder": ""
     },
     {
-        "DisplayName": "Custom Command Line Flags",
         "Category": "OHD Server Settings",
+        "DefaultValue": "",
         "Description": "Sets custom command line flags for the server (those that start with a - (dash)). Include the dash and separate with a space. Don't use flags already in AMP's settings!",
-        "Keywords": "custom,command,line,flags",
+        "DisplayName": "Custom Command Line Flags",
         "FieldName": "CustomFlags",
         "InputType": "text",
+        "Keywords": "custom,command,line,flags",
         "ParamFieldName": "CustomFlags",
-        "DefaultValue": "",
         "Placeholder": "-RCONMaxActiveConnections=5 -SupportersOnly"
     },
     {
-        "DisplayName": "Custom Command Line Options",
         "Category": "OHD Server Settings",
+        "DefaultValue": "",
         "Description": "Sets custom command line options for the server (those that start with a ? (question mark)). Include the question mark but do not separate with a space. Don't use options already in AMP's settings!",
-        "Keywords": "custom,command,line,options",
+        "DisplayName": "Custom Command Line Options",
         "FieldName": "CustomOptions",
         "InputType": "text",
-        "ParamFieldName": "CustomOptions",
-        "DefaultValue": ""
+        "Keywords": "custom,command,line,options",
+        "ParamFieldName": "CustomOptions"
     },
     {
-        "DisplayName": "Enemy Tags",
         "Category": "Casualfield (mod)",
+        "DefaultValue": "True",
         "Description": "Enable or disable nametags ontop of enemy players when in range",
-        "Keywords": "enemy,tags",
-        "InputType": "checkbox",
+        "DisplayName": "Enemy Tags",
+        "EnumValues": {
+            "True": "True",
+            "False": "False"
+        },
         "FieldName": "bEnableEnemyTags",
+        "InputType": "checkbox",
+        "Keywords": "enemy,tags",
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bEnableEnemyTags",
-        "DefaultValue": "True",
-        "Placeholder": "True",
-        "EnumValues": {
-            "True": "True",
-            "False": "False"
-        }
+        "Placeholder": "True"
     },
     {
-        "DisplayName": "Player Tags",
         "Category": "Casualfield (mod)",
+        "DefaultValue": "True",
         "Description": "Enable or disable player tags",
+        "DisplayName": "Player Tags",
+        "EnumValues": {
+            "True": "True",
+            "False": "False"
+        },
+        "FieldName": "bAllowPlayerTags",
+        "InputType": "checkbox",
         "Keywords": "player,team,tags",
-        "InputType": "checkbox",
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bAllowPlayerTags",
-        "DefaultValue": "True",
-        "Placeholder": "True",
-        "EnumValues": {
-            "True": "True",
-            "False": "False"
-        },
-        "FieldName": "bAllowPlayerTags"
+        "Placeholder": "True"
     },
     {
-        "DisplayName": "Death Camera",
         "Category": "Casualfield (mod)",
+        "DefaultValue": "True",
         "Description": "Enable or disable death camera",
+        "DisplayName": "Death Camera",
+        "EnumValues": {
+            "True": "True",
+            "False": "False"
+        },
+        "FieldName": "bEnableDeathCamera",
+        "InputType": "checkbox",
         "Keywords": "death,camera",
-        "InputType": "checkbox",
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bEnableDeathCamera",
-        "DefaultValue": "True",
-        "Placeholder": "True",
-        "EnumValues": {
-            "True": "True",
-            "False": "False"
-        },
-        "FieldName": "bEnableDeathCamera"
+        "Placeholder": "True"
     },
     {
-        "DisplayName": "Red Dot",
         "Category": "Casualfield (mod)",
+        "DefaultValue": "True",
         "Description": "Enable or disable red dot sight",
+        "DisplayName": "Red Dot",
+        "EnumValues": {
+            "True": "True",
+            "False": "False"
+        },
+        "FieldName": "bEnableRedDot",
+        "InputType": "checkbox",
         "Keywords": "red,dot,sight",
-        "InputType": "checkbox",
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bEnableRedDot",
-        "DefaultValue": "True",
-        "Placeholder": "True",
-        "EnumValues": {
-            "True": "True",
-            "False": "False"
-        },
-        "FieldName": "bEnableRedDot"
+        "Placeholder": "True"
     },
     {
-        "DisplayName": "Minimap",
         "Category": "Casualfield (mod)",
+        "DefaultValue": "True",
         "Description": "Enable or disable minimap",
+        "DisplayName": "Minimap",
+        "EnumValues": {
+            "True": "True",
+            "False": "False"
+        },
+        "FieldName": "bAllowMinimap",
+        "InputType": "checkbox",
         "Keywords": "minimap",
-        "InputType": "checkbox",
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bAllowMinimap",
-        "DefaultValue": "True",
-        "Placeholder": "True",
-        "EnumValues": {
-            "True": "True",
-            "False": "False"
-        },
-        "FieldName": "bAllowMinimap"
+        "Placeholder": "True"
     },
     {
-        "DisplayName": "Suppression Effect",
         "Category": "Casualfield (mod)",
+        "DefaultValue": "False",
         "Description": "Enable or disable suppression effect",
+        "DisplayName": "Suppression Effect",
+        "EnumValues": {
+            "True": "True",
+            "False": "False"
+        },
+        "FieldName": "bEnableSuppressionEffect",
+        "InputType": "checkbox",
         "Keywords": "suppression,effect",
-        "InputType": "checkbox",
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bEnableSuppressionEffect",
-        "DefaultValue": "False",
-        "Placeholder": "True",
-        "EnumValues": {
-            "True": "True",
-            "False": "False"
-        },
-        "FieldName": "bEnableSuppressionEffect"
+        "Placeholder": "True"
     },
     {
-        "DisplayName": "Suppression Movement",
         "Category": "Casualfield (mod)",
+        "DefaultValue": "False",
         "Description": "Enable or disable suppression movement",
+        "DisplayName": "Suppression Movement",
+        "EnumValues": {
+            "True": "True",
+            "False": "False"
+        },
+        "FieldName": "bEnableSuppressionMovement",
+        "InputType": "checkbox",
         "Keywords": "suppression,movement",
-        "InputType": "checkbox",
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bEnableSuppressionMovement",
-        "DefaultValue": "False",
-        "Placeholder": "True",
-        "EnumValues": {
-            "True": "True",
-            "False": "False"
-        },
-        "FieldName": "bEnableSuppressionMovement"
+        "Placeholder": "True"
     },
     {
-        "DisplayName": "Squad Spawn",
         "Category": "Casualfield (mod)",
+        "DefaultValue": "True",
         "Description": "Enable or disable squad spawn",
+        "DisplayName": "Squad Spawn",
+        "EnumValues": {
+            "True": "True",
+            "False": "False"
+        },
+        "FieldName": "bAllowSquadSpawn",
+        "InputType": "checkbox",
         "Keywords": "squad,spawn",
-        "InputType": "checkbox",
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bAllowSquadSpawn",
-        "DefaultValue": "True",
-        "Placeholder": "True",
-        "EnumValues": {
-            "True": "True",
-            "False": "False"
-        },
-        "FieldName": "bAllowSquadSpawn"
+        "Placeholder": "True"
     },
     {
-        "DisplayName": "Revive",
         "Category": "Casualfield (mod)",
+        "DefaultValue": "True",
         "Description": "Enable or disable revive option",
+        "DisplayName": "Revive",
+        "EnumValues": {
+            "True": "True",
+            "False": "False"
+        },
+        "FieldName": "bAllowRevive",
+        "InputType": "checkbox",
         "Keywords": "revive",
-        "InputType": "checkbox",
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bAllowRevive",
-        "DefaultValue": "True",
-        "Placeholder": "True",
-        "EnumValues": {
-            "True": "True",
-            "False": "False"
-        },
-        "FieldName": "bAllowRevive"
+        "Placeholder": "True"
     },
     {
-        "DisplayName": "Kill Feed",
         "Category": "Casualfield (mod)",
+        "DefaultValue": "True",
         "Description": "Enable or disable kill feed",
-        "Keywords": "kill,feed",
-        "InputType": "checkbox",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bAllowKillFeed",
-        "DefaultValue": "True",
-        "Placeholder": "True",
+        "DisplayName": "Kill Feed",
         "EnumValues": {
             "True": "True",
             "False": "False"
         },
-        "FieldName": "bAllowKillFeed"
-    },
-    {
-        "DisplayName": "Min Give Up Delay",
-        "Category": "Casualfield (mod)",
-        "Description": "Minimum delay before giving up",
-        "Keywords": "giveup,delay",
-        "InputType": "number",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.MinGiveUpDelay",
-        "DefaultValue": "5",
-        "Placeholder": "5",
-        "FieldName": "MinGiveUpDelay"
-    },
-    {
-        "DisplayName": "Min Respawn Delay",
-        "Category": "Casualfield (mod)",
-        "Description": "Minimum respawn delay",
-        "Keywords": "respawn,delay",
-        "InputType": "number",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.MinRespawnDelay",
-        "DefaultValue": "10",
-        "Placeholder": "10",
-        "FieldName": "MinRespawnDelay"
-    },
-    {
-        "DisplayName": "Squad Spawn Additional Delay",
-        "Category": "Casualfield (mod)",
-        "Description": "Additional delay for squad spawn",
-        "Keywords": "squad,spawn,additional,delay",
-        "InputType": "number",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.SquadSpawnAdditionalDelay",
-        "DefaultValue": "5",
-        "Placeholder": "5",
-        "FieldName": "SquadSpawnAdditionalDelay"
-    },
-    {
-        "DisplayName": "Radial Damage Multiplier",
-        "Category": "Casualfield (mod)",
-        "Description": "Multiplier for radial damage",
-        "Keywords": "radial,damage,multiplier",
-        "InputType": "number",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.RadialDamageMultiplier",
-        "DefaultValue": "0.25",
-        "Placeholder": "0.25",
-        "FieldName": "RadialDamageMultiplier"
-    },
-    {
-        "DisplayName": "Time To Continue",
-        "Category": "Casualfield (mod)",
-        "Description": "Time to continue after death",
-        "Keywords": "time,continue",
-        "InputType": "number",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.TimeToContinue",
-        "DefaultValue": "33",
-        "Placeholder": "33",
-        "FieldName": "TimeToContinue"
-    },
-    {
-        "DisplayName": "Player Sprint Acceleration",
-        "Category": "Casualfield (mod)",
-        "Description": "Acceleration during sprint",
-        "Keywords": "player,sprint,acceleration",
-        "InputType": "number",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.PlayerSprintAcceleration",
-        "DefaultValue": "0.9",
-        "Placeholder": "0.9",
-        "FieldName": "PlayerSprintAcceleration"
-    },
-    {
-        "DisplayName": "Player Sprint Strafing Threshold",
-        "Category": "Casualfield (mod)",
-        "Description": "Threshold for strafing while sprinting",
-        "Keywords": "player,sprint,strafing,threshold",
-        "InputType": "number",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.PlayerSprintStrafingThreashold",
-        "DefaultValue": "1.0",
-        "Placeholder": "1.0",
-        "FieldName": "PlayerSprintStrafingThreashold"
-    },
-    {
-        "DisplayName": "Player Max Walk Speed",
-        "Category": "Casualfield (mod)",
-        "Description": "Maximum walk speed for players",
-        "Keywords": "player,max,walk,speed",
-        "InputType": "number",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.PlayerMaxWalkSpeed",
-        "DefaultValue": "450",
-        "Placeholder": "450",
-        "FieldName": "PlayerMaxWalkSpeed"
-    },
-    {
-        "DisplayName": "Player Fall Damage Divisor",
-        "Category": "Casualfield (mod)",
-        "Description": "Divisor for fall damage",
-        "Keywords": "player,fall,damage,divisor",
-        "InputType": "number",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.PlayerFallDamageDivisor",
-        "DefaultValue": "15",
-        "Placeholder": "15",
-        "FieldName": "PlayerFallDamageDivisor"
-    },
-    {
-        "DisplayName": "Revive On Headshot",
-        "Category": "Casualfield (mod)",
-        "Description": "Disable revive on headshots",
-        "Keywords": "revive,on,headshot",
+        "FieldName": "bAllowKillFeed",
         "InputType": "checkbox",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bNoReviveOnHeadshot",
+        "Keywords": "kill,feed",
+        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bAllowKillFeed",
+        "Placeholder": "True"
+    },
+    {
+        "Category": "Casualfield (mod)",
+        "DefaultValue": "5",
+        "Description": "Minimum delay before giving up",
+        "DisplayName": "Min Give Up Delay",
+        "FieldName": "MinGiveUpDelay",
+        "InputType": "number",
+        "Keywords": "giveup,delay",
+        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.MinGiveUpDelay",
+        "Placeholder": "5"
+    },
+    {
+        "Category": "Casualfield (mod)",
+        "DefaultValue": "10",
+        "Description": "Minimum respawn delay",
+        "DisplayName": "Min Respawn Delay",
+        "FieldName": "MinRespawnDelay",
+        "InputType": "number",
+        "Keywords": "respawn,delay",
+        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.MinRespawnDelay",
+        "Placeholder": "10"
+    },
+    {
+        "Category": "Casualfield (mod)",
+        "DefaultValue": "5",
+        "Description": "Additional delay for squad spawn",
+        "DisplayName": "Squad Spawn Additional Delay",
+        "FieldName": "SquadSpawnAdditionalDelay",
+        "InputType": "number",
+        "Keywords": "squad,spawn,additional,delay",
+        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.SquadSpawnAdditionalDelay",
+        "Placeholder": "5"
+    },
+    {
+        "Category": "Casualfield (mod)",
+        "DefaultValue": "0.25",
+        "Description": "Multiplier for radial damage",
+        "DisplayName": "Radial Damage Multiplier",
+        "FieldName": "RadialDamageMultiplier",
+        "InputType": "number",
+        "Keywords": "radial,damage,multiplier",
+        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.RadialDamageMultiplier",
+        "Placeholder": "0.25"
+    },
+    {
+        "Category": "Casualfield (mod)",
+        "DefaultValue": "33",
+        "Description": "Time to continue after death",
+        "DisplayName": "Time To Continue",
+        "FieldName": "TimeToContinue",
+        "InputType": "number",
+        "Keywords": "time,continue",
+        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.TimeToContinue",
+        "Placeholder": "33"
+    },
+    {
+        "Category": "Casualfield (mod)",
+        "DefaultValue": "0.9",
+        "Description": "Acceleration during sprint",
+        "DisplayName": "Player Sprint Acceleration",
+        "FieldName": "PlayerSprintAcceleration",
+        "InputType": "number",
+        "Keywords": "player,sprint,acceleration",
+        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.PlayerSprintAcceleration",
+        "Placeholder": "0.9"
+    },
+    {
+        "Category": "Casualfield (mod)",
+        "DefaultValue": "1.0",
+        "Description": "Threshold for strafing while sprinting",
+        "DisplayName": "Player Sprint Strafing Threshold",
+        "FieldName": "PlayerSprintStrafingThreashold",
+        "InputType": "number",
+        "Keywords": "player,sprint,strafing,threshold",
+        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.PlayerSprintStrafingThreashold",
+        "Placeholder": "1.0"
+    },
+    {
+        "Category": "Casualfield (mod)",
+        "DefaultValue": "450",
+        "Description": "Maximum walk speed for players",
+        "DisplayName": "Player Max Walk Speed",
+        "FieldName": "PlayerMaxWalkSpeed",
+        "InputType": "number",
+        "Keywords": "player,max,walk,speed",
+        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.PlayerMaxWalkSpeed",
+        "Placeholder": "450"
+    },
+    {
+        "Category": "Casualfield (mod)",
+        "DefaultValue": "15",
+        "Description": "Divisor for fall damage",
+        "DisplayName": "Player Fall Damage Divisor",
+        "FieldName": "PlayerFallDamageDivisor",
+        "InputType": "number",
+        "Keywords": "player,fall,damage,divisor",
+        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.PlayerFallDamageDivisor",
+        "Placeholder": "15"
+    },
+    {
+        "Category": "Casualfield (mod)",
         "DefaultValue": "False",
+        "Description": "Disable revive on headshots",
+        "DisplayName": "Revive On Headshot",
         "EnumValues": {
             "True": "False",
             "False": "True"
         },
-        "FieldName": "bNoReviveOnHeadshot"
+        "FieldName": "bNoReviveOnHeadshot",
+        "InputType": "checkbox",
+        "Keywords": "revive,on,headshot",
+        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bNoReviveOnHeadshot"
     },
     {
-        "DisplayName": "Auto Spawn Radius",
         "Category": "Casualfield (mod)",
-        "Description": "Radius for auto spawning",
-        "Keywords": "auto,spawn,radius",
-        "InputType": "number",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.AutoSpawnRadius",
         "DefaultValue": "750",
-        "Placeholder": "750",
-        "FieldName": "AutoSpawnRadius"
+        "Description": "Radius for auto spawning",
+        "DisplayName": "Auto Spawn Radius",
+        "FieldName": "AutoSpawnRadius",
+        "InputType": "number",
+        "Keywords": "auto,spawn,radius",
+        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.AutoSpawnRadius",
+        "Placeholder": "750"
     }
 ]
