@@ -7,8 +7,7 @@
         "FieldName": "ServerName",
         "InputType": "text",
         "ParamFieldName": "ServerName",
-        "DefaultValue": "AMP Powered Operation: Harsh Doorstop Server",
-        "EnumValues": {}
+        "DefaultValue": "AMP Powered Operation: Harsh Doorstop Server"
     },
     {
         "DisplayName": "Initial Map",
@@ -45,8 +44,7 @@
         "InputType": "text",
         "ParamFieldName": "CustomMap",
         "DefaultValue": "",
-        "Placeholder": "AAS_Trainyard",
-        "EnumValues": {}
+        "Placeholder": "AAS_Trainyard"
     },
     {
         "DisplayName": "Map Cycle",
@@ -57,8 +55,7 @@
         "InputType": "list",
         "ParamFieldName": "MapCycle",
         "DefaultValue": "",
-        "Special": "listfile:./operation-harsh-doorstop/950900/HarshDoorstop/Saved/Config/WindowsServer/MapCycle.cfg",
-        "EnumValues": {}
+        "Special": "listfile:./operation-harsh-doorstop/950900/HarshDoorstop/Saved/Config/WindowsServer/MapCycle.cfg"
     },
     {
         "DisplayName": "Custom Mode",
@@ -93,8 +90,7 @@
         "InputType": "text",
         "ParamFieldName": "CustomMode",
         "DefaultValue": "",
-        "Placeholder": "/pathToGamemode/GameModeBPname.GameModeBPname_C",
-        "EnumValues": {}
+        "Placeholder": "/pathToGamemode/GameModeBPname.GameModeBPname_C"
     },
     {
         "DisplayName": "Server Admins",
@@ -105,8 +101,7 @@
         "InputType": "list",
         "ParamFieldName": "AdminList",
         "DefaultValue": "",
-        "Special": "listfile:./operation-harsh-doorstop/950900/HarshDoorstop/Saved/Config/WindowsServer/Admins.cfg",
-        "EnumValues": {}
+        "Special": "listfile:./operation-harsh-doorstop/950900/HarshDoorstop/Saved/Config/WindowsServer/Admins.cfg"
     },
     {
         "DisplayName": "Server Password",
@@ -118,8 +113,7 @@
         "ParamFieldName": "Password",
         "IncludeInCommandLine": true,
         "SkipIfEmpty": true,
-        "DefaultValue": "",
-        "EnumValues": {}
+        "DefaultValue": ""
     },
     {
         "DisplayName": "RCON Password",
@@ -129,8 +123,7 @@
         "FieldName": "RCONPassword",
         "InputType": "hidden",
         "ParamFieldName": "RCONPassword",
-        "IncludeInCommandLine": false,
-        "EnumValues": {}
+        "IncludeInCommandLine": false
     },
     {
         "DisplayName": "Whitelisted Players",
@@ -141,8 +134,7 @@
         "InputType": "list",
         "ParamFieldName": "Whitelist",
         "DefaultValue": "",
-        "Special": "listfile:./operation-harsh-doorstop/950900/HarshDoorstop/Saved/Config/WindowsServer/Whitelist.cfg",
-        "EnumValues": {}
+        "Special": "listfile:./operation-harsh-doorstop/950900/HarshDoorstop/Saved/Config/WindowsServer/Whitelist.cfg"
     },
     {
         "DisplayName": "Banned Players",
@@ -153,8 +145,7 @@
         "InputType": "list",
         "ParamFieldName": "BanList",
         "DefaultValue": "",
-        "Special": "listfile:./operation-harsh-doorstop/950900/HarshDoorstop/Saved/Config/WindowsServer/Bans.cfg",
-        "EnumValues": {}
+        "Special": "listfile:./operation-harsh-doorstop/950900/HarshDoorstop/Saved/Config/WindowsServer/Bans.cfg"
     },
     {
         "DisplayName": "Player Limit",
@@ -168,8 +159,7 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "16",
         "Placeholder": "16",
-        "Suffix": "players",
-        "EnumValues": {}
+        "Suffix": "players"
     },
     {
         "DisplayName": "Minimum Players To Start",
@@ -183,8 +173,7 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "0",
         "Placeholder": "0",
-        "Suffix": "players",
-        "EnumValues": {}
+        "Suffix": "players"
     },
     {
         "DisplayName": "Auto Assign Human Team",
@@ -280,8 +269,7 @@
         "InputType": "text",
         "ParamFieldName": "CustomBluforFaction",
         "DefaultValue": "",
-        "Placeholder": "",
-        "EnumValues": {}
+        "Placeholder": ""
     },
     {
         "DisplayName": "BluFor Tickets",
@@ -295,8 +283,7 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "500",
         "Placeholder": "500",
-        "Suffix": "tickets",
-        "EnumValues": {}
+        "Suffix": "tickets"
     },
     {
         "DisplayName": "BluFor Bots",
@@ -310,8 +297,7 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "0",
         "Placeholder": "0",
-        "Suffix": "bots",
-        "EnumValues": {}
+        "Suffix": "bots"
     },
     {
         "DisplayName": "OpFor Faction",
@@ -363,8 +349,7 @@
         "InputType": "text",
         "ParamFieldName": "CustomOpforFaction",
         "DefaultValue": "",
-        "Placeholder": "",
-        "EnumValues": {}
+        "Placeholder": ""
     },
     {
         "DisplayName": "OpFor Tickets",
@@ -378,8 +363,7 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "500",
         "Placeholder": "500",
-        "Suffix": "tickets",
-        "EnumValues": {}
+        "Suffix": "tickets"
     },
     {
         "DisplayName": "OpFor Bots",
@@ -393,8 +377,7 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "0",
         "Placeholder": "0",
-        "Suffix": "bots",
-        "EnumValues": {}
+        "Suffix": "bots"
     },
     {
         "DisplayName": "MultiHome IP Binding",
@@ -403,8 +386,7 @@
         "Keywords": "ip,binding,address,multihome",
         "FieldName": "MultiHome",
         "InputType": "hidden",
-        "ParamFieldName": "MultiHome",
-        "EnumValues": {}
+        "ParamFieldName": "MultiHome"
     },
     {
         "DisplayName": "Steam Web API Key",
@@ -416,8 +398,7 @@
         "ParamFieldName": "SteamWebApiKey",
         "DefaultValue": "",
         "Placeholder": "",
-        "IncludeInCommandLine": true,
-        "EnumValues": {}
+        "IncludeInCommandLine": true
     },
     {
         "DisplayName": "Custom Command Line Flags",
@@ -428,8 +409,7 @@
         "InputType": "text",
         "ParamFieldName": "CustomFlags",
         "DefaultValue": "",
-        "Placeholder": "-RCONMaxActiveConnections=5 -SupportersOnly",
-        "EnumValues": {}
+        "Placeholder": "-RCONMaxActiveConnections=5 -SupportersOnly"
     },
     {
         "DisplayName": "Custom Command Line Options",
@@ -439,8 +419,7 @@
         "FieldName": "CustomOptions",
         "InputType": "text",
         "ParamFieldName": "CustomOptions",
-        "DefaultValue": "",
-        "EnumValues": {}
+        "DefaultValue": ""
     },
     {
         "DisplayName": "Enemy Tags",
