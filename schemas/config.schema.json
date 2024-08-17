@@ -101,16 +101,14 @@
                     "description": "If true, the field must be supplied for the server to start"
                 },
                 "MinValue": {
-                    "type": "string",
-                    "format": "integer",
+                    "type": "number",
                     "minimum": -2147483648,
                     "maximum": 2147483647,
                     "default": -2147483648,
                     "description": "The lowest value allowed for a number `InputType`. Must be a whole number"
                 },
                 "MaxValue": {
-                    "type": "string",
-                    "format": "integer",
+                    "type": "number",
                     "minimum": -2147483648,
                     "maximum": 2147483647,
                     "default": 2147483647,
