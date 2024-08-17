@@ -1,6 +1,7 @@
 [
     {
         "Category": "OHD Server Settings:dns",
+        "Subcategory": "General:dns:0",
         "DefaultValue": "AMP Powered Operation: Harsh Doorstop Server",
         "Description": "Sets the name of the server as it appears publicly in the server browser",
         "DisplayName": "Server Name",
@@ -11,6 +12,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
+        "Subcategory": "General:dns:0",
         "DefaultValue": "AAS-TestMap",
         "Description": "Sets the map for the server. If \"Custom\" is selected, Custom Map Name must also be set",
         "DisplayName": "Initial Map",
@@ -37,6 +39,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
+        "Subcategory": "General:dns:0",
         "DefaultValue": "",
         "Description": "Sets a custom map for the server. \"Custom\" type must be selected under Map, and the map files included in HarshDoorstop/Mods",
         "DisplayName": "Custom Map Name",
@@ -48,6 +51,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
+        "Subcategory": "General:dns:0",
         "DefaultValue": "",
         "Description": "List of [proper names](https://operation-harsh-doorstop.fandom.com/wiki/Server_Install_Instructions#MapCycle.cfg) of maps to run in sequence on the server after the initial map, in the order to be run",
         "DisplayName": "Map Cycle",
@@ -59,6 +63,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
+        "Subcategory": "General:dns:0",
         "DefaultValue": "",
         "Description": "Sets the path to a modded gamemode for the server to run",
         "DisplayName": "Custom Mode",
@@ -83,6 +88,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
+        "Subcategory": "General:dns:0",
         "DefaultValue": "",
         "Description": "Sets a custom gamemode for the server. \"Custom\" type must be selected under Mode, and the mode files included in HarshDoorstop/Mods",
         "DisplayName": "Custom Mode Name",
@@ -94,6 +100,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
+        "Subcategory": "General:dns:0",
         "DefaultValue": "",
         "Description": "List of [Steam64 IDs](https://steamidfinder.com/) for server admins",
         "DisplayName": "Server Admins",
@@ -105,6 +112,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
+        "Subcategory": "General:dns:0",
         "DefaultValue": "",
         "Description": "Sets the password for players to join the server. Don't include a question mark",
         "DisplayName": "Server Password",
@@ -127,6 +135,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
+        "Subcategory": "General:dns:0",
         "DefaultValue": "",
         "Description": "List of [Steam64 IDs](https://steamidfinder.com/) for whitelisted players. Empty = whitelist disabled",
         "DisplayName": "Whitelisted Players",
@@ -138,6 +147,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
+        "Subcategory": "General:dns:0",
         "DefaultValue": "",
         "Description": "List of [Steam64 IDs](https://steamidfinder.com/) for banned players",
         "DisplayName": "Banned Players",
@@ -149,6 +159,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
+        "Subcategory": "General:dns:0",
         "DefaultValue": "16",
         "Description": "Sets the maximum number of players able to join the server at one time",
         "DisplayName": "Player Limit",
@@ -163,6 +174,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
+        "Subcategory": "General:dns:0",
         "DefaultValue": "0",
         "Description": "Sets the minimum number of players required to start a match",
         "DisplayName": "Minimum Players To Start",
@@ -177,6 +189,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
+        "Subcategory": "General:dns:0",
         "DefaultValue": "255",
         "Description": "Sets the team (if any) that human-controlled players will be forcibly assigned and locked into (cannot switch teams). This is useful for co-op servers",
         "DisplayName": "Auto Assign Human Team",
@@ -193,6 +206,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
+        "Subcategory": "General:dns:0",
         "DefaultValue": "",
         "Description": "If set, player kit restrictions will be disabled",
         "DisplayName": "Disable Kit Restrictions",
@@ -207,6 +221,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
+        "Subcategory": "General:dns:0",
         "DefaultValue": "-SupportersOnly",
         "Description": "Wether only people that bought the supporter DLC will be able to join",
         "DisplayName": "Custom Command Line Flags",
@@ -218,6 +233,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
+        "Subcategory": "General:dns:0",
         "DefaultValue": "",
         "Description": "If enabled, the server will fill empty slots with bots to satisfy the Minimum Players To Start number, and remove them if human players join to take their place",
         "DisplayName": "Autofill Bots",
@@ -409,6 +425,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
+        "Subcategory": "General:dns:0",
         "DefaultValue": "",
         "Description": "Sets your WebApiKey= in 'HarshDoorstop/Saved/Config/WindowsServer/Engine.ini' so your server enjoys the full featureset, you can get your key from steam://openurl/https://steamcommunity.com/dev/apikey",
         "DisplayName": "Steam Web API Key",
