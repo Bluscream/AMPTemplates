@@ -421,7 +421,7 @@
         "Description": "If required, you can change the binding of the server and Source RCON by changing the 'Server IP Address' setting under Security and Privacy. Ensure AMP itself can reach that IP or the console will not work",
         "DisplayName": "MultiHome IP Binding",
         "FieldName": "MultiHome",
-        "InputType": "hidden",
+        "InputType": "text",
         "Keywords": "ip,binding,address,multihome",
         "ParamFieldName": "MultiHome"
     },
@@ -432,10 +432,10 @@
         "Description": "Sets your WebApiKey= in 'HarshDoorstop/Saved/Config/WindowsServer/Engine.ini' so your server enjoys the full featureset, you can get your key from steam://openurl/https://steamcommunity.com/dev/apikey",
         "DisplayName": "Steam Web API Key",
         "FieldName": "SteamWebApiKey",
-        "IncludeInCommandLine": true,
+        "IncludeInCommandLine": false,
         "InputType": "password",
         "Keywords": "steam",
-        "ParamFieldName": "SteamWebApiKey",
+        "ParamFieldName": "OnlineSubsystemSteam.WebApiKey",
         "Placeholder": ""
     },
     {
