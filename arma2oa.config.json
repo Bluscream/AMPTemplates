@@ -1042,7 +1042,7 @@
         "InputType": "number",
         "IsFlagArgument": false,
         "Keywords": "wait,time,manual,kick,kicktimeout",
-        "MinValue": "-2",
+        "MinValue": -2,
         "ParamFieldName": "kickManual",
         "Placeholder": "-1",
         "Suffix": "seconds"
@@ -1058,7 +1058,7 @@
         "InputType": "number",
         "IsFlagArgument": false,
         "Keywords": "wait,time,connectivity,kick,kicktimeout",
-        "MinValue": "-2",
+        "MinValue": -2,
         "ParamFieldName": "kickConnectivity",
         "Placeholder": "180",
         "Suffix": "seconds"
@@ -1074,7 +1074,7 @@
         "InputType": "number",
         "IsFlagArgument": false,
         "Keywords": "wait,time,battleye,kick,kicktimeout",
-        "MinValue": "-2",
+        "MinValue": -2,
         "ParamFieldName": "kickBattlEye",
         "Placeholder": "180",
         "Suffix": "seconds"
@@ -1090,7 +1090,7 @@
         "InputType": "number",
         "IsFlagArgument": false,
         "Keywords": "wait,time,harmless,kick,kicktimeout",
-        "MinValue": "-2",
+        "MinValue": -2,
         "ParamFieldName": "kickHarmless",
         "Placeholder": "180",
         "Suffix": "seconds"
