@@ -1,4 +1,5 @@
 {
+    "$id": "http://json-schema.org/draft-06/schema#",
     "$schema": "http://json-schema.org/draft-06/schema#",
     "type": "array",
     "items": {
@@ -12,21 +13,30 @@
                 "DisplayName": {
                     "type": "string",
                     "default": "",
-                    "examples": ["Config Element"],
+                    "examples": [
+                        "Config Element"
+                    ],
                     "description": "The title displayed for the input"
                 },
                 "Category": {
                     "type": "string",
                     "pattern": "^[\\w\\-_ ]+(:[\\w_]+)?$",
                     "default": "",
-                    "examples": ["Server Settings","Server Settings:material_icon"],
+                    "examples": [
+                        "Server Settings",
+                        "Server Settings:material_icon"
+                    ],
                     "description": "This determines what tab the setting will appear under in the left side menu. Settings are automatically grouped together based on their category. Colon seperated string denoting the <actual name as shown to the user>:<the [material icon](https://fonts.google.com/icons) to use>"
                 },
                 "Subcategory": {
                     "type": "string",
                     "pattern": "^[\\w\\-_ ]+(:[\\w_]+)?(:-?\\d+)?$",
                     "default": "",
-                    "examples": ["Server Settings","Server Settings:material_icon","Server Settings:material_icon:1"],
+                    "examples": [
+                        "Server Settings",
+                        "Server Settings:material_icon",
+                        "Server Settings:material_icon:1"
+                    ],
                     "description": "⚠️ Undocumented Key | Colon seperated string denoting the <actual name as shown to the user>:<the [material icon](https://fonts.google.com/icons) to use>:<the order in the menu as number>"
                 },
                 "Description": {
@@ -37,7 +47,9 @@
                 "Keywords": {
                     "type": "string",
                     "default": "",
-                    "examples": [ "key,words" ]
+                    "examples": [
+                        "key,words"
+                    ]
                 },
                 "FieldName": {
                     "type": "string",
@@ -50,7 +62,10 @@
                 "ParamFieldName": {
                     "type": "string",
                     "default": "",
-                    "examples": ["field","category.field"],
+                    "examples": [
+                        "field",
+                        "category.field"
+                    ],
                     "description": "If this setting is included in the formatted command line flags, what the name of the field is. This links to the value in the config file defined in the metaconfig.json file. XPath (XML) and JPath (JSON) may be used for nested values. For INI files you can use category.field."
                 },
                 "DefaultValue": {
@@ -121,7 +136,11 @@
                 "Suffix": {
                     "type": "string",
                     "default": "",
-                    "examples": ["ms","min","hr"],
+                    "examples": [
+                        "ms",
+                        "min",
+                        "hr"
+                    ],
                     "description": "This is listed inside the input box on the right side. Should be used for measurements"
                 }
             },
