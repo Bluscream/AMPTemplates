@@ -757,7 +757,7 @@
         "FieldName": "AutoSpawnRadius",
         "InputType": "number",
         "Keywords": "auto,spawn,radius",
-        "ParamFieldName": "/casualcqb/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.AutoSpawnRadius",
+        "ParamFieldName": "AutoSpawnRadius",
         "Placeholder": "750"
     }
 ]
