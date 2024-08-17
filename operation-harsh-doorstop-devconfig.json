@@ -64,7 +64,7 @@
         "DisplayName": "Custom Mode",
         "EnumValues": {
             "": "None",
-            "/CasualCQB/Core/BP_HDGame_Skirmish_CQB.BP_HDGame_Skirmish_CQB_C": "CasualField (mod)",
+            "/CasualCQB/Core/BP_HDGame_Skirmish_CQB.BP_HDGame_Skirmish_CQB_C": "Casualfield - mod",
             "/CasualMode/Core/BP_HDGame_AdvanceAndSecure_CasualMode.BP_HDGame_AdvanceAndSecure_CasualMode_C": "Casual Warfare (mod)",
             "/BigLearning/Core/BP_BLGame_Testing.BP_BLGame_Testing_C": "Vehicle Overhaul (mod)",
             "/bodycam/Core/BP_HDGame_BodycamAAS": "Bodycam (mod)",
@@ -422,7 +422,7 @@
         "ParamFieldName": "CustomOptions"
     },
     {
-        "Category": "Casualfield (mod)",
+        "Category": "Casualfield - mod",
         "DefaultValue": "True",
         "Description": "Enable or disable nametags ontop of enemy players when in range",
         "DisplayName": "Enemy Tags",
@@ -437,7 +437,7 @@
         "Placeholder": "True"
     },
     {
-        "Category": "Casualfield (mod)",
+        "Category": "Casualfield - mod",
         "DefaultValue": "True",
         "Description": "Enable or disable player tags",
         "DisplayName": "Player Tags",
@@ -452,7 +452,7 @@
         "Placeholder": "True"
     },
     {
-        "Category": "Casualfield (mod)",
+        "Category": "Casualfield - mod",
         "DefaultValue": "True",
         "Description": "Enable or disable death camera",
         "DisplayName": "Death Camera",
@@ -467,7 +467,7 @@
         "Placeholder": "True"
     },
     {
-        "Category": "Casualfield (mod)",
+        "Category": "Casualfield - mod",
         "DefaultValue": "True",
         "Description": "Enable or disable red dot sight",
         "DisplayName": "Red Dot",
@@ -482,7 +482,7 @@
         "Placeholder": "True"
     },
     {
-        "Category": "Casualfield (mod)",
+        "Category": "Casualfield - mod",
         "DefaultValue": "True",
         "Description": "Enable or disable minimap",
         "DisplayName": "Minimap",
@@ -497,7 +497,7 @@
         "Placeholder": "True"
     },
     {
-        "Category": "Casualfield (mod)",
+        "Category": "Casualfield - mod",
         "DefaultValue": "False",
         "Description": "Enable or disable suppression effect",
         "DisplayName": "Suppression Effect",
@@ -512,7 +512,7 @@
         "Placeholder": "True"
     },
     {
-        "Category": "Casualfield (mod)",
+        "Category": "Casualfield - mod",
         "DefaultValue": "False",
         "Description": "Enable or disable suppression movement",
         "DisplayName": "Suppression Movement",
@@ -527,7 +527,7 @@
         "Placeholder": "True"
     },
     {
-        "Category": "Casualfield (mod)",
+        "Category": "Casualfield - mod",
         "DefaultValue": "True",
         "Description": "Enable or disable squad spawn",
         "DisplayName": "Squad Spawn",
@@ -542,7 +542,7 @@
         "Placeholder": "True"
     },
     {
-        "Category": "Casualfield (mod)",
+        "Category": "Casualfield - mod",
         "DefaultValue": "True",
         "Description": "Enable or disable revive option",
         "DisplayName": "Revive",
@@ -557,7 +557,7 @@
         "Placeholder": "True"
     },
     {
-        "Category": "Casualfield (mod)",
+        "Category": "Casualfield - mod",
         "DefaultValue": "True",
         "Description": "Enable or disable kill feed",
         "DisplayName": "Kill Feed",
@@ -572,7 +572,7 @@
         "Placeholder": "True"
     },
     {
-        "Category": "Casualfield (mod)",
+        "Category": "Casualfield - mod",
         "DefaultValue": "5",
         "Description": "Minimum delay before giving up",
         "DisplayName": "Min Give Up Delay",
@@ -583,7 +583,7 @@
         "Placeholder": "5"
     },
     {
-        "Category": "Casualfield (mod)",
+        "Category": "Casualfield - mod",
         "DefaultValue": "10",
         "Description": "Minimum respawn delay",
         "DisplayName": "Min Respawn Delay",
@@ -594,7 +594,7 @@
         "Placeholder": "10"
     },
     {
-        "Category": "Casualfield (mod)",
+        "Category": "Casualfield - mod",
         "DefaultValue": "5",
         "Description": "Additional delay for squad spawn",
         "DisplayName": "Squad Spawn Additional Delay",
@@ -605,7 +605,7 @@
         "Placeholder": "5"
     },
     {
-        "Category": "Casualfield (mod)",
+        "Category": "Casualfield - mod",
         "DefaultValue": "0.25",
         "Description": "Multiplier for radial damage",
         "DisplayName": "Radial Damage Multiplier",
@@ -616,7 +616,7 @@
         "Placeholder": "0.25"
     },
     {
-        "Category": "Casualfield (mod)",
+        "Category": "Casualfield - mod",
         "DefaultValue": "33",
         "Description": "Time to continue after death",
         "DisplayName": "Time To Continue",
@@ -627,7 +627,7 @@
         "Placeholder": "33"
     },
     {
-        "Category": "Casualfield (mod)",
+        "Category": "Casualfield - mod",
         "DefaultValue": "0.9",
         "Description": "Acceleration during sprint",
         "DisplayName": "Player Sprint Acceleration",
@@ -638,7 +638,7 @@
         "Placeholder": "0.9"
     },
     {
-        "Category": "Casualfield (mod)",
+        "Category": "Casualfield - mod",
         "DefaultValue": "1.0",
         "Description": "Threshold for strafing while sprinting",
         "DisplayName": "Player Sprint Strafing Threshold",
@@ -649,7 +649,7 @@
         "Placeholder": "1.0"
     },
     {
-        "Category": "Casualfield (mod)",
+        "Category": "Casualfield - mod",
         "DefaultValue": "450",
         "Description": "Maximum walk speed for players",
         "DisplayName": "Player Max Walk Speed",
@@ -660,7 +660,7 @@
         "Placeholder": "450"
     },
     {
-        "Category": "Casualfield (mod)",
+        "Category": "Casualfield - mod",
         "DefaultValue": "15",
         "Description": "Divisor for fall damage",
         "DisplayName": "Player Fall Damage Divisor",
@@ -671,7 +671,7 @@
         "Placeholder": "15"
     },
     {
-        "Category": "Casualfield (mod)",
+        "Category": "Casualfield - mod",
         "DefaultValue": "False",
         "Description": "Disable revive on headshots",
         "DisplayName": "Revive On Headshot",
@@ -685,7 +685,7 @@
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bNoReviveOnHeadshot"
     },
     {
-        "Category": "Casualfield (mod)",
+        "Category": "Casualfield - mod",
         "DefaultValue": "750",
         "Description": "Radius for auto spawning",
         "DisplayName": "Auto Spawn Radius",
