@@ -31,10 +31,12 @@
           "type": "string"
         },
         "_Meta_GithubOrigin": {
-          "type": "string"
+          "type": "string",
+          "format": "uri"
         },
         "_Meta_GithubURL": {
-          "type": "string"
+          "type": "string",
+          "format": "uri"
         },
         "Meta_URL": {
           "type": "string"
