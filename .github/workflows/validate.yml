@@ -57,4 +57,3 @@
             schema: schemas/generator.schema.json
             # mode: lax
             fixSchemas: true
-            extraFormats: true
