@@ -55,4 +55,4 @@
           with:
             file: '*.generator.json'
             schema: schemas/generator.schema.json
-            # mode: strong
+            mode: spec

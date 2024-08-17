@@ -31,10 +31,21 @@
                   "type": "string"
               },
               "_Meta_GithubOrigin": {
-                  "type": "string"
+                  "type": "string",
+                  "format": "uri",
+                  "qt-uri-protocols": [
+                      "https"
+                  ],
+                  "qt-uri-extensions": [
+                      ".git"
+                  ]
               },
               "_Meta_GithubURL": {
-                  "type": "string"
+                  "type": "string",
+                  "format": "uri",
+                  "qt-uri-protocols": [
+                      "https"
+                  ]
               },
               "Meta_URL": {
                   "type": "string"
@@ -61,19 +72,19 @@
                   "type": "string"
               },
               "_SupportsWindows": {
-                 "type": "string"
+                  "type": "boolean"
               },
               "_SupportsLinux": {
-                 "type": "string"
+                  "type": "boolean"
               },
               "App_AdminMethod": {
                   "type": "string"
               },
               "App_HasReadableConsole": {
-                 "type": "string"
+                  "type": "boolean"
               },
               "App_HasWritableConsole": {
-                 "type": "string"
+                  "type": "boolean"
               },
               "App_DisplayName": {
                   "type": "string"
@@ -91,7 +102,8 @@
                   "type": "string"
               },
               "App_RapidStartup": {
-                 "type": "string"
+                  "type": "string",
+                  "format": "boolean"
               },
               "App_ApplicationReadyMode": {
                   "type": "string"
@@ -103,7 +115,8 @@
                   "type": "string"
               },
               "App_ExitTimeout": {
-                  "type": "string"
+                  "type": "string",
+                  "format": "integer"
               },
               "App_ExitFile": {
                   "type": "string"
@@ -130,7 +143,8 @@
                   "type": "string"
               },
               "App_MaxUsers": {
-                  "type": "string"
+                  "type": "string",
+                  "format": "integer"
               },
               "App_UseRandomAdminPassword": {
                   "type": "string"
@@ -142,16 +156,19 @@
                   "type": "string"
               },
               "App_RCONConnectDelaySeconds": {
-                 "type": "string"
+                  "type": "string",
+                  "format": "integer"
               },
               "App_RCONConnectRetrySeconds": {
-                 "type": "string"
+                  "type": "string",
+                  "format": "integer"
               },
               "App_RCONHeartbeatCommand": {
                   "type": "string"
               },
               "App_RCONHeartbeatMinutes": {
-                 "type": "string"
+                  "type": "string",
+                  "format": "integer"
               },
               "App_TelnetLoginFormat": {
                   "type": "string"
@@ -175,12 +192,16 @@
                   "type": "string"
               },
               "App_MonitorChildProcessWaitMs": {
-                 "type": "string"
+                  "type": "string",
+                  "format": "integer"
               },
               "App_MonitorChildProcessName": {
                   "type": "string"
               },
               "App_Compatibility": {
+                  "type": "string"
+              },
+              "_App_SteamWorkshopDownloadLocation": {
                   "type": "string"
               },
               "App_SteamWorkshopDownloadLocation": {
@@ -226,26 +247,30 @@
                   "type": "string"
               },
               "Console_SleepDelayMinutes": {
-                 "type": "string"
+                  "type": "string",
+                  "format": "integer"
               },
               "Console_DozeDelay": {
-                 "type": "string"
+                  "type": "string",
+                  "format": "integer"
               },
               "Console_AutoRetryCount": {
-                 "type": "string"
+                  "type": "string",
+                  "format": "integer"
               },
               "Console_SleepStartThresholdSeconds": {
-                 "type": "string"
+                  "type": "string",
+                  "format": "integer"
               },
               "_PortMappings": {
                   "type": "array",
-                  "items": {}
+                  "items": {
+                      "$ref": "#/definitions/PortMapping"
+                  }
               },
               "_ConfigFileMappings": {
                   "type": "array",
-                  "items": {
-                      "$ref": "#/definitions/ConfigFileMapping"
-                  }
+                  "items": {}
               },
               "_UpdateSourceURL": {
                   "type": "string"
@@ -254,10 +279,10 @@
                   "type": "string"
               },
               "_UpdateSourceUnzip": {
-                 "type": "string"
+                  "type": "boolean"
               },
               "_DisplayImageSource": {
-                 "type": "string"
+                  "type": "string"
               },
               "_SteamServerAppID": {
                   "type": "string"
@@ -293,7 +318,7 @@
                   "type": "string"
               },
               "Meta_OS": {
-                 "type": "string"
+                  "type": "integer"
               },
               "Meta_ConfigManifest": {
                   "type": "string"
@@ -314,7 +339,8 @@
                   "type": "string"
               },
               "_SteamCheck": {
-                 "type": "string"
+                  "type": "string",
+                  "format": "integer"
               },
               "Meta_DisplayImageSource": {
                   "type": "string"
@@ -323,10 +349,12 @@
                   "type": "string"
               },
               "App_WorkingDir": {
-                  "type": "string"
+                  "type": "string",
+                  "format": "integer"
               },
               "_SteamClientAppID": {
-                  "type": "string"
+                  "type": "string",
+                  "format": "integer"
               },
               "App_ExecutableWin": {
                   "type": "string"
@@ -354,7 +382,7 @@
                   "items": {}
               },
               "isValid": {
-                 "type": "string"
+                  "type": "boolean"
               }
           },
           "required": [],
@@ -383,13 +411,13 @@
                   "type": "string"
               },
               "IsFlagArgument": {
-                 "type": "string"
+                  "type": "boolean"
               },
               "ParamFieldName": {
                   "type": "string"
               },
               "IncludeInCommandLine": {
-                 "type": "string"
+                  "type": "boolean"
               },
               "DefaultValue": {
                   "type": "string"
@@ -398,19 +426,21 @@
                   "type": "string"
               },
               "Suffix": {
-                  "$ref": "#/definitions/Suffix"
+                  "type": "string"
               },
               "Hidden": {
-                 "type": "string"
+                  "type": "boolean"
               },
               "SkipIfEmpty": {
-                 "type": "string"
+                  "type": "boolean"
               },
               "_CheckedValue": {
-                 "type": "string"
+                  "type": "string",
+                  "format": "boolean"
               },
               "_UncheckedValue": {
-                 "type": "string"
+                  "type": "string",
+                  "format": "boolean"
               },
               "_EnumMappings": {
                   "type": "array",
@@ -426,39 +456,44 @@
       "EnumValues": {
           "type": "object",
           "additionalProperties": false,
-          "properties": {
-              "true": {
-                  "type": "string"
-              },
-              "false": {
-                  "type": "string"
-              }
-          },
-          "required": [],
           "title": "EnumValues"
       },
-      "ConfigFileMapping": {
+      "PortMapping": {
           "type": "object",
           "additionalProperties": false,
           "properties": {
-              "ConfigFile": {
+              "_Protocol": {
+                  "type": "string",
+                  "format": "integer"
+              },
+              "Protocol": {
                   "type": "string"
               },
-              "_ConfigType": {
-                 "type": "string"
+              "Port": {
+                  "type": "string",
+                  "format": "integer"
               },
-              "ConfigType": {
+              "_PortType": {
                   "type": "string"
               },
-              "_AutoMap": {
-                 "type": "string"
+              "_Name": {
+                  "type": "string"
               },
-              "AutoMap": {
-                 "type": "string"
+              "Name": {
+                  "type": "string"
+              },
+              "_Description": {
+                  "type": "string"
+              },
+              "Description": {
+                  "type": "string"
+              },
+              "Ref": {
+                  "type": "string"
               }
           },
           "required": [],
-          "title": "ConfigFileMapping"
+          "title": "PortMapping"
       },
       "UpdateStage": {
           "type": "object",
@@ -468,13 +503,15 @@
                   "type": "string"
               },
               "_UpdateSourcePlatform": {
-                 "type": "string"
+                  "type": "string",
+                  "format": "integer"
               },
               "UpdateSourcePlatform": {
                   "type": "string"
               },
               "_UpdateSource": {
-                 "type": "string"
+                  "type": "string",
+                  "format": "integer"
               },
               "UpdateSource": {
                   "type": "string"
@@ -492,40 +529,47 @@
                   "type": "string"
               },
               "UnzipUpdateSource": {
-                 "type": "string"
+                  "type": "boolean"
               },
               "OverwriteExistingFiles": {
-                 "type": "string"
+                  "type": "boolean"
               },
               "_ForceDownloadPlatform": {
-                 "type": "string"
+                  "type": "string",
+                  "format": "integer"
               },
               "ForceDownloadPlatform": {
                   "type": "null"
               },
               "UpdateSourceConditionSetting": {
-                  "type": "null"
+                  "anyOf": [
+                      {
+                          "type": "null"
+                      },
+                      {
+                          "type": "string"
+                      }
+                  ]
               },
               "UpdateSourceConditionValue": {
-                  "type": "null"
+                  "anyOf": [
+                      {
+                          "type": "null"
+                      },
+                      {
+                          "type": "string"
+                      }
+                  ]
               },
               "DeleteAfterExtract": {
-                 "type": "string"
+                  "type": "boolean"
               },
               "OneShot": {
-                 "type": "string"
+                  "type": "boolean"
               }
           },
           "required": [],
           "title": "UpdateStage"
-      },
-      "Suffix": {
-          "type": "string",
-          "enum": [
-              "",
-              "requests"
-          ],
-          "title": "Suffix"
       }
   }
 }
