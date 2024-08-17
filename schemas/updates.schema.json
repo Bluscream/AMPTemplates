@@ -19,7 +19,7 @@
           "$ref": "#/definitions/UpdateSource"
         },
         "UpdateSourceData": {
-          "type": "string",
+          "type": "string"
         },
         "UpdateSourceArgs": {
           "type": "string"
