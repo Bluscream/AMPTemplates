@@ -29,6 +29,7 @@
         },
         "origin": {
           "type": "string",
+          "format": "uri",
           "pattern": "^https:\/\/.+\\.[gG][iI][tT]$",
           "description": "The cloneable git repo this template repository can be pulled from",
           "examples": [
@@ -37,6 +38,7 @@
         },
         "url": {
           "type": "string",
+          "format": "uri",
           "pattern": "^(https:\/\/[^\\s]+)$",
           "description": "A url containing informations about this template repository",
           "examples": [

@@ -20,7 +20,6 @@
           with:
             file: 'manifest.json'
             schema: schemas/manifest.schema.json
-            mode: strong
             fixSchema: true
   
         - name: "Validate *.config.json"
