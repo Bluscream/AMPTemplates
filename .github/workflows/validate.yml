@@ -55,4 +55,5 @@
           with:
             file: '*.generator.json'
             schema: schemas/generator.schema.json
-            mode: lax
+            # mode: lax
+            fixSchemas: true
