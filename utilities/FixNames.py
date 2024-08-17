@@ -49,7 +49,7 @@ def update_kvp_files(directory):
                     for suffix in mappings.keys():
                         if suffix in line: # needs patching
                             print(f"Patching line {num} in {file}: {line}")
-                            lines[num - 1] = line.replace(suffix, f"".{suffix}")# Replace the line with the patched version
+                            lines[num - 1] = line.replace(suffix, f".{suffix}")# Replace the line with the patched version
                             break  # Break after the first successful patching
     
                 # Write the processed lines back to the file
