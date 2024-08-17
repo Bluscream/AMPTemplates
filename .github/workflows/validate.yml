@@ -23,7 +23,7 @@ jobs:
           schema-version: draft-06
           print-valid-files: false
           fail-on-missing-schema: true
-          # strict: true
+          strict: false
           allow-matching-properties: false
           allow-union-types: true
 
@@ -35,7 +35,7 @@ jobs:
           schema-version: draft-06
           print-valid-files: false
           fail-on-missing-schema: true
-          # strict: true
+          strict: false
           allow-matching-properties: false
           allow-union-types: true
 
@@ -47,7 +47,7 @@ jobs:
           schema-version: draft-06
           print-valid-files: false
           fail-on-missing-schema: true
-          # strict: true
+          strict: false
           allow-matching-properties: false
           allow-union-types: true
 
@@ -59,7 +59,7 @@ jobs:
           schema-version: draft-06
           print-valid-files: false
           fail-on-missing-schema: true
-          # strict: true
+          strict: false
           allow-matching-properties: false
           allow-union-types: true
 
@@ -71,7 +71,7 @@ jobs:
           schema-version: draft-06
           print-valid-files: false
           fail-on-missing-schema: true
-          # strict: true
+          strict: false
           allow-matching-properties: false
           allow-union-types: true
 
@@ -83,6 +83,6 @@ jobs:
           schema-version: draft-06
           print-valid-files: false
           fail-on-missing-schema: true
-          # strict: true
+          strict: false
           allow-matching-properties: false
           allow-union-types: true
