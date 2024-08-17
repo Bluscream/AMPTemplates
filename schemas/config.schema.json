@@ -17,14 +17,14 @@
                 },
                 "Category": {
                     "type": "string",
-                    "pattern": "^[\\w :_-]+$",
+                    "pattern": "^[\\w_- ]+(:[\\w_]+)?$",
                     "default": "",
                     "examples": ["Server Settings","Server Settings:material_icon"],
                     "description": "This determines what tab the setting will appear under in the left side menu. Settings are automatically grouped together based on their category. Colon seperated string denoting the <actual name as shown to the user>:<the [material icon](https://fonts.google.com/icons) to use>"
                 },
                 "Subcategory": {
                     "type": "string",
-                    "pattern": "^[\\w :_-]+$",
+                    "pattern": "^[\\w_- ]+(:[\\w_]+)?(:\\d+)?$",
                     "default": "",
                     "examples": ["Server Settings","Server Settings:material_icon","Server Settings:material_icon:1"],
                     "description": "⚠️ Undocumented Key | Colon seperated string denoting the <actual name as shown to the user>:<the [material icon](https://fonts.google.com/icons) to use>:<the order in the menu as number>"
