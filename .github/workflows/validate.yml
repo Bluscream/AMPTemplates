@@ -20,35 +20,35 @@
           with:
             file: 'manifest.json'
             schema: schemas/manifest.schema.json
-            fixSchema: true
+            fixSchemas: true
   
         - name: "Validate *.config.json"
           uses: cardinalby/schema-validator-action@v3
           with:
             file: '*.config.json'
             schema: schemas/config.schema.json
-            fixSchema: true
+            fixSchemas: true
   
         - name: "Validate *.metaconfig.json"
           uses: cardinalby/schema-validator-action@v3
           with:
             file: '*.metaconfig.json'
             schema: schemas/metaconfig.schema.json
-            fixSchema: true
+            fixSchemas: true
   
         - name: "Validate *.updates.json"
           uses: cardinalby/schema-validator-action@v3
           with:
             file: '*.updates.json'
             schema: schemas/updates.schema.json
-            fixSchema: true
+            fixSchemas: true
   
         - name: "Validate *.ports.json"
           uses: cardinalby/schema-validator-action@v3
           with:
             file: '*.ports.json'
             schema: schemas/ports.schema.json
-            fixSchema: true
+            fixSchemas: true
   
         - name: "Validate *.generator.json"
           uses: cardinalby/schema-validator-action@v3 # walbo/validate-json@v1.1.0
@@ -57,7 +57,7 @@
             file: '*.generator.json'
             schema: schemas/generator.schema.json
             mode: spec
-            fixSchema: true
+            fixSchemas: true
             # schema-version: draft-06
             # strict: false
             # allow-matching-properties: true
