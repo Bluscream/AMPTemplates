@@ -11,6 +11,7 @@ def editFile(filepath):
 
     key = "MinValue"
     for i, obj in enumerate(data):
+          break
           if key in obj:
                 if obj[key].isdigit():
                       obj[key] = int(obj[key])
