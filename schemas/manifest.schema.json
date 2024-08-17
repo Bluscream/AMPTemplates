@@ -73,7 +73,8 @@
         "AppTemplates"
       ],
       "title": "Repository Type",
-      "description": "The type of repository"
+      "description": "The type of repository",
+      "default": "AppTemplates"
     }
   }
 }
