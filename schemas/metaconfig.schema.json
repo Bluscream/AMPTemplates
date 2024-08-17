@@ -71,7 +71,8 @@
       "enum": [
         "auto",
         "ini",
-        "kvp"
+        "kvp",
+        "json"
       ],
       "title": "Config Type",
       "description": "The type of config",
