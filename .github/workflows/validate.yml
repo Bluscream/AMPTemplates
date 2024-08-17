@@ -28,7 +28,6 @@
           with:
             file: '*.config.json'
             schema: schemas/config.schema.json
-            mode: strong
             fixSchema: true
   
         - name: "Validate *.metaconfig.json"
@@ -36,7 +35,6 @@
           with:
             file: '*.metaconfig.json'
             schema: schemas/metaconfig.schema.json
-            mode: strong
             fixSchema: true
   
         - name: "Validate *.updates.json"
@@ -44,7 +42,6 @@
           with:
             file: '*.updates.json'
             schema: schemas/updates.schema.json
-            mode: strong
             fixSchema: true
   
         - name: "Validate *.ports.json"
@@ -52,7 +49,6 @@
           with:
             file: '*.ports.json'
             schema: schemas/ports.schema.json
-            mode: strong
             fixSchema: true
   
         - name: "Validate *.generator.json"
@@ -61,7 +57,7 @@
             # files: "*.generator.json"
             file: '*.generator.json'
             schema: schemas/generator.schema.json
-            mode: lax
+            mode: spec
             fixSchema: true
             # schema-version: draft-06
             # strict: false
