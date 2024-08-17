@@ -51,9 +51,16 @@
             # mode: strong
   
         - name: "Validate *.generator.json"
-          uses: cardinalby/schema-validator-action@v3
+          uses: walbo/validate-json@v1.1.0 # cardinalby/schema-validator-action@v3
           with:
-            file: '*.generator.json'
+            files: "*.generator.json"
+            # file: '*.generator.json'
             schema: schemas/generator.schema.json
-            # mode: lax
-            fixSchemas: true
+            schema-version: draft-06
+            strict: false
+            allow-matching-properties: true
+            allow-union-types: true
+            print-valid-files: false
+              
+              
+              
