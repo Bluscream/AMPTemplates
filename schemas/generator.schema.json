@@ -61,19 +61,19 @@
                   "type": "string"
               },
               "_SupportsWindows": {
-                  "type": "boolean"
+                 "type": "string"
               },
               "_SupportsLinux": {
-                  "type": "boolean"
+                 "type": "string"
               },
               "App_AdminMethod": {
                   "type": "string"
               },
               "App_HasReadableConsole": {
-                  "type": "boolean"
+                 "type": "string"
               },
               "App_HasWritableConsole": {
-                  "type": "boolean"
+                 "type": "string"
               },
               "App_DisplayName": {
                   "type": "string"
@@ -91,7 +91,7 @@
                   "type": "string"
               },
               "App_RapidStartup": {
-                  "type": "boolean"
+                 "type": "string"
               },
               "App_ApplicationReadyMode": {
                   "type": "string"
@@ -142,16 +142,16 @@
                   "type": "string"
               },
               "App_RCONConnectDelaySeconds": {
-                  "type": "integer"
+                 "type": "string"
               },
               "App_RCONConnectRetrySeconds": {
-                  "type": "integer"
+                 "type": "string"
               },
               "App_RCONHeartbeatCommand": {
                   "type": "string"
               },
               "App_RCONHeartbeatMinutes": {
-                  "type": "integer"
+                 "type": "string"
               },
               "App_TelnetLoginFormat": {
                   "type": "string"
@@ -175,7 +175,7 @@
                   "type": "string"
               },
               "App_MonitorChildProcessWaitMs": {
-                  "type": "integer"
+                 "type": "string"
               },
               "App_MonitorChildProcessName": {
                   "type": "string"
@@ -226,16 +226,16 @@
                   "type": "string"
               },
               "Console_SleepDelayMinutes": {
-                  "type": "integer"
+                 "type": "string"
               },
               "Console_DozeDelay": {
-                  "type": "integer"
+                 "type": "string"
               },
               "Console_AutoRetryCount": {
-                  "type": "integer"
+                 "type": "string"
               },
               "Console_SleepStartThresholdSeconds": {
-                  "type": "integer"
+                 "type": "string"
               },
               "_PortMappings": {
                   "type": "array",
@@ -254,10 +254,10 @@
                   "type": "string"
               },
               "_UpdateSourceUnzip": {
-                  "type": "boolean"
+                 "type": "string"
               },
               "_DisplayImageSource": {
-                  "type": "integer"
+                 "type": "string"
               },
               "_SteamServerAppID": {
                   "type": "string"
@@ -293,7 +293,7 @@
                   "type": "string"
               },
               "Meta_OS": {
-                  "type": "integer"
+                 "type": "string"
               },
               "Meta_ConfigManifest": {
                   "type": "string"
@@ -314,7 +314,7 @@
                   "type": "string"
               },
               "_SteamCheck": {
-                  "type": "integer"
+                 "type": "string"
               },
               "Meta_DisplayImageSource": {
                   "type": "string"
@@ -354,7 +354,7 @@
                   "items": {}
               },
               "isValid": {
-                  "type": "boolean"
+                 "type": "string"
               }
           },
           "required": [],
@@ -383,13 +383,13 @@
                   "type": "string"
               },
               "IsFlagArgument": {
-                  "type": "boolean"
+                 "type": "string"
               },
               "ParamFieldName": {
                   "type": "string"
               },
               "IncludeInCommandLine": {
-                  "type": "boolean"
+                 "type": "string"
               },
               "DefaultValue": {
                   "type": "string"
@@ -401,16 +401,16 @@
                   "$ref": "#/definitions/Suffix"
               },
               "Hidden": {
-                  "type": "boolean"
+                 "type": "string"
               },
               "SkipIfEmpty": {
-                  "type": "boolean"
+                 "type": "string"
               },
               "_CheckedValue": {
-                  "type": "boolean"
+                 "type": "string"
               },
               "_UncheckedValue": {
-                  "type": "boolean"
+                 "type": "string"
               },
               "_EnumMappings": {
                   "type": "array",
@@ -445,16 +445,16 @@
                   "type": "string"
               },
               "_ConfigType": {
-                  "type": "integer"
+                 "type": "string"
               },
               "ConfigType": {
                   "type": "string"
               },
               "_AutoMap": {
-                  "type": "boolean"
+                 "type": "string"
               },
               "AutoMap": {
-                  "type": "boolean"
+                 "type": "string"
               }
           },
           "required": [],
@@ -468,13 +468,13 @@
                   "type": "string"
               },
               "_UpdateSourcePlatform": {
-                  "type": "integer"
+                 "type": "string"
               },
               "UpdateSourcePlatform": {
                   "type": "string"
               },
               "_UpdateSource": {
-                  "type": "integer"
+                 "type": "string"
               },
               "UpdateSource": {
                   "type": "string"
@@ -492,13 +492,13 @@
                   "type": "string"
               },
               "UnzipUpdateSource": {
-                  "type": "boolean"
+                 "type": "string"
               },
               "OverwriteExistingFiles": {
-                  "type": "boolean"
+                 "type": "string"
               },
               "_ForceDownloadPlatform": {
-                  "type": "integer"
+                 "type": "string"
               },
               "ForceDownloadPlatform": {
                   "type": "null"
@@ -510,10 +510,10 @@
                   "type": "null"
               },
               "DeleteAfterExtract": {
-                  "type": "boolean"
+                 "type": "string"
               },
               "OneShot": {
-                  "type": "boolean"
+                 "type": "string"
               }
           },
           "required": [],
