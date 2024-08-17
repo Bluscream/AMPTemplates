@@ -49,7 +49,6 @@
         },
         "prefix": {
           "type": "string",
-          "pattern": "^[^\/\\]*$",
           "description": "Prefix shown when creating a new instance through the AMP webinterface. Do not include the forward slash",
           "examples": [
             "CubeCoders"
