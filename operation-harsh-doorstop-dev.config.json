@@ -477,7 +477,7 @@
         "FieldName": "bEnableEnemyTags",
         "InputType": "checkbox",
         "Keywords": "enemy,tags",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bEnableEnemyTags",
+        "ParamFieldName": "bEnableEnemyTags",
         "Placeholder": "True",
         "IsFlagArgument":false
     },
@@ -494,7 +494,7 @@
         "FieldName": "bAllowPlayerTags",
         "InputType": "checkbox",
         "Keywords": "player,team,tags",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bAllowPlayerTags",
+        "ParamFieldName": "bAllowPlayerTags",
         "Placeholder": "True"
     },
     {
@@ -510,7 +510,7 @@
         "FieldName": "bEnableDeathCamera",
         "InputType": "checkbox",
         "Keywords": "death,camera",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bEnableDeathCamera",
+        "ParamFieldName": "bEnableDeathCamera",
         "Placeholder": "True"
     },
     {
@@ -526,7 +526,7 @@
         "FieldName": "bEnableRedDot",
         "InputType": "checkbox",
         "Keywords": "red,dot,sight",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bEnableRedDot",
+        "ParamFieldName": "bEnableRedDot",
         "Placeholder": "True"
     },
     {
@@ -542,7 +542,7 @@
         "FieldName": "bAllowMinimap",
         "InputType": "checkbox",
         "Keywords": "minimap",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bAllowMinimap",
+        "ParamFieldName": "bAllowMinimap",
         "Placeholder": "True"
     },
     {
@@ -558,7 +558,7 @@
         "FieldName": "bEnableSuppressionEffect",
         "InputType": "checkbox",
         "Keywords": "suppression,effect",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bEnableSuppressionEffect",
+        "ParamFieldName": "bEnableSuppressionEffect",
         "Placeholder": "True"
     },
     {
@@ -574,7 +574,7 @@
         "FieldName": "bEnableSuppressionMovement",
         "InputType": "checkbox",
         "Keywords": "suppression,movement",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bEnableSuppressionMovement",
+        "ParamFieldName": "bEnableSuppressionMovement",
         "Placeholder": "True"
     },
     {
@@ -590,7 +590,7 @@
         "FieldName": "bAllowSquadSpawn",
         "InputType": "checkbox",
         "Keywords": "squad,spawn",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bAllowSquadSpawn",
+        "ParamFieldName": "bAllowSquadSpawn",
         "Placeholder": "True"
     },
     {
@@ -606,7 +606,7 @@
         "FieldName": "bAllowRevive",
         "InputType": "checkbox",
         "Keywords": "revive",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bAllowRevive",
+        "ParamFieldName": "bAllowRevive",
         "Placeholder": "True"
     },
     {
@@ -622,7 +622,7 @@
         "FieldName": "bAllowKillFeed",
         "InputType": "checkbox",
         "Keywords": "kill,feed",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bAllowKillFeed",
+        "ParamFieldName": "bAllowKillFeed",
         "Placeholder": "True"
     },
     {
@@ -634,7 +634,7 @@
         "FieldName": "MinGiveUpDelay",
         "InputType": "number",
         "Keywords": "giveup,delay",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.MinGiveUpDelay",
+        "ParamFieldName": "MinGiveUpDelay",
         "Placeholder": "5"
     },
     {
@@ -646,7 +646,7 @@
         "FieldName": "MinRespawnDelay",
         "InputType": "number",
         "Keywords": "respawn,delay",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.MinRespawnDelay",
+        "ParamFieldName": "MinRespawnDelay",
         "Placeholder": "10"
     },
     {
@@ -658,7 +658,7 @@
         "FieldName": "SquadSpawnAdditionalDelay",
         "InputType": "number",
         "Keywords": "squad,spawn,additional,delay",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.SquadSpawnAdditionalDelay",
+        "ParamFieldName": "SquadSpawnAdditionalDelay",
         "Placeholder": "5"
     },
     {
@@ -670,7 +670,7 @@
         "FieldName": "RadialDamageMultiplier",
         "InputType": "number",
         "Keywords": "radial,damage,multiplier",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.RadialDamageMultiplier",
+        "ParamFieldName": "RadialDamageMultiplier",
         "Placeholder": "0.25"
     },
     {
@@ -682,7 +682,7 @@
         "FieldName": "TimeToContinue",
         "InputType": "number",
         "Keywords": "time,continue",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.TimeToContinue",
+        "ParamFieldName": "TimeToContinue",
         "Placeholder": "33"
     },
     {
@@ -694,7 +694,7 @@
         "FieldName": "PlayerSprintAcceleration",
         "InputType": "number",
         "Keywords": "player,sprint,acceleration",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.PlayerSprintAcceleration",
+        "ParamFieldName": "PlayerSprintAcceleration",
         "Placeholder": "0.9"
     },
     {
@@ -706,7 +706,7 @@
         "FieldName": "PlayerSprintStrafingThreashold",
         "InputType": "number",
         "Keywords": "player,sprint,strafing,threshold",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.PlayerSprintStrafingThreashold",
+        "ParamFieldName": "PlayerSprintStrafingThreashold",
         "Placeholder": "1.0"
     },
     {
@@ -718,7 +718,7 @@
         "FieldName": "PlayerMaxWalkSpeed",
         "InputType": "number",
         "Keywords": "player,max,walk,speed",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.PlayerMaxWalkSpeed",
+        "ParamFieldName": "PlayerMaxWalkSpeed",
         "Placeholder": "450"
     },
     {
@@ -730,7 +730,7 @@
         "FieldName": "PlayerFallDamageDivisor",
         "InputType": "number",
         "Keywords": "player,fall,damage,divisor",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.PlayerFallDamageDivisor",
+        "ParamFieldName": "PlayerFallDamageDivisor",
         "Placeholder": "15"
     },
     {
@@ -746,7 +746,7 @@
         "FieldName": "bNoReviveOnHeadshot",
         "InputType": "checkbox",
         "Keywords": "revive,on,headshot",
-        "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bNoReviveOnHeadshot"
+        "ParamFieldName": "bNoReviveOnHeadshot"
     },
     {
         "Category": "Mod Settings:extension",

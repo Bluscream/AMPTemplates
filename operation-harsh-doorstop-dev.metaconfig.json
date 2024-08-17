@@ -18,28 +18,46 @@
         "ConfigFile":"HarshDoorstop/Saved/Config/WindowsServer/Game.ini",
         "ConfigType": "ini",
         "ConfigFormatRegex": "^(?<key>.+?)=(?<value>.*?)$",
-        "AutoMap":true,
-        "Importable": true
+        "AutoMap":false,
+        "Importable": false,
+        "Subsections": [
+            {
+                "Heading": "/casualcqb/core/bp_hdgamestate_cqb.bp_hdgamestate_cqb_c",
+                "SettingMappings": {
+                    "bEnableEnemyTags": "bEnableEnemyTags",
+                    "bEnableDeathCamera": "bEnableDeathCamera",
+                    "bEnableRedDot": "bEnableRedDot",
+                    "bAllowMinimap": "bAllowMinimap",
+                    "bEnableSuppressionEffect": "bEnableSuppressionEffect",
+                    "bEnableSuppressionMovement": "bEnableSuppressionMovement",
+                    "bAllowSquadSpawn": "bAllowSquadSpawn",
+                    "bAllowRevive": "bAllowRevive",
+                    "bAllowKillFeed": "bAllowKillFeed",
+                    "MinGiveUpDelay": "MinGiveUpDelay",
+                    "MinRespawnDelay": "MinRespawnDelay",
+                    "SquadSpawnAdditionalDelay": "SquadSpawnAdditionalDelay",
+                    "RadialDamageMultiplier": "RadialDamageMultiplier",
+                    "bAllowPlayerTags": "bAllowPlayerTags",
+                    "TimeToContinue": "TimeToContinue",
+                    "PlayerSprintAcceleration": "PlayerSprintAcceleration",
+                    "PlayerSprintStrafingThreashold": "PlayerSprintStrafingThreashold",
+                    "PlayerMaxWalkSpeed": "PlayerMaxWalkSpeed",
+                    "PlayerFallDamageDivisor": "PlayerFallDamageDivisor"
+                }
+            },
+            {
+                "Heading": "/casualcqb/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c",
+                "SettingMappings": {
+                    "AutoSpawnRadius": "AutoSpawnRadius"
+                }
+            }
+		]
     },
     {
         "ConfigFile":"HarshDoorstop/Saved/Config/WindowsServer/GameUserSettings.ini",
         "ConfigType": "ini",
         "ConfigFormatRegex": "^(?<key>.+?)=(?<value>.*?)$",
         "AutoMap":false,
-        "Importable": false,
-        "Subsections": [
-			{
-				"Heading": "/casualcqb/core/bp_hdgamestate_cqb.bp_hdgamestate_cqb_c",
-				"SettingMappings": {
-					"bEnableEnemyTags": "bEnableEnemyTags"
-				}
-			},
-			{
-				"Heading": "/casualcqb/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c",
-				"SettingMappings": {
-					"AutoSpawnRadius": "AutoSpawnRadius"
-				}
-			}
-		]
+        "Importable": true
     }
 ]
