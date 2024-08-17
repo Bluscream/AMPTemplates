@@ -14,6 +14,10 @@
           "type": "string",
           "description": "Relative or absolute path to the config file"
         },
+        "ConfigFileTemplate": {
+          "type": "string",
+          "description": "Requires ConfigType `template`"
+        },
         "AutoMap": {
           "type": "boolean",
           "default": true,
@@ -76,7 +80,8 @@
         "auto",
         "ini",
         "kvp",
-        "json"
+        "json",
+        "template"
       ],
       "title": "Config Type",
       "description": "The type of config",
