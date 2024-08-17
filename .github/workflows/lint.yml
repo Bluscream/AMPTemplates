@@ -2,10 +2,10 @@
 name: Lint
 
 on:  # yamllint disable-line rule:truthy
-  workflow_dispatch: null
-  # push: null
-  # pull_request: null
-  
+  workflow_dispatch:
+  pull_request:
+  # push:
+
 permissions: read-all
 
 jobs:
@@ -30,5 +30,4 @@ jobs:
       - name: Super-linter
         uses: super-linter/super-linter@v6.2.0  # x-release-please-version
         env:
-          # To report GitHub Actions status checks
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # To report GitHub Actions status checks
