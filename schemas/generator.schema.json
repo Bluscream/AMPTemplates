@@ -544,16 +544,6 @@
               "ForceDownloadPlatform": {
                   "type": "null"
               },
-              "NullOrString": {
-                  "anyOf": [
-                      {
-                          "type": "null"
-                      },
-                      {
-                          "type": "string"
-                      }
-                  ]
-              },
               "DeleteAfterExtract": {
                   "type": "boolean"
               },
@@ -564,5 +554,15 @@
           "required": [],
           "title": "UpdateStage"
       }
-  }
+  ,
+  "NullOrString": {
+      "anyOf": [
+          {
+              "type": "null"
+          },
+          {
+              "type": "string"
+          }
+      ]
+  },}
 }
