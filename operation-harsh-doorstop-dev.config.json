@@ -1,6 +1,6 @@
 [
     {
-        "Category": "OHD Server Settings",
+        "Category": "OHD Server Settings:dns",
         "DefaultValue": "AMP Powered Operation: Harsh Doorstop Server",
         "Description": "Sets the name of the server as it appears publicly in the server browser",
         "DisplayName": "Server Name",
@@ -10,7 +10,7 @@
         "ParamFieldName": "ServerName"
     },
     {
-        "Category": "OHD Server Settings",
+        "Category": "OHD Server Settings:dns",
         "DefaultValue": "AAS-TestMap",
         "Description": "Sets the map for the server. If \"Custom\" is selected, Custom Map Name must also be set",
         "DisplayName": "Initial Map",
@@ -36,7 +36,7 @@
         "ParamFieldName": "Map"
     },
     {
-        "Category": "OHD Server Settings",
+        "Category": "OHD Server Settings:dns",
         "DefaultValue": "",
         "Description": "Sets a custom map for the server. \"Custom\" type must be selected under Map, and the map files included in HarshDoorstop/Mods",
         "DisplayName": "Custom Map Name",
@@ -47,7 +47,7 @@
         "Placeholder": "AAS_Trainyard"
     },
     {
-        "Category": "OHD Server Settings",
+        "Category": "OHD Server Settings:dns",
         "DefaultValue": "",
         "Description": "List of [proper names](https://operation-harsh-doorstop.fandom.com/wiki/Server_Install_Instructions#MapCycle.cfg) of maps to run in sequence on the server after the initial map, in the order to be run",
         "DisplayName": "Map Cycle",
@@ -58,7 +58,7 @@
         "Special": "listfile:./operation-harsh-doorstop/950900/HarshDoorstop/Saved/Config/WindowsServer/MapCycle.cfg"
     },
     {
-        "Category": "OHD Server Settings",
+        "Category": "OHD Server Settings:dns",
         "DefaultValue": "",
         "Description": "Sets the path to a modded gamemode for the server to run",
         "DisplayName": "Custom Mode",
@@ -66,7 +66,7 @@
             "": "None",
             "/BigLearning/Core/BP_BLGame_Testing.BP_BLGame_Testing_C": "Vehicle Overhaul (mod)",
             "/Bodycam/Core/GM_Bodycam.GM_Bodycam_C": "Realistic Bodycam (mod)",
-            "/CasualCQB/Core/BP_HDGame_Skirmish_CQB.BP_HDGame_Skirmish_CQB_C": "Casualfield - mod",
+            "/CasualCQB/Core/BP_HDGame_Skirmish_CQB.BP_HDGame_Skirmish_CQB_C": "Mod - Casualfield:extension",
             "/CasualMode/Core/BP_HDGame_AdvanceAndSecure_CasualMode.BP_HDGame_AdvanceAndSecure_CasualMode_C": "Casual Warfare (mod)",
             "/ConstructionPrototype/GameMode/BP_HDGame_AdvanceAndSecure_Construct.BP_HDGame_AdvanceAndSecure_Construct_C": "Construction (mod)",
             "/Detonation/Root/Core/BP_HDGame_Detonation.BP_HDGame_Detonation_C": "Detonation (mod)",
@@ -82,7 +82,7 @@
         "SkipIfEmpty": true
     },
     {
-        "Category": "OHD Server Settings",
+        "Category": "OHD Server Settings:dns",
         "DefaultValue": "",
         "Description": "Sets a custom gamemode for the server. \"Custom\" type must be selected under Mode, and the mode files included in HarshDoorstop/Mods",
         "DisplayName": "Custom Mode Name",
@@ -93,7 +93,7 @@
         "Placeholder": "/pathToGamemode/GameModeBPname.GameModeBPname_C"
     },
     {
-        "Category": "OHD Server Settings",
+        "Category": "OHD Server Settings:dns",
         "DefaultValue": "",
         "Description": "List of [Steam64 IDs](https://steamidfinder.com/) for server admins",
         "DisplayName": "Server Admins",
@@ -104,7 +104,7 @@
         "Special": "listfile:./operation-harsh-doorstop/950900/HarshDoorstop/Saved/Config/WindowsServer/Admins.cfg"
     },
     {
-        "Category": "OHD Server Settings",
+        "Category": "OHD Server Settings:dns",
         "DefaultValue": "",
         "Description": "Sets the password for players to join the server. Don't include a question mark",
         "DisplayName": "Server Password",
@@ -116,7 +116,7 @@
         "SkipIfEmpty": true
     },
     {
-        "Category": "OHD Server Settings",
+        "Category": "OHD Server Settings:dns",
         "Description": "See the Security and Privacy menu for configurable options for the server's RCON password",
         "DisplayName": "RCON Password",
         "FieldName": "RCONPassword",
@@ -126,7 +126,7 @@
         "ParamFieldName": "RCONPassword"
     },
     {
-        "Category": "OHD Server Settings",
+        "Category": "OHD Server Settings:dns",
         "DefaultValue": "",
         "Description": "List of [Steam64 IDs](https://steamidfinder.com/) for whitelisted players. Empty = whitelist disabled",
         "DisplayName": "Whitelisted Players",
@@ -137,7 +137,7 @@
         "Special": "listfile:./operation-harsh-doorstop/950900/HarshDoorstop/Saved/Config/WindowsServer/Whitelist.cfg"
     },
     {
-        "Category": "OHD Server Settings",
+        "Category": "OHD Server Settings:dns",
         "DefaultValue": "",
         "Description": "List of [Steam64 IDs](https://steamidfinder.com/) for banned players",
         "DisplayName": "Banned Players",
@@ -148,7 +148,7 @@
         "Special": "listfile:./operation-harsh-doorstop/950900/HarshDoorstop/Saved/Config/WindowsServer/Bans.cfg"
     },
     {
-        "Category": "OHD Server Settings",
+        "Category": "OHD Server Settings:dns",
         "DefaultValue": "16",
         "Description": "Sets the maximum number of players able to join the server at one time",
         "DisplayName": "Player Limit",
@@ -162,7 +162,7 @@
         "Suffix": "players"
     },
     {
-        "Category": "OHD Server Settings",
+        "Category": "OHD Server Settings:dns",
         "DefaultValue": "0",
         "Description": "Sets the minimum number of players required to start a match",
         "DisplayName": "Minimum Players To Start",
@@ -176,7 +176,7 @@
         "Suffix": "players"
     },
     {
-        "Category": "OHD Server Settings",
+        "Category": "OHD Server Settings:dns",
         "DefaultValue": "255",
         "Description": "Sets the team (if any) that human-controlled players will be forcibly assigned and locked into (cannot switch teams). This is useful for co-op servers",
         "DisplayName": "Auto Assign Human Team",
@@ -192,7 +192,7 @@
         "ParamFieldName": "AutoAssignHuman"
     },
     {
-        "Category": "OHD Server Settings",
+        "Category": "OHD Server Settings:dns",
         "DefaultValue": "",
         "Description": "If set, player kit restrictions will be disabled",
         "DisplayName": "Disable Kit Restrictions",
@@ -206,7 +206,7 @@
         "ParamFieldName": "bDisableKitRestrictions"
     },
     {
-        "Category": "OHD Server Settings",
+        "Category": "OHD Server Settings:dns",
         "DefaultValue": "",
         "Description": "If enabled, the server will fill empty slots with bots to satisfy the Minimum Players To Start number, and remove them if human players join to take their place",
         "DisplayName": "Autofill Bots",
@@ -220,7 +220,7 @@
         "ParamFieldName": "bBotAutofill"
     },
     {
-        "Category": "OHD Server Settings",
+        "Category": "OHD Server Settings:dns",
         "DefaultValue": "",
         "Description": "Sets the BluFor team faction. Select \"Map Default\" to use the default faction for the loaded map. If \"Custom\" is selected, Custom BluFor Faction must also be set",
         "DisplayName": "BluFor Faction",
@@ -261,7 +261,7 @@
         "SkipIfEmpty": true
     },
     {
-        "Category": "OHD Server Settings",
+        "Category": "OHD Server Settings:dns",
         "DefaultValue": "",
         "Description": "Sets a custom BluFor team faction. \"Custom\" type must be selected under BluFor Faction, and the faction files included in HarshDoorstop/Mods",
         "DisplayName": "Custom BluFor Faction",
@@ -272,7 +272,7 @@
         "Placeholder": ""
     },
     {
-        "Category": "OHD Server Settings",
+        "Category": "OHD Server Settings:dns",
         "DefaultValue": "500",
         "Description": "Sets the starting number of BluFor team tickets",
         "DisplayName": "BluFor Tickets",
@@ -286,7 +286,7 @@
         "Suffix": "tickets"
     },
     {
-        "Category": "OHD Server Settings",
+        "Category": "OHD Server Settings:dns",
         "DefaultValue": "0",
         "Description": "Sets the number of BluFor team bots",
         "DisplayName": "BluFor Bots",
@@ -300,7 +300,7 @@
         "Suffix": "bots"
     },
     {
-        "Category": "OHD Server Settings",
+        "Category": "OHD Server Settings:dns",
         "DefaultValue": "",
         "Description": "Sets the OpFor team faction. Select \"Map Default\" to use the default faction for the loaded map. If \"Custom\" is selected, Custom OpFor Faction must also be set",
         "DisplayName": "OpFor Faction",
@@ -341,7 +341,7 @@
         "SkipIfEmpty": true
     },
     {
-        "Category": "OHD Server Settings",
+        "Category": "OHD Server Settings:dns",
         "DefaultValue": "",
         "Description": "Sets a custom OpFor team faction. \"Custom\" type must be selected under OpFor Faction, and the faction files included in HarshDoorstop/Mods",
         "DisplayName": "Custom OpFor Faction",
@@ -352,7 +352,7 @@
         "Placeholder": ""
     },
     {
-        "Category": "OHD Server Settings",
+        "Category": "OHD Server Settings:dns",
         "DefaultValue": "500",
         "Description": "Sets the starting number of OpFor team tickets",
         "DisplayName": "OpFor Tickets",
@@ -366,7 +366,7 @@
         "Suffix": "tickets"
     },
     {
-        "Category": "OHD Server Settings",
+        "Category": "OHD Server Settings:dns",
         "DefaultValue": "0",
         "Description": "Sets the number of OpFor team bots",
         "DisplayName": "OpFor Bots",
@@ -380,7 +380,7 @@
         "Suffix": "bots"
     },
     {
-        "Category": "OHD Server Settings",
+        "Category": "OHD Server Settings:dns",
         "Description": "If required, you can change the binding of the server and Source RCON by changing the 'Server IP Address' setting under Security and Privacy. Ensure AMP itself can reach that IP or the console will not work",
         "DisplayName": "MultiHome IP Binding",
         "FieldName": "MultiHome",
@@ -389,7 +389,7 @@
         "ParamFieldName": "MultiHome"
     },
     {
-        "Category": "OHD Server Settings",
+        "Category": "OHD Server Settings:dns",
         "DefaultValue": "",
         "Description": "Sets your WebApiKey= in 'HarshDoorstop/Saved/Config/WindowsServer/Engine.ini' so your server enjoys the full featureset, you can get your key from steam://openurl/https://steamcommunity.com/dev/apikey",
         "DisplayName": "Steam Web API Key",
@@ -401,7 +401,7 @@
         "Placeholder": ""
     },
     {
-        "Category": "OHD Server Settings",
+        "Category": "OHD Server Settings:dns",
         "DefaultValue": "",
         "Description": "Sets custom command line flags for the server (those that start with a - (dash)). Include the dash and separate with a space. Don't use flags already in AMP's settings!",
         "DisplayName": "Custom Command Line Flags",
@@ -412,7 +412,7 @@
         "Placeholder": "-RCONMaxActiveConnections=5 -SupportersOnly"
     },
     {
-        "Category": "OHD Server Settings",
+        "Category": "OHD Server Settings:dns",
         "DefaultValue": "",
         "Description": "Sets custom command line options for the server (those that start with a ? (question mark)). Include the question mark but do not separate with a space. Don't use options already in AMP's settings!",
         "DisplayName": "Custom Command Line Options",
@@ -422,7 +422,7 @@
         "ParamFieldName": "CustomOptions"
     },
     {
-        "Category": "Casualfield - mod",
+        "Category": "Mod - Casualfield:extension",
         "DefaultValue": "True",
         "Description": "Enable or disable nametags ontop of enemy players when in range",
         "DisplayName": "Enemy Tags",
@@ -437,7 +437,7 @@
         "Placeholder": "True"
     },
     {
-        "Category": "Casualfield - mod",
+        "Category": "Mod - Casualfield:extension",
         "DefaultValue": "True",
         "Description": "Enable or disable player tags",
         "DisplayName": "Player Tags",
@@ -452,7 +452,7 @@
         "Placeholder": "True"
     },
     {
-        "Category": "Casualfield - mod",
+        "Category": "Mod - Casualfield:extension",
         "DefaultValue": "True",
         "Description": "Enable or disable death camera",
         "DisplayName": "Death Camera",
@@ -467,7 +467,7 @@
         "Placeholder": "True"
     },
     {
-        "Category": "Casualfield - mod",
+        "Category": "Mod - Casualfield:extension",
         "DefaultValue": "True",
         "Description": "Enable or disable red dot sight",
         "DisplayName": "Red Dot",
@@ -482,7 +482,7 @@
         "Placeholder": "True"
     },
     {
-        "Category": "Casualfield - mod",
+        "Category": "Mod - Casualfield:extension",
         "DefaultValue": "True",
         "Description": "Enable or disable minimap",
         "DisplayName": "Minimap",
@@ -497,7 +497,7 @@
         "Placeholder": "True"
     },
     {
-        "Category": "Casualfield - mod",
+        "Category": "Mod - Casualfield:extension",
         "DefaultValue": "False",
         "Description": "Enable or disable suppression effect",
         "DisplayName": "Suppression Effect",
@@ -512,7 +512,7 @@
         "Placeholder": "True"
     },
     {
-        "Category": "Casualfield - mod",
+        "Category": "Mod - Casualfield:extension",
         "DefaultValue": "False",
         "Description": "Enable or disable suppression movement",
         "DisplayName": "Suppression Movement",
@@ -527,7 +527,7 @@
         "Placeholder": "True"
     },
     {
-        "Category": "Casualfield - mod",
+        "Category": "Mod - Casualfield:extension",
         "DefaultValue": "True",
         "Description": "Enable or disable squad spawn",
         "DisplayName": "Squad Spawn",
@@ -542,7 +542,7 @@
         "Placeholder": "True"
     },
     {
-        "Category": "Casualfield - mod",
+        "Category": "Mod - Casualfield:extension",
         "DefaultValue": "True",
         "Description": "Enable or disable revive option",
         "DisplayName": "Revive",
@@ -557,7 +557,7 @@
         "Placeholder": "True"
     },
     {
-        "Category": "Casualfield - mod",
+        "Category": "Mod - Casualfield:extension",
         "DefaultValue": "True",
         "Description": "Enable or disable kill feed",
         "DisplayName": "Kill Feed",
@@ -572,7 +572,7 @@
         "Placeholder": "True"
     },
     {
-        "Category": "Casualfield - mod",
+        "Category": "Mod - Casualfield:extension",
         "DefaultValue": "5",
         "Description": "Minimum delay before giving up",
         "DisplayName": "Min Give Up Delay",
@@ -583,7 +583,7 @@
         "Placeholder": "5"
     },
     {
-        "Category": "Casualfield - mod",
+        "Category": "Mod - Casualfield:extension",
         "DefaultValue": "10",
         "Description": "Minimum respawn delay",
         "DisplayName": "Min Respawn Delay",
@@ -594,7 +594,7 @@
         "Placeholder": "10"
     },
     {
-        "Category": "Casualfield - mod",
+        "Category": "Mod - Casualfield:extension",
         "DefaultValue": "5",
         "Description": "Additional delay for squad spawn",
         "DisplayName": "Squad Spawn Additional Delay",
@@ -605,7 +605,7 @@
         "Placeholder": "5"
     },
     {
-        "Category": "Casualfield - mod",
+        "Category": "Mod - Casualfield:extension",
         "DefaultValue": "0.25",
         "Description": "Multiplier for radial damage",
         "DisplayName": "Radial Damage Multiplier",
@@ -616,7 +616,7 @@
         "Placeholder": "0.25"
     },
     {
-        "Category": "Casualfield - mod",
+        "Category": "Mod - Casualfield:extension",
         "DefaultValue": "33",
         "Description": "Time to continue after death",
         "DisplayName": "Time To Continue",
@@ -627,7 +627,7 @@
         "Placeholder": "33"
     },
     {
-        "Category": "Casualfield - mod",
+        "Category": "Mod - Casualfield:extension",
         "DefaultValue": "0.9",
         "Description": "Acceleration during sprint",
         "DisplayName": "Player Sprint Acceleration",
@@ -638,7 +638,7 @@
         "Placeholder": "0.9"
     },
     {
-        "Category": "Casualfield - mod",
+        "Category": "Mod - Casualfield:extension",
         "DefaultValue": "1.0",
         "Description": "Threshold for strafing while sprinting",
         "DisplayName": "Player Sprint Strafing Threshold",
@@ -649,7 +649,7 @@
         "Placeholder": "1.0"
     },
     {
-        "Category": "Casualfield - mod",
+        "Category": "Mod - Casualfield:extension",
         "DefaultValue": "450",
         "Description": "Maximum walk speed for players",
         "DisplayName": "Player Max Walk Speed",
@@ -660,7 +660,7 @@
         "Placeholder": "450"
     },
     {
-        "Category": "Casualfield - mod",
+        "Category": "Mod - Casualfield:extension",
         "DefaultValue": "15",
         "Description": "Divisor for fall damage",
         "DisplayName": "Player Fall Damage Divisor",
@@ -671,7 +671,7 @@
         "Placeholder": "15"
     },
     {
-        "Category": "Casualfield - mod",
+        "Category": "Mod - Casualfield:extension",
         "DefaultValue": "False",
         "Description": "Disable revive on headshots",
         "DisplayName": "Revive On Headshot",
@@ -685,7 +685,7 @@
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bNoReviveOnHeadshot"
     },
     {
-        "Category": "Casualfield - mod",
+        "Category": "Mod - Casualfield:extension",
         "DefaultValue": "750",
         "Description": "Radius for auto spawning",
         "DisplayName": "Auto Spawn Radius",
