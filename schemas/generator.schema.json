@@ -553,16 +553,16 @@
       },
       "required": [],
       "title": "UpdateStage"
+    },
+    "NullOrString": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string"
+        }
+      ]
     }
-  },
-  "NullOrString": {
-    "anyOf": [
-      {
-        "type": "null"
-      },
-      {
-        "type": "string"
-      }
-    ]
   }
 }
