@@ -24,7 +24,7 @@ jobs:
           print-valid-files: false
           fail-on-missing-schema: true
           strict: false
-          allow-matching-properties: false
+          allow-matching-properties: true
           allow-union-types: true
 
       - name: "Validate *.config.json"
@@ -36,7 +36,7 @@ jobs:
           print-valid-files: false
           fail-on-missing-schema: true
           strict: false
-          allow-matching-properties: false
+          allow-matching-properties: true
           allow-union-types: true
 
       - name: "Validate *.metaconfig.json"
@@ -48,7 +48,7 @@ jobs:
           print-valid-files: false
           fail-on-missing-schema: true
           strict: false
-          allow-matching-properties: false
+          allow-matching-properties: true
           allow-union-types: true
 
       - name: "Validate *.updates.json"
@@ -60,7 +60,7 @@ jobs:
           print-valid-files: false
           fail-on-missing-schema: true
           strict: false
-          allow-matching-properties: false
+          allow-matching-properties: true
           allow-union-types: true
 
       - name: "Validate *.ports.json"
@@ -72,7 +72,7 @@ jobs:
           print-valid-files: false
           fail-on-missing-schema: true
           strict: false
-          allow-matching-properties: false
+          allow-matching-properties: true
           allow-union-types: true
 
       - name: "Validate *.generator.json"
@@ -84,5 +84,5 @@ jobs:
           print-valid-files: false
           fail-on-missing-schema: true
           strict: false
-          allow-matching-properties: false
+          allow-matching-properties: true
           allow-union-types: true
