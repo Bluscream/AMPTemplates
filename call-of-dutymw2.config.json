@@ -338,7 +338,7 @@
         "Keywords": "inactivity,afk,period,g_inactivity",
         "MinValue": 0,
         "ParamFieldName": "g_inactivity",
-        "Placehoder": "300",
+        "Placeholder": "300",
         "Suffix": "seconds"
     },
     {
@@ -352,7 +352,7 @@
         "Keywords": "inactivity,period,spectator,g_inactivitySpectator",
         "MinValue": 0,
         "ParamFieldName": "g_inactivitySpectator",
-        "Placehoder": "500",
+        "Placeholder": "500",
         "Suffix": "seconds"
     },
     {
