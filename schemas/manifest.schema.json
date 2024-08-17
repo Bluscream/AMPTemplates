@@ -29,7 +29,7 @@
         },
         "origin": {
           "type": "string",
-          "format": "uri",
+          "pattern": "^https:\/\/[a-zA-Z0-9.-]+\\.[gG][iI][tT]\\s?$",
           "description": "The cloneable git repo this template repository can be pulled from",
           "examples": [
             "https://github.com/CubeCoders/AMPTemplates.git"
@@ -37,7 +37,7 @@
         },
         "url": {
           "type": "string",
-          "format": "uri",
+          "format": "^(https:\/\/[^\\s]+)$",
           "description": "A url containing informations about this template repository",
           "examples": [
             "https://github.com/CubeCoders/AMPTemplates"
