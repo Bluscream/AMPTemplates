@@ -12,12 +12,14 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      # - uses: actions/checkout@v4
 
       - name: "Validate manifest.json"
         uses: snapcart/json-schema-validator@v1.0.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          send_comment: true
+          clear_comments: true
           json_path_pattern: 'manifest.json$'
           json_schema: ./schemas/manifest.schema.json
 
@@ -25,6 +27,8 @@ jobs:
         uses: snapcart/json-schema-validator@v1.0.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          send_comment: true
+          clear_comments: true
           json_path_pattern: '.*.config.json$'
           json_schema: schemas/config.schema.json
 
@@ -32,6 +36,8 @@ jobs:
         uses: snapcart/json-schema-validator@v1.0.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          send_comment: true
+          clear_comments: true
           json_path_pattern: .*.metaconfig.json$
           json_schema: schemas/metaconfig.schema.json
 
@@ -39,6 +45,8 @@ jobs:
         uses: snapcart/json-schema-validator@v1.0.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          send_comment: true
+          clear_comments: true
           json_path_pattern: .*.updates.json$
           json_schema: schemas/updates.schema.json
 
@@ -46,6 +54,8 @@ jobs:
         uses: snapcart/json-schema-validator@v1.0.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          send_comment: true
+          clear_comments: true
           json_path_pattern: .*.ports.json$
           json_schema: schemas/ports.schema.json
 
@@ -53,5 +63,7 @@ jobs:
         uses: snapcart/json-schema-validator@v1.0.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          send_comment: true
+          clear_comments: true
           json_path_pattern: .*.generator.json$
           json_schema: schemas/generator.schema.json
