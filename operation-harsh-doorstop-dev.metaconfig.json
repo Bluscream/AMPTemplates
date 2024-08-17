@@ -4,14 +4,36 @@
         "ConfigType": "ini",
         "ConfigFormatRegex": "^(?<key>.+?)=(?<value>.*?)$",
         "AutoMap":true,
-        "Importable": true
+        "Importable": true,
+        "Subsections": [
+			{
+				"Heading": "/casualcqb/core/bp_hdgamestate_cqb.bp_hdgamestate_cqb_c",
+				"SettingMappings": {
+					"bEnableEnemyTags": "bEnableEnemyTags"
+				}
+			},
+			{
+				"Heading": "/casualcqb/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c",
+				"SettingMappings": {
+					"AutoSpawnRadius": "AutoSpawnRadius"
+				}
+			}
+		]
     },
     {
         "ConfigFile":"HarshDoorstop/Saved/Config/WindowsServer/Engine.ini",
         "ConfigType": "ini",
         "ConfigFormatRegex": "^(?<key>.+?)=(?<value>.*?)$",
         "AutoMap":true,
-        "Importable": true
+        "Importable": true,
+        "Subsections": [
+			{
+				"Heading": "OnlineSubsystemSteam",
+				"SettingMappings": {
+					"WebApiKey": "WebApiKey"
+				}
+			}
+		]
     },
     {
         "ConfigFile":"HarshDoorstop/Saved/Config/WindowsServer/GameUserSettings.ini",
