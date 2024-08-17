@@ -10,10 +10,10 @@
       "additionalProperties": false,
       "properties": {
         "Protocol": {
-          "$ref": "#/definitions/ProtocolUnion"
+          "$ref": "#/definitions/ProtocolEnum"
         },
         "Port": {
-          "$ref": "#/definitions/PortUnion"
+          "type": "integer"
         },
         "Ref": {
           "type": "string"
@@ -36,29 +36,6 @@
       },
       "required": [],
       "title": "PortElement"
-    },
-    "PortUnion": {
-      "anyOf": [
-        {
-          "type": "integer"
-        },
-        {
-          "type": "string",
-          "format": "integer"
-        }
-      ],
-      "title": "PortUnion"
-    },
-    "ProtocolUnion": {
-      "anyOf": [
-        {
-          "$ref": "#/definitions/ProtocolEnum"
-        },
-        {
-          "type": "integer"
-        }
-      ],
-      "title": "ProtocolUnion"
     },
     "ProtocolEnum": {
       "type": "string",
