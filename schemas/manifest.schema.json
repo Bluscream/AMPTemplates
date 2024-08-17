@@ -9,7 +9,7 @@
       "properties": {
         "id": {
           "type": "string",
-          "format": "uuid",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
           "examples": [
             "ec280171-c67b-4cf8-923f-dc27fea91ee1"
           ],
