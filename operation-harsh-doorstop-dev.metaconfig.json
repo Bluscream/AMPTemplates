@@ -1,6 +1,28 @@
 [
     {
+        "ConfigFile":"HarshDoorstop/Saved/Config/WindowsServer/Engine.ini",
+        "ConfigType": "ini",
+        "ConfigFormatRegex": "^(?<key>.+?)=(?<value>.*?)$",
+        "AutoMap":true,
+        "Importable": true,
+        "Subsections": [
+			{
+				"Heading": "OnlineSubsystemSteam",
+				"SettingMappings": {
+					"WebApiKey": "WebApiKey"
+				}
+			}
+		]
+    },
+    {
         "ConfigFile":"HarshDoorstop/Saved/Config/WindowsServer/Game.ini",
+        "ConfigType": "ini",
+        "ConfigFormatRegex": "^(?<key>.+?)=(?<value>.*?)$",
+        "AutoMap":true,
+        "Importable": true
+    },
+    {
+        "ConfigFile":"HarshDoorstop/Saved/Config/WindowsServer/GameUserSettings.ini",
         "ConfigType": "ini",
         "ConfigFormatRegex": "^(?<key>.+?)=(?<value>.*?)$",
         "AutoMap":true,
@@ -19,27 +41,5 @@
 				}
 			}
 		]
-    },
-    {
-        "ConfigFile":"HarshDoorstop/Saved/Config/WindowsServer/Engine.ini",
-        "ConfigType": "ini",
-        "ConfigFormatRegex": "^(?<key>.+?)=(?<value>.*?)$",
-        "AutoMap":true,
-        "Importable": true,
-        "Subsections": [
-			{
-				"Heading": "OnlineSubsystemSteam",
-				"SettingMappings": {
-					"WebApiKey": "WebApiKey"
-				}
-			}
-		]
-    },
-    {
-        "ConfigFile":"HarshDoorstop/Saved/Config/WindowsServer/GameUserSettings.ini",
-        "ConfigType": "ini",
-        "ConfigFormatRegex": "^(?<key>.+?)=(?<value>.*?)$",
-        "AutoMap":true,
-        "Importable": true
     }
 ]
