@@ -25,8 +25,8 @@
         "ConfigFile":"HarshDoorstop/Saved/Config/WindowsServer/GameUserSettings.ini",
         "ConfigType": "ini",
         "ConfigFormatRegex": "^(?<key>.+?)=(?<value>.*?)$",
-        "AutoMap":true,
-        "Importable": true,
+        "AutoMap":false,
+        "Importable": false,
         "Subsections": [
 			{
 				"Heading": "/casualcqb/core/bp_hdgamestate_cqb.bp_hdgamestate_cqb_c",
