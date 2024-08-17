@@ -15,74 +15,43 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: "Validate manifest.json"
-        uses: walbo/validate-json@v1.1.0
-        # uses: docker://orrosenblatt/validate-json-action:latest
+        uses: cardinalby/schema-validator-action@v3
         with:
-          files: "manifest.json"
+          file: 'manifest.json'
           schema: schemas/manifest.schema.json
-          schema-version: draft-06
-          print-valid-files: false
-          fail-on-missing-schema: true
-          strict: false
-          allow-matching-properties: true
-          allow-union-types: true
+          mode: strong
 
       - name: "Validate *.config.json"
-        uses: walbo/validate-json@v1.1.0
+        uses: cardinalby/schema-validator-action@v3
         with:
-          files: "*.config.json"
+          file: '*.config.json'
           schema: schemas/config.schema.json
-          schema-version: draft-06
-          print-valid-files: false
-          fail-on-missing-schema: true
-          strict: false
-          allow-matching-properties: true
-          allow-union-types: true
+          mode: strong
 
       - name: "Validate *.metaconfig.json"
-        uses: walbo/validate-json@v1.1.0
+        uses: cardinalby/schema-validator-action@v3
         with:
-          files: "*.metaconfig.json"
+          file: '*.metaconfig.json'
           schema: schemas/metaconfig.schema.json
-          schema-version: draft-06
-          print-valid-files: false
-          fail-on-missing-schema: true
-          strict: false
-          allow-matching-properties: true
-          allow-union-types: true
+          mode: strong
 
       - name: "Validate *.updates.json"
-        uses: walbo/validate-json@v1.1.0
+        uses: cardinalby/schema-validator-action@v3
         with:
-          files: "*.updates.json"
+          file: '*.updates.json'
           schema: schemas/updates.schema.json
-          schema-version: draft-06
-          print-valid-files: false
-          fail-on-missing-schema: true
-          strict: false
-          allow-matching-properties: true
-          allow-union-types: true
+          mode: strong
 
       - name: "Validate *.ports.json"
-        uses: walbo/validate-json@v1.1.0
+        uses: cardinalby/schema-validator-action@v3
         with:
-          files: "*.ports.json"
+          file: '*.ports.json'
           schema: schemas/ports.schema.json
-          schema-version: draft-06
-          print-valid-files: false
-          fail-on-missing-schema: true
-          strict: false
-          allow-matching-properties: true
-          allow-union-types: true
+          mode: strong
 
       - name: "Validate *.generator.json"
-        uses: walbo/validate-json@v1.1.0
+        uses: cardinalby/schema-validator-action@v3
         with:
-          files: "*.generator.json"
+          file: '*.generator.json'
           schema: schemas/generator.schema.json
-          schema-version: draft-06
-          print-valid-files: false
-          fail-on-missing-schema: true
-          strict: false
-          allow-matching-properties: true
-          allow-union-types: true
+          mode: strong
