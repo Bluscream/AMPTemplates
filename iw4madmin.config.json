@@ -41,7 +41,7 @@
         "IncludeInCommandLine": true,
         "InputType": "number",
         "Keywords": "request,queue,limit,request-queue-limit",
-        "MinValue": "0",
+        "MinValue": 0,
         "ParamFieldName": "request-queue-limit",
         "Placeholder": "25",
         "SkipIfEmpty": true,

@@ -282,7 +282,7 @@
         "FieldName": "$MaxUsers",
         "InputType": "number",
         "Keywords": "max,players,limit",
-        "MinValue": "1",
+        "MinValue": 1,
         "ParamFieldName": "sv_maxclients",
         "Placeholder": "18"
     },
@@ -307,7 +307,7 @@
         "InputType": "number",
         "Keywords": "maximum,ping,sv_maxPing",
         "MaxValue": "1000",
-        "MinValue": "0",
+        "MinValue": 0,
         "ParamFieldName": "sv_maxPing",
         "Placeholder": "0",
         "Suffix": "milliseconds"
@@ -322,7 +322,7 @@
         "InputType": "number",
         "Keywords": "timeout,sv_timeout",
         "MaxValue": "1800",
-        "MinValue": "0",
+        "MinValue": 0,
         "ParamFieldName": "sv_timeout",
         "Placeholder": "20",
         "Suffix": "seconds"
@@ -336,7 +336,7 @@
         "FieldName": "g_inactivity",
         "InputType": "number",
         "Keywords": "inactivity,afk,period,g_inactivity",
-        "MinValue": "0",
+        "MinValue": 0,
         "ParamFieldName": "g_inactivity",
         "Placehoder": "300",
         "Suffix": "seconds"
@@ -350,7 +350,7 @@
         "FieldName": "g_inactivitySpectator",
         "InputType": "number",
         "Keywords": "inactivity,period,spectator,g_inactivitySpectator",
-        "MinValue": "0",
+        "MinValue": 0,
         "ParamFieldName": "g_inactivitySpectator",
         "Placehoder": "500",
         "Suffix": "seconds"
@@ -365,7 +365,7 @@
         "InputType": "number",
         "Keywords": "ban,period,temporary,sv_kickBanTime",
         "MaxValue": "3600",
-        "MinValue": "0",
+        "MinValue": 0,
         "ParamFieldName": "sv_kickBanTime",
         "Placeholder": "3600",
         "Suffix": "seconds"
@@ -379,7 +379,7 @@
         "FieldName": "sv_securityLevel",
         "InputType": "number",
         "Keywords": "security,level,sv_securityLevel",
-        "MinValue": "0",
+        "MinValue": 0,
         "ParamFieldName": "sv_securityLevel",
         "Placeholder": "23"
     },
@@ -437,7 +437,7 @@
         "InputType": "number",
         "Keywords": "voice,chat,quality,sv_voicequality",
         "MaxValue": "9",
-        "MinValue": "0",
+        "MinValue": 0,
         "ParamFieldName": "sv_voicequality",
         "Placeholder": "9"
     },
@@ -505,7 +505,7 @@
         "InputType": "number",
         "Keywords": "reconnect,limit,sv_reconnectlimit",
         "MaxValue": "1800",
-        "MinValue": "0",
+        "MinValue": 0,
         "ParamFieldName": "sv_reconnectlimit",
         "Placeholder": "4"
     },

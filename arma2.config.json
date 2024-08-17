@@ -116,7 +116,7 @@
         "InputType": "number",
         "IsFlagArgument": false,
         "Keywords": "maximum,players,clients,limit,maxplayers",
-        "MinValue": "1",
+        "MinValue": 1,
         "ParamFieldName": "maxPlayers",
         "Placeholder": "64",
         "Suffix": "players"
@@ -293,7 +293,7 @@
         "IsFlagArgument": false,
         "Keywords": "headless,client",
         "MaxValue": "5",
-        "MinValue": "0",
+        "MinValue": 0,
         "ParamFieldName": "HeadlessClientsNum",
         "Placeholder": "0"
     },
@@ -353,7 +353,7 @@
         "IsFlagArgument": false,
         "Keywords": "frames,fps,limitfps",
         "MaxValue": "1000",
-        "MinValue": "5",
+        "MinValue": 5,
         "ParamFieldName": "limitFPS",
         "Placeholder": "50",
         "SkipIfEmpty": true,
@@ -429,7 +429,7 @@
         "InputType": "number",
         "IsFlagArgument": false,
         "Keywords": "voting,minimum,votemissionplayers",
-        "MinValue": "1",
+        "MinValue": 1,
         "ParamFieldName": "voteMissionPlayers",
         "Placeholder": "1"
     },
@@ -444,7 +444,7 @@
         "InputType": "number",
         "IsFlagArgument": false,
         "Keywords": "voting,threshold,votethreshold",
-        "MinValue": "0",
+        "MinValue": 0,
         "ParamFieldName": "voteThreshold",
         "Placeholder": "0.33"
     },
@@ -509,7 +509,7 @@
         "IsFlagArgument": false,
         "Keywords": "voice,chat,codec,quality,voncodecquality",
         "MaxValue": "30",
-        "MinValue": "1",
+        "MinValue": 1,
         "ParamFieldName": "vonCodecQuality",
         "Placeholder": "3"
     },
@@ -912,7 +912,7 @@
         "IsFlagArgument": false,
         "Keywords": "disconnect,timeout,disconnecttimeout",
         "MaxValue": "90",
-        "MinValue": "5",
+        "MinValue": 5,
         "ParamFieldName": "disconnectTimeout",
         "Placeholder": "90",
         "Suffix": "seconds"

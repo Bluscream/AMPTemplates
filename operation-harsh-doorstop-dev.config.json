@@ -156,7 +156,7 @@
         "IncludeInCommandLine": true,
         "InputType": "number",
         "Keywords": "max,maximum,players,limit,maxplayers",
-        "MinValue": "1",
+        "MinValue": 1,
         "ParamFieldName": "MaxPlayers",
         "Placeholder": "16",
         "Suffix": "players"
@@ -170,7 +170,7 @@
         "IncludeInCommandLine": true,
         "InputType": "number",
         "Keywords": "min,minimum,players,minplayers",
-        "MinValue": "0",
+        "MinValue": 0,
         "ParamFieldName": "MinPlayers",
         "Placeholder": "0",
         "Suffix": "players"
@@ -280,7 +280,7 @@
         "IncludeInCommandLine": true,
         "InputType": "number",
         "Keywords": "blufor,tickets,BluforNumTickets",
-        "MinValue": "0",
+        "MinValue": 0,
         "ParamFieldName": "BluforNumTickets",
         "Placeholder": "500",
         "Suffix": "tickets"
@@ -294,7 +294,7 @@
         "IncludeInCommandLine": true,
         "InputType": "number",
         "Keywords": "blufor,bots,BluforNumBots",
-        "MinValue": "0",
+        "MinValue": 0,
         "ParamFieldName": "BluforNumBots",
         "Placeholder": "0",
         "Suffix": "bots"
@@ -360,7 +360,7 @@
         "IncludeInCommandLine": true,
         "InputType": "number",
         "Keywords": "opfor,tickets,OpforNumTickets",
-        "MinValue": "0",
+        "MinValue": 0,
         "ParamFieldName": "OpforNumTickets",
         "Placeholder": "500",
         "Suffix": "tickets"
@@ -374,7 +374,7 @@
         "IncludeInCommandLine": true,
         "InputType": "number",
         "Keywords": "opfor,bots,OpforNumBots",
-        "MinValue": "0",
+        "MinValue": 0,
         "ParamFieldName": "OpforNumBots",
         "Placeholder": "0",
         "Suffix": "bots"
