@@ -12,5 +12,12 @@
         "ConfigFormatRegex": "^(?<key>.+?)=(?<value>.*?)$",
         "AutoMap":true,
         "Importable": true
+    },
+    {
+        "ConfigFile":"HarshDoorstop/Saved/Config/WindowsServer/GameUserSettings.ini",
+        "ConfigType": "ini",
+        "ConfigFormatRegex": "^(?<key>.+?)=(?<value>.*?)$",
+        "AutoMap":true,
+        "Importable": true
     }
 ]
