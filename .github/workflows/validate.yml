@@ -1,69 +1,57 @@
 ---
-name: Validate JSON Schemas
-
-on: # yamllint disable-line rule:truthy
-  workflow_dispatch:
-  pull_request:
-  # push:
-
-permissions: read-all
-
-jobs:
-  validate:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: "Validate manifest.json"
-        uses: snapcart/json-schema-validator@v1.0.0
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          send_comment: true
-          clear_comments: true
-          json_path_pattern: 'manifest.json$'
-          json_schema: ./schemas/manifest.schema.json
-
-      - name: "Validate *.config.json"
-        uses: snapcart/json-schema-validator@v1.0.0
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          send_comment: true
-          clear_comments: true
-          json_path_pattern: '.*.config.json$'
-          json_schema: schemas/config.schema.json
-
-      - name: "Validate *.metaconfig.json"
-        uses: snapcart/json-schema-validator@v1.0.0
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          send_comment: true
-          clear_comments: true
-          json_path_pattern: .*.metaconfig.json$
-          json_schema: schemas/metaconfig.schema.json
-
-      - name: "Validate *.updates.json"
-        uses: snapcart/json-schema-validator@v1.0.0
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          send_comment: true
-          clear_comments: true
-          json_path_pattern: .*.updates.json$
-          json_schema: schemas/updates.schema.json
-
-      - name: "Validate *.ports.json"
-        uses: snapcart/json-schema-validator@v1.0.0
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          send_comment: true
-          clear_comments: true
-          json_path_pattern: .*.ports.json$
-          json_schema: schemas/ports.schema.json
-
-      - name: "Validate *.generator.json"
-        uses: snapcart/json-schema-validator@v1.0.0
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          send_comment: true
-          clear_comments: true
-          json_path_pattern: .*.generator.json$
-          json_schema: schemas/generator.schema.json
+  name: Validate JSON Schemas
+  
+  on: # yamllint disable-line rule:truthy
+    workflow_dispatch:
+    pull_request:
+    # push:
+  
+  permissions: read-all
+  
+  jobs:
+    validate:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v4
+  
+        - name: "Validate manifest.json"
+          uses: cardinalby/schema-validator-action@v3
+          with:
+            file: 'manifest.json'
+            schema: schemas/manifest.schema.json
+            # mode: strong
+  
+        - name: "Validate *.config.json"
+          uses: cardinalby/schema-validator-action@v3
+          with:
+            file: '*.config.json'
+            schema: schemas/config.schema.json
+            # mode: strong
+  
+        - name: "Validate *.metaconfig.json"
+          uses: cardinalby/schema-validator-action@v3
+          with:
+            file: '*.metaconfig.json'
+            schema: schemas/metaconfig.schema.json
+            # mode: strong
+  
+        - name: "Validate *.updates.json"
+          uses: cardinalby/schema-validator-action@v3
+          with:
+            file: '*.updates.json'
+            schema: schemas/updates.schema.json
+            # mode: strong
+  
+        - name: "Validate *.ports.json"
+          uses: cardinalby/schema-validator-action@v3
+          with:
+            file: '*.ports.json'
+            schema: schemas/ports.schema.json
+            # mode: strong
+  
+        - name: "Validate *.generator.json"
+          uses: cardinalby/schema-validator-action@v3
+          with:
+            file: '*.generator.json'
+            schema: schemas/generator.schema.json
+            # mode: strong
