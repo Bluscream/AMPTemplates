@@ -24,7 +24,7 @@
         "UnzipUpdateSource":true,
         "OverwriteExistingFiles":true,
         "DeleteAfterExtract":true
-    },, 
+    },
     {
         "UpdateStageName": "Download Missing X3DAudio1_6.dll",
         "UpdateSourcePlatform": "All",
