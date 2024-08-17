@@ -29,7 +29,7 @@
         },
         "origin": {
           "type": "string",
-          "pattern": "^https:\/\/[a-zA-Z0-9.-]+\\.[gG][iI][tT]\\s?$",
+          "pattern": "^https:\/\/.+\\.[gG][iI][tT]$",
           "description": "The cloneable git repo this template repository can be pulled from",
           "examples": [
             "https://github.com/CubeCoders/AMPTemplates.git"
@@ -49,6 +49,7 @@
         },
         "prefix": {
           "type": "string",
+          "pattern": "^[^\\/\\]+$",
           "description": "Prefix shown when creating a new instance through the AMP webinterface. Do not include the forward slash",
           "examples": [
             "CubeCoders"
