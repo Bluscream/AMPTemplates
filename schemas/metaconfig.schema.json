@@ -34,7 +34,7 @@
                   }
               },
               "ConfigType": {
-                    "$ref": "#/definitions/InputType"
+                    "$ref": "#/definitions/ConfigType"
               },
               "ConfigFormat": {
                   "type": "string",
