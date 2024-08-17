@@ -289,7 +289,7 @@
             "Description": "Auto Messages",
             "Keywords": "auto,messages",
             "FieldName": "AutoMessages",
-            "InputType": "Textarea",
+            "InputType": "textarea",
             "IsFlagArgument": false,
             "ParamFieldName": "AutoMessages",
             "IncludeInCommandLine": false,
