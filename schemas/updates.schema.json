@@ -31,7 +31,7 @@
           "type": "string"
         },
         "OverwriteExistingFiles": {
-          "$ref": "#/definitions/DeleteAfterExtract"
+          "type": "boolean"
         },
         "SkipOnFailure": {
           "type": "boolean"
