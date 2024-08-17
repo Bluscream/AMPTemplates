@@ -2,177 +2,156 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "type": "array",
   "items": {
-      "anyOf": [
-          {
-              "$ref": "#/definitions/Update"
-          },
-          {
-              "type": "null"
-          }
-      ]
+    "$ref": "#/definitions/UpdateItem"
   },
   "definitions": {
-      "Update": {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-              "UpdateStageName": {
-                  "type": "string"
-              },
-              "UpdateSourcePlatform": {
-                  "$ref": "#/definitions/Platform"
-              },
-              "UpdateSource": {
-                  "$ref": "#/definitions/UpdateSource"
-              },
-              "UpdateSourceData": {
-                  "type": "string",
-                  "qt-uri-protocols": [
-                      "http",
-                      "https"
-                  ],
-                  "qt-uri-extensions": [
-                      ".backupexclusions7d2d1",
-                      ".backupexclusionsark1",
-                      ".backupexclusionsark2",
-                      ".backupexclusionsarksa1",
-                      ".backupexclusionsarksa2",
-                      ".backupexclusionsempyrion1",
-                      ".backupexclusionsmw2",
-                      ".backupexclusionsterraria",
-                      ".backupexclusionstshock",
-                      ".bz2",
-                      ".cfg",
-                      ".config",
-                      ".dat",
-                      ".dll",
-                      ".example",
-                      ".exe",
-                      ".git",
-                      ".gz",
-                      ".ini",
-                      ".json",
-                      ".php",
-                      ".ron",
-                      ".run",
-                      ".sh",
-                      ".sii",
-                      ".sp",
-                      ".toml",
-                      ".txt",
-                      ".xml",
-                      ".xz",
-                      ".yaml",
-                      ".yml",
-                      ".zip"
-                  ]
-              },
-              "UpdateSourceArgs": {
-                  "type": "string"
-              },
-              "ForceDownloadPlatform": {
-                  "$ref": "#/definitions/Platform"
-              },
-              "UpdateSourceTarget": {
-                  "type": "string"
-              },
-              "OverwriteExistingFiles": {
-                  "$ref": "#/definitions/DeleteAfterExtract"
-              },
-              "SkipOnFailure": {
-                  "type": "boolean"
-              },
-              "UpdateSourceConditionSetting": {
-                  "anyOf": [
-                      {
-                          "type": "null"
-                      },
-                      {
-                          "type": "string"
-                      }
-                  ]
-              },
-              "UpdateSourceConditionValue": {
-                  "anyOf": [
-                      {
-                          "type": "null"
-                      },
-                      {
-                          "type": "string"
-                      }
-                  ]
-              },
-              "UnzipUpdateSource": {
-                  "type": "boolean"
-              },
-              "DeleteAfterExtract": {
-                  "type": "boolean"
-              },
-              "UpdateSourceVersion": {
-                  "type": "string"
-              },
-              "UpdateSourceArch": {
-                  "$ref": "#/definitions/UpdateSourceArch"
-              },
-              "UpdateSourceExtra": {
-                  "type": "string"
-              },
-              "OneShot": {
-                  "type": "boolean"
-              }
-          },
-          "required": [],
-          "title": "Update"
-      },
-      "BoolString": {
-          "anyOf": [
-              {
-                  "type": "boolean"
-              },
-              {
-                  "type": "string",
-                  "format": "boolean"
-              }
-          ],
-          "title": "BoolString"
-      },
-      "Platform": {
+    "UpdateItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "UpdateStageName": {
+          "type": "string"
+        },
+        "UpdateSourcePlatform": {
+          "$ref": "#/definitions/Platform"
+        },
+        "UpdateSource": {
+          "$ref": "#/definitions/UpdateSource"
+        },
+        "UpdateSourceData": {
           "type": "string",
-          "enum": [
-              "All",
-              "Linux",
-              "Windows"
+          "qt-uri-protocols": [
+            "http",
+            "https"
           ],
-          "title": "Platform"
+          "qt-uri-extensions": [
+            ".backupexclusions7d2d1",
+            ".backupexclusionsark1",
+            ".backupexclusionsark2",
+            ".backupexclusionsarksa1",
+            ".backupexclusionsarksa2",
+            ".backupexclusionsempyrion1",
+            ".backupexclusionsmw2",
+            ".backupexclusionsterraria",
+            ".backupexclusionstshock",
+            ".bz2",
+            ".cfg",
+            ".config",
+            ".dat",
+            ".dll",
+            ".example",
+            ".exe",
+            ".git",
+            ".gz",
+            ".ini",
+            ".json",
+            ".php",
+            ".ron",
+            ".run",
+            ".sh",
+            ".sii",
+            ".sp",
+            ".toml",
+            ".txt",
+            ".xml",
+            ".xz",
+            ".yaml",
+            ".yml",
+            ".zip"
+          ]
+        },
+        "UpdateSourceArgs": {
+          "type": "string"
+        },
+        "ForceDownloadPlatform": {
+          "$ref": "#/definitions/Platform"
+        },
+        "UpdateSourceTarget": {
+          "type": "string"
+        },
+        "OverwriteExistingFiles": {
+          "$ref": "#/definitions/DeleteAfterExtract"
+        },
+        "SkipOnFailure": {
+          "type": "boolean"
+        },
+        "UpdateSourceConditionSetting": {
+          "type": "string"
+        },
+        "UpdateSourceConditionValue": {
+          "type": "string"
+        },
+        "UnzipUpdateSource": {
+          "type": "boolean"
+        },
+        "DeleteAfterExtract": {
+          "type": "boolean"
+        },
+        "UpdateSourceVersion": {
+          "type": "string"
+        },
+        "UpdateSourceArch": {
+          "$ref": "#/definitions/UpdateSourceArch"
+        },
+        "UpdateSourceExtra": {
+          "type": "string"
+        },
+        "OneShot": {
+          "type": "boolean"
+        }
       },
-      "UpdateSource": {
+      "required": [],
+      "title": "Update"
+    },
+    "BoolString": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
           "type": "string",
-          "enum": [
-              "SteamCMD",
-              "CreateDirectory",
-              "FetchURL",
-              "Executable",
-              "CopyFilePath",
-              "GithubRelease",
-              "CreateFile",
-              "SetExecutableFlag",
-              "Pause",
-              "StartApplication",
-              "WaitForStartupComplete",
-              "ShutdownApplication",
-              "FetchURLFromJQ",
-              "ExtractArchive",
-              "GitRepo"
-          ],
-          "title": "UpdateSource"
-      },
-      "UpdateSourceArch": {
-          "type": "string",
-          "enum": [
-              "x86_64",
-              "aarch64"
-          ],
-          "title": "UpdateSourceArch"
-      }
+          "format": "boolean"
+        }
+      ],
+      "title": "BoolString"
+    },
+    "Platform": {
+      "type": "string",
+      "enum": [
+        "All",
+        "Linux",
+        "Windows"
+      ],
+      "title": "Platform"
+    },
+    "UpdateSource": {
+      "type": "string",
+      "enum": [
+        "SteamCMD",
+        "CreateDirectory",
+        "FetchURL",
+        "Executable",
+        "CopyFilePath",
+        "GithubRelease",
+        "CreateFile",
+        "SetExecutableFlag",
+        "Pause",
+        "StartApplication",
+        "WaitForStartupComplete",
+        "ShutdownApplication",
+        "FetchURLFromJQ",
+        "ExtractArchive",
+        "GitRepo"
+      ],
+      "title": "UpdateSource"
+    },
+    "UpdateSourceArch": {
+      "type": "string",
+      "enum": [
+        "x86_64",
+        "aarch64"
+      ],
+      "title": "UpdateSourceArch"
+    }
   }
 }
