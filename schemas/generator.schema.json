@@ -384,6 +384,7 @@
         {
           "type": "null"
         },
+        {"type": "boolean"},
         {
           "type": "object",
           "additionalProperties": false,
@@ -452,7 +453,7 @@
     },
     "EnumValues": {
       "type": "object",
-      "additionalProperties": false,
+      "additionalProperties": true,
       "title": "EnumValues"
     },
     "PortMapping": {
