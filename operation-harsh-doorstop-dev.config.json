@@ -230,12 +230,15 @@
         "InputType": "checkbox",
         "Keywords": "supporter,only,donator",
         "ParamFieldName": "SupportersOnly",
-        "IsFlagArgument": true
+        "IsFlagArgument": true,
+        "EnumValues": {
+            "False": "False",
+            "True": "True"
+        }
     },
     {
         "Category": "OHD Server Settings:dns",
         "Subcategory": "General:dns",
-        "DefaultValue": "",
         "Description": "If enabled, the server will fill empty slots with bots to satisfy the Minimum Players To Start number, and remove them if human players join to take their place",
         "DisplayName": "Autofill Bots",
         "EnumValues": {
