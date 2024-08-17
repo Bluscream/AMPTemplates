@@ -17,10 +17,17 @@
                 },
                 "Category": {
                     "type": "string",
-                    "pattern": "^[\\w\\s]*$",
+                    "pattern": "^[\\w\\s:_]*$",
                     "default": "",
-                    "examples": ["Settings"],
+                    "examples": ["Server Settings","Server Settings:sub_category"],
                     "description": "This determines what tab the setting will appear under in the left side menu. Settings are automatically grouped together based on their category"
+                },
+                "Subcategory": {
+                    "type": "string",
+                    "pattern": "^[\\w\\s:_]*$",
+                    "default": "",
+                    "examples": ["Server Settings:settings:1"],
+                    "description": "⚠️ Undocumented Key"
                 },
                 "Description": {
                     "type": "string",
