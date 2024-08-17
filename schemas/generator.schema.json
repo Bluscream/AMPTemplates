@@ -525,6 +525,12 @@
               "UpdateSourceTarget": {
                   "type": "string"
               },
+              "UpdateSourceConditionSetting": {
+                    "$ref": "#/definitions/NullOrString"
+              },
+              "UpdateSourceConditionValue": {
+                    "$ref": "#/definitions/NullOrString"
+              },
               "UnzipUpdateSource": {
                   "type": "boolean"
               },
