@@ -11,7 +11,6 @@ def editFile(filepath):
 
     key = "MinValue"
     for i, obj in enumerate(data):
-          break
           if key in obj:
                 if obj[key].isdigit():
                       obj[key] = int(obj[key])
@@ -29,7 +28,7 @@ def editFile(filepath):
 
     # Save the modified JSON back to the file with 'utf-8' encoding
     with codecs.open(filepath, 'w', 'utf-8') as file:
-        json.dump(data, file, ensure_ascii=False, indent=4)
+        json.dump(data, file, ensure_ascii=False, indent=4, sort_keys=True)
     
     print(f"Edited {filepath}")
 

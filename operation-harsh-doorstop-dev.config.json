@@ -17,17 +17,17 @@
         "EnumValues": {
             "AAS-TestMap": "AAS Test Map (default)",
             "Argonne": "WWI: Argonne",
-            "SaintQuentin": "WWI: Saint Quentin (expansion)",
             "Carentan": "WWII: Carentan (expansion)",
+            "Khafji_P": "Gulf War: Khafji",
+            "LamDong": "Vietnam: Lam Dong",
+            "Map_vao_small": "Vooga Small (mod)",
+            "Map_vao_vehbasespawn": "Vooga Large basespawn and hab spawn (mod)",
+            "Map_vao_vehicles": "Vooga Large flag spawn (mod)",
             "Montecassino": "WWII: Monte Cassino",
             "OmahaBeach": "WWII: Omaha Beach (expansion)",
-            "LamDong": "Vietnam: Lam Dong",
-            "Tan_Binh": "Vietnam: Tan Binh (expansion)",
-            "Khafji_P": "Gulf War: Khafji",
             "Risala": "Modern Era: Risala",
-            "Map_vao_small": "Vooga Small (mod)",
-            "Map_vao_vehicles": "Vooga Large flag spawn (mod)",
-            "Map_vao_vehbasespawn": "Vooga Large basespawn and hab spawn (mod)",
+            "SaintQuentin": "WWI: Saint Quentin (expansion)",
+            "Tan_Binh": "Vietnam: Tan Binh (expansion)",
             "{{CustomMap}}": "--Custom--"
         },
         "FieldName": "Map",
@@ -64,14 +64,14 @@
         "DisplayName": "Custom Mode",
         "EnumValues": {
             "": "None",
+            "/BigLearning/Core/BP_BLGame_Testing.BP_BLGame_Testing_C": "Vehicle Overhaul (mod)",
+            "/Bodycam/Core/GM_Bodycam.GM_Bodycam_C": "Realistic Bodycam (mod)",
             "/CasualCQB/Core/BP_HDGame_Skirmish_CQB.BP_HDGame_Skirmish_CQB_C": "Casualfield - mod",
             "/CasualMode/Core/BP_HDGame_AdvanceAndSecure_CasualMode.BP_HDGame_AdvanceAndSecure_CasualMode_C": "Casual Warfare (mod)",
-            "/BigLearning/Core/BP_BLGame_Testing.BP_BLGame_Testing_C": "Vehicle Overhaul (mod)",
-            "/bodycam/Core/BP_HDGame_BodycamAAS": "Bodycam (mod)",
-            "/Bodycam/Core/GM_Bodycam.GM_Bodycam_C": "Realistic Bodycam (mod)",
-            "/Starwars/Core/BP_HDGame_AdvanceAndSecure_Starwars.BP_HDGame_AdvanceAndSecure_Starwars_C": "Star Wars (mod)",
             "/ConstructionPrototype/GameMode/BP_HDGame_AdvanceAndSecure_Construct.BP_HDGame_AdvanceAndSecure_Construct_C": "Construction (mod)",
             "/Detonation/Root/Core/BP_HDGame_Detonation.BP_HDGame_Detonation_C": "Detonation (mod)",
+            "/Starwars/Core/BP_HDGame_AdvanceAndSecure_Starwars.BP_HDGame_AdvanceAndSecure_Starwars_C": "Star Wars (mod)",
+            "/bodycam/Core/BP_HDGame_BodycamAAS": "Bodycam (mod)",
             "{{CustomMode}}": "--Custom--"
         },
         "FieldName": "game",
@@ -226,31 +226,31 @@
         "DisplayName": "BluFor Faction",
         "EnumValues": {
             "": "--Map Default--",
-            "BP_OMFactionInfo_UnitedStates": "WWI: USA",
-            "BP_OMFactionInfo_Germany": "WWI: Germany",
-            "BP_OOFactionInfo_USA": "WWII: US Army",
-            "BP_OOFactionInfo_USRangers": "WWII: US Rangers",
-            "BP_OOFactionInfo_Germany": "WWII: Fallschirmjäger (German Paratroopers)",
-            "BP_OOFactionInfo_Wehrmact": "WWII: Wehrmacht (German Army)",
-            "BP_RSFactionInfo_USArmy": "Vietnam: USA",
-            "BP_RSFactionInfo_NVA": "Vietnam: NVA",
-            "BP_HDFactionInfo_UnitedStates": "Cold War: USA",
-            "BP_HDFactionInfo_Russians": "Cold War: Soviet Union",
-            "BP_HDFactionInfo_PMC": "Modern Era: PMC",
+            "BP_HDFactionInfo_BRO": "Bronies (mod)",
+            "BP_HDFactionInfo_FEM": "Femboys (mod)",
+            "BP_HDFactionInfo_FUR": "Furries (mod)",
             "BP_HDFactionInfo_Insurgents": "Modern Era: Insurgents",
+            "BP_HDFactionInfo_PMC": "Modern Era: PMC",
+            "BP_HDFactionInfo_Russians": "Cold War: Soviet Union",
             "BP_HDFactionInfo_TG_BluFor": "Debug: BluFor (All Kits/Eras)",
             "BP_HDFactionInfo_TG_OpFor": "Debug: OpFor (All Kits/Eras)",
-            "BP_OMFactionInfo_212": "Star Wars 212 (mod)",
+            "BP_HDFactionInfo_UnitedStates": "Cold War: USA",
             "BP_OMFactionInfo_104th": "Star Wars 104th (mod)",
+            "BP_OMFactionInfo_212": "Star Wars 212 (mod)",
             "BP_OMFactionInfo_332nd": "Star Wars 332nd (mod)",
             "BP_OMFactionInfo_41st": "Star Wars 41st (mod)",
             "BP_OMFactionInfo_501st": "Star Wars 501st (mod)",
             "BP_OMFactionInfo_Foddsquad": "Star Wars Foddsquad (mod)",
+            "BP_OMFactionInfo_Germany": "WWI: Germany",
             "BP_OMFactionInfo_Guard": "Star Wars Guard (mod)",
             "BP_OMFactionInfo_Seperatist": "Star Wars Seperatist (mod)",
-            "BP_HDFactionInfo_FEM": "Femboys (mod)",
-            "BP_HDFactionInfo_FUR": "Furries (mod)",
-            "BP_HDFactionInfo_BRO": "Bronies (mod)",
+            "BP_OMFactionInfo_UnitedStates": "WWI: USA",
+            "BP_OOFactionInfo_Germany": "WWII: Fallschirmjäger (German Paratroopers)",
+            "BP_OOFactionInfo_USA": "WWII: US Army",
+            "BP_OOFactionInfo_USRangers": "WWII: US Rangers",
+            "BP_OOFactionInfo_Wehrmact": "WWII: Wehrmacht (German Army)",
+            "BP_RSFactionInfo_NVA": "Vietnam: NVA",
+            "BP_RSFactionInfo_USArmy": "Vietnam: USA",
             "{{CustomBluforFaction}}": "--Custom--"
         },
         "FieldName": "BluforFaction",
@@ -306,31 +306,31 @@
         "DisplayName": "OpFor Faction",
         "EnumValues": {
             "": "--Map Default--",
-            "BP_OMFactionInfo_UnitedStates": "WWI: USA",
-            "BP_OMFactionInfo_Germany": "WWI: Germany",
-            "BP_OOFactionInfo_USA": "WWII: US Army",
-            "BP_OOFactionInfo_USRangers": "WWII: US Rangers",
-            "BP_OOFactionInfo_Germany": "WWII: Fallschirmjäger (German Paratroopers)",
-            "BP_OOFactionInfo_Wehrmact": "WWII: Wehrmacht (German Army)",
-            "BP_RSFactionInfo_USArmy": "Vietnam: USA",
-            "BP_RSFactionInfo_NVA": "Vietnam: NVA",
-            "BP_HDFactionInfo_UnitedStates": "Cold War: USA",
-            "BP_HDFactionInfo_Russians": "Cold War: Soviet Union",
-            "BP_HDFactionInfo_PMC": "Modern Era: PMC",
+            "BP_HDFactionInfo_BRO": "Bronies (mod)",
+            "BP_HDFactionInfo_FEM": "Femboys (mod)",
+            "BP_HDFactionInfo_FUR": "Furries (mod)",
             "BP_HDFactionInfo_Insurgents": "Modern Era: Insurgents",
-            "BP_HDFactionInfo_TG_OpFor": "Debug: OpFor (All Kits/Eras)",
+            "BP_HDFactionInfo_PMC": "Modern Era: PMC",
+            "BP_HDFactionInfo_Russians": "Cold War: Soviet Union",
             "BP_HDFactionInfo_TG_BluFor": "Debug: BluFor (All Kits/Eras)",
-            "BP_OMFactionInfo_212": "Star Wars 212 (mod)",
+            "BP_HDFactionInfo_TG_OpFor": "Debug: OpFor (All Kits/Eras)",
+            "BP_HDFactionInfo_UnitedStates": "Cold War: USA",
             "BP_OMFactionInfo_104th": "Star Wars 104th (mod)",
+            "BP_OMFactionInfo_212": "Star Wars 212 (mod)",
             "BP_OMFactionInfo_332nd": "Star Wars 332nd (mod)",
             "BP_OMFactionInfo_41st": "Star Wars 41st (mod)",
             "BP_OMFactionInfo_501st": "Star Wars 501st (mod)",
             "BP_OMFactionInfo_Foddsquad": "Star Wars Foddsquad (mod)",
+            "BP_OMFactionInfo_Germany": "WWI: Germany",
             "BP_OMFactionInfo_Guard": "Star Wars Guard (mod)",
             "BP_OMFactionInfo_Seperatist": "Star Wars Seperatist (mod)",
-            "BP_HDFactionInfo_FEM": "Femboys (mod)",
-            "BP_HDFactionInfo_FUR": "Furries (mod)",
-            "BP_HDFactionInfo_BRO": "Bronies (mod)",
+            "BP_OMFactionInfo_UnitedStates": "WWI: USA",
+            "BP_OOFactionInfo_Germany": "WWII: Fallschirmjäger (German Paratroopers)",
+            "BP_OOFactionInfo_USA": "WWII: US Army",
+            "BP_OOFactionInfo_USRangers": "WWII: US Rangers",
+            "BP_OOFactionInfo_Wehrmact": "WWII: Wehrmacht (German Army)",
+            "BP_RSFactionInfo_NVA": "Vietnam: NVA",
+            "BP_RSFactionInfo_USArmy": "Vietnam: USA",
             "{{CustomBluforFaction}}": "--Custom--"
         },
         "FieldName": "OpforFaction",
@@ -427,8 +427,8 @@
         "Description": "Enable or disable nametags ontop of enemy players when in range",
         "DisplayName": "Enemy Tags",
         "EnumValues": {
-            "True": "True",
-            "False": "False"
+            "False": "False",
+            "True": "True"
         },
         "FieldName": "bEnableEnemyTags",
         "InputType": "checkbox",
@@ -442,8 +442,8 @@
         "Description": "Enable or disable player tags",
         "DisplayName": "Player Tags",
         "EnumValues": {
-            "True": "True",
-            "False": "False"
+            "False": "False",
+            "True": "True"
         },
         "FieldName": "bAllowPlayerTags",
         "InputType": "checkbox",
@@ -457,8 +457,8 @@
         "Description": "Enable or disable death camera",
         "DisplayName": "Death Camera",
         "EnumValues": {
-            "True": "True",
-            "False": "False"
+            "False": "False",
+            "True": "True"
         },
         "FieldName": "bEnableDeathCamera",
         "InputType": "checkbox",
@@ -472,8 +472,8 @@
         "Description": "Enable or disable red dot sight",
         "DisplayName": "Red Dot",
         "EnumValues": {
-            "True": "True",
-            "False": "False"
+            "False": "False",
+            "True": "True"
         },
         "FieldName": "bEnableRedDot",
         "InputType": "checkbox",
@@ -487,8 +487,8 @@
         "Description": "Enable or disable minimap",
         "DisplayName": "Minimap",
         "EnumValues": {
-            "True": "True",
-            "False": "False"
+            "False": "False",
+            "True": "True"
         },
         "FieldName": "bAllowMinimap",
         "InputType": "checkbox",
@@ -502,8 +502,8 @@
         "Description": "Enable or disable suppression effect",
         "DisplayName": "Suppression Effect",
         "EnumValues": {
-            "True": "True",
-            "False": "False"
+            "False": "False",
+            "True": "True"
         },
         "FieldName": "bEnableSuppressionEffect",
         "InputType": "checkbox",
@@ -517,8 +517,8 @@
         "Description": "Enable or disable suppression movement",
         "DisplayName": "Suppression Movement",
         "EnumValues": {
-            "True": "True",
-            "False": "False"
+            "False": "False",
+            "True": "True"
         },
         "FieldName": "bEnableSuppressionMovement",
         "InputType": "checkbox",
@@ -532,8 +532,8 @@
         "Description": "Enable or disable squad spawn",
         "DisplayName": "Squad Spawn",
         "EnumValues": {
-            "True": "True",
-            "False": "False"
+            "False": "False",
+            "True": "True"
         },
         "FieldName": "bAllowSquadSpawn",
         "InputType": "checkbox",
@@ -547,8 +547,8 @@
         "Description": "Enable or disable revive option",
         "DisplayName": "Revive",
         "EnumValues": {
-            "True": "True",
-            "False": "False"
+            "False": "False",
+            "True": "True"
         },
         "FieldName": "bAllowRevive",
         "InputType": "checkbox",
@@ -562,8 +562,8 @@
         "Description": "Enable or disable kill feed",
         "DisplayName": "Kill Feed",
         "EnumValues": {
-            "True": "True",
-            "False": "False"
+            "False": "False",
+            "True": "True"
         },
         "FieldName": "bAllowKillFeed",
         "InputType": "checkbox",
@@ -676,8 +676,8 @@
         "Description": "Disable revive on headshots",
         "DisplayName": "Revive On Headshot",
         "EnumValues": {
-            "True": "False",
-            "False": "True"
+            "False": "True",
+            "True": "False"
         },
         "FieldName": "bNoReviveOnHeadshot",
         "InputType": "checkbox",
