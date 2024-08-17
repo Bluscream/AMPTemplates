@@ -5,15 +5,14 @@ from pathlib import Path
 
 def editFile(filepath):
     with codecs.open(filepath, 'r', 'utf-8-sig') as file:
+        print(f"Editing {filepath}")
         data = json.load(file)
 
-    print(f"Editing {filepath}")
-
-    key = "MinValue"
-    for i, obj in enumerate(data):
-          if key in obj:
-                if isinstance(obj[key], str) and (obj[key].isdigit() or obj[key].startswith('-')):
-                      obj[key] = int(obj[key])
+    for key in ["MinValue","MaxValue"]:
+        for i, obj in enumerate(data):
+            if key in obj:
+                    if isinstance(obj[key], str) and (obj[key].isdigit() or obj[key].startswith('-')):
+                        obj[key] = int(obj[key])
         # sorted_obj = {k: obj[k] for k in sorted(obj)}
         
         # Update the object in the list with the sorted version
