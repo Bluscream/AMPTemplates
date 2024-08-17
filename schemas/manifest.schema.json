@@ -37,7 +37,7 @@
         },
         "url": {
           "type": "string",
-          "format": "^(https:\/\/[^\\s]+)$",
+          "pattern": "^(https:\/\/[^\\s]+)$",
           "description": "A url containing informations about this template repository",
           "examples": [
             "https://github.com/CubeCoders/AMPTemplates"
