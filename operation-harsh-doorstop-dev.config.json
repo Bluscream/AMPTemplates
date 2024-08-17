@@ -402,7 +402,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
-        "Subcategory": "Custom Settings:dns:1",
+        "Subcategory": "Custom Settings:dns",
         "DefaultValue": "",
         "Description": "Sets custom command line flags for the server (those that start with a - (dash)). Include the dash and separate with a space. Don't use flags already in AMP's settings!",
         "DisplayName": "Custom Command Line Flags",
@@ -414,7 +414,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
-        "Subcategory": "Custom Settings:dns:2",
+        "Subcategory": "Custom Settings:dns",
         "DefaultValue": "",
         "Description": "Sets custom command line options for the server (those that start with a ? (question mark)). Include the question mark but do not separate with a space. Don't use options already in AMP's settings!",
         "DisplayName": "Custom Command Line Options",
