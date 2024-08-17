@@ -478,7 +478,8 @@
         "InputType": "checkbox",
         "Keywords": "enemy,tags",
         "ParamFieldName": "/casualcqb/root/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c.bEnableEnemyTags",
-        "Placeholder": "True"
+        "Placeholder": "True",
+        "IsFlagArgument":false
     },
     {
         "Category": "Mod Settings:extension",
