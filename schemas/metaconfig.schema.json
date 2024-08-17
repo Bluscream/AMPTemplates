@@ -37,6 +37,10 @@
           "type": "string",
           "default": "{0}={1}",
           "description": "{0} is replaced with the setting key and {1} with the value"
+        },
+        "ConfigFormatRegex": {
+          "type": "string",
+          "description": "set\\w+(?<key>.+?)\\w+\"?(?<value>.*?)\"?$"
         }
       },
       "required": [
