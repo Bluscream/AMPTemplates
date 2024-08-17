@@ -380,68 +380,74 @@
           "title": "Generator"
       },
       "AppSetting": {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-              "DisplayName": {
-                  "type": "string"
-              },
-              "Category": {
-                  "type": "string"
-              },
-              "Description": {
-                  "type": "string"
-              },
-              "Keywords": {
-                  "type": "string"
-              },
-              "FieldName": {
-                  "type": "string"
-              },
-              "InputType": {
-                  "type": "string"
-              },
-              "IsFlagArgument": {
-                  "type": "boolean"
-              },
-              "ParamFieldName": {
-                  "type": "string"
-              },
-              "IncludeInCommandLine": {
-                  "type": "boolean"
-              },
-              "DefaultValue": {
-                  "type": "string"
-              },
-              "Placeholder": {
-                  "type": "string"
-              },
-              "Suffix": {
-                  "type": "string"
-              },
-              "Hidden": {
-                  "type": "boolean"
-              },
-              "SkipIfEmpty": {
-                  "type": "boolean"
-              },
-              "_CheckedValue": {
-                  "type": "string",
-                  "format": "boolean"
-              },
-              "_UncheckedValue": {
-                  "type": "string",
-                  "format": "boolean"
-              },
-              "_EnumMappings": {
-                  "type": "array",
-                  "items": {}
-              },
-              "EnumValues": {
-                  "$ref": "#/definitions/EnumValues"
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "DisplayName": {
+                    "type": "string"
+                },
+                "Category": {
+                    "type": "string"
+                },
+                "Description": {
+                    "type": "string"
+                },
+                "Keywords": {
+                    "type": "string"
+                },
+                "FieldName": {
+                    "type": "string"
+                },
+                "InputType": {
+                    "type": "string"
+                },
+                "IsFlagArgument": {
+                    "type": "boolean"
+                },
+                "ParamFieldName": {
+                    "type": "string"
+                },
+                "IncludeInCommandLine": {
+                    "type": "boolean"
+                },
+                "DefaultValue": {
+                    "type": "string"
+                },
+                "Placeholder": {
+                    "type": "string"
+                },
+                "Suffix": {
+                    "type": "string"
+                },
+                "Hidden": {
+                    "type": "boolean"
+                },
+                "SkipIfEmpty": {
+                    "type": "boolean"
+                },
+                "_CheckedValue": {
+                    "type": "string",
+                    "format": "boolean"
+                },
+                "_UncheckedValue": {
+                    "type": "string",
+                    "format": "boolean"
+                },
+                "_EnumMappings": {
+                    "type": "array",
+                    "items": {}
+                },
+                "EnumValues": {
+                    "$ref": "#/definitions/EnumValues"
+                }
               }
-          },
-          "required": [],
+            }
+          ],
           "title": "AppSetting"
       },
       "EnumValues": {
@@ -532,17 +538,7 @@
               "ForceDownloadPlatform": {
                   "type": "null"
               },
-              "UpdateSourceConditionSetting": {
-                  "anyOf": [
-                      {
-                          "type": "null"
-                      },
-                      {
-                          "type": "string"
-                      }
-                  ]
-              },
-              "UpdateSourceConditionValue": {
+              "NullOrString": {
                   "anyOf": [
                       {
                           "type": "null"
