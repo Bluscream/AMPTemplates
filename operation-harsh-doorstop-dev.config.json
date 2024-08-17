@@ -1,7 +1,7 @@
 [
     {
         "Category": "OHD Server Settings:dns",
-        "Subcategory": "General:dns:0",
+        "Subcategory": "General:dns",
         "DefaultValue": "AMP Powered Operation: Harsh Doorstop Server",
         "Description": "Sets the name of the server as it appears publicly in the server browser",
         "DisplayName": "Server Name",
@@ -12,7 +12,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
-        "Subcategory": "General:dns:0",
+        "Subcategory": "General:dns",
         "DefaultValue": "AAS-TestMap",
         "Description": "Sets the map for the server. If \"Custom\" is selected, Custom Map Name must also be set",
         "DisplayName": "Initial Map",
@@ -39,7 +39,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
-        "Subcategory": "General:dns:0",
+        "Subcategory": "General:dns",
         "DefaultValue": "",
         "Description": "Sets a custom map for the server. \"Custom\" type must be selected under Map, and the map files included in HarshDoorstop/Mods",
         "DisplayName": "Custom Map Name",
@@ -51,7 +51,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
-        "Subcategory": "General:dns:0",
+        "Subcategory": "General:dns",
         "DefaultValue": "",
         "Description": "List of [proper names](https://operation-harsh-doorstop.fandom.com/wiki/Server_Install_Instructions#MapCycle.cfg) of maps to run in sequence on the server after the initial map, in the order to be run",
         "DisplayName": "Map Cycle",
@@ -63,7 +63,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
-        "Subcategory": "General:dns:0",
+        "Subcategory": "General:dns",
         "DefaultValue": "",
         "Description": "Sets the path to a modded gamemode for the server to run",
         "DisplayName": "Custom Mode",
@@ -88,7 +88,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
-        "Subcategory": "General:dns:0",
+        "Subcategory": "General:dns",
         "DefaultValue": "",
         "Description": "Sets a custom gamemode for the server. \"Custom\" type must be selected under Mode, and the mode files included in HarshDoorstop/Mods",
         "DisplayName": "Custom Mode Name",
@@ -100,7 +100,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
-        "Subcategory": "General:dns:0",
+        "Subcategory": "General:dns",
         "DefaultValue": "",
         "Description": "List of [Steam64 IDs](https://steamidfinder.com/) for server admins",
         "DisplayName": "Server Admins",
@@ -112,7 +112,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
-        "Subcategory": "General:dns:0",
+        "Subcategory": "General:dns",
         "DefaultValue": "",
         "Description": "Sets the password for players to join the server. Don't include a question mark",
         "DisplayName": "Server Password",
@@ -125,17 +125,18 @@
     },
     {
         "Category": "OHD Server Settings:dns",
+        "Subcategory": "Advanced:dns",
         "Description": "See the Security and Privacy menu for configurable options for the server's RCON password",
         "DisplayName": "RCON Password",
         "FieldName": "RCONPassword",
         "IncludeInCommandLine": false,
-        "InputType": "hidden",
+        "InputType": "randompassword",
         "Keywords": "rcon,password",
         "ParamFieldName": "RCONPassword"
     },
     {
         "Category": "OHD Server Settings:dns",
-        "Subcategory": "General:dns:0",
+        "Subcategory": "General:dns",
         "DefaultValue": "",
         "Description": "List of [Steam64 IDs](https://steamidfinder.com/) for whitelisted players. Empty = whitelist disabled",
         "DisplayName": "Whitelisted Players",
@@ -147,7 +148,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
-        "Subcategory": "General:dns:0",
+        "Subcategory": "General:dns",
         "DefaultValue": "",
         "Description": "List of [Steam64 IDs](https://steamidfinder.com/) for banned players",
         "DisplayName": "Banned Players",
@@ -159,7 +160,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
-        "Subcategory": "General:dns:0",
+        "Subcategory": "General:dns",
         "DefaultValue": "16",
         "Description": "Sets the maximum number of players able to join the server at one time",
         "DisplayName": "Player Limit",
@@ -174,7 +175,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
-        "Subcategory": "General:dns:0",
+        "Subcategory": "General:dns",
         "DefaultValue": "0",
         "Description": "Sets the minimum number of players required to start a match",
         "DisplayName": "Minimum Players To Start",
@@ -189,7 +190,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
-        "Subcategory": "General:dns:0",
+        "Subcategory": "General:dns",
         "DefaultValue": "255",
         "Description": "Sets the team (if any) that human-controlled players will be forcibly assigned and locked into (cannot switch teams). This is useful for co-op servers",
         "DisplayName": "Auto Assign Human Team",
@@ -206,7 +207,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
-        "Subcategory": "General:dns:0",
+        "Subcategory": "General:dns",
         "DefaultValue": "",
         "Description": "If set, player kit restrictions will be disabled",
         "DisplayName": "Disable Kit Restrictions",
@@ -221,7 +222,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
-        "Subcategory": "General:dns:0",
+        "Subcategory": "General:dns",
         "DefaultValue": "-SupportersOnly",
         "Description": "Wether only people that bought the supporter DLC will be able to join",
         "DisplayName": "Custom Command Line Flags",
@@ -233,7 +234,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
-        "Subcategory": "General:dns:0",
+        "Subcategory": "General:dns",
         "DefaultValue": "",
         "Description": "If enabled, the server will fill empty slots with bots to satisfy the Minimum Players To Start number, and remove them if human players join to take their place",
         "DisplayName": "Autofill Bots",
@@ -248,7 +249,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
-        "Subcategory": "BLUFOR:flag:1",
+        "Subcategory": "BLUFOR:flag",
         "DefaultValue": "",
         "Description": "Sets the BluFor team faction. Select \"Map Default\" to use the default faction for the loaded map. If \"Custom\" is selected, Custom BluFor Faction must also be set",
         "DisplayName": "BluFor Faction",
@@ -290,7 +291,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
-        "Subcategory": "BLUFOR:flag:1",
+        "Subcategory": "BLUFOR:flag",
         "DefaultValue": "",
         "Description": "Sets a custom BluFor team faction. \"Custom\" type must be selected under BluFor Faction, and the faction files included in HarshDoorstop/Mods",
         "DisplayName": "Custom BluFor Faction",
@@ -302,7 +303,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
-        "Subcategory": "BLUFOR:flag:1",
+        "Subcategory": "BLUFOR:flag",
         "DefaultValue": "500",
         "Description": "Sets the starting number of BluFor team tickets",
         "DisplayName": "BluFor Tickets",
@@ -317,7 +318,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
-        "Subcategory": "BLUFOR:flag:1",
+        "Subcategory": "BLUFOR:flag",
         "DefaultValue": "0",
         "Description": "Sets the number of BluFor team bots",
         "DisplayName": "BluFor Bots",
@@ -332,7 +333,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
-        "Subcategory": "OPFOR:flag:1",
+        "Subcategory": "OPFOR:flag",
         "DefaultValue": "",
         "Description": "Sets the OpFor team faction. Select \"Map Default\" to use the default faction for the loaded map. If \"Custom\" is selected, Custom OpFor Faction must also be set",
         "DisplayName": "OpFor Faction",
@@ -374,7 +375,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
-        "Subcategory": "OPFOR:flag:1",
+        "Subcategory": "OPFOR:flag",
         "DefaultValue": "",
         "Description": "Sets a custom OpFor team faction. \"Custom\" type must be selected under OpFor Faction, and the faction files included in HarshDoorstop/Mods",
         "DisplayName": "Custom OpFor Faction",
@@ -386,7 +387,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
-        "Subcategory": "OPFOR:flag:1",
+        "Subcategory": "OPFOR:flag",
         "DefaultValue": "500",
         "Description": "Sets the starting number of OpFor team tickets",
         "DisplayName": "OpFor Tickets",
@@ -401,7 +402,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
-        "Subcategory": "OPFOR:flag:1",
+        "Subcategory": "OPFOR:flag",
         "DefaultValue": "0",
         "Description": "Sets the number of OpFor team bots",
         "DisplayName": "OpFor Bots",
@@ -416,6 +417,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
+        "Subcategory": "Advanced:dns",
         "Description": "If required, you can change the binding of the server and Source RCON by changing the 'Server IP Address' setting under Security and Privacy. Ensure AMP itself can reach that IP or the console will not work",
         "DisplayName": "MultiHome IP Binding",
         "FieldName": "MultiHome",
@@ -425,7 +427,7 @@
     },
     {
         "Category": "OHD Server Settings:dns",
-        "Subcategory": "General:dns:0",
+        "Subcategory": "General:dns",
         "DefaultValue": "",
         "Description": "Sets your WebApiKey= in 'HarshDoorstop/Saved/Config/WindowsServer/Engine.ini' so your server enjoys the full featureset, you can get your key from steam://openurl/https://steamcommunity.com/dev/apikey",
         "DisplayName": "Steam Web API Key",
