@@ -2,14 +2,14 @@
 $DebugPreference = 'Continue'
 
 # Define the path pattern for config files and exclude metaconfig files
-$pattern = '*config.json'
+$pattern = '*ports.json'
 $excludePattern = 'metaconfig\.json'
 
 # Initialize an empty array to hold the merged content
 $mergedContent = @()
 
 # Get all matching files recursively, excluding excluded ones
-$files = Get-ChildItem -Path .\ -Filter $pattern -Recurse -Exclude $excludePattern
+$files = Get-ChildItem -Path .\ -Filter $pattern -Recurse # -Exclude $excludePattern
 
 # Debug print for the files found
 Write-Debug "Found $($files.Count) files matching the pattern '$pattern'"

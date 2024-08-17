@@ -1,40 +1,73 @@
 {
-  
   "$schema": "http://json-schema.org/draft-06/schema#",
   "type": "array",
-  "description": "",
-  "minItems": 1,
-  "uniqueItems": true,
   "items": {
-    "type": "object",
-    "required": [
-      "Protocol",
-      "Port",
-      "Name",
-      "Description",
-      "Ref"
-    ],
-    "properties": {
-      "Protocol": {
-        "type": "string",
-        "minLength": 1
+    "$ref": "#/definitions/PortElement"
+  },
+  "definitions": {
+    "PortElement": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Protocol": {
+          "$ref": "#/definitions/ProtocolUnion"
+        },
+        "Port": {
+          "$ref": "#/definitions/PortUnion"
+        },
+        "Ref": {
+          "type": "string"
+        },
+        "Name": {
+          "type": "string"
+        },
+        "Description": {
+          "type": "string"
+        },
+        "Offset": {
+          "type": "integer"
+        },
+        "Range": {
+          "type": "integer"
+        },
+        "ChildPorts": {
+          "type": "object"
+        }
       },
-      "Port": {
-        "type": "string",
-        "minLength": 1
-      },
-      "Name": {
-        "type": "string",
-        "minLength": 1
-      },
-      "Description": {
-        "type": "string",
-        "minLength": 1
-      },
-      "Ref": {
-        "type": "string",
-        "minLength": 1
-      }
+      "required": [],
+      "title": "PortElement"
+    },
+    "PortUnion": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "string",
+          "format": "integer"
+        }
+      ],
+      "title": "PortUnion"
+    },
+    "ProtocolUnion": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/ProtocolEnum"
+        },
+        {
+          "type": "integer"
+        }
+      ],
+      "title": "ProtocolUnion"
+    },
+    "ProtocolEnum": {
+      "type": "string",
+      "enum": [
+        "UDP",
+        "Both",
+        "TCP"
+      ],
+      "title": "ProtocolEnum"
     }
   }
 }
