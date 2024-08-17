@@ -1,8 +1,10 @@
 import json
 import codecs
 
+filepath = 'operation-harsh-doorstop-devconfig.json'
+
 # Open the JSON file with 'utf-8-sig' encoding to remove BOM if present
-with codecs.open('operation-harsh-doorstop-devconfig.json', 'r', 'utf-8-sig') as file:
+with codecs.open(filepath, 'r', 'utf-8-sig') as file:
     data = json.load(file)
 
 for i, obj in enumerate(data):
@@ -20,5 +22,5 @@ for i, obj in enumerate(data):
     #     obj["EnumValues"] = {"True": "True", "False": "False"}
 
 # Save the modified JSON back to the file with 'utf-8' encoding
-with codecs.open('operation-harsh-doorstop-devconfig.json', 'w', 'utf-8') as file:
+with codecs.open(filepath, 'w', 'utf-8') as file:
     json.dump(data, file, ensure_ascii=False, indent=4)
