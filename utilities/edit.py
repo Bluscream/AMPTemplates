@@ -9,10 +9,10 @@ def editFile(filepath):
 
     print(f"Editing {filepath}")
 
-    key = "MinValue"
+    key = "MaxValue"
     for i, obj in enumerate(data):
           if key in obj:
-                if obj[key].isdigit():
+                if isinstance(obj[key], str) and obj[key].isdigit():
                       obj[key] = int(obj[key])
         # sorted_obj = {k: obj[k] for k in sorted(obj)}
         
