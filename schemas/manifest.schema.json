@@ -31,12 +31,6 @@
         "origin": {
           "type": "string",
           "format": "uri",
-          "qt-uri-protocols": [
-            "https"
-          ],
-          "qt-uri-extensions": [
-            ".git"
-          ],
           "description": "The cloneable git repo this template repository can be pulled from",
           "examples": [
             "https://github.com/CubeCoders/AMPTemplates.git"
@@ -45,9 +39,6 @@
         "url": {
           "type": "string",
           "format": "uri",
-          "qt-uri-protocols": [
-            "https"
-          ],
           "description": "A url containing informations about this template repository",
           "examples": [
             "https://github.com/CubeCoders/AMPTemplates"
