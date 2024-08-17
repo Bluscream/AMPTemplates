@@ -58,5 +58,5 @@ def update_kvp_files(directory):
 
 if __name__ == "__main__":
     parent_directory = '.'  # Update this path
-    rename_json_files(parent_directory)
+    # rename_json_files(parent_directory)
     update_kvp_files(parent_directory)
