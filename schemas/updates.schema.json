@@ -20,45 +20,6 @@
         },
         "UpdateSourceData": {
           "type": "string",
-          "qt-uri-protocols": [
-            "http",
-            "https"
-          ],
-          "qt-uri-extensions": [
-            ".backupexclusions7d2d1",
-            ".backupexclusionsark1",
-            ".backupexclusionsark2",
-            ".backupexclusionsarksa1",
-            ".backupexclusionsarksa2",
-            ".backupexclusionsempyrion1",
-            ".backupexclusionsmw2",
-            ".backupexclusionsterraria",
-            ".backupexclusionstshock",
-            ".bz2",
-            ".cfg",
-            ".config",
-            ".dat",
-            ".dll",
-            ".example",
-            ".exe",
-            ".git",
-            ".gz",
-            ".ini",
-            ".json",
-            ".php",
-            ".ron",
-            ".run",
-            ".sh",
-            ".sii",
-            ".sp",
-            ".toml",
-            ".txt",
-            ".xml",
-            ".xz",
-            ".yaml",
-            ".yml",
-            ".zip"
-          ]
         },
         "UpdateSourceArgs": {
           "type": "string"
