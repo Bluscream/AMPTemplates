@@ -4,6 +4,44 @@
             "fileMatch": [
                 "*.ports.json"
             ],
+            "url": "file:///C:/Users/blusc/AppData/Local/Temp/AMPTemplates/schemas/ports.schema.json"
+        },
+        {
+            "fileMatch": [
+                "*.updates.json"
+            ],
+            "url": "file:///C:/Users/blusc/AppData/Local/Temp/AMPTemplates/schemas/updates.schema.json"
+        },
+        {
+            "fileMatch": [
+                "*metaconfig.json"
+            ],
+            "url": "file:///C:/Users/blusc/AppData/Local/Temp/AMPTemplates/schemas/metaconfig.schema.json"
+        },
+        {
+            "fileMatch": [
+                "*.config.json"
+            ],
+            "url": "file:///C:/Users/blusc/AppData/Local/Temp/AMPTemplates/schemas/config.schema.json"
+        },
+        {
+            "fileMatch": [
+                "*.generator.json"
+            ],
+            "url": "file:///C:/Users/blusc/AppData/Local/Temp/AMPTemplates/schemas/generator.schema.json"
+        },
+        {
+            "fileMatch": [
+                "manifest.json"
+            ],
+            "url": "file:///C:/Users/blusc/AppData/Local/Temp/AMPTemplates/schemas/manifest.schema.json"
+        }
+    ],
+    "json.schemas.remote": [
+        {
+            "fileMatch": [
+                "*.ports.json"
+            ],
             "url": "https://github.com/Bluscream/AMPTemplates/raw/dev/schemas/ports.schema.json"
         },
         {

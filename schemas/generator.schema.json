@@ -566,7 +566,7 @@
     },
     "BoolString": {
       "type": "string",
-      "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
+      "pattern": "(?i)(true|false|0|1|yes|no|enabled|disabled|on|off)$"
     },
     "NullOrString": {
       "anyOf": [
