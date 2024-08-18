@@ -14,12 +14,16 @@ jobs:
       contents: read
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@main
+        with: { fetch-depth: 0 }
+
       - name: Check for any changed workflows
         id: check-for-changed-workflows
         uses: tj-actions/changed-files@main
         with:
           files: |
             .github/workflows/**.yml
+
       - name: Validate workflows
         if: steps.check-for-changed-workflows.outputs.any_changed == 'true'
         uses: dsanders11/json-schema-validate-action@main
