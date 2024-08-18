@@ -1,6 +1,9 @@
 name: Validate JSON Schemas (ammarlakis)
 'on':
   workflow_dispatch: null
+  push:
+    branches:
+      - dev
 permissions: read-all
 jobs:
   validate:
