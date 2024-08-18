@@ -111,7 +111,7 @@
         },
         "App_ExitTimeout": {
           "type": "string",
-          "format": "integer"
+          "format": "int32",
         },
         "App_ExitFile": {
           "type": "string"
@@ -139,7 +139,7 @@
         },
         "App_MaxUsers": {
           "type": "string",
-          "format": "integer"
+          "format": "int32",
         },
         "App_UseRandomAdminPassword": {
           "type": "string"
@@ -152,18 +152,18 @@
         },
         "App_RCONConnectDelaySeconds": {
           "type": "string",
-          "format": "integer"
+          "format": "int32",
         },
         "App_RCONConnectRetrySeconds": {
           "type": "string",
-          "format": "integer"
+          "format": "int32",
         },
         "App_RCONHeartbeatCommand": {
           "type": "string"
         },
         "App_RCONHeartbeatMinutes": {
           "type": "string",
-          "format": "integer"
+          "format": "int32",
         },
         "App_TelnetLoginFormat": {
           "type": "string"
@@ -188,7 +188,7 @@
         },
         "App_MonitorChildProcessWaitMs": {
           "type": "string",
-          "format": "integer"
+          "format": "int32",
         },
         "App_MonitorChildProcessName": {
           "type": "string"
@@ -243,19 +243,19 @@
         },
         "Console_SleepDelayMinutes": {
           "type": "string",
-          "format": "integer"
+          "format": "int32",
         },
         "Console_DozeDelay": {
           "type": "string",
-          "format": "integer"
+          "format": "int32",
         },
         "Console_AutoRetryCount": {
           "type": "string",
-          "format": "integer"
+          "format": "int32",
         },
         "Console_SleepStartThresholdSeconds": {
           "type": "string",
-          "format": "integer"
+          "format": "int32",
         },
         "_PortMappings": {
           "type": "array",
@@ -336,7 +336,7 @@
         },
         "_SteamCheck": {
           "type": "string",
-          "format": "integer"
+          "format": "int32",
         },
         "Meta_DisplayImageSource": {
           "type": "string"
@@ -346,11 +346,11 @@
         },
         "App_WorkingDir": {
           "type": "string",
-          "format": "integer"
+          "format": "int32",
         },
         "_SteamClientAppID": {
           "type": "string",
-          "format": "integer"
+          "format": "int32",
         },
         "App_ExecutableWin": {
           "type": "string"
@@ -475,14 +475,14 @@
       "properties": {
         "_Protocol": {
           "type": "string",
-          "format": "integer"
+          "format": "int32",
         },
         "Protocol": {
           "type": "string"
         },
         "Port": {
           "type": "string",
-          "format": "integer"
+          "format": "int32",
         },
         "_PortType": {
           "type": "string"
@@ -515,14 +515,14 @@
         },
         "_UpdateSourcePlatform": {
           "type": "string",
-          "format": "integer"
+          "format": "int32",
         },
         "UpdateSourcePlatform": {
           "type": "string"
         },
         "_UpdateSource": {
           "type": "string",
-          "format": "integer"
+          "format": "int32",
         },
         "UpdateSource": {
           "type": "string"
@@ -555,7 +555,7 @@
         },
         "_ForceDownloadPlatform": {
           "type": "string",
-          "format": "integer"
+          "format": "int32",
         },
         "ForceDownloadPlatform": {
           "type": "null"
