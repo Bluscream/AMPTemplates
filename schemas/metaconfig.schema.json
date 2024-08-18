@@ -72,7 +72,8 @@
       "type": "object",
       "additionalProperties": true,
       "required": [],
-      "title": "SettingMappings"
+      "title": "SettingMappings",
+      "description": "\"<setting name in file>\": \"<ParamFieldName in AMP>\""
     },
     "ConfigType": {
       "type": "string",
