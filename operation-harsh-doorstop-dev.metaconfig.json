@@ -1,8 +1,6 @@
 [
     {
         "ConfigFile": "HarshDoorstop/Saved/Config/WindowsServer/Engine.ini",
-        "ConfigType": "ini",
-        "ConfigFormatRegex": "^(?<key>.+?)=(?<value>.*?)$",
         "AutoMap": false,
         "Importable": false,
         "Subsections": [
@@ -28,8 +26,6 @@
     },
     {
         "ConfigFile": "HarshDoorstop/Saved/Config/WindowsServer/Game.ini",
-        "ConfigType": "ini",
-        "ConfigFormatRegex": "^(?<key>.+?)=(?<value>.*?)$",
         "AutoMap": false,
         "Importable": false,
         "Subsections": [
