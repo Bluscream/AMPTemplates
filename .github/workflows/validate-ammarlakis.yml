@@ -39,6 +39,4 @@ jobs:
         uses: ammarlakis/action-ajv@master
         with:
           data: '*.generator.json'
-          schema: schemas/generator.schema.json  # pull_request:
-  # push:
-  #   branches: [ "dev" ]
+          schema: schemas/generator.schema.json

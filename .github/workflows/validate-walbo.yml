@@ -56,8 +56,5 @@ jobs:
           schema-version: draft-06
           allow-union-types: true
           strict: false
-          # allow-matching-properties: true  # pull_request:
-  # push:
-  #   branches: [ "dev" ]
-
+          # allow-matching-properties: true
           # print-valid-files: false

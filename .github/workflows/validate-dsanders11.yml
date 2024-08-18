@@ -39,6 +39,4 @@ jobs:
         uses: dsanders11/json-schema-validate-action@main
         with:
           files: '*.generator.json'
-          schema: schemas/generator.schema.json  # pull_request:
-  # push:
-  #   branches: [ "dev" ]
+          schema: schemas/generator.schema.json

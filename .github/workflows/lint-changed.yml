@@ -33,5 +33,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           FILTER_REGEX_INCLUDE: ${{ steps.changed_files.outputs.all_changed_files }}
         with:
-          args: '--filter-path $(echo "${{ steps.changed_files.outputs.all_changed_files }}" | jq -r ''.[]'')'  # pull_request:
-  # push:
+          args: '--filter-path $(echo "${{ steps.changed_files.outputs.all_changed_files }}" | jq -r ''.[]'')'
