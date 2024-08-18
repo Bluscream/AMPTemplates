@@ -1,5 +1,5 @@
 ---
-name: Validate JSON Schemas (dsanders11)
+name: Validate JSON Schemas (ammarlakis)
 'on':
   workflow_dispatch: null
 permissions: read-all
@@ -11,34 +11,34 @@ jobs:
         with:
           fetch-depth: 0
       - name: Validate manifest.json
-        uses: dsanders11/json-schema-validate-action@main
+        uses: ammarlakis/action-ajv@master
         with:
-          files: manifest.json
+          data: manifest.json
           schema: schemas/manifest.schema.json
       - name: Validate *.config.json
-        uses: dsanders11/json-schema-validate-action@main
+        uses: ammarlakis/action-ajv@master
         with:
-          files: '*.config.json'
+          data: '*.config.json'
           schema: schemas/config.schema.json
       - name: Validate *.metaconfig.json
-        uses: dsanders11/json-schema-validate-action@main
+        uses: ammarlakis/action-ajv@master
         with:
-          files: '*.metaconfig.json'
+          data: '*.metaconfig.json'
           schema: schemas/metaconfig.schema.json
       - name: Validate *.updates.json
-        uses: dsanders11/json-schema-validate-action@main
+        uses: ammarlakis/action-ajv@master
         with:
-          files: '*.updates.json'
+          data: '*.updates.json'
           schema: schemas/updates.schema.json
       - name: Validate *.ports.json
-        uses: dsanders11/json-schema-validate-action@main
+        uses: ammarlakis/action-ajv@master
         with:
-          files: '*.ports.json'
+          data: '*.ports.json'
           schema: schemas/ports.schema.json
       - name: Validate *.generator.json
-        uses: dsanders11/json-schema-validate-action@main
+        uses: ammarlakis/action-ajv@master
         with:
-          files: '*.generator.json'
+          data: '*.generator.json'
           schema: schemas/generator.schema.json  # pull_request:
   # push:
   #   branches: [ "dev" ]
