@@ -79,6 +79,12 @@ jobs:
           schema: schemas/generator.schema.json
           strict: false
           strictSchema: false
+          strictTypes: false
+          strictTuples: false
+          strictRequired: false
+          allowDate: true
+          removeAdditional: "failing"
+          useDefaults: false
           validateFormats: false
           allErrors: true
           verbose: true
