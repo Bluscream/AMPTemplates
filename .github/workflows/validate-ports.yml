@@ -32,7 +32,7 @@ jobs:
           strict: false
           allow-matching-properties: false
           fail-on-missing-schema: true
-          # print-valid-files: false
+          print-valid-files: false
       - name: Schema (cardinalby/schema-validator-action)
         continue-on-error: true
         uses: cardinalby/schema-validator-action@master
