@@ -1,4 +1,3 @@
----
 name: Lint all files
 'on':
   workflow_dispatch: null

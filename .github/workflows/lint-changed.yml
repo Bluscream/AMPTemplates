@@ -1,4 +1,3 @@
----
 name: Lint changed files
 'on':
   workflow_dispatch: null
