@@ -141,7 +141,7 @@
         "DisplayName": "RCON Password",
         "FieldName": "RemoteAdminPassword",
         "IncludeInCommandLine": false,
-        "InputType": "hidden",
+        "InputType": "randompassword",
         "Keywords": "rcon,password",
         "ParamFieldName": "RemoteAdminPassword"
     },
@@ -315,7 +315,7 @@
     {
         "Category": "OHD Server Settings:dns",
         "Subcategory": "General:dns",
-        "DefaultValue": "",
+        "DefaultValue": "False",
         "Description": "If set, player kit restrictions will be disabled",
         "DisplayName": "Disable Kit Restrictions",
         "EnumValues": {
@@ -325,7 +325,8 @@
         "FieldName": "DisableKitRestrictions",
         "InputType": "checkbox",
         "Keywords": "disable,kit,restrictions,bDisableKitRestrictions",
-        "ParamFieldName": "DisableKitRestrictions"
+        "ParamFieldName": "DisableKitRestrictions",
+        "SkipIfEmpty": true
     },
     {
         "Category": "OHD Server Settings:dns",
