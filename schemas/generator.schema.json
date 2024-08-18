@@ -63,19 +63,19 @@
           "type": "string"
         },
         "_SupportsWindows": {
-          "type": "boolean"
+          "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
         },
         "_SupportsLinux": {
-          "type": "boolean"
+          "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
         },
         "App_AdminMethod": {
           "type": "string"
         },
         "App_HasReadableConsole": {
-          "type": "boolean"
+          "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
         },
         "App_HasWritableConsole": {
-          "type": "boolean"
+          "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
         },
         "App_DisplayName": {
           "type": "string"
@@ -270,7 +270,7 @@
           "type": "string"
         },
         "_UpdateSourceUnzip": {
-          "type": "boolean"
+          "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
         },
         "_DisplayImageSource": {
           "type": "string"
@@ -373,7 +373,7 @@
           "items": {}
         },
         "isValid": {
-          "type": "boolean"
+          "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
         }
       },
       "required": [],
@@ -384,7 +384,7 @@
         {
           "type": "null"
         },
-        {"type": "boolean"},
+        {"pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"},
         {
           "type": "object",
           "additionalProperties": false,
@@ -408,13 +408,13 @@
               "type": "string"
             },
             "IsFlagArgument": {
-              "type": "boolean"
+              "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
             },
             "ParamFieldName": {
               "type": "string"
             },
             "IncludeInCommandLine": {
-              "type": "boolean"
+              "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
             },
             "DefaultValue": {
               "type": "string"
@@ -426,10 +426,10 @@
               "type": "string"
             },
             "Hidden": {
-              "type": "boolean"
+              "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
             },
             "SkipIfEmpty": {
-              "type": "boolean"
+              "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
             },
             "_CheckedValue": {
               "type": "string",
@@ -533,10 +533,10 @@
           "$ref": "#/definitions/NullOrString"
         },
         "UnzipUpdateSource": {
-          "type": "boolean"
+          "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
         },
         "OverwriteExistingFiles": {
-          "type": "boolean"
+          "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
         },
         "_ForceDownloadPlatform": {
           "type": "string",
@@ -546,10 +546,10 @@
           "type": "null"
         },
         "DeleteAfterExtract": {
-          "type": "boolean"
+          "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
         },
         "OneShot": {
-          "type": "boolean"
+          "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
         }
       },
       "required": [],
