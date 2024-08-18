@@ -1,0 +1,19 @@
+name: Validate all Github workflows
+  
+on: # yamllint disable-line rule:truthy
+  workflow_dispatch:
+
+permissions: read-all
+
+jobs:
+  validate-github-actions-workflows:
+    name: Validate GitHub Actions workflows
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate workflows
+        uses: dsanders11/json-schema-validate-action@main
+        with:
+          schema: https://json.schemastore.org/github-workflow.json
+          files: .github/workflows/**.yml 

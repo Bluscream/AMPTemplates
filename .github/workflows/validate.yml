@@ -5,7 +5,6 @@
     workflow_dispatch:
     pull_request:
     push:
-      branches: [ "dev" ]
   
   permissions: read-all
   
