@@ -17,7 +17,7 @@ jobs:
         with:
           data: manifest.json
           schema: schemas/manifest.schema.json
-          strictSchema: false
+          strict: false
           validateFormats: false
           allErrors: true
           verbose: true
@@ -26,7 +26,7 @@ jobs:
         with:
           data: '*.config.json'
           schema: schemas/config.schema.json
-          strictSchema: false
+          strict: false
           validateFormats: false
           allErrors: true
           verbose: true
@@ -35,7 +35,7 @@ jobs:
         with:
           data: '*.metaconfig.json'
           schema: schemas/metaconfig.schema.json
-          strictSchema: false
+          strict: false
           validateFormats: false
           allErrors: true
           verbose: true
@@ -44,7 +44,7 @@ jobs:
         with:
           data: '*.updates.json'
           schema: schemas/updates.schema.json
-          strictSchema: false
+          strict: false
           validateFormats: false
           allErrors: true
           verbose: true
@@ -53,7 +53,7 @@ jobs:
         with:
           data: '*.ports.json'
           schema: schemas/ports.schema.json
-          strictSchema: false
+          strict: false
           validateFormats: false
           allErrors: true
           verbose: true
@@ -62,7 +62,7 @@ jobs:
         with:
           data: '*.generator.json'
           schema: schemas/generator.schema.json
-          strictSchema: false
+          strict: false
           validateFormats: false
           allErrors: true
           verbose: true
