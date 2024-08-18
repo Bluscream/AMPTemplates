@@ -93,7 +93,7 @@
           "type": "string"
         },
         "App_RapidStartup": {
-          "$ref": "#/definitions/BoolOrString"
+          "type": "boolean"
         },
         "App_ApplicationReadyMode": {
           "type": "string"
@@ -433,10 +433,10 @@
               "type": "boolean"
             },
             "_CheckedValue": {
-              "$ref": "#/definitions/BoolOrString"
+              "type": "boolean"
             },
             "_UncheckedValue": {
-              "$ref": "#/definitions/BoolOrString"
+              "type": "boolean"
             },
             "_EnumMappings": {
               "type": "array",
