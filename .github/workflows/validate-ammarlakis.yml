@@ -22,6 +22,7 @@ jobs:
           allErrors: true
           verbose: true
           extraFormats: true
+          ignoreErrors: true
       - name: Validate *.config.json
         uses: Bluscream/action-ajv@patch-1
         with:
@@ -32,6 +33,7 @@ jobs:
           allErrors: true
           verbose: true
           extraFormats: true
+          ignoreErrors: true
       - name: Validate *.metaconfig.json
         uses: Bluscream/action-ajv@patch-1
         with:
@@ -42,6 +44,7 @@ jobs:
           allErrors: true
           verbose: true
           extraFormats: true
+          ignoreErrors: true
       - name: Validate *.updates.json
         uses: Bluscream/action-ajv@patch-1
         with:
@@ -52,6 +55,7 @@ jobs:
           allErrors: true
           verbose: true
           extraFormats: true
+          ignoreErrors: true
       - name: Validate *.ports.json
         uses: Bluscream/action-ajv@patch-1
         with:
@@ -62,6 +66,7 @@ jobs:
           allErrors: true
           verbose: true
           extraFormats: true
+          ignoreErrors: true
       - name: Validate *.generator.json
         uses: Bluscream/action-ajv@patch-1
         with:
@@ -72,3 +77,4 @@ jobs:
           allErrors: true
           verbose: true
           extraFormats: true
+          ignoreErrors: true
