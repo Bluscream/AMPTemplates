@@ -98,7 +98,7 @@
         },
         "App_RapidStartup": {
           "type": "string",
-          "format": "boolean"
+          "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
         },
         "App_ApplicationReadyMode": {
           "type": "string"
@@ -446,11 +446,11 @@
             },
             "_CheckedValue": {
               "type": "string",
-              "format": "boolean"
+              "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
             },
             "_UncheckedValue": {
               "type": "string",
-              "format": "boolean"
+              "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
             },
             "_EnumMappings": {
               "type": "array",
