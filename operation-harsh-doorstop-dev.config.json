@@ -1,7 +1,7 @@
 [
     {
         "Category": "Mod Settings:extension",
-        "Subcategory": "General:extension:100",
+        "Subcategory": ":extension:100",
         "FieldName": "Placeholder",
         "ParamFieldName": "Placeholder",
         "DisplayName": "",
