@@ -1,0 +1,64 @@
+name: Validate `*.metaconfig.json`
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '*.metaconfig.json'
+  pull_request:
+    paths:
+      - '*.metaconfig.json'
+
+permissions: read-all
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: read
+      statuses: write
+
+    steps:
+    - name: Pull
+      uses: actions/checkout@main
+      with:
+        fetch-depth: 0
+        ref: ${{ github.head_ref }}
+
+    - name: Schema (walbo/validate-json)
+      continue-on-error: true
+      uses: walbo/validate-json@main
+      with:
+        files: '*.metaconfig.json'
+        schema: schemas/metaconfig.schema.json
+        schema-version: draft-07
+        allow-union-types: true
+        strict: false
+        allow-matching-properties: false
+        fail-on-missing-schema: true
+        # print-valid-files: false
+
+    - name: Schema (cardinalby/schema-validator-action)
+      continue-on-error: true
+      uses: cardinalby/schema-validator-action@master
+      with:
+        file: '*.metaconfig.json'
+        schema: schemas/metaconfig.schema.json
+        fixSchemas: true
+
+    - name: Schema (dsanders11/json-schema-validate-action)
+      continue-on-error: true
+      uses: dsanders11/json-schema-validate-action@main
+      with:
+        files: '*.metaconfig.json'
+        schema: schemas/metaconfig.schema.json
+
+    - name: Schema (ammarlakis/action-ajv)
+      continue-on-error: true
+      uses: ammarlakis/action-ajv@master
+      with:
+        data: '*.metaconfig.json'
+        schema: schemas/metaconfig.schema.json
+        allErrors: true
+        verbose: true
