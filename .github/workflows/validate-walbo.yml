@@ -1,11 +1,11 @@
 ---
-  name: Validate JSON Schemas
+  name: Validate JSON Schemas (Walbo)
   
   on: # yamllint disable-line rule:truthy
     workflow_dispatch:
-    pull_request:
-    push:
-      branches: [ "dev" ]
+    # pull_request:
+    # push:
+    #   branches: [ "dev" ]
   
   permissions: read-all
   
@@ -16,47 +16,44 @@
         - uses: actions/checkout@v4
   
         - name: "Validate manifest.json"
-          uses: cardinalby/schema-validator-action@v3
+          uses: walbo/validate-json@v1.1.0
           with:
-            file: 'manifest.json'
+            files: 'manifest.json'
             schema: schemas/manifest.schema.json
-            fixSchemas: true
   
         - name: "Validate *.config.json"
-          uses: cardinalby/schema-validator-action@v3
+          uses: walbo/validate-json@v1.1.0
           with:
-            file: '*.config.json'
+            files: '*.config.json'
             schema: schemas/config.schema.json
-            fixSchemas: true
   
         - name: "Validate *.metaconfig.json"
-          uses: cardinalby/schema-validator-action@v3
+          uses: walbo/validate-json@v1.1.0
           with:
-            file: '*.metaconfig.json'
+            files: '*.metaconfig.json'
             schema: schemas/metaconfig.schema.json
-            fixSchemas: true
   
         - name: "Validate *.updates.json"
-          uses: cardinalby/schema-validator-action@v3
+          uses: walbo/validate-json@v1.1.0
           with:
-            file: '*.updates.json'
+            files: '*.updates.json'
             schema: schemas/updates.schema.json
-            fixSchemas: true
   
         - name: "Validate *.ports.json"
-          uses: cardinalby/schema-validator-action@v3
+          uses: walbo/validate-json@v1.1.0
           with:
-            file: '*.ports.json'
+            files: '*.ports.json'
             schema: schemas/ports.schema.json
-            fixSchemas: true
   
         - name: "Validate *.generator.json"
-          uses: cardinalby/schema-validator-action@v3
+          uses: walbo/validate-json@v1.1.0
           with:
-            file: '*.generator.json'
+            files: '*.generator.json'
             schema: schemas/generator.schema.json
-            mode: spec
-            fixSchemas: true
-              
+            # schema-version: draft-06
+            # strict: false
+            # allow-matching-properties: true
+            # allow-union-types: true
+            # print-valid-files: false
               
               

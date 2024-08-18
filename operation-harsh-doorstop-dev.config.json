@@ -445,7 +445,7 @@
         "DisplayName": "RCON Password",
         "FieldName": "RemoteAdminPassword",
         "IncludeInCommandLine": false,
-        "InputType": "password",
+        "InputType": "hidden",
         "Keywords": "rcon,password",
         "ParamFieldName": "RemoteAdminPassword"
     },

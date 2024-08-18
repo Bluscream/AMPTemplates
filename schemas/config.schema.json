@@ -30,7 +30,7 @@
                 },
                 "Subcategory": {
                     "type": "string",
-                    "pattern": "^[\\w\\-_ ]+(:[\\w_]+)?(:-?\\d+)?$",
+                    "pattern": "^[\\w\\-_ ]*(:[\\w_]+)?(:-?\\d+)?$",
                     "default": "",
                     "examples": [
                         "Server Settings",

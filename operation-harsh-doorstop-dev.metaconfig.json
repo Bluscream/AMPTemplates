@@ -34,7 +34,6 @@
                 "SettingMappings": {
                     "bEnabled": "RCONEnabled",
                     "ListenPort": "RCONPort",
-                    "Password": "RemoteAdminPassword",
                     "MaxActiveConnections": "RCONMaxActiveConnections",
                     "MaxAuthAttempts": "RCONMaxAuthAttempts"
                 }
