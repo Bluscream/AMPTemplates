@@ -3,8 +3,8 @@
         "ConfigFile":"HarshDoorstop/Saved/Config/WindowsServer/Engine.ini",
         "ConfigType": "ini",
         "ConfigFormatRegex": "^(?<key>.+?)=(?<value>.*?)$",
-        "AutoMap":true,
-        "Importable": true,
+        "AutoMap":false,
+        "Importable": false,
         "Subsections": [
 			{
 				"Heading": "OnlineSubsystemSteam",
@@ -22,7 +22,7 @@
         "Importable": false,
         "Subsections": [
             {
-                "Heading": "/casualcqb/core/bp_hdgamestate_cqb.bp_hdgamestate_cqb_c",
+                "Heading": "/CasualCQB/Root/Core/BP_HDGameState_CQB.BP_HDGameState_CQB_C",
                 "SettingMappings": {
                     "bEnableEnemyTags": "bEnableEnemyTags",
                     "bEnableDeathCamera": "bEnableDeathCamera",
@@ -46,7 +46,7 @@
                 }
             },
             {
-                "Heading": "/casualcqb/core/bp_hdgame_skirmish_cqb.bp_hdgame_skirmish_cqb_c",
+                "Heading": "/CasualCQB/Root/Core/BP_HDGame_Skirmish_CQB.BP_HDGame_Skirmish_CQB_C",
                 "SettingMappings": {
                     "AutoSpawnRadius": "AutoSpawnRadius"
                 }
@@ -58,6 +58,6 @@
         "ConfigType": "ini",
         "ConfigFormatRegex": "^(?<key>.+?)=(?<value>.*?)$",
         "AutoMap":false,
-        "Importable": true
+        "Importable": false
     }
 ]
