@@ -31,12 +31,10 @@
           "type": "string"
         },
         "OverwriteExistingFiles": {
-          "type": "string",
-          "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
+          "type": "boolean"
         },
         "SkipOnFailure": {
-          "type": "string",
-          "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
+          "type": "boolean"
         },
         "UpdateSourceConditionSetting": {
           "type": "string"
@@ -45,12 +43,10 @@
           "type": "string"
         },
         "UnzipUpdateSource": {
-          "type": "string",
-          "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
+          "type": "boolean"
         },
         "DeleteAfterExtract": {
-          "type": "string",
-          "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
+          "type": "boolean"
         },
         "UpdateSourceVersion": {
           "type": "string"
@@ -62,8 +58,7 @@
           "type": "string"
         },
         "OneShot": {
-          "type": "string",
-          "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
+          "type": "boolean"
         }
       },
       "required": [],
@@ -72,8 +67,7 @@
     "BoolString": {
       "anyOf": [
         {
-          "type": "string",
-          "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
+          "type": "boolean"
         },
         {
           "type": "string",

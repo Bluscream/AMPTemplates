@@ -82,14 +82,12 @@
                     "description": "Values to be applied for the `enum` and `checkbox` InputTypes"
                 },
                 "IncludeInCommandLine": {
-                    "type": "string",
-                    "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i",
+                    "type": "boolean",
                     "default": false,
                     "description": "If true, then it'll be included automatically by `{{$FormattedArgs}}`"
                 },
                 "SkipIfEmpty": {
-                    "type": "string",
-                    "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i",
+                    "type": "boolean",
                     "default": false,
                     "description": " If true, and `IncludeInCommandLine` is true, the key/pair will not be included if the input has a blank value entered"
                 },
@@ -98,8 +96,7 @@
                     "default": ""
                 },
                 "Required": {
-                    "type": "string",
-                    "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i",
+                    "type": "boolean",
                     "default": false,
                     "description": "If true, the field must be supplied for the server to start"
                 },
@@ -118,14 +115,12 @@
                     "description": "The highest value allowed for a number `InputType`. Must be a whole number"
                 },
                 "IsFlagArgument": {
-                    "type": "string",
-                    "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i",
+                    "type": "boolean",
                     "default": false,
                     "description": "If true, for checkbox based settings, the checkbox being on will add the DefaultValue into `{{$FormattedArgs}}` as-is"
                 },
                 "Hidden": {
-                    "type": "string",
-                    "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i",
+                    "type": "boolean",
                     "default": false,
                     "description": "If true, the input is not visible to the user and not accessible through the API. Useful for mapping AMP variables to config files"
                 },
@@ -133,8 +128,7 @@
                     "type": "string"
                 },
                 "ExcludeFromImport": {
-                    "type": "string",
-                    "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i",
+                    "type": "boolean",
                     "default": false
                 },
                 "Suffix": {
