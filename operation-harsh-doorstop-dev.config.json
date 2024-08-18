@@ -139,11 +139,11 @@
         "Subcategory": "RCON:vpn_key",
         "Description": "See the Security and Privacy menu for configurable options for the server's RCON password",
         "DisplayName": "RCON Password",
-        "FieldName": "RCONPassword",
+        "FieldName": "RemoteAdminPassword",
         "IncludeInCommandLine": false,
-        "InputType": "randompassword",
+        "InputType": "hidden",
         "Keywords": "rcon,password",
-        "ParamFieldName": "RCONPassword"
+        "ParamFieldName": "RemoteAdminPassword"
     },
     {
         "Category": "OHD Server Settings:dns",
@@ -156,7 +156,8 @@
         "MaxValue": 25565,
         "DefaultValue": "7779",
         "Keywords": "rcon",
-        "ParamFieldName": "RCONPort"
+        "ParamFieldName": "RCONPort",
+        "Hidden": true
     },
     {
         "Category": "OHD Server Settings:dns",
