@@ -56,7 +56,9 @@
       "type": "object",
       "properties": {
         "Heading": {
-          "type": "string"
+          "type": "string",
+          "title": "Heading",
+          "description": "Dot seperated path to the parent of the keys"
         },
         "SettingMappings": {
           "$ref": "#/definitions/SettingMappings"
@@ -66,7 +68,8 @@
         "Heading",
         "SettingMappings"
       ],
-      "title": "Subsection"
+      "title": "Subsection",
+      "description": "\"<setting name in file>\": \"<ParamFieldName in AMP>\""
     },
     "SettingMappings": {
       "type": "object",
