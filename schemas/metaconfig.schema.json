@@ -32,7 +32,9 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/Subsection"
-          }
+          },
+          "title": "Subsections",
+          "description": "\"<setting name in file>\": \"<ParamFieldName in AMP>\""
         },
         "ConfigType": {
           "$ref": "#/definitions/ConfigType"
