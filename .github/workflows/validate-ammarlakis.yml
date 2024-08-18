@@ -14,28 +14,34 @@ jobs:
         with:
           data: manifest.json
           schema: schemas/manifest.schema.json
+          strictSchema: "log"
       - name: Validate *.config.json
         uses: ammarlakis/action-ajv@master
         with:
           data: '*.config.json'
           schema: schemas/config.schema.json
+          strictSchema: "log"
       - name: Validate *.metaconfig.json
         uses: ammarlakis/action-ajv@master
         with:
           data: '*.metaconfig.json'
           schema: schemas/metaconfig.schema.json
+          strictSchema: "log"
       - name: Validate *.updates.json
         uses: ammarlakis/action-ajv@master
         with:
           data: '*.updates.json'
           schema: schemas/updates.schema.json
+          strictSchema: "log"
       - name: Validate *.ports.json
         uses: ammarlakis/action-ajv@master
         with:
           data: '*.ports.json'
           schema: schemas/ports.schema.json
+          strictSchema: "log"
       - name: Validate *.generator.json
         uses: ammarlakis/action-ajv@master
         with:
           data: '*.generator.json'
           schema: schemas/generator.schema.json
+          strictSchema: "log"
