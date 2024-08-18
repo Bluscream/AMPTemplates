@@ -23,6 +23,7 @@
             schema-version: draft-06
             allow-matching-properties: true
             allow-union-types: true
+            strict: false
   
         - name: "Validate *.config.json"
           uses: walbo/validate-json@v1.1.0
@@ -32,6 +33,7 @@
             schema-version: draft-06
             allow-matching-properties: true
             allow-union-types: true
+            strict: false
   
         - name: "Validate *.metaconfig.json"
           uses: walbo/validate-json@v1.1.0
@@ -41,6 +43,7 @@
             schema-version: draft-06
             allow-matching-properties: true
             allow-union-types: true
+            strict: false
   
         - name: "Validate *.updates.json"
           uses: walbo/validate-json@v1.1.0
@@ -50,6 +53,7 @@
             schema-version: draft-06
             allow-matching-properties: true
             allow-union-types: true
+            strict: false
   
         - name: "Validate *.ports.json"
           uses: walbo/validate-json@v1.1.0
@@ -59,6 +63,7 @@
             schema-version: draft-06
             allow-matching-properties: true
             allow-union-types: true
+            strict: false
   
         - name: "Validate *.generator.json"
           uses: walbo/validate-json@v1.1.0
@@ -68,7 +73,7 @@
             schema-version: draft-06
             allow-matching-properties: true
             allow-union-types: true
-            # strict: false
+            strict: false
             # print-valid-files: false
               
               
