@@ -20,37 +20,42 @@
           with:
             files: 'manifest.json'
             schema: schemas/manifest.schema.json
+            schema-version: draft-06
   
         - name: "Validate *.config.json"
           uses: walbo/validate-json@v1.1.0
           with:
             files: '*.config.json'
             schema: schemas/config.schema.json
+            schema-version: draft-06
   
         - name: "Validate *.metaconfig.json"
           uses: walbo/validate-json@v1.1.0
           with:
             files: '*.metaconfig.json'
             schema: schemas/metaconfig.schema.json
+            schema-version: draft-06
   
         - name: "Validate *.updates.json"
           uses: walbo/validate-json@v1.1.0
           with:
             files: '*.updates.json'
             schema: schemas/updates.schema.json
+            schema-version: draft-06
   
         - name: "Validate *.ports.json"
           uses: walbo/validate-json@v1.1.0
           with:
             files: '*.ports.json'
             schema: schemas/ports.schema.json
+            schema-version: draft-06
   
         - name: "Validate *.generator.json"
           uses: walbo/validate-json@v1.1.0
           with:
             files: '*.generator.json'
             schema: schemas/generator.schema.json
-            # schema-version: draft-06
+            schema-version: draft-06
             # strict: false
             # allow-matching-properties: true
             # allow-union-types: true
