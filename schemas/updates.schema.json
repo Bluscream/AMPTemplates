@@ -104,7 +104,7 @@
     },
     "BoolString": {
       "type": "string",
-      "pattern": "(?i)(true|false|0|1|yes|no|enabled|disabled|on|off)$"
+      "pattern": "^(TRUE|True|true|FALSE|False|false|YES|Yes|yes|NO|No|no|ON|On|on|OFF|Off|off|0|1|ENABLED|Enabled|enabled|DISABLED|Disabled|disabled|ENABLE|Enable|enable|DISABLE|Disable|disable)$"
     },
     "BoolOrString": {
       "anyOf": [
