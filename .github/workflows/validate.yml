@@ -16,42 +16,42 @@
         - uses: actions/checkout@main
   
         - name: "Validate manifest.json"
-          uses: cardinalby/schema-validator-action
+          uses: cardinalby/schema-validator-action@master
           with:
             file: 'manifest.json'
             schema: schemas/manifest.schema.json
             fixSchemas: true
   
         - name: "Validate *.config.json"
-          uses: cardinalby/schema-validator-action
+          uses: cardinalby/schema-validator-action@master
           with:
             file: '*.config.json'
             schema: schemas/config.schema.json
             fixSchemas: true
   
         - name: "Validate *.metaconfig.json"
-          uses: cardinalby/schema-validator-action
+          uses: cardinalby/schema-validator-action@master
           with:
             file: '*.metaconfig.json'
             schema: schemas/metaconfig.schema.json
             fixSchemas: true
   
         - name: "Validate *.updates.json"
-          uses: cardinalby/schema-validator-action
+          uses: cardinalby/schema-validator-action@master
           with:
             file: '*.updates.json'
             schema: schemas/updates.schema.json
             fixSchemas: true
   
         - name: "Validate *.ports.json"
-          uses: cardinalby/schema-validator-action
+          uses: cardinalby/schema-validator-action@master
           with:
             file: '*.ports.json'
             schema: schemas/ports.schema.json
             fixSchemas: true
   
         - name: "Validate *.generator.json"
-          uses: cardinalby/schema-validator-action
+          uses: cardinalby/schema-validator-action@master
           with:
             file: '*.generator.json'
             schema: schemas/generator.schema.json
