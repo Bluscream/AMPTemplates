@@ -141,7 +141,7 @@
         "DisplayName": "RCON Password",
         "FieldName": "RemoteAdminPassword",
         "IncludeInCommandLine": false,
-        "InputType": "randompassword",
+        "InputType": "password",
         "Keywords": "rcon,password",
         "ParamFieldName": "RemoteAdminPassword"
     },
@@ -305,7 +305,7 @@
         "Category": "OHD Server Settings:dns",
         "Subcategory": "General:dns",
         "DefaultValue": "-1",
-        "Description": "Minimum amount of players required to capture a point",
+        "Description": "Minimum amount of players required to capture a point (-1 = Use Map Settings)",
         "DisplayName": "Minimum Players To Capture",
         "FieldName": "MinPlayersToCapture",
         "InputType": "number",
