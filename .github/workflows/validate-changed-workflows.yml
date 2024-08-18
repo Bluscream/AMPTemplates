@@ -8,10 +8,14 @@ on: # yamllint disable-line rule:truthy
 permissions: read-all
 
 jobs:
-  validate-github-actions-workflows:
+  validate-changed-github-actions-workflows:
     name: Validate GitHub Actions workflows
+
     permissions:
       contents: read
+      packages: read
+      statuses: write # To report GitHub Actions status checks
+
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
