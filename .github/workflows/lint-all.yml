@@ -1,5 +1,5 @@
 ---
-name: Lint
+name: Lint all files
 
 on:  # yamllint disable-line rule:truthy
   workflow_dispatch:
@@ -16,18 +16,15 @@ jobs:
     permissions:
       contents: read
       packages: read
-      # To report GitHub Actions status checks
-      statuses: write
+      statuses: write # To report GitHub Actions status checks
 
     steps:
       - name: Checkout code
-        uses: actions/checkout
-        with:
-          # super-linter needs the full git history to get the
-          # list of files that changed across commits
-          fetch-depth: 0
+        uses: actions/checkout@main
+        with: 
+          fetch-depth: 0 # super-linter needs the full git history to get the list of files that changed across commits
 
       - name: Super-linter
-        uses: super-linter/super-linter  # x-release-please-version
+        uses: super-linter/super-linter@main  # x-release-please-version
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # To report GitHub Actions status checks

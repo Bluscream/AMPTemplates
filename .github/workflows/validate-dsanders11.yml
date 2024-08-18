@@ -13,10 +13,10 @@
       validate:
         runs-on: ubuntu-latest
         steps:
-          - uses: actions/checkout
+          - uses: actions/checkout@main
     
           - name: "Validate manifest.json"
-            uses: dsanders11/json-schema-validate-action
+            uses: dsanders11/json-schema-validate-action@main
             with:
               files: 'manifest.json'
               schema: schemas/manifest.schema.json

@@ -1,0 +1,43 @@
+---
+name: Lint changed files
+
+on:  # yamllint disable-line rule:truthy
+  workflow_dispatch:
+  # pull_request:
+  # push:
+
+permissions: read-all
+
+jobs:
+  build:
+    name: Lint
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      packages: read
+      statuses: write # To report GitHub Actions status checks
+
+    steps:
+      - uses: actions/checkout@main
+        with: { fetch-depth: 0 }
+
+      - name: Check for changed files
+        id: changed_files
+        uses: tj-actions/changed-files@main
+      - name: List changed files
+        if: steps.changed_files.outputs.any_changed == 'true'
+        env:
+          ALL_CHANGED_FILES: ${{ steps.changed_files.outputs.all_changed_files }}
+        run: |
+          for file in ${ALL_CHANGED_FILES}; do
+            echo "$file was changed"
+          done
+      - name: Lint changed files
+        if: steps.changed_files.outputs.any_changed == 'true'
+        uses: super-linter/super-linter@main # x-release-please-version
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # To report GitHub Actions status checks
+          FILTER_REGEX_INCLUDE: ${{ steps.changed_files.outputs.all_changed_files }}
+        with: 
+          args: --filter-path $(echo "${{ steps.changed_files.outputs.all_changed_files }}" | jq -r '.[]')
