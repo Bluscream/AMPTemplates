@@ -93,7 +93,7 @@
           "type": "string"
         },
         "App_RapidStartup": {
-          "type": "boolean"
+          "$ref": "#/definitions/BoolString"
         },
         "App_ApplicationReadyMode": {
           "type": "string"
@@ -560,11 +560,13 @@
           "type": "boolean"
         },
         {
-          "type": "string",
-          "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
+         "$ref": "#/definitions/BoolString"
         }
-      ],
-      "title": "BoolString"
+      ]
+    },
+    "BoolString": {
+      "type": "string",
+      "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
     },
     "NullOrString": {
       "anyOf": [

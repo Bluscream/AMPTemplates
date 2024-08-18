@@ -64,18 +64,6 @@
       "required": [],
       "title": "Update"
     },
-    "BoolString": {
-      "anyOf": [
-        {
-          "type": "boolean"
-        },
-        {
-          "type": "string",
-          "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
-        }
-      ],
-      "title": "BoolString"
-    },
     "Platform": {
       "type": "string",
       "enum": [
@@ -113,6 +101,30 @@
         "aarch64"
       ],
       "title": "UpdateSourceArch"
+    },
+    "BoolString": {
+      "type": "string",
+      "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
+    },
+    "BoolOrString": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+         "$ref": "#/definitions/BoolString"
+        }
+      ]
+    },
+    "NullOrString": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string"
+        }
+      ]
     }
   }
 }
