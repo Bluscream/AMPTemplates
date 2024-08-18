@@ -46,7 +46,7 @@
             {
                 "Heading": "/Script/HDMain.HDGameSession",
                 "SettingMappings": {
-                    "bSupportersOnlyWhitelist": "bSupportersOnlyWhitelist"
+                    "bSupportersOnlyWhitelist": "SupportersOnly"
                 }
             },
             {
