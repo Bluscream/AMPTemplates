@@ -93,8 +93,7 @@
           "type": "string"
         },
         "App_RapidStartup": {
-          "type": "string",
-          "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
+          "$ref": "#/definitions/BoolOrString"
         },
         "App_ApplicationReadyMode": {
           "type": "string"
@@ -434,12 +433,10 @@
               "type": "boolean"
             },
             "_CheckedValue": {
-              "type": "string",
-              "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
+              "$ref": "#/definitions/BoolOrString"
             },
             "_UncheckedValue": {
-              "type": "string",
-              "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
+              "$ref": "#/definitions/BoolOrString"
             },
             "_EnumMappings": {
               "type": "array",
@@ -556,6 +553,18 @@
       },
       "required": [],
       "title": "UpdateStage"
+    },
+    "BoolOrString": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "string",
+          "pattern": "/^(true|false|0|1|yes|no|enabled|disabled|on|off)$/i"
+        }
+      ],
+      "title": "BoolString"
     },
     "NullOrString": {
       "anyOf": [
