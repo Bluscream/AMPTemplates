@@ -381,12 +381,6 @@
     "AppSetting": {
       "anyOf": [
         {
-          "type": "null"
-        },
-        {
-          "type": "boolean"
-        },
-        {
           "type": "object",
           "additionalProperties": false,
           "properties": {
@@ -433,10 +427,10 @@
               "type": "boolean"
             },
             "_CheckedValue": {
-              "type": "boolean"
+              "$ref": "#/definitions/BoolString"
             },
             "_UncheckedValue": {
-              "type": "boolean"
+              "$ref": "#/definitions/BoolString"
             },
             "_EnumMappings": {
               "type": "array",
