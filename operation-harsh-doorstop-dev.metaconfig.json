@@ -9,13 +9,13 @@
             {
                 "Heading": "[SystemSettings]",
                 "SettingMappings": {
-                    "Game.FriendlyFireOverride": "Game.FriendlyFireOverride",
-                    "Game.AutoBalanceTeamsOverride": "Game.AutoBalanceTeamsOverride",
-                    "HD.AAS.ActiveRouteOverride": "HD.AAS.ActiveRouteOverride",
-                    "HD.CP.EnforceSmallerMinPlayersToCapture": "HD.CP.EnforceSmallerMinPlayersToCapture",
-                    "HD.CP.MinPlayersToCaptureOverride": "HD.CP.MinPlayersToCaptureOverride",
-                    "HD.Game.MinRespawnDelayOverride": "HD.Game.MinRespawnDelayOverride",
-                    "HD.Game.DisableKitRestrictionsOverride": "HD.Game.DisableKitRestrictionsOverride"
+                    "Game.FriendlyFireOverride": "FriendlyFire",
+                    "Game.AutoBalanceTeamsOverride": "AutoBalanceTeams",
+                    "HD.AAS.ActiveRouteOverride": "ActiveRoute",
+                    "HD.CP.EnforceSmallerMinPlayersToCapture": "EnforceSmallerMinPlayersToCapture",
+                    "HD.CP.MinPlayersToCaptureOverride": "MinPlayersToCapture",
+                    "HD.Game.MinRespawnDelayOverride": "MinRespawnDelay",
+                    "HD.Game.DisableKitRestrictionsOverride": "DisableKitRestrictions"
                 }
             },
             {
@@ -37,10 +37,10 @@
                 "Heading": "/Script/RCON.RCONServerSystem",
                 "SettingMappings": {
                     "bEnabled": "RCONEnabled",
-                    "ListenPort": "ListenPort",
+                    "ListenPort": "RCONPort",
                     "Password": "RCONPassword",
-                    "MaxActiveConnections": "MaxActiveConnections",
-                    "MaxAuthAttempts": "MaxAuthAttempts"
+                    "MaxActiveConnections": "RCONMaxActiveConnections",
+                    "MaxAuthAttempts": "RCONMaxAuthAttempts"
                 }
             },
             {

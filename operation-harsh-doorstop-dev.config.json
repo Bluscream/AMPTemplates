@@ -125,18 +125,18 @@
     },
     {
         "Category": "OHD Server Settings:dns",
-        "Subcategory": "Advanced:dns",
+        "Subcategory": "RCON:vpn_key",
         "Description": "Enable RCON",
         "DisplayName": "RCON Enabled",
         "FieldName": "RCONEnabled",
         "IncludeInCommandLine": false,
         "InputType": "checkbox",
-        "Keywords": "rcon,password",
+        "Keywords": "rcon",
         "ParamFieldName": "RCONEnabled"
     },
     {
         "Category": "OHD Server Settings:dns",
-        "Subcategory": "Advanced:dns",
+        "Subcategory": "RCON:vpn_key",
         "Description": "See the Security and Privacy menu for configurable options for the server's RCON password",
         "DisplayName": "RCON Password",
         "FieldName": "RCONPassword",
@@ -144,6 +144,44 @@
         "InputType": "randompassword",
         "Keywords": "rcon,password",
         "ParamFieldName": "RCONPassword"
+    },
+    {
+        "Category": "OHD Server Settings:dns",
+        "Subcategory": "RCON:vpn_key",
+        "Description": "Set RCON Port",
+        "DisplayName": "RCON Port",
+        "FieldName": "RCONPort",
+        "InputType": "number",
+        "MinValue": 0,
+        "MaxValue": 25565,
+        "DefaultValue": "7779",
+        "Keywords": "rcon",
+        "ParamFieldName": "RCONPort"
+    },
+    {
+        "Category": "OHD Server Settings:dns",
+        "Subcategory": "RCON:vpn_key",
+        "Description": "Set RCONMaxActiveConnections",
+        "DisplayName": "RCONMaxActiveConnections",
+        "FieldName": "RCONMaxActiveConnections",
+        "InputType": "number",
+        "MinValue": 0,
+        "DefaultValue": "3",
+        "MaxValue": 25565,
+        "Keywords": "rcon",
+        "ParamFieldName": "RCONMaxActiveConnections"
+    },
+    {
+        "Category": "OHD Server Settings:dns",
+        "Subcategory": "RCON:vpn_key",
+        "Description": "Set RCONMaxAuthAttempts",
+        "DisplayName": "RCON MaxAuthAttempts",
+        "FieldName": "RCONMaxAuthAttempts",
+        "InputType": "number",
+        "MinValue": 0,
+        "MaxValue": 25565,
+        "Keywords": "rcon",
+        "ParamFieldName": "RCONMaxAuthAttempts"
     },
     {
         "Category": "OHD Server Settings:dns",
@@ -219,6 +257,63 @@
     {
         "Category": "OHD Server Settings:dns",
         "Subcategory": "General:dns",
+        "DefaultValue": "True",
+        "Description": "Enables Friendly Fire",
+        "DisplayName": "Friendly Fire",
+        "FieldName": "FriendlyFire",
+        "InputType": "checkbox",
+        "Keywords": "Game.FriendlyFireOverride",
+        "ParamFieldName": "FriendlyFire"
+    },
+    {
+        "Category": "OHD Server Settings:dns",
+        "Subcategory": "General:dns",
+        "DefaultValue": "False",
+        "Description": "Enables Overriding Active Route",
+        "DisplayName": "ActiveRoute",
+        "FieldName": "ActiveRoute",
+        "InputType": "checkbox",
+        "Keywords": "HD.AAS.ActiveRouteOverride",
+        "ParamFieldName": "ActiveRoute"
+    },
+    {
+        "Category": "OHD Server Settings:dns",
+        "Subcategory": "General:dns",
+        "DefaultValue": "False",
+        "Description": "Enables Team Auto Balancing",
+        "DisplayName": "AutoBalance Teams",
+        "FieldName": "AutoBalanceTeams",
+        "InputType": "checkbox",
+        "Keywords": "Game.AutoBalanceTeamsOverride",
+        "ParamFieldName": "AutoBalanceTeams"
+    },
+    {
+        "Category": "OHD Server Settings:dns",
+        "Subcategory": "General:dns",
+        "DefaultValue": "-1",
+        "Description": "Enforce Smaller Min Players To Capture",
+        "DisplayName": "EnforceSmallerMinPlayersToCapture",
+        "FieldName": "EnforceSmallerMinPlayersToCapture",
+        "InputType": "number",
+        "MinValue": -1,
+        "Keywords": "HD.CP.EnforceSmallerMinPlayersToCapture",
+        "ParamFieldName": "EnforceSmallerMinPlayersToCapture"
+    },
+    {
+        "Category": "OHD Server Settings:dns",
+        "Subcategory": "General:dns",
+        "DefaultValue": "-1",
+        "Description": "Min Players To Capture Override",
+        "DisplayName": "MinPlayersToCapture",
+        "FieldName": "MinPlayersToCapture",
+        "InputType": "number",
+        "MinValue": -1,
+        "Keywords": "HD.CP.MinPlayersToCaptureOverride",
+        "ParamFieldName": "MinPlayersToCapture"
+    },
+    {
+        "Category": "OHD Server Settings:dns",
+        "Subcategory": "General:dns",
         "DefaultValue": "",
         "Description": "If set, player kit restrictions will be disabled",
         "DisplayName": "Disable Kit Restrictions",
@@ -226,10 +321,10 @@
             "False": "",
             "True": "?bDisableKitRestrictions"
         },
-        "FieldName": "bDisableKitRestrictions",
+        "FieldName": "DisableKitRestrictions",
         "InputType": "checkbox",
         "Keywords": "disable,kit,restrictions,bDisableKitRestrictions",
-        "ParamFieldName": "bDisableKitRestrictions"
+        "ParamFieldName": "DisableKitRestrictions"
     },
     {
         "Category": "OHD Server Settings:dns",
