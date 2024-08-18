@@ -153,8 +153,8 @@
         "FieldName": "RCONPort",
         "InputType": "number",
         "MinValue": 0,
-        "MaxValue": 25565,
         "DefaultValue": "7779",
+        "MaxValue": 25565,
         "Keywords": "rcon",
         "ParamFieldName": "RCONPort",
         "Hidden": true
@@ -180,6 +180,7 @@
         "FieldName": "RCONMaxAuthAttempts",
         "InputType": "number",
         "MinValue": 0,
+        "DefaultValue": "2",
         "MaxValue": 25565,
         "Keywords": "rcon",
         "ParamFieldName": "RCONMaxAuthAttempts"
