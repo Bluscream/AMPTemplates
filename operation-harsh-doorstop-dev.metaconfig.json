@@ -6,6 +6,18 @@
         "AutoMap":false,
         "Importable": false,
         "Subsections": [
+            {
+                "Heading": "[SystemSettings]",
+                "SettingMappings": {
+                    "Game.FriendlyFireOverride": "Game.FriendlyFireOverride",
+                    "Game.AutoBalanceTeamsOverride": "Game.AutoBalanceTeamsOverride",
+                    "HD.AAS.ActiveRouteOverride": "HD.AAS.ActiveRouteOverride",
+                    "HD.CP.EnforceSmallerMinPlayersToCapture": "HD.CP.EnforceSmallerMinPlayersToCapture",
+                    "HD.CP.MinPlayersToCaptureOverride": "HD.CP.MinPlayersToCaptureOverride",
+                    "HD.Game.MinRespawnDelayOverride": "HD.Game.MinRespawnDelayOverride",
+                    "HD.Game.DisableKitRestrictionsOverride": "HD.Game.DisableKitRestrictionsOverride"
+                }
+            },
 			{
 				"Heading": "OnlineSubsystemSteam",
 				"SettingMappings": {
@@ -21,6 +33,22 @@
         "AutoMap":false,
         "Importable": false,
         "Subsections": [
+            {
+                "Heading": "/Script/RCON.RCONServerSystem",
+                "SettingMappings": {
+                    "bEnabled": "bEnabled",
+                    "ListenPort": "ListenPort",
+                    "Password": "Password",
+                    "MaxActiveConnections": "MaxActiveConnections",
+                    "MaxAuthAttempts": "MaxAuthAttempts"
+                }
+            },
+            {
+                "Heading": "/Script/HDMain.HDGameSession",
+                "SettingMappings": {
+                    "bSupportersOnlyWhitelist": "bSupportersOnlyWhitelist"
+                }
+            },
             {
                 "Heading": "/CasualCQB/Root/Core/BP_HDGameState_CQB.BP_HDGameState_CQB_C",
                 "SettingMappings": {
