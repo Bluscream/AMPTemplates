@@ -28,7 +28,7 @@
         "UpdateSourceVersion":"legacy",
         "UpdateSourceConditionSetting":"GameBranch",
         "UpdateSourceConditionValue":"legacy"
-    },
+    }, 
     {
         "UpdateStageName":"SteamCMD Download (Dedicated Server)",
         "UpdateSourcePlatform":"All",

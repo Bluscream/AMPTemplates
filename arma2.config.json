@@ -24,7 +24,7 @@
         "IsFlagArgument": false,
         "Keywords": "server,password",
         "ParamFieldName": "password"
-    },
+    }, 
     {
         "Category": "Arma Server Settings",
         "DefaultValue": "",

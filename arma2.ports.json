@@ -40,5 +40,5 @@
         "Ref": "RCONPort",
         "Name": "RCON Port",
         "Description": "Port for RCON traffic"
-    }
+    } 
 ]

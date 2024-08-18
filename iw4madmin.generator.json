@@ -73,7 +73,7 @@
     "Console_UpdateAvailableRegex": "^\\[\\d\\d:\\d\\d:\\d\\d\\] \\[INFO\\] A new server update is available! v[\\d\\.]+.$",
     "Console_SuppressLogAtStart": "False",
     "Console_ActivateLogRegex": "",
-    "Console_UserActions": "{}",
+    "Console_UserActions": "{}", 
     "Console_SleepMode": "False",
     "Console_SleepOnStart": "False",
     "Console_SleepDelayMinutes": "5",
