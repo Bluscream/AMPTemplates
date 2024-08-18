@@ -36,9 +36,9 @@
             {
                 "Heading": "/Script/RCON.RCONServerSystem",
                 "SettingMappings": {
-                    "bEnabled": "bEnabled",
+                    "RCONEnabled": "bEnabled",
                     "ListenPort": "ListenPort",
-                    "Password": "Password",
+                    "RCONPassword": "Password",
                     "MaxActiveConnections": "MaxActiveConnections",
                     "MaxAuthAttempts": "MaxAuthAttempts"
                 }

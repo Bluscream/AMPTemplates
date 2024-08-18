@@ -126,6 +126,17 @@
     {
         "Category": "OHD Server Settings:dns",
         "Subcategory": "Advanced:dns",
+        "Description": "Enable RCON",
+        "DisplayName": "RCON Enabled",
+        "FieldName": "RCONEnabled",
+        "IncludeInCommandLine": false,
+        "InputType": "checkbox",
+        "Keywords": "rcon,password",
+        "ParamFieldName": "RCONEnabled"
+    },
+    {
+        "Category": "OHD Server Settings:dns",
+        "Subcategory": "Advanced:dns",
         "Description": "See the Security and Privacy menu for configurable options for the server's RCON password",
         "DisplayName": "RCON Password",
         "FieldName": "RCONPassword",
