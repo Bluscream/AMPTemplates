@@ -19,6 +19,8 @@ jobs:
           schema: schemas/manifest.schema.json
           strictSchema: false
           validateFormats: false
+          allErrors: true
+          verbose: true
       - name: Validate *.config.json
         uses: ammarlakis/action-ajv@master
         with:
@@ -26,6 +28,8 @@ jobs:
           schema: schemas/config.schema.json
           strictSchema: false
           validateFormats: false
+          allErrors: true
+          verbose: true
       - name: Validate *.metaconfig.json
         uses: ammarlakis/action-ajv@master
         with:
@@ -33,6 +37,8 @@ jobs:
           schema: schemas/metaconfig.schema.json
           strictSchema: false
           validateFormats: false
+          allErrors: true
+          verbose: true
       - name: Validate *.updates.json
         uses: ammarlakis/action-ajv@master
         with:
@@ -40,6 +46,8 @@ jobs:
           schema: schemas/updates.schema.json
           strictSchema: false
           validateFormats: false
+          allErrors: true
+          verbose: true
       - name: Validate *.ports.json
         uses: ammarlakis/action-ajv@master
         with:
@@ -47,6 +55,8 @@ jobs:
           schema: schemas/ports.schema.json
           strictSchema: false
           validateFormats: false
+          allErrors: true
+          verbose: true
       - name: Validate *.generator.json
         uses: ammarlakis/action-ajv@master
         with:
@@ -54,3 +64,5 @@ jobs:
           schema: schemas/generator.schema.json
           strictSchema: false
           validateFormats: false
+          allErrors: true
+          verbose: true
