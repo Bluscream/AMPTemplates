@@ -13,80 +13,44 @@ jobs:
         with:
           fetch-depth: 0
       - name: Validate manifest.json
-        uses: Bluscream/action-ajv@patch-1
+        uses: ammarlakis/action-ajv@master
         with:
           data: manifest.json
           schema: schemas/manifest.schema.json
-          strict: false
-          strictSchema: false
-          validateFormats: false
           allErrors: true
           verbose: true
-          extraFormats: true
-          ignoreErrors: true
       - name: Validate *.config.json
-        uses: Bluscream/action-ajv@patch-1
+        uses: ammarlakis/action-ajv@master
         with:
           data: '*.config.json'
           schema: schemas/config.schema.json
-          strict: false
-          strictSchema: false
-          validateFormats: false
           allErrors: true
           verbose: true
-          extraFormats: true
-          ignoreErrors: true
       - name: Validate *.metaconfig.json
-        uses: Bluscream/action-ajv@patch-1
+        uses: ammarlakis/action-ajv@master
         with:
           data: '*.metaconfig.json'
           schema: schemas/metaconfig.schema.json
-          strict: false
-          strictSchema: false
-          validateFormats: false
           allErrors: true
           verbose: true
-          extraFormats: true
-          ignoreErrors: true
       - name: Validate *.updates.json
-        uses: Bluscream/action-ajv@patch-1
+        uses: ammarlakis/action-ajv@master
         with:
           data: '*.updates.json'
           schema: schemas/updates.schema.json
-          strict: false
-          strictSchema: false
-          validateFormats: false
           allErrors: true
           verbose: true
-          extraFormats: true
-          ignoreErrors: true
       - name: Validate *.ports.json
-        uses: Bluscream/action-ajv@patch-1
+        uses: ammarlakis/action-ajv@master
         with:
           data: '*.ports.json'
           schema: schemas/ports.schema.json
-          strict: false
-          strictSchema: false
-          validateFormats: false
           allErrors: true
           verbose: true
-          extraFormats: true
-          ignoreErrors: true
       - name: Validate *.generator.json
-        uses: Bluscream/action-ajv@patch-1
+        uses: ammarlakis/action-ajv@master
         with:
           data: '*.generator.json'
           schema: schemas/generator.schema.json
-          strict: false
-          strictSchema: false
-          strictTypes: false
-          strictTuples: false
-          strictRequired: false
-          allowDate: true
-          removeAdditional: "failing"
-          useDefaults: false
-          validateFormats: false
           allErrors: true
           verbose: true
-          extraFormats: true
-          ignoreErrors: true
