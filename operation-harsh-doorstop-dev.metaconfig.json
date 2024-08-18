@@ -1,9 +1,9 @@
 [
     {
-        "ConfigFile":"HarshDoorstop/Saved/Config/WindowsServer/Engine.ini",
+        "ConfigFile": "HarshDoorstop/Saved/Config/WindowsServer/Engine.ini",
         "ConfigType": "ini",
         "ConfigFormatRegex": "^(?<key>.+?)=(?<value>.*?)$",
-        "AutoMap":false,
+        "AutoMap": false,
         "Importable": false,
         "Subsections": [
             {
@@ -18,19 +18,19 @@
                     "HD.Game.DisableKitRestrictionsOverride": "HD.Game.DisableKitRestrictionsOverride"
                 }
             },
-			{
-				"Heading": "OnlineSubsystemSteam",
-				"SettingMappings": {
-					"WebApiKey": "WebApiKey"
-				}
-			}
-		]
+            {
+                "Heading": "OnlineSubsystemSteam",
+                "SettingMappings": {
+                    "WebApiKey": "WebApiKey"
+                }
+            }
+        ]
     },
     {
-        "ConfigFile":"HarshDoorstop/Saved/Config/WindowsServer/Game.ini",
+        "ConfigFile": "HarshDoorstop/Saved/Config/WindowsServer/Game.ini",
         "ConfigType": "ini",
         "ConfigFormatRegex": "^(?<key>.+?)=(?<value>.*?)$",
-        "AutoMap":false,
+        "AutoMap": false,
         "Importable": false,
         "Subsections": [
             {
@@ -79,13 +79,13 @@
                     "AutoSpawnRadius": "AutoSpawnRadius"
                 }
             }
-		]
+        ]
     },
     {
-        "ConfigFile":"HarshDoorstop/Saved/Config/WindowsServer/GameUserSettings.ini",
+        "ConfigFile": "HarshDoorstop/Saved/Config/WindowsServer/GameUserSettings.ini",
         "ConfigType": "ini",
         "ConfigFormatRegex": "^(?<key>.+?)=(?<value>.*?)$",
-        "AutoMap":false,
+        "AutoMap": false,
         "Importable": false
     }
 ]

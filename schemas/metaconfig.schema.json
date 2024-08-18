@@ -34,7 +34,7 @@
             "$ref": "#/definitions/Subsection"
           },
           "title": "Subsections",
-          "description": "\"<setting name in file>\": \"<ParamFieldName in AMP>\""
+          "description": "\"setting name in file\": \"ParamFieldName in AMP\""
         },
         "ConfigType": {
           "$ref": "#/definitions/ConfigType"
@@ -46,7 +46,7 @@
         },
         "ConfigFormatRegex": {
           "type": "string",
-          "description": "set\\w+(?<key>.+?)\\w+\"?(?<value>.*?)\"?$"
+          "description": "set\\w+(?%3Ckey%3E.+?)\\w+\"?(?%3Cvalue%3E.*?)\"?$"
         }
       },
       "required": [
@@ -71,14 +71,14 @@
         "SettingMappings"
       ],
       "title": "Subsection",
-      "description": "\"<setting name in file>\": \"<ParamFieldName in AMP>\""
+      "description": "\"setting name in file\": \"ParamFieldName in AMP\""
     },
     "SettingMappings": {
       "type": "object",
       "additionalProperties": true,
       "required": [],
       "title": "SettingMappings",
-      "description": "\"<setting name in file>\": \"<ParamFieldName in AMP>\""
+      "description": "\"setting name in file>\": \"ParamFieldName in AMP\""
     },
     "ConfigType": {
       "type": "string",
