@@ -13,7 +13,7 @@ jobs:
     permissions:
       contents: read
       packages: read
-      statuses: write
+      statuses: read
     steps:
       - name: Pull
         uses: actions/checkout@main

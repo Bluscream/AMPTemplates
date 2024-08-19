@@ -8,7 +8,7 @@ jobs:
     permissions:
       contents: read
       packages: read
-      statuses: write
+      statuses: read
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
