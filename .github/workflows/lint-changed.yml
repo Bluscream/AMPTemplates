@@ -31,9 +31,10 @@ jobs:
         uses: super-linter/super-linter@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_ALL_CODEBASE: false
           ENABLE_GITHUB_ACTIONS_STEP_SUMMARY: false
           SAVE_SUPER_LINTER_SUMMARY: false
-          VALIDATE_ALL_CODEBASE: false
+          SAVE_SUPER_LINTER_OUTPUT: false
           VALIDATE_JSCPD: false
           VALIDATE_CHECKOV: false
           FIX_ANSIBLE: true
