@@ -12,18 +12,26 @@ jobs:
       statuses: write
       actions: write
     steps:
+      - name: Create Token
+        id: create_token
+        uses: tibdex/github-app-token@main
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
       - name: Checkout code
         continue-on-error: true
         uses: actions/checkout@main
         with:
           fetch-depth: 0
-        env:
-          GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
+          token: ${{ steps.create_token.outputs.token }}
+        # env:
+        #   GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
       - name: Super-linter
         continue-on-error: true
         uses: super-linter/super-linter@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ENABLE_GITHUB_ACTIONS_STEP_SUMMARY: false
           VALIDATE_ALL_CODEBASE: false
           VALIDATE_JSCPD: false
           VALIDATE_CHECKOV: false
@@ -79,7 +87,7 @@ jobs:
         continue-on-error: true
         uses: stefanzweifel/git-auto-commit-action@master
         with:
-          commit_message: "[bot/super-linter] fix formatting"
-        env:
-          GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
+          commit_message: "[bot/super-linter] fix formatting (skip-checks:true)"
+        # env:
+        #   GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
   
