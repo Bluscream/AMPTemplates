@@ -636,7 +636,7 @@
     {
         "Category": "OHD Server Settings:dns",
         "Subcategory": "General:dns",
-        "DefaultValue": "-SupportersOnly",
+        "DefaultValue": "False",
         "Description": "Wether only people that bought the supporter DLC will be able to join",
         "DisplayName": "Custom Command Line Flags",
         "FieldName": "SupportersOnly",
