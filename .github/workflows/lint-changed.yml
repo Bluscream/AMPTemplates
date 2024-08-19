@@ -1,6 +1,5 @@
-name: Lint all files
+name: Lint changed files
 'on':
-  workflow_dispatch: null
   pull_request: null
   push: null
 permissions: read-all
