@@ -12,14 +12,14 @@ netcommand="$(command -v "ss" >/dev/null 2>&1 && echo "ss" || echo "netstat")"
 # If not, exit
 server_started=false
 for i in $(seq 1 180); do
-  if $netcommand -uln | grep -q ":$3 "; then
-    server_started=true
-    break
-  fi
-  sleep 1
+	if $netcommand -uln | grep -q ":$3 "; then
+		server_started=true
+		break
+	fi
+	sleep 1
 done
 if ! $server_started; then
-  exit 1
+	exit 1
 fi
 
 # Start the headless clients
@@ -28,25 +28,25 @@ parfile="${6:-}"
 export LD_LIBRARY_PATH=$(dirname "$0")/linux64:$LD_LIBRARY_PATH
 cd ./arma2oa/33935
 for i in $(seq 1 "$1"); do
-  if [[ "$2" == "0.0.0.0" ]]; then
-    connect="127.0.0.1"
-  else
-    connect="$2"
-  fi
-  ./arma2oaserver -client -nosound -profiles=A2Master -connect=$connect:$3 -port=$baseport -password="$4" "-mod=$5" "-par=$parfile" >/dev/null 2>&1 &
-  clients+=($!)
+	if [[ "$2" == "0.0.0.0" ]]; then
+		connect="127.0.0.1"
+	else
+		connect="$2"
+	fi
+	./arma2oaserver -client -nosound -profiles=A2Master -connect=$connect:$3 -port=$baseport -password="$4" "-mod=$5" "-par=$parfile" >/dev/null 2>&1 &
+	clients+=($!)
 done
 
 # Monitor server process and terminate headless clients
 # when server terminates or SIGTERM/SIGINT received
 trap 'for client in "${clients[@]}"; do kill "$client" >/dev/null 2>&1; done; wait' SIGTERM SIGINT
 while true; do
-  if ! $netcommand -uln | grep -q ":$3 "; then
-    for client in "${clients[@]}"; do
-      kill "$client" >/dev/null 2>&1
-    done
-    wait
-    exit 0
-  fi
-  sleep 1
+	if ! $netcommand -uln | grep -q ":$3 "; then
+		for client in "${clients[@]}"; do
+			kill "$client" >/dev/null 2>&1
+		done
+		wait
+		exit 0
+	fi
+	sleep 1
 done

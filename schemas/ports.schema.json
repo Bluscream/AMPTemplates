@@ -39,11 +39,7 @@
     },
     "ProtocolEnum": {
       "type": "string",
-      "enum": [
-        "UDP",
-        "Both",
-        "TCP"
-      ],
+      "enum": ["UDP", "Both", "TCP"],
       "title": "ProtocolEnum"
     }
   }

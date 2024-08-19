@@ -66,11 +66,7 @@
     },
     "Platform": {
       "type": "string",
-      "enum": [
-        "All",
-        "Linux",
-        "Windows"
-      ],
+      "enum": ["All", "Linux", "Windows"],
       "title": "Platform"
     },
     "UpdateSource": {
@@ -96,10 +92,7 @@
     },
     "UpdateSourceArch": {
       "type": "string",
-      "enum": [
-        "x86_64",
-        "aarch64"
-      ],
+      "enum": ["x86_64", "aarch64"],
       "title": "UpdateSourceArch"
     },
     "BoolString": {
@@ -112,7 +105,7 @@
           "type": "boolean"
         },
         {
-         "$ref": "#/definitions/BoolString"
+          "$ref": "#/definitions/BoolString"
         }
       ]
     },

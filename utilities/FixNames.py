@@ -1,7 +1,5 @@
 import os
-import re
 from pathlib import Path
-import fileinput
 
 mappings = {
     "..metaconfig.json": "-metaconfig.json",
@@ -9,8 +7,9 @@ mappings = {
     "..ports.json": "-ports.json",
     "..updates.json": "-updates.json",
     "..generator.json": "-generator.json",
-    "start.json": "-start.json"
+    "start.json": "-start.json",
 }
+
 
 def rename_json_files(directory):
     for root, dirs, files in os.walk(directory):
@@ -29,6 +28,7 @@ def rename_json_files(directory):
                         os.rename(Path(root) / file, new_file_path)
                         break
 
+
 def update_kvp_files(directory):
     # Recursively find all .kvp files
     for root, dirs, files in os.walk(directory):
@@ -36,28 +36,31 @@ def update_kvp_files(directory):
             if file.endswith(".kvp"):
                 file_path = Path(root) / file
 
-                with open(file_path, 'r') as kvp_file:
+                with open(file_path, "r") as kvp_file:
                     lines = kvp_file.readlines()
-                
+
                 # Process each line
                 for num, line in enumerate(lines, start=1):
-                    if any(ext in line for ext in mappings.values()): # already patched
+                    if any(ext in line for ext in mappings.values()):  # already patched
                         print(f"line {num} in {file} already patched: {line}")
                         continue
-                    
+
                     # Check if the line needs patching
                     # elif any(ext in line for ext in mappings.keys()): # needs patching
                     for suffix in mappings.keys():
-                        if suffix in line: # needs patching
+                        if suffix in line:  # needs patching
                             print(f"Patching line {num} in {file}: {line}")
-                            lines[num - 1] = line.replace(suffix, mappings[suffix])# Replace the line with the patched version
+                            lines[num - 1] = line.replace(
+                                suffix, mappings[suffix]
+                            )  # Replace the line with the patched version
                             break  # Break after the first successful patching
-    
+
                 # Write the processed lines back to the file
-                with open(file_path, 'w') as kvp_file:
+                with open(file_path, "w") as kvp_file:
                     kvp_file.writelines(lines)
 
+
 if __name__ == "__main__":
-    parent_directory = '.'  # Update this path
+    parent_directory = "."  # Update this path
     rename_json_files(parent_directory)
     # update_kvp_files(parent_directory)

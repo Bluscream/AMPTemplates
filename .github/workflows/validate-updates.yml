@@ -3,10 +3,10 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - '*-update.json'
+      - "*-update.json"
   pull_request:
     paths:
-      - '*-update.json'
+      - "*-update.json"
 permissions: read-all
 jobs:
   validate:
@@ -25,7 +25,7 @@ jobs:
         continue-on-error: true
         uses: walbo/validate-json@main
         with:
-          files: '*-update.json'
+          files: "*-update.json"
           schema: schemas/update.schema.json
           schema-version: draft-07
           allow-union-types: true
@@ -37,20 +37,20 @@ jobs:
         continue-on-error: true
         uses: cardinalby/schema-validator-action@master
         with:
-          file: '*-update.json'
+          file: "*-update.json"
           schema: schemas/update.schema.json
           fixSchemas: true
       - name: Schema (dsanders11/json-schema-validate-action)
         continue-on-error: true
         uses: dsanders11/json-schema-validate-action@main
         with:
-          files: '*-update.json'
+          files: "*-update.json"
           schema: schemas/update.schema.json
       - name: Schema (ammarlakis/action-ajv)
         continue-on-error: true
         uses: ammarlakis/action-ajv@master
         with:
-          data: '*-update.json'
+          data: "*-update.json"
           schema: schemas/update.schema.json
           allErrors: true
           verbose: true

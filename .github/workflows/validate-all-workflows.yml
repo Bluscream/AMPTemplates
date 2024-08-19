@@ -1,5 +1,5 @@
 name: Validate all Github workflows
-'on':
+"on":
   workflow_dispatch: null
 permissions: read-all
 jobs:

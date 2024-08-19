@@ -1,4 +1,4 @@
-# Arguments: [number_clients] [server_binding] [server_port] "<server_password>" "<mod_list>" "<hc_parameters_file>"
+﻿# Arguments: [number_clients] [server_binding] [server_port] "<server_password>" "<mod_list>" "<hc_parameters_file>"
 
 # Check if any headless clients are to be run
 # If none, immediately exit
@@ -19,7 +19,7 @@ if (-not $serverStarted) { exit 1 }
 # Start the headless clients
 $clients = @()
 $basePort = [int]$args[2] + 498
-if ($args.Length -lt 6) { 
+if ($args.Length -lt 6) {
     $parfile = ""
 } else {
     $parfile = $args[6]

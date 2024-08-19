@@ -1,93 +1,93 @@
 [
-    {
-        "UpdateStageName":"SteamCMD Download (Game)",
-        "UpdateSourcePlatform":"All",
-        "UpdateSource":"SteamCMD",
-        "UpdateSourceData":"33930",
-        "UpdateSourceTarget":"{{$FullBaseDir}}",
-        "UpdateSourceVersion":"{{GameBranch}}"
-    },
-    {
-        "UpdateStageName":"SteamCMD Download (Server)",
-        "UpdateSourcePlatform":"All",
-        "UpdateSource":"SteamCMD",
-        "UpdateSourceData":"33935",
-        "UpdateSourceTarget":"{{$FullBaseDir}}",
-        "UpdateSourceVersion":"{{ServerBranch}}"
-    }, 
-    {
-        "UpdateStageName": "Download Linux Server Files",
-        "UpdateSourcePlatform": "All",
-        "UpdateSource":"FetchURL",
-        "UpdateSourceData": "https://github.com/Bluscream/arma2-oa-linux-server/releases/latest/download/a2oa-server.zip",
-        "UpdateSourceTarget":"{{$FullBaseDir}}",
-        "UnzipUpdateSource":true,
-        "OverwriteExistingFiles":true,
-        "DeleteAfterExtract":true
-    },
-    {
-        "UpdateStageName": "Download Missing X3DAudio1_6.dll",
-        "UpdateSourcePlatform": "All",
-        "UpdateSource":"FetchURL",
-        "UpdateSourceData": "https://github.com/Bluscream/arma2-oa-linux-server/raw/main/X3DAudio1_6.dll",
-        "UpdateSourceTarget":"{{$FullBaseDir}}",
-        "OverwriteExistingFiles":true
-    },
-    {
-        "UpdateStageName":"Set Executable Flag",
-        "UpdateSourcePlatform":"Linux",
-        "UpdateSource":"SetExecutableFlag",
-        "UpdateSourceArgs":"{{$FullBaseDir}}arma2oaserver"
-    },
-    {
-        "UpdateStageName": "Mission Prefetch Server Download",
-        "UpdateSourcePlatform": "All",
-        "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://app.dayzlauncher.com/MissionPrefetchServer.zip",
-        "UpdateSourceTarget": "{{$FullBaseDir}}",
-        "UnzipUpdateSource": true,
-        "OverwriteExistingFiles": true,
-        "DeleteAfterExtract": true
-    },
-    {
-        "UpdateStageName":"Server Config Template Download",
-        "UpdateSourcePlatform":"All",
-        "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://github.com/Bluscream/AMPTemplates/raw/dev/arma2oaserver.cfg",
-        "UpdateSourceArgs":"AMP_server.cfg",
-        "UpdateSourceTarget":"{{$FullBaseDir}}",
-        "OverwriteExistingFiles":false
-    },
-    {
-        "UpdateStageName":"Server Config Template Download",
-        "UpdateSourcePlatform":"All",
-        "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://github.com/Bluscream/AMPTemplates/raw/dev/arma2oaserver.cfg",
-        "UpdateSourceArgs":"server.cfg",
-        "UpdateSourceTarget":"{{$FullBaseDir}}",
-        "OverwriteExistingFiles":false
-    },
-    {
-        "UpdateStageName":"Basic Config File Download",
-        "UpdateSourcePlatform":"All",
-        "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://github.com/Bluscream/AMPTemplates/raw/dev/arma2oabasic.cfg",
-        "UpdateSourceArgs":"basic.cfg",
-        "UpdateSourceTarget":"{{$FullBaseDir}}",
-        "OverwriteExistingFiles":false
-    },
-    {
-        "UpdateStageName":"Create Server Parameters File",
-        "UpdateSourcePlatform":"All",
-        "UpdateSource":"CreateFile",
-        "UpdateSourceArgs":"{{$FullBaseDir}}parameters.txt",
-        "OverwriteExistingFiles":false
-    },
-    {
-        "UpdateStageName":"Create Headless Client Parameters File",
-        "UpdateSourcePlatform":"All",
-        "UpdateSource":"CreateFile",
-        "UpdateSourceArgs":"{{$FullBaseDir}}hc_parameters.txt",
-        "OverwriteExistingFiles":false
-    }
+  {
+    "UpdateStageName": "SteamCMD Download (Game)",
+    "UpdateSourcePlatform": "All",
+    "UpdateSource": "SteamCMD",
+    "UpdateSourceData": "33930",
+    "UpdateSourceTarget": "{{$FullBaseDir}}",
+    "UpdateSourceVersion": "{{GameBranch}}"
+  },
+  {
+    "UpdateStageName": "SteamCMD Download (Server)",
+    "UpdateSourcePlatform": "All",
+    "UpdateSource": "SteamCMD",
+    "UpdateSourceData": "33935",
+    "UpdateSourceTarget": "{{$FullBaseDir}}",
+    "UpdateSourceVersion": "{{ServerBranch}}"
+  },
+  {
+    "UpdateStageName": "Download Linux Server Files",
+    "UpdateSourcePlatform": "All",
+    "UpdateSource": "FetchURL",
+    "UpdateSourceData": "https://github.com/Bluscream/arma2-oa-linux-server/releases/latest/download/a2oa-server.zip",
+    "UpdateSourceTarget": "{{$FullBaseDir}}",
+    "UnzipUpdateSource": true,
+    "OverwriteExistingFiles": true,
+    "DeleteAfterExtract": true
+  },
+  {
+    "UpdateStageName": "Download Missing X3DAudio1_6.dll",
+    "UpdateSourcePlatform": "All",
+    "UpdateSource": "FetchURL",
+    "UpdateSourceData": "https://github.com/Bluscream/arma2-oa-linux-server/raw/main/X3DAudio1_6.dll",
+    "UpdateSourceTarget": "{{$FullBaseDir}}",
+    "OverwriteExistingFiles": true
+  },
+  {
+    "UpdateStageName": "Set Executable Flag",
+    "UpdateSourcePlatform": "Linux",
+    "UpdateSource": "SetExecutableFlag",
+    "UpdateSourceArgs": "{{$FullBaseDir}}arma2oaserver"
+  },
+  {
+    "UpdateStageName": "Mission Prefetch Server Download",
+    "UpdateSourcePlatform": "All",
+    "UpdateSource": "FetchURL",
+    "UpdateSourceData": "https://app.dayzlauncher.com/MissionPrefetchServer.zip",
+    "UpdateSourceTarget": "{{$FullBaseDir}}",
+    "UnzipUpdateSource": true,
+    "OverwriteExistingFiles": true,
+    "DeleteAfterExtract": true
+  },
+  {
+    "UpdateStageName": "Server Config Template Download",
+    "UpdateSourcePlatform": "All",
+    "UpdateSource": "FetchURL",
+    "UpdateSourceData": "https://github.com/Bluscream/AMPTemplates/raw/dev/arma2oaserver.cfg",
+    "UpdateSourceArgs": "AMP_server.cfg",
+    "UpdateSourceTarget": "{{$FullBaseDir}}",
+    "OverwriteExistingFiles": false
+  },
+  {
+    "UpdateStageName": "Server Config Template Download",
+    "UpdateSourcePlatform": "All",
+    "UpdateSource": "FetchURL",
+    "UpdateSourceData": "https://github.com/Bluscream/AMPTemplates/raw/dev/arma2oaserver.cfg",
+    "UpdateSourceArgs": "server.cfg",
+    "UpdateSourceTarget": "{{$FullBaseDir}}",
+    "OverwriteExistingFiles": false
+  },
+  {
+    "UpdateStageName": "Basic Config File Download",
+    "UpdateSourcePlatform": "All",
+    "UpdateSource": "FetchURL",
+    "UpdateSourceData": "https://github.com/Bluscream/AMPTemplates/raw/dev/arma2oabasic.cfg",
+    "UpdateSourceArgs": "basic.cfg",
+    "UpdateSourceTarget": "{{$FullBaseDir}}",
+    "OverwriteExistingFiles": false
+  },
+  {
+    "UpdateStageName": "Create Server Parameters File",
+    "UpdateSourcePlatform": "All",
+    "UpdateSource": "CreateFile",
+    "UpdateSourceArgs": "{{$FullBaseDir}}parameters.txt",
+    "OverwriteExistingFiles": false
+  },
+  {
+    "UpdateStageName": "Create Headless Client Parameters File",
+    "UpdateSourcePlatform": "All",
+    "UpdateSource": "CreateFile",
+    "UpdateSourceArgs": "{{$FullBaseDir}}hc_parameters.txt",
+    "OverwriteExistingFiles": false
+  }
 ]

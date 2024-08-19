@@ -1,4 +1,4 @@
-# Enable debug output
+﻿# Enable debug output
 $DebugPreference = 'Continue'
 
 # Define the path pattern for config files and exclude metaconfig files
@@ -17,10 +17,10 @@ Write-Debug "Found $($files.Count) files matching the pattern '$pattern'"
 foreach ($file in $files) {
     # Debug print for processing each file
     Write-Debug "Processing file: $($file.FullName)"
-    
+
     # Read the content of the file and convert it to an object
     $content = Get-Content $file.FullName | ConvertFrom-Json
-    
+
     # Add the converted object to the merged content array
     $mergedContent += $content
 }

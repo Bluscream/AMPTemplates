@@ -1,75 +1,75 @@
 [
-    {
-        "ConfigFile": "HarshDoorstop/Saved/Config/WindowsServer/Engine.ini",
-        "Subsections": [
-            {
-                "Heading": "[SystemSettings]",
-                "SettingMappings": {
-                    "Game.FriendlyFireOverride": "FriendlyFire",
-                    "Game.AutoBalanceTeamsOverride": "AutoBalanceTeams",
-                    "HD.AAS.ActiveRouteOverride": "ActiveRoute",
-                    "HD.CP.EnforceSmallerMinPlayersToCapture": "EnforceSmallerMinPlayersToCapture",
-                    "HD.CP.MinPlayersToCaptureOverride": "MinPlayersToCapture",
-                    "HD.Game.MinRespawnDelayOverride": "MinRespawnDelay",
-                    "HD.Game.DisableKitRestrictionsOverride": "DisableKitRestrictions"
-                }
-            },
-            {
-                "Heading": "OnlineSubsystemSteam",
-                "SettingMappings": {
-                    "WebApiKey": "WebApiKey"
-                }
-            }
-        ]
-    },
-    {
-        "ConfigFile": "HarshDoorstop/Saved/Config/WindowsServer/Game.ini",
-        "Subsections": [
-            {
-                "Heading": "/Script/RCON.RCONServerSystem",
-                "SettingMappings": {
-                    "bEnabled": "RCONEnabled",
-                    "ListenPort": "RCONPort",
-                    "MaxActiveConnections": "RCONMaxActiveConnections",
-                    "MaxAuthAttempts": "RCONMaxAuthAttempts"
-                }
-            },
-            {
-                "Heading": "/Script/HDMain.HDGameSession",
-                "SettingMappings": {
-                    "bSupportersOnlyWhitelist": "SupportersOnly"
-                }
-            },
-            {
-                "Heading": "/CasualCQB/Root/Core/BP_HDGameState_CQB.BP_HDGameState_CQB_C",
-                "SettingMappings": {
-                    "bEnableEnemyTags": "bEnableEnemyTags",
-                    "bEnableDeathCamera": "bEnableDeathCamera",
-                    "bEnableRedDot": "bEnableRedDot",
-                    "bAllowMinimap": "bAllowMinimap",
-                    "bEnableSuppressionEffect": "bEnableSuppressionEffect",
-                    "bEnableSuppressionMovement": "bEnableSuppressionMovement",
-                    "bAllowSquadSpawn": "bAllowSquadSpawn",
-                    "bAllowRevive": "bAllowRevive",
-                    "bAllowKillFeed": "bAllowKillFeed",
-                    "MinGiveUpDelay": "MinGiveUpDelay",
-                    "MinRespawnDelay": "MinRespawnDelay",
-                    "SquadSpawnAdditionalDelay": "SquadSpawnAdditionalDelay",
-                    "RadialDamageMultiplier": "RadialDamageMultiplier",
-                    "bAllowPlayerTags": "bAllowPlayerTags",
-                    "TimeToContinue": "TimeToContinue",
-                    "PlayerSprintAcceleration": "PlayerSprintAcceleration",
-                    "PlayerSprintStrafingThreashold": "PlayerSprintStrafingThreashold",
-                    "PlayerMaxWalkSpeed": "PlayerMaxWalkSpeed",
-                    "PlayerFallDamageDivisor": "PlayerFallDamageDivisor"
-                }
-            },
-            {
-                "Heading": "/CasualCQB/Root/Core/BP_HDGame_Skirmish_CQB.BP_HDGame_Skirmish_CQB_C",
-                "SettingMappings": {
-                    "AutoSpawnRadius": "AutoSpawnRadius"
-                }
-            }
-        ]
-    }
+  {
+    "ConfigFile": "HarshDoorstop/Saved/Config/WindowsServer/Engine.ini",
+    "Subsections": [
+      {
+        "Heading": "[SystemSettings]",
+        "SettingMappings": {
+          "Game.FriendlyFireOverride": "FriendlyFire",
+          "Game.AutoBalanceTeamsOverride": "AutoBalanceTeams",
+          "HD.AAS.ActiveRouteOverride": "ActiveRoute",
+          "HD.CP.EnforceSmallerMinPlayersToCapture": "EnforceSmallerMinPlayersToCapture",
+          "HD.CP.MinPlayersToCaptureOverride": "MinPlayersToCapture",
+          "HD.Game.MinRespawnDelayOverride": "MinRespawnDelay",
+          "HD.Game.DisableKitRestrictionsOverride": "DisableKitRestrictions"
+        }
+      },
+      {
+        "Heading": "OnlineSubsystemSteam",
+        "SettingMappings": {
+          "WebApiKey": "WebApiKey"
+        }
+      }
+    ]
+  },
+  {
+    "ConfigFile": "HarshDoorstop/Saved/Config/WindowsServer/Game.ini",
+    "Subsections": [
+      {
+        "Heading": "/Script/RCON.RCONServerSystem",
+        "SettingMappings": {
+          "bEnabled": "RCONEnabled",
+          "ListenPort": "RCONPort",
+          "MaxActiveConnections": "RCONMaxActiveConnections",
+          "MaxAuthAttempts": "RCONMaxAuthAttempts"
+        }
+      },
+      {
+        "Heading": "/Script/HDMain.HDGameSession",
+        "SettingMappings": {
+          "bSupportersOnlyWhitelist": "SupportersOnly"
+        }
+      },
+      {
+        "Heading": "/CasualCQB/Root/Core/BP_HDGameState_CQB.BP_HDGameState_CQB_C",
+        "SettingMappings": {
+          "bEnableEnemyTags": "bEnableEnemyTags",
+          "bEnableDeathCamera": "bEnableDeathCamera",
+          "bEnableRedDot": "bEnableRedDot",
+          "bAllowMinimap": "bAllowMinimap",
+          "bEnableSuppressionEffect": "bEnableSuppressionEffect",
+          "bEnableSuppressionMovement": "bEnableSuppressionMovement",
+          "bAllowSquadSpawn": "bAllowSquadSpawn",
+          "bAllowRevive": "bAllowRevive",
+          "bAllowKillFeed": "bAllowKillFeed",
+          "MinGiveUpDelay": "MinGiveUpDelay",
+          "MinRespawnDelay": "MinRespawnDelay",
+          "SquadSpawnAdditionalDelay": "SquadSpawnAdditionalDelay",
+          "RadialDamageMultiplier": "RadialDamageMultiplier",
+          "bAllowPlayerTags": "bAllowPlayerTags",
+          "TimeToContinue": "TimeToContinue",
+          "PlayerSprintAcceleration": "PlayerSprintAcceleration",
+          "PlayerSprintStrafingThreashold": "PlayerSprintStrafingThreashold",
+          "PlayerMaxWalkSpeed": "PlayerMaxWalkSpeed",
+          "PlayerFallDamageDivisor": "PlayerFallDamageDivisor"
+        }
+      },
+      {
+        "Heading": "/CasualCQB/Root/Core/BP_HDGame_Skirmish_CQB.BP_HDGame_Skirmish_CQB_C",
+        "SettingMappings": {
+          "AutoSpawnRadius": "AutoSpawnRadius"
+        }
+      }
+    ]
+  }
 ]

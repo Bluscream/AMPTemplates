@@ -554,7 +554,7 @@
           "type": "boolean"
         },
         {
-         "$ref": "#/definitions/BoolString"
+          "$ref": "#/definitions/BoolString"
         }
       ]
     },
