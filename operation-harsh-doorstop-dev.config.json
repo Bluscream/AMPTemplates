@@ -623,15 +623,14 @@
         "DefaultValue": "False",
         "Description": "If set, player kit restrictions will be disabled",
         "DisplayName": "Disable Kit Restrictions",
-        "EnumValues": {
-            "False": "",
-            "True": "?bDisableKitRestrictions"
-        },
         "FieldName": "DisableKitRestrictions",
         "InputType": "checkbox",
         "Keywords": "disable,kit,restrictions,bDisableKitRestrictions",
         "ParamFieldName": "DisableKitRestrictions",
-        "SkipIfEmpty": true
+        "EnumValues": {
+            "False": "False",
+            "True": "True"
+        }
     },
     {
         "Category": "OHD Server Settings:dns",

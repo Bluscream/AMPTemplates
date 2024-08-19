@@ -1,8 +1,6 @@
 [
     {
         "ConfigFile": "HarshDoorstop/Saved/Config/WindowsServer/Engine.ini",
-        "AutoMap": false,
-        "Importable": false,
         "Subsections": [
             {
                 "Heading": "[SystemSettings]",
@@ -26,8 +24,6 @@
     },
     {
         "ConfigFile": "HarshDoorstop/Saved/Config/WindowsServer/Game.ini",
-        "AutoMap": false,
-        "Importable": false,
         "Subsections": [
             {
                 "Heading": "/Script/RCON.RCONServerSystem",
@@ -75,12 +71,5 @@
                 }
             }
         ]
-    },
-    {
-        "ConfigFile": "HarshDoorstop/Saved/Config/WindowsServer/GameUserSettings.ini",
-        "ConfigType": "ini",
-        "ConfigFormatRegex": "^(?<key>.+?)=(?<value>.*?)$",
-        "AutoMap": false,
-        "Importable": false
     }
 ]
