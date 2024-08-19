@@ -1,21 +1,93 @@
 name: Lint all files
-'on':
+"on":
   workflow_dispatch: null
-permissions: read-all
 jobs:
   build:
     name: Lint
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       packages: read
-      statuses: read
+      statuses: write
+      actions: write
     steps:
+      - name: Create Token
+        id: create_token
+        uses: tibdex/github-app-token@v2.1.0
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
       - name: Checkout code
+        continue-on-error: true
         uses: actions/checkout@main
         with:
           fetch-depth: 0
+          token: ${{ steps.create_token.outputs.token }}
+        # env:
+        #   GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
       - name: Super-linter
+        continue-on-error: true
         uses: super-linter/super-linter@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_ALL_CODEBASE: true
+          ENABLE_GITHUB_ACTIONS_STEP_SUMMARY: false
+          SAVE_SUPER_LINTER_SUMMARY: false
+          SAVE_SUPER_LINTER_OUTPUT: false
+          VALIDATE_JSCPD: false
+          VALIDATE_CHECKOV: false
+          FIX_ANSIBLE: true
+          FIX_CLANG_FORMAT: true
+          FIX_CSHARP: true
+          FIX_CSS_PRETTIER: true
+          FIX_CSS: true
+          FIX_DOTNET_SLN_FORMAT_ANALYZERS: true
+          FIX_DOTNET_SLN_FORMAT_STYLE: true
+          FIX_DOTNET_SLN_FORMAT_WHITESPACE: true
+          FIX_ENV: true
+          FIX_GO_MODULES: true
+          FIX_GO: true
+          FIX_GOOGLE_JAVA_FORMAT: true
+          FIX_GRAPHQL_PRETTIER: true
+          FIX_GROOVY: true
+          FIX_HTML_PRETTIER: true
+          FIX_JAVASCRIPT_ES: true
+          FIX_JAVASCRIPT_PRETTIER: true
+          FIX_JAVASCRIPT_STANDARD: true
+          FIX_JSON_PRETTIER: true
+          FIX_JSON: true
+          FIX_JSONC: true
+          FIX_JSONC_PRETTIER: true
+          FIX_JSX_PRETTIER: true
+          FIX_JSX: true
+          FIX_MARKDOWN_PRETTIER: true
+          FIX_MARKDOWN: true
+          FIX_POWERSHELL: true
+          FIX_PROTOBUF: true
+          FIX_PYTHON_BLACK: true
+          FIX_PYTHON_ISORT: true
+          FIX_PYTHON_RUFF: true
+          FIX_RUBY: true
+          FIX_RUST_2015: true
+          FIX_RUST_2018: true
+          FIX_RUST_2021: true
+          FIX_RUST_CLIPPY: true
+          FIX_SCALAFMT: true
+          FIX_SHELL_SHFMT: true
+          FIX_SNAKEMAKE_SNAKEFMT: true
+          FIX_SQLFLUFF: true
+          FIX_TERRAFORM_FMT: true
+          FIX_TSX: true
+          FIX_TYPESCRIPT_ES: true
+          FIX_TYPESCRIPT_PRETTIER: true
+          FIX_TYPESCRIPT_STANDARD: true
+          FIX_VUE_PRETTIER: true
+          FIX_YAML_PRETTIER: true
+
+      - name: Push fixed
+        continue-on-error: true
+        uses: stefanzweifel/git-auto-commit-action@master
+        with:
+          commit_message: "[bot/super-linter] fix formatting\n\nskip-checks: true"
+        # env:
+        #   GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
