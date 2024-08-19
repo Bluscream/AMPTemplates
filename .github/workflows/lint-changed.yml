@@ -88,6 +88,6 @@ jobs:
         continue-on-error: true
         uses: stefanzweifel/git-auto-commit-action@master
         with:
-          commit_message: "[bot/super-linter] fix formatting [no ci]\n\n\nskip-checks: true"
+          commit_message: "[bot/super-linter] fix formatting\n\nskip-checks: true"
         # env:
         #   GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
