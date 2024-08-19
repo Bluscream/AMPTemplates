@@ -17,6 +17,8 @@ jobs:
         uses: actions/checkout@main
         with:
           fetch-depth: 0
+        # env:
+        #   GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
       - name: Super-linter
         continue-on-error: true
         uses: super-linter/super-linter@main
@@ -78,4 +80,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@master
         with:
           commit_message: "[bot/super-linter] fix formatting"
+        env:
+          GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
   
