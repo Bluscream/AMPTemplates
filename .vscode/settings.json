@@ -2,13 +2,14 @@
     "json.schemas": [
         {
             "fileMatch": [
-                "*.ports.json"
+                "*-ports.json"
             ],
             "url": "file:///C:/Users/blusc/AppData/Local/Temp/AMPTemplates/schemas/ports.schema.json"
         },
         {
             "fileMatch": [
-                "*.updates.json"
+                "*-updates.json",
+                "*-start.json"
             ],
             "url": "file:///C:/Users/blusc/AppData/Local/Temp/AMPTemplates/schemas/updates.schema.json"
         },
@@ -20,13 +21,13 @@
         },
         {
             "fileMatch": [
-                "*.config.json"
+                "*-config.json"
             ],
             "url": "file:///C:/Users/blusc/AppData/Local/Temp/AMPTemplates/schemas/config.schema.json"
         },
         {
             "fileMatch": [
-                "*.generator.json"
+                "*-generator.json"
             ],
             "url": "file:///C:/Users/blusc/AppData/Local/Temp/AMPTemplates/schemas/generator.schema.json"
         },
@@ -40,13 +41,14 @@
     "json.schemas.remote": [
         {
             "fileMatch": [
-                "*.ports.json"
+                "*-ports.json"
             ],
             "url": "https://github.com/Bluscream/AMPTemplates/raw/dev/schemas/ports.schema.json"
         },
         {
             "fileMatch": [
-                "*.updates.json"
+                "*-updates.json",
+                "*-start.json"
             ],
             "url": "https://github.com/Bluscream/AMPTemplates/raw/dev/schemas/updates.schema.json"
         },
@@ -58,13 +60,13 @@
         },
         {
             "fileMatch": [
-                "*.config.json"
+                "*-config.json"
             ],
             "url": "https://github.com/Bluscream/AMPTemplates/raw/dev/schemas/config.schema.json"
         },
         {
             "fileMatch": [
-                "*.generator.json"
+                "*-generator.json"
             ],
             "url": "https://github.com/Bluscream/AMPTemplates/raw/dev/schemas/generator.schema.json"
         },

@@ -1,12 +1,12 @@
-name: Validate `*-ports.json`
+name: Validate `*-start.json`
 on:
   workflow_dispatch:
   push:
     paths:
-      - '*-ports.json'
+      - '*-start.json'
   pull_request:
     paths:
-      - '*-ports.json'
+      - '*-start.json'
 permissions: read-all
 jobs:
   validate:
@@ -25,8 +25,8 @@ jobs:
         continue-on-error: true
         uses: walbo/validate-json@main
         with:
-          files: '*-ports.json'
-          schema: schemas/ports.schema.json
+          files: '*-start.json'
+          schema: schemas/update.schema.json
           schema-version: draft-07
           allow-union-types: true
           strict: false
@@ -37,20 +37,20 @@ jobs:
         continue-on-error: true
         uses: cardinalby/schema-validator-action@master
         with:
-          file: '*-ports.json'
-          schema: schemas/ports.schema.json
+          file: '*-start.json'
+          schema: schemas/update.schema.json
           fixSchemas: true
       - name: Schema (dsanders11/json-schema-validate-action)
         continue-on-error: true
         uses: dsanders11/json-schema-validate-action@main
         with:
-          files: '*-ports.json'
-          schema: schemas/ports.schema.json
+          files: '*-start.json'
+          schema: schemas/update.schema.json
       - name: Schema (ammarlakis/action-ajv)
         continue-on-error: true
         uses: ammarlakis/action-ajv@master
         with:
-          data: '*-ports.json'
-          schema: schemas/ports.schema.json
+          data: '*-start.json'
+          schema: schemas/update.schema.json
           allErrors: true
           verbose: true

@@ -1,12 +1,12 @@
-name: Validate `*.generator.json`
+name: Validate `*-generator.json`
 on:
   workflow_dispatch:
   push:
     paths:
-      - '*.generator.json'
+      - '*-generator.json'
   pull_request:
     paths:
-      - '*.generator.json'
+      - '*-generator.json'
 permissions: read-all
 jobs:
   validate:
@@ -25,7 +25,7 @@ jobs:
         continue-on-error: true
         uses: walbo/validate-json@main
         with:
-          files: '*.generator.json'
+          files: '*-generator.json'
           schema: schemas/generator.schema.json
           schema-version: draft-07
           allow-union-types: true
@@ -37,20 +37,20 @@ jobs:
         continue-on-error: true
         uses: cardinalby/schema-validator-action@master
         with:
-          file: '*.generator.json'
+          file: '*-generator.json'
           schema: schemas/generator.schema.json
           fixSchemas: true
       - name: Schema (dsanders11/json-schema-validate-action)
         continue-on-error: true
         uses: dsanders11/json-schema-validate-action@main
         with:
-          files: '*.generator.json'
+          files: '*-generator.json'
           schema: schemas/generator.schema.json
       - name: Schema (ammarlakis/action-ajv)
         continue-on-error: true
         uses: ammarlakis/action-ajv@master
         with:
-          data: '*.generator.json'
+          data: '*-generator.json'
           schema: schemas/generator.schema.json
           allErrors: true
           verbose: true
