@@ -4,9 +4,6 @@
 | -----------------------|-------------------|
 | GITHUB_ACTIONS | Pass ✅ |
 | GITLEAKS | Pass ✅ |
-| MARKDOWN | Pass ✅ |
-| MARKDOWN_PRETTIER | Pass ✅ |
-| NATURAL_LANGUAGE | Pass ✅ |
 | YAML | Pass ✅ |
 | YAML_PRETTIER | Pass ✅ |
 
