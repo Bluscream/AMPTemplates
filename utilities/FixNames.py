@@ -4,11 +4,11 @@ from pathlib import Path
 import fileinput
 
 mappings = {
-    ".metaconfig.json": "-metaconfig.json",
-    ".config.json": "-config.json",
-    ".ports.json": "-ports.json",
-    ".updates.json": "-updates.json",
-    ".generator.json": "-generator.json"
+    "..metaconfig.json": "-metaconfig.json",
+    "..config.json": "-config.json",
+    "..ports.json": "-ports.json",
+    "..updates.json": "-updates.json",
+    "..generator.json": "-generator.json"
 }
 
 def rename_json_files(directory):
@@ -49,7 +49,7 @@ def update_kvp_files(directory):
                     for suffix in mappings.keys():
                         if suffix in line: # needs patching
                             print(f"Patching line {num} in {file}: {line}")
-                            lines[num - 1] = line.replace(suffix, f".{suffix}")# Replace the line with the patched version
+                            lines[num - 1] = line.replace(suffix, mappings[suffix])# Replace the line with the patched version
                             break  # Break after the first successful patching
     
                 # Write the processed lines back to the file
@@ -58,5 +58,5 @@ def update_kvp_files(directory):
 
 if __name__ == "__main__":
     parent_directory = '.'  # Update this path
-    rename_json_files(parent_directory)
+    # rename_json_files(parent_directory)
     update_kvp_files(parent_directory)
