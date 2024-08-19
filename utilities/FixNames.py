@@ -8,7 +8,8 @@ mappings = {
     "..config.json": "-config.json",
     "..ports.json": "-ports.json",
     "..updates.json": "-updates.json",
-    "..generator.json": "-generator.json"
+    "..generator.json": "-generator.json",
+    "start.json": "-start.json"
 }
 
 def rename_json_files(directory):
@@ -58,5 +59,5 @@ def update_kvp_files(directory):
 
 if __name__ == "__main__":
     parent_directory = '.'  # Update this path
-    # rename_json_files(parent_directory)
-    update_kvp_files(parent_directory)
+    rename_json_files(parent_directory)
+    # update_kvp_files(parent_directory)
