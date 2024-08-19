@@ -643,7 +643,21 @@
         "InputType": "checkbox",
         "Keywords": "supporter,only,donator",
         "ParamFieldName": "SupportersOnly",
-        "IsFlagArgument": true,
+        "EnumValues": {
+            "False": "False",
+            "True": "True"
+        }
+    },
+    {
+        "Category": "OHD Server Settings:dns",
+        "Subcategory": "General:dns",
+        "DefaultValue": "False",
+        "Description": "Description",
+        "DisplayName": "DisplayName",
+        "FieldName": "FieldName",
+        "InputType": "checkbox",
+        "Keywords": "supporter,only,donator",
+        "ParamFieldName": "ParamFieldName",
         "EnumValues": {
             "False": "False",
             "True": "True"
