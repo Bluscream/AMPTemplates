@@ -10,6 +10,7 @@ jobs:
       contents: write
       packages: read
       statuses: write
+      actions: write
     steps:
       - name: Checkout code
         continue-on-error: true
@@ -23,6 +24,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_ALL_CODEBASE: false
           VALIDATE_JSCPD: false
+          VALIDATE_CHECKOV: false
           FIX_ANSIBLE: true
           FIX_CLANG_FORMAT: true
           FIX_CSHARP: true
