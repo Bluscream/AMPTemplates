@@ -18,10 +18,10 @@
       "False": "False",
       "True": "True"
     },
-    "FieldName": "bEnableEnemyTags",
+    "FieldName": "Mod.CasualField.bEnableEnemyTags",
     "InputType": "checkbox",
     "Keywords": "enemy,tags",
-    "ParamFieldName": "bEnableEnemyTags",
+    "ParamFieldName": "Mod.CasualField.bEnableEnemyTags",
     "Placeholder": "True",
     "IsFlagArgument": false
   },
