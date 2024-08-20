@@ -447,6 +447,10 @@
     "Category": "OHD Server Settings:dns",
     "Description": "Enable RCON",
     "DisplayName": "RCON Enabled",
+    "EnumValues": {
+      "False": "False",
+      "True": "True"
+    },
     "FieldName": "RCON.Enabled",
     "IncludeInCommandLine": false,
     "InputType": "checkbox",
