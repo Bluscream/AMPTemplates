@@ -13,6 +13,7 @@ def editFile(filepath):
         if obj["Subcategory"] == "Casualfield:flag:10":
             obj["Keywords"] += "," + obj["ParamFieldName"]
             obj["ParamFieldName"] = "Mod.CasualField." + obj["ParamFieldName"]
+            obj["FieldName"] = obj["ParamFieldName"]
             print(obj["FieldName"])
 
     # for key in ["MinValue", "MaxValue"]:
