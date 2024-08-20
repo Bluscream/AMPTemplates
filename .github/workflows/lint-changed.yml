@@ -13,13 +13,14 @@ jobs:
       actions: write
     steps:
       - name: Create Token
+        continue-on-error: false
         id: create_token
         uses: tibdex/github-app-token@v2.1.0
         with:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
       - name: Checkout code
-        continue-on-error: true
+        continue-on-error: false
         uses: actions/checkout@main
         with:
           fetch-depth: 0
@@ -86,7 +87,7 @@ jobs:
           FIX_YAML_PRETTIER: true
 
       - name: Push fixed
-        continue-on-error: true
+        continue-on-error: false
         uses: stefanzweifel/git-auto-commit-action@master
         with:
           commit_message: "[bot/no ci/super-linter] fix formatting\n\nskip-checks: true"

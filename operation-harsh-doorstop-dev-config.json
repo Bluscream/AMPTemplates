@@ -1,11 +1,12 @@
 [
   {
     "Category": "Mod Settings:extension",
-    "Subcategory": ":extension:100",
+    "Subcategory": "Others:extension:100",
     "FieldName": "Placeholder",
     "ParamFieldName": "Placeholder",
     "DisplayName": "",
-    "InputType": "hidden"
+    "InputType": "hidden",
+    "Hidden": false
   },
   {
     "Category": "Mod Settings:extension",
