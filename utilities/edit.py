@@ -9,13 +9,18 @@ def editFile(filepath):
         print(f"Editing {filepath}")
         data = json.load(file)
 
-    for key in ["MinValue", "MaxValue"]:
-        for i, obj in enumerate(data):
-            if key in obj:
-                if isinstance(obj[key], str) and (
-                    obj[key].isdigit() or obj[key].startswith("-")
-                ):
-                    obj[key] = int(obj[key])
+    for i, obj in enumerate(data):
+        if obj["Subcategory"] == "Casualfield:flag:10":
+            obj["ParamFieldName"] = "Mod.CasualField." + obj["ParamFieldName"]
+            print(obj["FieldName"])
+
+    # for key in ["MinValue", "MaxValue"]:
+    #     for i, obj in enumerate(data):
+    #         if key in obj:
+    #             if isinstance(obj[key], str) and (
+    #                 obj[key].isdigit() or obj[key].startswith("-")
+    #             ):
+    #                 obj[key] = int(obj[key])
         # sorted_obj = {k: obj[k] for k in sorted(obj)}
 
         # Update the object in the list with the sorted version
@@ -43,4 +48,5 @@ def editDir(dirpath, filter=".json"):
                 editFile(fullpath)
 
 
-editDir(".", ".config.json")
+# editDir(".", ".config.json")
+editFile("operation-harsh-doorstop-dev-config.json")
