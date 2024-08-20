@@ -11,6 +11,7 @@ def editFile(filepath):
 
     for i, obj in enumerate(data):
         if obj["Subcategory"] == "Casualfield:flag:10":
+            obj["Keywords"] += "," + obj["ParamFieldName"]
             obj["ParamFieldName"] = "Mod.CasualField." + obj["ParamFieldName"]
             print(obj["FieldName"])
 
