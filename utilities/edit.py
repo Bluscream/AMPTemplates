@@ -23,10 +23,10 @@ def editFile(filepath):
     #                 obj[key].isdigit() or obj[key].startswith("-")
     #             ):
     #                 obj[key] = int(obj[key])
-        # sorted_obj = {k: obj[k] for k in sorted(obj)}
+    # sorted_obj = {k: obj[k] for k in sorted(obj)}
 
-        # Update the object in the list with the sorted version
-        # data[i] = sorted_obj
+    # Update the object in the list with the sorted version
+    # data[i] = sorted_obj
     # for obj in data:
     #     if "FieldName" not in obj:
     #         obj["FieldName"] = obj.get("ParamFieldName").split('.')[-1]
