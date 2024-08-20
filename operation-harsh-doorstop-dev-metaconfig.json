@@ -51,6 +51,7 @@
           "bEnableSuppressionMovement": "Mod.CasualField.bEnableSuppressionMovement",
           "bAllowSquadSpawn": "Mod.CasualField.bAllowSquadSpawn",
           "bAllowRevive": "Mod.CasualField.bAllowRevive",
+          "bNoReviveOnHeadshot": "Mod.CasualField.bNoReviveOnHeadshot",
           "bAllowKillFeed": "Mod.CasualField.bAllowKillFeed",
           "MinGiveUpDelay": "Mod.CasualField.MinGiveUpDelay",
           "MinRespawnDelay": "Mod.CasualField.MinRespawnDelay",
