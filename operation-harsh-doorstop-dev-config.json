@@ -280,7 +280,7 @@
   {
     "Category": "Mod Settings:extension",
     "DefaultValue": "False",
-    "Description": "Disable revive on headshots",
+    "Description": "Allow reviving on headshots",
     "DisplayName": "Revive On Headshot",
     "EnumValues": {
       "False": "True",
