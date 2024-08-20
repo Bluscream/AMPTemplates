@@ -564,12 +564,12 @@
     {
         "Category": "OHD Server Settings:dns",
         "DefaultValue": "True",
-        "Description": "Enables Friendly Fire",
+        "Description": "Allows Friendly Fire",
         "DisplayName": "Friendly Fire",
-        "FieldName": "FriendlyFire",
+        "FieldName": "Game.FriendlyFire",
         "InputType": "checkbox",
         "Keywords": "Game.FriendlyFireOverride",
-        "ParamFieldName": "FriendlyFire",
+        "ParamFieldName": "Game.FriendlyFire",
         "Subcategory": "General:dns"
     },
     {
@@ -577,10 +577,10 @@
         "DefaultValue": "False",
         "Description": "Enables Overriding Active Route",
         "DisplayName": "ActiveRoute",
-        "FieldName": "ActiveRoute",
+        "FieldName": "Game.ActiveRoute",
         "InputType": "checkbox",
         "Keywords": "HD.AAS.ActiveRouteOverride",
-        "ParamFieldName": "ActiveRoute",
+        "ParamFieldName": "Game.ActiveRoute",
         "Subcategory": "General:dns"
     },
     {
@@ -588,22 +588,22 @@
         "DefaultValue": "False",
         "Description": "Enables Team Auto Balancing",
         "DisplayName": "AutoBalance Teams",
-        "FieldName": "AutoBalanceTeams",
+        "FieldName": "Game.AutoBalanceTeams",
         "InputType": "checkbox",
         "Keywords": "Game.AutoBalanceTeamsOverride",
-        "ParamFieldName": "AutoBalanceTeams",
+        "ParamFieldName": "Game.AutoBalanceTeams",
         "Subcategory": "General:dns"
     },
     {
         "Category": "OHD Server Settings:dns",
         "DefaultValue": "-1",
         "Description": "Enforce Smaller Min Players To Capture",
-        "DisplayName": "EnforceSmallerMinPlayersToCapture",
-        "FieldName": "EnforceSmallerMinPlayersToCapture",
+        "DisplayName": "Enforce Smaller Min Players To Capture",
+        "FieldName": "Game.EnforceSmallerMinPlayersToCapture",
         "InputType": "number",
         "Keywords": "HD.CP.EnforceSmallerMinPlayersToCapture",
         "MinValue": -1,
-        "ParamFieldName": "EnforceSmallerMinPlayersToCapture",
+        "ParamFieldName": "Game.EnforceSmallerMinPlayersToCapture",
         "Subcategory": "General:dns"
     },
     {
@@ -611,11 +611,11 @@
         "DefaultValue": "-1",
         "Description": "Minimum amount of players required to capture a point (-1 = Use Map Settings)",
         "DisplayName": "Minimum Players To Capture",
-        "FieldName": "MinPlayersToCapture",
+        "FieldName": "Game.MinPlayersToCapture",
         "InputType": "number",
         "Keywords": "HD.CP.MinPlayersToCaptureOverride",
         "MinValue": -1,
-        "ParamFieldName": "MinPlayersToCapture",
+        "ParamFieldName": "Game.MinPlayersToCapture",
         "Subcategory": "General:dns"
     },
     {
@@ -627,10 +627,10 @@
             "False": "False",
             "True": "True"
         },
-        "FieldName": "DisableKitRestrictions",
+        "FieldName": "Game.DisableKitRestrictions",
         "InputType": "checkbox",
         "Keywords": "disable,kit,restrictions,bDisableKitRestrictions",
-        "ParamFieldName": "DisableKitRestrictions",
+        "ParamFieldName": "Game.DisableKitRestrictions",
         "Subcategory": "General:dns"
     },
     {
@@ -642,10 +642,22 @@
             "False": "False",
             "True": "True"
         },
-        "FieldName": "SupportersOnly",
+        "FieldName": "Game.SupportersOnly",
         "InputType": "checkbox",
         "Keywords": "supporter,only,donator",
-        "ParamFieldName": "SupportersOnly",
+        "ParamFieldName": "Game.SupportersOnly",
+        "Subcategory": "General:dns"
+    },
+    {
+      "Category": "OHD Server Settings:dns",
+        "DefaultValue": "10",
+        "Description": "Minimum respawn delay",
+        "DisplayName": "Min Respawn Delay",
+        "FieldName": "Game.MinRespawnDelay",
+        "InputType": "number",
+        "Keywords": "respawn,delay,MinRespawnDelay",
+        "ParamFieldName": "Game.MinRespawnDelay",
+        "Placeholder": "10",
         "Subcategory": "General:dns"
     },
     {
@@ -860,11 +872,11 @@
         "DefaultValue": "",
         "Description": "Sets your WebApiKey= in 'HarshDoorstop/Saved/Config/WindowsServer/Engine.ini' so your server enjoys the full featureset, you can get your key from steam://openurl/https://steamcommunity.com/dev/apikey",
         "DisplayName": "Steam Web API Key",
-        "FieldName": "SteamWebApiKey",
+        "FieldName": "Steam.WebApiKey",
         "IncludeInCommandLine": false,
         "InputType": "password",
         "Keywords": "steam",
-        "ParamFieldName": "OnlineSubsystemSteam.WebApiKey",
+        "ParamFieldName": "Steam.WebApiKey",
         "Placeholder": "",
         "Subcategory": "General:dns"
     },
