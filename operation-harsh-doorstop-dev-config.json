@@ -317,6 +317,21 @@
   },
   {
     "Category": "OHD Server Settings:dns",
+    "DefaultValue": "16",
+    "Description": "Sets the maximum number of players able to join the server at one time",
+    "DisplayName": "Player Limit",
+    "FieldName": "$MaxUsers",
+    "IncludeInCommandLine": true,
+    "InputType": "number",
+    "Keywords": "max,maximum,players,limit,maxplayers",
+    "MinValue": 1,
+    "ParamFieldName": "MaxPlayers",
+    "Placeholder": "16",
+    "Subcategory": "General:dns",
+    "Suffix": "players"
+  },
+  {
+    "Category": "OHD Server Settings:dns",
     "DefaultValue": "AAS-TestMap",
     "Description": "Sets the map for the server. If \"Custom\" is selected, Custom Map Name must also be set",
     "DisplayName": "Initial Map",
@@ -345,6 +360,31 @@
   {
     "Category": "OHD Server Settings:dns",
     "DefaultValue": "",
+    "Description": "Sets the path to a modded gamemode for the server to run",
+    "DisplayName": "Game Mode",
+    "EnumValues": {
+      "": "None",
+      "/BigLearning/Core/BP_BLGame_Testing.BP_BLGame_Testing_C": "Vehicle Overhaul (mod)",
+      "/Bodycam/Core/GM_Bodycam.GM_Bodycam_C": "Realistic Bodycam (mod)",
+      "/CasualCQB/Core/BP_HDGame_Skirmish_CQB.BP_HDGame_Skirmish_CQB_C": "Casualstrike (mod)",
+      "/CasualMode/Core/BP_HDGame_AdvanceAndSecure_CasualMode.BP_HDGame_AdvanceAndSecure_CasualMode_C": "Casual Warfare (mod)",
+      "/ConstructionPrototype/GameMode/BP_HDGame_AdvanceAndSecure_Construct.BP_HDGame_AdvanceAndSecure_Construct_C": "Construction (mod)",
+      "/Detonation/Root/Core/BP_HDGame_Detonation.BP_HDGame_Detonation_C": "Detonation (mod)",
+      "/Starwars/Core/BP_HDGame_AdvanceAndSecure_Starwars.BP_HDGame_AdvanceAndSecure_Starwars_C": "Star Wars (mod)",
+      "/bodycam/Core/BP_HDGame_BodycamAAS": "Bodycam (mod)",
+      "{{CustomMode}}": "--Custom--"
+    },
+    "FieldName": "game",
+    "IncludeInCommandLine": true,
+    "InputType": "text",
+    "Keywords": "game,gamemode",
+    "ParamFieldName": "game",
+    "SkipIfEmpty": true,
+    "Subcategory": "General:dns"
+  },
+  {
+    "Category": "OHD Server Settings:dns",
+    "DefaultValue": "",
     "Description": "Sets a custom map for the server. \"Custom\" type must be selected under Map, and the map files included in HarshDoorstop/Mods",
     "DisplayName": "Custom Map Name",
     "FieldName": "CustomMap",
@@ -364,31 +404,6 @@
     "Keywords": "map,cycle,list,mapcycle",
     "ParamFieldName": "MapCycle",
     "Special": "listfile:./operation-harsh-doorstop/950900/HarshDoorstop/Saved/Config/WindowsServer/MapCycle.cfg",
-    "Subcategory": "General:dns"
-  },
-  {
-    "Category": "OHD Server Settings:dns",
-    "DefaultValue": "",
-    "Description": "Sets the path to a modded gamemode for the server to run",
-    "DisplayName": "Custom Mode",
-    "EnumValues": {
-      "": "None",
-      "/BigLearning/Core/BP_BLGame_Testing.BP_BLGame_Testing_C": "Vehicle Overhaul (mod)",
-      "/Bodycam/Core/GM_Bodycam.GM_Bodycam_C": "Realistic Bodycam (mod)",
-      "/CasualCQB/Core/BP_HDGame_Skirmish_CQB.BP_HDGame_Skirmish_CQB_C": "Mod Settings:extension",
-      "/CasualMode/Core/BP_HDGame_AdvanceAndSecure_CasualMode.BP_HDGame_AdvanceAndSecure_CasualMode_C": "Casual Warfare (mod)",
-      "/ConstructionPrototype/GameMode/BP_HDGame_AdvanceAndSecure_Construct.BP_HDGame_AdvanceAndSecure_Construct_C": "Construction (mod)",
-      "/Detonation/Root/Core/BP_HDGame_Detonation.BP_HDGame_Detonation_C": "Detonation (mod)",
-      "/Starwars/Core/BP_HDGame_AdvanceAndSecure_Starwars.BP_HDGame_AdvanceAndSecure_Starwars_C": "Star Wars (mod)",
-      "/bodycam/Core/BP_HDGame_BodycamAAS": "Bodycam (mod)",
-      "{{CustomMode}}": "--Custom--"
-    },
-    "FieldName": "game",
-    "IncludeInCommandLine": true,
-    "InputType": "text",
-    "Keywords": "game,gamemode",
-    "ParamFieldName": "game",
-    "SkipIfEmpty": true,
     "Subcategory": "General:dns"
   },
   {
@@ -516,21 +531,6 @@
   },
   {
     "Category": "OHD Server Settings:dns",
-    "DefaultValue": "16",
-    "Description": "Sets the maximum number of players able to join the server at one time",
-    "DisplayName": "Player Limit",
-    "FieldName": "$MaxUsers",
-    "IncludeInCommandLine": true,
-    "InputType": "number",
-    "Keywords": "max,maximum,players,limit,maxplayers",
-    "MinValue": 1,
-    "ParamFieldName": "MaxPlayers",
-    "Placeholder": "16",
-    "Subcategory": "General:dns",
-    "Suffix": "players"
-  },
-  {
-    "Category": "OHD Server Settings:dns",
     "DefaultValue": "0",
     "Description": "Sets the minimum number of players required to start a match",
     "DisplayName": "Minimum Players To Start",
@@ -637,7 +637,7 @@
     "Category": "OHD Server Settings:dns",
     "DefaultValue": "False",
     "Description": "Wether only people that bought the supporter DLC will be able to join",
-    "DisplayName": "Custom Command Line Flags",
+    "DisplayName": "Supporters Only Whitelist",
     "EnumValues": {
       "False": "False",
       "True": "True"
@@ -658,21 +658,6 @@
     "Keywords": "respawn,delay,MinRespawnDelay",
     "ParamFieldName": "Game.MinRespawnDelay",
     "Placeholder": "10",
-    "Subcategory": "General:dns"
-  },
-  {
-    "Category": "OHD Server Settings:dns",
-    "DefaultValue": "False",
-    "Description": "Description",
-    "DisplayName": "DisplayName",
-    "EnumValues": {
-      "False": "False",
-      "True": "True"
-    },
-    "FieldName": "FieldName",
-    "InputType": "checkbox",
-    "Keywords": "supporter,only,donator",
-    "ParamFieldName": "ParamFieldName",
     "Subcategory": "General:dns"
   },
   {
