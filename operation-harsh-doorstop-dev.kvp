@@ -34,7 +34,7 @@ App.ExecutableLinux=1316480/HarshDoorstop/Binaries/Linux/HarshDoorstopServer-Lin
 App.WorkingDir=1316480
 App.LinuxCommandLineArgs=
 App.WindowsCommandLineArgs=-FullStdOutLogOutput
-App.CommandLineArgs=HarshDoorstop {{Map}}?{{$FormattedArgs}}{{bBotAutofill}}{{CustomOptions}} -stdout -QueryPort={{$QueryPort}} -RCONPort={{$RCONPort}} -EnableRCON -MultiHome={{$ApplicationIPBinding}} -RCONIP={{$ApplicationIPBinding}} -RCONPassword={{$RemoteAdminPassword}} -SteamServerName="{{ServerName}}" {{CustomFlags}} {{$PlatformArgs}}
+App.CommandLineArgs=HarshDoorstop {{Map}}?{{$FormattedArgs}}{{bBotAutofill}}{{CustomOptions}} -stdout -QueryPort={{$QueryPort}} -MultiHome={{$ApplicationIPBinding}} -RCONIP={{$ApplicationIPBinding}} -RCONPassword={{$RemoteAdminPassword}} -SteamServerName="{{ServerName}}" {{CustomFlags}} {{$PlatformArgs}}
 App.UseLinuxIOREDIR=False
 App.AppSettings={}
 App.EnvironmentVariables={"LD_LIBRARY_PATH":"{{$FullRootDir}}linux64:%LD_LIBRARY_PATH%","SteamAppId":"1307180"}
@@ -54,7 +54,7 @@ App.AdminPortRef=RCONPort
 App.PrimaryApplicationPortRef=QueryPort
 App.UniversalSleepApplicationUDPPortRef=QueryPort
 App.UniversalSleepSteamQueryPortRef=QueryPort
-App.MaxUsers=16
+App.MaxUsers=32
 App.UseRandomAdminPassword=True
 App.PersistRandomPassword=True
 App.RemoteAdminPassword=
