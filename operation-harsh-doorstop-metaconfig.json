@@ -1,0 +1,76 @@
+[
+  {
+    "ConfigFile": "HarshDoorstop/Saved/Config/WindowsServer/Engine.ini",
+    "Subsections": [
+      {
+        "Heading": "SystemSettings",
+        "SettingMappings": {
+          "Game.FriendlyFireOverride": "Game.FriendlyFire",
+          "Game.AutoBalanceTeamsOverride": "Game.AutoBalanceTeams",
+          "HD.AAS.ActiveRouteOverride": "Game.ActiveRoute",
+          "HD.CP.EnforceSmallerMinPlayersToCapture": "Game.EnforceSmallerMinPlayersToCapture",
+          "HD.CP.MinPlayersToCaptureOverride": "Game.MinPlayersToCapture",
+          "HD.Game.MinRespawnDelayOverride": "Game.MinRespawnDelay",
+          "HD.Game.DisableKitRestrictionsOverride": "Game.DisableKitRestrictions"
+        }
+      },
+      {
+        "Heading": "OnlineSubsystemSteam",
+        "SettingMappings": {
+          "WebApiKey": "Steam.WebApiKey"
+        }
+      }
+    ]
+  },
+  {
+    "ConfigFile": "HarshDoorstop/Saved/Config/WindowsServer/Game.ini",
+    "Subsections": [
+      {
+        "Heading": "/Script/RCON.RCONServerSystem",
+        "SettingMappings": {
+          "bEnabled": "RCON.Enabled",
+          "ListenPort": "RCONPort",
+          "MaxActiveConnections": "RCON.MaxActiveConnections",
+          "MaxAuthAttempts": "RCON.MaxAuthAttempts"
+        }
+      },
+      {
+        "Heading": "/Script/HDMain.HDGameSession",
+        "SettingMappings": {
+          "bSupportersOnlyWhitelist": "Game.SupportersOnly"
+        }
+      },
+      {
+        "Heading": "/CasualCQB/Root/Core/BP_HDGameState_CQB.BP_HDGameState_CQB_C",
+        "SettingMappings": {
+          "bEnableEnemyTags": "Mod.CasualField.bEnableEnemyTags",
+          "bEnableDeathCamera": "Mod.CasualField.bEnableDeathCamera",
+          "bEnableRedDot": "Mod.CasualField.bEnableRedDot",
+          "bAllowMinimap": "Mod.CasualField.bAllowMinimap",
+          "bEnableSuppressionEffect": "Mod.CasualField.bEnableSuppressionEffect",
+          "bEnableSuppressionMovement": "Mod.CasualField.bEnableSuppressionMovement",
+          "bAllowSquadSpawn": "Mod.CasualField.bAllowSquadSpawn",
+          "bAllowRevive": "Mod.CasualField.bAllowRevive",
+          "bNoReviveOnHeadshot": "Mod.CasualField.bNoReviveOnHeadshot",
+          "bAllowKillFeed": "Mod.CasualField.bAllowKillFeed",
+          "MinGiveUpDelay": "Mod.CasualField.MinGiveUpDelay",
+          "MinRespawnDelay": "Mod.CasualField.MinRespawnDelay",
+          "SquadSpawnAdditionalDelay": "Mod.CasualField.SquadSpawnAdditionalDelay",
+          "RadialDamageMultiplier": "Mod.CasualField.RadialDamageMultiplier",
+          "bAllowPlayerTags": "Mod.CasualField.bAllowPlayerTags",
+          "TimeToContinue": "Mod.CasualField.TimeToContinue",
+          "PlayerSprintAcceleration": "Mod.CasualField.PlayerSprintAcceleration",
+          "PlayerSprintStrafingThreashold": "Mod.CasualField.PlayerSprintStrafingThreashold",
+          "PlayerMaxWalkSpeed": "Mod.CasualField.PlayerMaxWalkSpeed",
+          "PlayerFallDamageDivisor": "Mod.CasualField.PlayerFallDamageDivisor"
+        }
+      },
+      {
+        "Heading": "/CasualCQB/Root/Core/BP_HDGame_Skirmish_CQB.BP_HDGame_Skirmish_CQB_C",
+        "SettingMappings": {
+          "AutoSpawnRadius": "Mod.CasualField.AutoSpawnRadius"
+        }
+      }
+    ]
+  }
+]
