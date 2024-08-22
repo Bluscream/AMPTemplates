@@ -1,6 +1,10 @@
 {
   "json.schemas": [
     {
+      "fileMatch": ["manifest.json"],
+      "url": "file:///C:/Users/blusc/AppData/Local/Temp/AMPTemplates/schemas/manifest.schema.json"
+    },
+    {
       "fileMatch": ["*-ports.json"],
       "url": "file:///C:/Users/blusc/AppData/Local/Temp/AMPTemplates/schemas/ports.schema.json"
     },
@@ -21,11 +25,15 @@
       "url": "file:///C:/Users/blusc/AppData/Local/Temp/AMPTemplates/schemas/generator.schema.json"
     },
     {
-      "fileMatch": ["manifest.json"],
-      "url": "file:///C:/Users/blusc/AppData/Local/Temp/AMPTemplates/schemas/manifest.schema.json"
+      "fileMatch": ["*-maps.json"],
+      "url": "file:///C:/Users/blusc/AppData/Local/Temp/AMPTemplates/schemas/maps.schema.json"
     }
   ],
   "json.schemas.remote": [
+    {
+      "fileMatch": ["manifest.json"],
+      "url": "https://github.com/Bluscream/AMPTemplates/raw/dev/schemas/manifest.schema.json"
+    }
     {
       "fileMatch": ["*-ports.json"],
       "url": "https://github.com/Bluscream/AMPTemplates/raw/dev/schemas/ports.schema.json"
@@ -47,8 +55,8 @@
       "url": "https://github.com/Bluscream/AMPTemplates/raw/dev/schemas/generator.schema.json"
     },
     {
-      "fileMatch": ["manifest.json"],
-      "url": "https://github.com/Bluscream/AMPTemplates/raw/dev/schemas/manifest.schema.json"
+      "fileMatch": ["*-maps.json"],
+      "url": "https://github.com/Bluscream/AMPTemplates/raw/dev/schemas/maps.schema.json"
     }
   ]
 }

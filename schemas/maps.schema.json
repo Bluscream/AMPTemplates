@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "type": "array",
+    "items": {
+        "$ref": "#/definitions/Map"
+    },
+    "definitions": {
+        "Map": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "path": {
+                    "type": "string"
+                },
+                "mode": {
+                    "$ref": "#/definitions/GameMode"
+                }
+            },
+            "required": [
+                "name",
+                "id",
+                "path"
+            ],
+            "title": "Map"
+        },
+        "GameMode": {
+            "type": "string",
+            "enum": [
+                "skirmish",
+                "training"
+            ],
+            "title": "Game Mode"
+        }
+    }
+}

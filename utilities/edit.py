@@ -9,12 +9,17 @@ def editFile(filepath):
         print(f"Editing {filepath}")
         data = json.load(file)
 
+    newDict = {}
+
     for i, obj in enumerate(data):
-        if obj["Subcategory"] == "Casualfield:flag:10":
-            obj["Keywords"] += "," + obj["ParamFieldName"]
-            obj["ParamFieldName"] = "Mod.CasualField." + obj["ParamFieldName"]
-            obj["FieldName"] = obj["ParamFieldName"]
-            print(obj["FieldName"])
+        id = obj["id"]
+        del obj["id"]
+        newDict[id] = obj
+        # if obj["Subcategory"] == "Casualfield:flag:10":
+        #     obj["Keywords"] += "," + obj["ParamFieldName"]
+        #     obj["ParamFieldName"] = "Mod.CasualField." + obj["ParamFieldName"]
+        #     obj["FieldName"] = obj["ParamFieldName"]
+        #     print(obj["FieldName"])
 
     # for key in ["MinValue", "MaxValue"]:
     #     for i, obj in enumerate(data):
@@ -37,7 +42,7 @@ def editFile(filepath):
 
     # Save the modified JSON back to the file with 'utf-8' encoding
     with codecs.open(filepath, "w", "utf-8") as file:
-        json.dump(data, file, ensure_ascii=False, indent=4, sort_keys=True)
+        json.dump(newDict, file, ensure_ascii=False, indent=4, sort_keys=True)
 
     print(f"Edited {filepath}")
 
@@ -51,4 +56,4 @@ def editDir(dirpath, filter=".json"):
 
 
 # editDir(".", ".config.json")
-editFile("operation-harsh-doorstop-dev-config.json")
+editFile("operation-harsh-doorstop-maps.json")
