@@ -1,13 +1,14 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
     "$ref": "#/definitions/Maps",
+    "additionalProperties": false,
     "definitions": {
         "Maps": {
-            "items": {
+            "type": "object",
+            "uniqueItems": true,
+            "additionalProperties": {
                 "$ref": "#/definitions/Map"
             },
-            "type": "object",
-            "additionalProperties": true,
             "title": "Maps",
             "description": "Dictionary of defined or available maps"
         },
@@ -31,6 +32,9 @@
                     ],
                     "title": "umap path",
                     "description": "Path to the maps .umap file within the .pak"
+                },
+                "mod": {
+                    "$ref": "#/definitions/Mod"
                 }
             },
             "required": [
@@ -46,6 +50,20 @@
                 "training"
             ],
             "title": "Game Mode"
+        },
+        "Mod": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "url": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "title": "Mod",
+            "description": "Mod the map originates from"
         }
     }
 }

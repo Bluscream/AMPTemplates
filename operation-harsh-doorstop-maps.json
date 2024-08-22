@@ -127,5 +127,29 @@
     "TrainingGrouds_Training_TargetRange": {
         "name": "Training Grouds (Target Range)",
         "path": "/HDAssets/Maps/TrainingGrounds/GameplayLayers/TrainingGrouds_Training_TargetRange"
+    },
+    "Map_vao_small": {
+        "name": "Vooga Small (Mod)",
+        "path": "/Vao/Maps/Map_vao_small",
+        "mod": {
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285049160",
+            "name": "Vooga WIP"
+        }
+    },
+    "Map_vao_vehbasespawn": {
+        "name": "Vooga Large basespawn and hab spawn (Mod)",
+        "path": "/Vao/Maps/Map_vao_vehbasespawn",
+        "mod": {
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285049160",
+            "name": "Vooga WIP"
+        }
+    },
+    "Map_vao_vehicles": {
+        "name": "Vooga Large flag spawn (Mod)",
+        "path": "/Vao/Maps/Map_vao_vehicles",
+        "mod": {
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285049160",
+            "name": "Vooga WIP"
+        }
     }
 }
