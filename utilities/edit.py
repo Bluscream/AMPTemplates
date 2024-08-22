@@ -12,11 +12,11 @@ def editFile(filepath):
     # for k, v in data.items():
     #     if "mod" in v:
     #         print(v.get("mod").get("name"))
-        # if obj["Subcategory"] == "Casualfield:flag:10":
-        #     obj["Keywords"] += "," + obj["ParamFieldName"]
-        #     obj["ParamFieldName"] = "Mod.CasualField." + obj["ParamFieldName"]
-        #     obj["FieldName"] = obj["ParamFieldName"]
-        #     print(obj["FieldName"])
+    # if obj["Subcategory"] == "Casualfield:flag:10":
+    #     obj["Keywords"] += "," + obj["ParamFieldName"]
+    #     obj["ParamFieldName"] = "Mod.CasualField." + obj["ParamFieldName"]
+    #     obj["FieldName"] = obj["ParamFieldName"]
+    #     print(obj["FieldName"])
 
     # for key in ["MinValue", "MaxValue"]:
     #     for i, obj in enumerate(data):
