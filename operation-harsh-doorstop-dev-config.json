@@ -474,13 +474,13 @@
     "DefaultValue": "7779",
     "Description": "Set RCON Port",
     "DisplayName": "RCON Port",
-    "FieldName": "RCON.Port",
+    "FieldName": "RCONPort",
     "Hidden": true,
     "InputType": "number",
     "Keywords": "rcon",
     "MaxValue": 25565,
     "MinValue": 0,
-    "ParamFieldName": "RCON.Port",
+    "ParamFieldName": "RCONPort",
     "Subcategory": "RCON:vpn_key"
   },
   {

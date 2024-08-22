@@ -29,7 +29,7 @@
         "Heading": "/Script/RCON.RCONServerSystem",
         "SettingMappings": {
           "bEnabled": "RCON.Enabled",
-          "ListenPort": "RCON.Port",
+          "ListenPort": "RCONPort",
           "MaxActiveConnections": "RCON.MaxActiveConnections",
           "MaxAuthAttempts": "RCON.MaxAuthAttempts"
         }
