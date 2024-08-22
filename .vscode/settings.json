@@ -23,10 +23,6 @@
     {
       "fileMatch": ["*-generator.json"],
       "url": "file:///C:/Users/blusc/AppData/Local/Temp/AMPTemplates/schemas/generator.schema.json"
-    },
-    {
-      "fileMatch": ["*-maps.json"],
-      "url": "file:///C:/Users/blusc/AppData/Local/Temp/AMPTemplates/schemas/maps.schema.json"
     }
   ],
   "json.schemas.remote": [
@@ -53,10 +49,6 @@
     {
       "fileMatch": ["*-generator.json"],
       "url": "https://github.com/Bluscream/AMPTemplates/raw/dev/schemas/generator.schema.json"
-    },
-    {
-      "fileMatch": ["*-maps.json"],
-      "url": "https://github.com/Bluscream/AMPTemplates/raw/dev/schemas/maps.schema.json"
     }
   ]
 }
