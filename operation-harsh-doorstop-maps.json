@@ -1,131 +1,131 @@
 {
-    "AAS-TestMap": {
-        "name": "AAS-TestMap",
-        "path": "steam.90201159165580288/HDCore/Maps/Dev/AAS-TestMap"
-    },
-    "AlDhakir": {
-        "name": "AlDhakir",
-        "path": "/HDAssets/Maps/AlDhakir/GameplayLayers/AlDhakir"
-    },
-    "AlDhakir_Skirmish_AbandonedApartments": {
-        "mode": "skirmish",
-        "name": "AlDhakir (Abandoned Apartments)",
-        "path": "/HDAssets/Maps/AlDhakir/GameplayLayers/AlDhakir_Skirmish_AbandonedApartments"
-    },
-    "AlDhakir_Skirmish_DesertSettlement": {
-        "mode": "skirmish",
-        "name": "AlDhakir (Desert Settlement)",
-        "path": "/HDAssets/Maps/AlDhakir/GameplayLayers/AlDhakir_Skirmish_DesertSettlement"
-    },
-    "AlDhakir_Skirmish_WadiFarmstead": {
-        "mode": "skirmish",
-        "name": "AlDhakir (Wadi Farmstead)",
-        "path": "/HDAssets/Maps/AlDhakir/GameplayLayers/AlDhakir_Skirmish_WadiFarmstead"
-    },
-    "Argonne": {
-        "name": "Argonne",
-        "path": "/Michael/Maps/Argonne/GameplayLayers/Argonne"
-    },
-    "Argonne_Skirmish_Bunker": {
-        "mode": "skirmish",
-        "name": "Argonne (Bunker)",
-        "path": "/Michael/Maps/Argonne/GameplayLayers/Argonne_Skirmish_Bunker"
-    },
-    "Argonne_Skirmish_EastTrenches": {
-        "mode": "skirmish",
-        "name": "Argonne (East Trenches)",
-        "path": "/Michael/Maps/Argonne/GameplayLayers/Argonne_Skirmish_EastTrenches"
-    },
-    "Argonne_Skirmish_WestTrenches": {
-        "mode": "skirmish",
-        "name": "Argonne (West Trenches)",
-        "path": "/Michael/Maps/Argonne/GameplayLayers/Argonne_Skirmish_WestTrenches"
-    },
-    "Carentan": {
-        "name": "Carentan",
-        "path": "/Carentan/Maps/Carentan"
-    },
-    "Jaziira": {
-        "name": "Jaziira",
-        "path": "/HDAssets/Maps/Jaziira/GameplayLayers/Jaziira"
-    },
-    "Jaziira_Skirmish_City": {
-        "mode": "skirmish",
-        "name": "Jaziira (City)",
-        "path": "/HDAssets/Maps/Jaziira/GameplayLayers/Jaziira_Skirmish_City"
-    },
-    "Khafji": {
-        "name": "Khafji",
-        "path": "/HDAssets/Maps/Khafji/GameplayLayers/Khafji"
-    },
-    "Khafji_Skirmish_ConstructionSite": {
-        "mode": "skirmish",
-        "name": "Khafji (Construction Site)",
-        "path": "/HDAssets/Maps/Jaziira/GameplayLayers/Khafji_Skirmish_ConstructionSite"
-    },
-    "Khafji_Skirmish_IndustrialSector": {
-        "mode": "skirmish",
-        "name": "Khafji (Industrial Sector)",
-        "path": "/HDAssets/Maps/Jaziira/GameplayLayers/Khafji_Skirmish_IndustrialSector"
-    },
-    "LamDong": {
-        "name": "Lam Dong",
-        "path": "/RollingStone/Maps/LamDong/GameplayLayers/LamDong"
-    },
-    "LamDong_Skirmish_Outpost": {
-        "mode": "skirmish",
-        "name": "Lam Dong (Outpost)",
-        "path": "/RollingStone/Maps/LamDong/GameplayLayers/LamDong_Skirmish_Outpost"
-    },
-    "LamDong_Skirmish_RiceFields": {
-        "mode": "skirmish",
-        "name": "Lam Dong (Rice Field)",
-        "path": "/RollingStone/Maps/LamDong/GameplayLayers/LamDong_Skirmish_RiceFields"
-    },
-    "LamDong_Skirmish_Village": {
-        "mode": "skirmish",
-        "name": "Lam Dong (Village)",
-        "path": "/RollingStone/Maps/LamDong/GameplayLayers/LamDong_Skirmish_Village"
-    },
-    "Montecassino": {
-        "name": "Montecassino",
-        "path": "/Overlord/Maps/Montecassino/GameplayLayers/Montecassino"
-    },
-    "Montecassino_Skirmish_Castle": {
-        "mode": "skirmish",
-        "name": "Montecassino (Castle)",
-        "path": "/Overlord/Maps/Montecassino/GameplayLayers/Montecassino_Skirmish_Castle"
-    },
-    "Montecassino_Skirmish_Villa": {
-        "mode": "skirmish",
-        "name": "Montecassino (Villa)",
-        "path": "/Overlord/Maps/Montecassino/GameplayLayers/Montecassino_Skirmish_Villa"
-    },
-    "Risala": {
-        "name": "Risala",
-        "path": "/Sandbreaker/Maps/Risala/GameplayLayers/Risala"
-    },
-    "Risala_Skirmish_Highway": {
-        "mode": "skirmish",
-        "name": "Risala (Highway)",
-        "path": "/Sandbreaker/Maps/Risala/GameplayLayers/Risala_Skirmish_Highway"
-    },
-    "Risala_Skirmish_Shipyard": {
-        "mode": "skirmish",
-        "name": "Risala (Shipyard)",
-        "path": "/Sandbreaker/Maps/Risala/GameplayLayers/Risala_Skirmish_Shipyard"
-    },
-    "Startup": {
-        "name": "Main Menu",
-        "path": "/HDCore/Maps/Startup"
-    },
-    "TrainingGrouds_Skirmish_UrbanComplex": {
-        "mode": "skirmish",
-        "name": "Training Grouds (Urban Complex)",
-        "path": "/HDAssets/Maps/TrainingGrounds/GameplayLayers/TrainingGrouds_Skirmish_UrbanComplex"
-    },
-    "TrainingGrouds_Training_TargetRange": {
-        "name": "Training Grouds (Target Range)",
-        "path": "/HDAssets/Maps/TrainingGrounds/GameplayLayers/TrainingGrouds_Training_TargetRange"
-    }
+  "AAS-TestMap": {
+    "name": "AAS-TestMap",
+    "path": "steam.90201159165580288/HDCore/Maps/Dev/AAS-TestMap"
+  },
+  "AlDhakir": {
+    "name": "AlDhakir",
+    "path": "/HDAssets/Maps/AlDhakir/GameplayLayers/AlDhakir"
+  },
+  "AlDhakir_Skirmish_AbandonedApartments": {
+    "mode": "skirmish",
+    "name": "AlDhakir (Abandoned Apartments)",
+    "path": "/HDAssets/Maps/AlDhakir/GameplayLayers/AlDhakir_Skirmish_AbandonedApartments"
+  },
+  "AlDhakir_Skirmish_DesertSettlement": {
+    "mode": "skirmish",
+    "name": "AlDhakir (Desert Settlement)",
+    "path": "/HDAssets/Maps/AlDhakir/GameplayLayers/AlDhakir_Skirmish_DesertSettlement"
+  },
+  "AlDhakir_Skirmish_WadiFarmstead": {
+    "mode": "skirmish",
+    "name": "AlDhakir (Wadi Farmstead)",
+    "path": "/HDAssets/Maps/AlDhakir/GameplayLayers/AlDhakir_Skirmish_WadiFarmstead"
+  },
+  "Argonne": {
+    "name": "Argonne",
+    "path": "/Michael/Maps/Argonne/GameplayLayers/Argonne"
+  },
+  "Argonne_Skirmish_Bunker": {
+    "mode": "skirmish",
+    "name": "Argonne (Bunker)",
+    "path": "/Michael/Maps/Argonne/GameplayLayers/Argonne_Skirmish_Bunker"
+  },
+  "Argonne_Skirmish_EastTrenches": {
+    "mode": "skirmish",
+    "name": "Argonne (East Trenches)",
+    "path": "/Michael/Maps/Argonne/GameplayLayers/Argonne_Skirmish_EastTrenches"
+  },
+  "Argonne_Skirmish_WestTrenches": {
+    "mode": "skirmish",
+    "name": "Argonne (West Trenches)",
+    "path": "/Michael/Maps/Argonne/GameplayLayers/Argonne_Skirmish_WestTrenches"
+  },
+  "Carentan": {
+    "name": "Carentan",
+    "path": "/Carentan/Maps/Carentan"
+  },
+  "Jaziira": {
+    "name": "Jaziira",
+    "path": "/HDAssets/Maps/Jaziira/GameplayLayers/Jaziira"
+  },
+  "Jaziira_Skirmish_City": {
+    "mode": "skirmish",
+    "name": "Jaziira (City)",
+    "path": "/HDAssets/Maps/Jaziira/GameplayLayers/Jaziira_Skirmish_City"
+  },
+  "Khafji": {
+    "name": "Khafji",
+    "path": "/HDAssets/Maps/Khafji/GameplayLayers/Khafji"
+  },
+  "Khafji_Skirmish_ConstructionSite": {
+    "mode": "skirmish",
+    "name": "Khafji (Construction Site)",
+    "path": "/HDAssets/Maps/Jaziira/GameplayLayers/Khafji_Skirmish_ConstructionSite"
+  },
+  "Khafji_Skirmish_IndustrialSector": {
+    "mode": "skirmish",
+    "name": "Khafji (Industrial Sector)",
+    "path": "/HDAssets/Maps/Jaziira/GameplayLayers/Khafji_Skirmish_IndustrialSector"
+  },
+  "LamDong": {
+    "name": "Lam Dong",
+    "path": "/RollingStone/Maps/LamDong/GameplayLayers/LamDong"
+  },
+  "LamDong_Skirmish_Outpost": {
+    "mode": "skirmish",
+    "name": "Lam Dong (Outpost)",
+    "path": "/RollingStone/Maps/LamDong/GameplayLayers/LamDong_Skirmish_Outpost"
+  },
+  "LamDong_Skirmish_RiceFields": {
+    "mode": "skirmish",
+    "name": "Lam Dong (Rice Field)",
+    "path": "/RollingStone/Maps/LamDong/GameplayLayers/LamDong_Skirmish_RiceFields"
+  },
+  "LamDong_Skirmish_Village": {
+    "mode": "skirmish",
+    "name": "Lam Dong (Village)",
+    "path": "/RollingStone/Maps/LamDong/GameplayLayers/LamDong_Skirmish_Village"
+  },
+  "Montecassino": {
+    "name": "Montecassino",
+    "path": "/Overlord/Maps/Montecassino/GameplayLayers/Montecassino"
+  },
+  "Montecassino_Skirmish_Castle": {
+    "mode": "skirmish",
+    "name": "Montecassino (Castle)",
+    "path": "/Overlord/Maps/Montecassino/GameplayLayers/Montecassino_Skirmish_Castle"
+  },
+  "Montecassino_Skirmish_Villa": {
+    "mode": "skirmish",
+    "name": "Montecassino (Villa)",
+    "path": "/Overlord/Maps/Montecassino/GameplayLayers/Montecassino_Skirmish_Villa"
+  },
+  "Risala": {
+    "name": "Risala",
+    "path": "/Sandbreaker/Maps/Risala/GameplayLayers/Risala"
+  },
+  "Risala_Skirmish_Highway": {
+    "mode": "skirmish",
+    "name": "Risala (Highway)",
+    "path": "/Sandbreaker/Maps/Risala/GameplayLayers/Risala_Skirmish_Highway"
+  },
+  "Risala_Skirmish_Shipyard": {
+    "mode": "skirmish",
+    "name": "Risala (Shipyard)",
+    "path": "/Sandbreaker/Maps/Risala/GameplayLayers/Risala_Skirmish_Shipyard"
+  },
+  "Startup": {
+    "name": "Main Menu",
+    "path": "/HDCore/Maps/Startup"
+  },
+  "TrainingGrouds_Skirmish_UrbanComplex": {
+    "mode": "skirmish",
+    "name": "Training Grouds (Urban Complex)",
+    "path": "/HDAssets/Maps/TrainingGrounds/GameplayLayers/TrainingGrouds_Skirmish_UrbanComplex"
+  },
+  "TrainingGrouds_Training_TargetRange": {
+    "name": "Training Grouds (Target Range)",
+    "path": "/HDAssets/Maps/TrainingGrounds/GameplayLayers/TrainingGrouds_Training_TargetRange"
+  }
 }
