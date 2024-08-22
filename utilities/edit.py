@@ -9,9 +9,9 @@ def editFile(filepath):
         print(f"Editing {filepath}")
         data = json.load(file)
 
-    for k, v in data.items():
-        if "mod" in v:
-            print(v.get("mod").get("name"))
+    # for k, v in data.items():
+    #     if "mod" in v:
+    #         print(v.get("mod").get("name"))
         # if obj["Subcategory"] == "Casualfield:flag:10":
         #     obj["Keywords"] += "," + obj["ParamFieldName"]
         #     obj["ParamFieldName"] = "Mod.CasualField." + obj["ParamFieldName"]
@@ -38,10 +38,10 @@ def editFile(filepath):
     #     obj["EnumValues"] = {"True": "True", "False": "False"}
 
     # Save the modified JSON back to the file with 'utf-8' encoding
-    # with codecs.open(filepath, "w", "utf-8") as file:
-    #     json.dump(newDict, file, ensure_ascii=False, indent=4, sort_keys=True)
+    with codecs.open(filepath, "w", "utf-8") as file:
+        json.dump(data, file, ensure_ascii=False, indent=1, sort_keys=True)
 
-    # print(f"Edited {filepath}")
+    print(f"Edited {filepath}")
 
 
 def editDir(dirpath, filter=".json"):
