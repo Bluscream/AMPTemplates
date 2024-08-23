@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "",
+    "description": "JSON schema for defining generator configurations",
     "type": "object",
     "properties": {
       "_availablePortOptions": {
