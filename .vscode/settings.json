@@ -28,27 +28,27 @@
   "json.schemas.remote": [
     {
       "fileMatch": ["manifest.json"],
-      "url": "https://github.com/Bluscream/AMPTemplates/raw/dev/schemas/manifest.schema.json"
-    }
+      "url": "https://github.com/Bluscream/AMPTemplates/raw/main/schemas/manifest.schema.json"
+    },
     {
       "fileMatch": ["*-ports.json"],
-      "url": "https://github.com/Bluscream/AMPTemplates/raw/dev/schemas/ports.schema.json"
+      "url": "https://github.com/Bluscream/AMPTemplates/raw/main/schemas/ports.schema.json"
     },
     {
       "fileMatch": ["*-updates.json", "*-start.json"],
-      "url": "https://github.com/Bluscream/AMPTemplates/raw/dev/schemas/updates.schema.json"
+      "url": "https://github.com/Bluscream/AMPTemplates/raw/main/schemas/updates.schema.json"
     },
     {
       "fileMatch": ["*metaconfig.json"],
-      "url": "https://github.com/Bluscream/AMPTemplates/raw/dev/schemas/metaconfig.schema.json"
+      "url": "https://github.com/Bluscream/AMPTemplates/raw/main/schemas/metaconfig.schema.json"
     },
     {
       "fileMatch": ["*-config.json"],
-      "url": "https://github.com/Bluscream/AMPTemplates/raw/dev/schemas/config.schema.json"
+      "url": "https://github.com/Bluscream/AMPTemplates/raw/main/schemas/config.schema.json"
     },
     {
       "fileMatch": ["*-generator.json"],
-      "url": "https://github.com/Bluscream/AMPTemplates/raw/dev/schemas/generator.schema.json"
+      "url": "https://github.com/Bluscream/AMPTemplates/raw/main/schemas/generator.schema.json"
     }
   ]
 }
